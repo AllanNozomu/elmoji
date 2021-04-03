@@ -131,17 +131,23 @@ addIntoTrieAux id s trie =
 
 fetchFromIndex : String -> Index data -> List data
 fetchFromIndex s index =
-    fetchFromTrie (normalize s |> String.toLower) index.trie
-        |> Set.foldl
-            (\curr acc ->
-                case Dict.get curr index.dataDict of
-                    Nothing ->
-                        acc
+    let
+        normalizedS = (normalize s |> String.toLower)
+    in
+    if String.length normalizedS == 0 then
+        []
+    else
+        fetchFromTrie (normalize s |> String.toLower) index.trie
+            |> Set.foldl
+                (\curr acc ->
+                    case Dict.get curr index.dataDict of
+                        Nothing ->
+                            acc
 
-                    Just data ->
-                        data :: acc
-            )
-            []
+                        Just data ->
+                            data :: acc
+                )
+                []
 
 
 fetchFromTrie : String -> Trie -> Set Int
