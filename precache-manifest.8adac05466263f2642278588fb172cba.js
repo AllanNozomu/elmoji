@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/elmoji/favicon.ico"
   },
   {
-    "revision": "95dd8b9bb70315a66ce2aeac27871953",
+    "revision": "af5367b388cff4f29f223d762fb07121",
     "url": "/elmoji/index.html"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/elmoji/manifest.json"
   },
   {
-    "revision": "f087d4198176d37a1897",
-    "url": "/elmoji/static/css/main.ca883688.chunk.css"
+    "revision": "e1dfa86e34a68d1fedfd",
+    "url": "/elmoji/static/css/main.b3bde655.chunk.css"
   },
   {
-    "revision": "f087d4198176d37a1897",
-    "url": "/elmoji/static/js/main.f087d419.chunk.js"
+    "revision": "e1dfa86e34a68d1fedfd",
+    "url": "/elmoji/static/js/main.e1dfa86e.chunk.js"
   },
   {
     "revision": "1a87473cca6cb67ff568",
