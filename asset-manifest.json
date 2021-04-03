@@ -1,7 +1,7 @@
 {
-  "main.css": "/elmoji/static/css/main.b3bde655.chunk.css",
-  "main.js": "/elmoji/static/js/main.e1dfa86e.chunk.js",
-  "main.js.map": "/elmoji/static/js/main.e1dfa86e.chunk.js.map",
+  "main.css": "/elmoji/static/css/main.68119f16.chunk.css",
+  "main.js": "/elmoji/static/js/main.56b4ed62.chunk.js",
+  "main.js.map": "/elmoji/static/js/main.56b4ed62.chunk.js.map",
   "runtime~main.js": "/elmoji/static/js/runtime~main.1a87473c.js",
   "runtime~main.js.map": "/elmoji/static/js/runtime~main.1a87473c.js.map",
   "vendors~main.js": "/elmoji/static/js/vendors~main.0b49ec49.chunk.js",
@@ -11,5 +11,5 @@
   "index.html": "/elmoji/index.html",
   "logo.svg": "/elmoji/logo.svg",
   "manifest.json": "/elmoji/manifest.json",
-  "precache-manifest.8adac05466263f2642278588fb172cba.js": "/elmoji/precache-manifest.8adac05466263f2642278588fb172cba.js"
+  "precache-manifest.40700dbcf916433e56a77c5e38d7951f.js": "/elmoji/precache-manifest.40700dbcf916433e56a77c5e38d7951f.js"
 }
