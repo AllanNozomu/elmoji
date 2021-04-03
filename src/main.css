@@ -14,13 +14,17 @@ body {
   margin: 0;
   text-align: center;
   color: #293c4b;
+  font-size: 3rem;
 }
 
-h1 {
-  font-size: 30px;
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-img {
-  margin: 20px 0;
-  max-width: 200px;
+input {
+  font-size: 3rem;
+  height: 3rem;
 }
