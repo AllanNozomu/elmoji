@@ -61,7 +61,7 @@ view model =
         [ h1[][text "Elmoji"],
         input [ onInput ChangeText, placeholder "Search for Emojis" ] []
         , div[][text ((String.fromInt (List.length model.emojis)) ++ " emojis found")]
-        , div [ id "container"] (List.indexedMap (\index emoji -> (div[onClick <| Copy emoji][text emoji])) model.emojis)
+        , div [ id "container"] (List.indexedMap (\index emoji -> (div[class "hover", onClick <| Copy emoji][text emoji])) model.emojis)
         ]
 
 
