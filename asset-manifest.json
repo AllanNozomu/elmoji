@@ -1,0 +1,15 @@
+{
+  "main.css": "/elmoji/static/css/main.ca883688.chunk.css",
+  "main.js": "/elmoji/static/js/main.f087d419.chunk.js",
+  "main.js.map": "/elmoji/static/js/main.f087d419.chunk.js.map",
+  "runtime~main.js": "/elmoji/static/js/runtime~main.1a87473c.js",
+  "runtime~main.js.map": "/elmoji/static/js/runtime~main.1a87473c.js.map",
+  "vendors~main.js": "/elmoji/static/js/vendors~main.0b49ec49.chunk.js",
+  "vendors~main.js.map": "/elmoji/static/js/vendors~main.0b49ec49.chunk.js.map",
+  "./service-worker.js": "/elmoji/./service-worker.js",
+  "favicon.ico": "/elmoji/favicon.ico",
+  "index.html": "/elmoji/index.html",
+  "logo.svg": "/elmoji/logo.svg",
+  "manifest.json": "/elmoji/manifest.json",
+  "precache-manifest.e8c8788d27c3a4d6cba4b52a2ec800b5.js": "/elmoji/precache-manifest.e8c8788d27c3a4d6cba4b52a2ec800b5.js"
+}
