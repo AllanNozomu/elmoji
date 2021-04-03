@@ -11,6 +11,9 @@ let app = Elm.Main.init({
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
+toastr.options.timeOut = 2000;
+
 app.ports.copy.subscribe((emoji) => {
   navigator.clipboard.writeText(emoji);
+  toastr.success(`${emoji} coppied to clipboard`)
 });
