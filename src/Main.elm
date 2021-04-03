@@ -1,12 +1,14 @@
-module Main exposing (..)
+port module Main exposing (..)
 
 import Browser
 import Emojis exposing (allEmojis, emojisIndex)
 import Html exposing (Html, div, input, text, h1)
 import Html.Attributes exposing (placeholder, id, class)
-import Html.Events exposing (onInput)
+import Html.Events exposing (onInput, onClick)
 import Trie exposing (Index, fetchFromIndex)
 
+
+port copy : (String) -> Cmd msg
 
 ---- MODEL ----
 
@@ -28,6 +30,7 @@ init =
 
 type Msg
     = ChangeText String
+    | Copy String
     
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -44,6 +47,9 @@ update msg model =
             in
             ({ model | input = s, emojis = emojisList }, Cmd.none)
 
+        Copy emojiId ->
+            (model, copy emojiId)
+
 
 
 ---- VIEW ----
@@ -55,7 +61,7 @@ view model =
         [ h1[][text "Elmoji"],
         input [ onInput ChangeText, placeholder "Search for Emojis" ] []
         , div[][text ((String.fromInt (List.length model.emojis)) ++ " emojis found")]
-        , div [ id "container"] (List.map (\emoji -> (div[][text emoji])) model.emojis)
+        , div [ id "container"] (List.indexedMap (\index emoji -> (div[onClick <| Copy emoji][text emoji])) model.emojis)
         ]
 
 
