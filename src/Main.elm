@@ -2,7 +2,7 @@ port module Main exposing (..)
 
 import Browser
 import Emojis exposing (allEmojis, emojisIndex)
-import Html exposing (Html, div, input, text, h1)
+import Html exposing (Html, div, input, text, h1, h2)
 import Html.Attributes exposing (placeholder, id, class)
 import Html.Events exposing (onInput, onClick)
 import Trie exposing (Index, fetchFromIndex)
@@ -60,7 +60,7 @@ view model =
     div []
         [ h1[][text "Elmoji"],
         input [ onInput ChangeText, placeholder "Search for Emojis" ] []
-        , div[][text ((String.fromInt (List.length model.emojis)) ++ " emojis found")]
+        , h2[][text ((String.fromInt (List.length model.emojis)) ++ " emojis found")]
         , div [ id "container"] (List.indexedMap (\index emoji -> (div[class "hover", onClick <| Copy emoji][text emoji])) model.emojis)
         ]
 
