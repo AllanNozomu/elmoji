@@ -69,7 +69,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         ChangeText s ->
-            if String.length s >= 1 then
+            if String.length s == 0 then
                 ( { model | input = s, emojis = model.allEmojis }, Cmd.none )
 
             else
@@ -109,7 +109,8 @@ view : Model -> Html Msg
 view model =
     if model.status == Loading then
         div []
-            [ h1 [] [ text "Carregando" ]
+            [ h1 [] [ text "Elmoji" ]
+            , h2 [] [ text "Carregando" ]
             , div [ class "loader-inner ball-pulse" ]
                 [ div [] []
                 , div [] []
