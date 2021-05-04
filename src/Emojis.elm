@@ -15,1809 +15,3524 @@ allEmojis =
 
 emojisList : List ( String, List String )
 emojisList =
-    [ ( "😀", [ "grinning_face", "face", "smile", "happy", "joy", "grin" ] )
-    , ( "😃", [ "grinning_face_with_big_eyes", "face", "happy", "joy", "haha", "smile", "funny" ] )
-    , ( "😄", [ "grinning_face_with_smiling_eyes", "face", "happy", "joy", "funny", "haha", "laugh", "like" ] )
-    , ( "😁", [ "beaming_face_with_smiling_eyes", "face", "happy", "smile", "joy", "kawaii" ] )
-    , ( "😆", [ "grinning_squinting_face", "happy", "joy", "lol", "satisfied", "haha", "face", "glad", "XD", "laugh" ] )
-    , ( "😅", [ "grinning_face_with_sweat", "face", "hot", "happy", "laugh", "sweat", "smile", "relief" ] )
-    , ( "\u{1F923}", [ "rolling_on_the_floor_laughing", "face", "rolling", "floor", "laughing", "lol", "haha" ] )
-    , ( "😂", [ "face_with_tears_of_joy", "face", "cry", "tears", "weep", "happy", "happytears", "haha" ] )
-    , ( "🙂", [ "slightly_smiling_face", "face", "smile" ] )
-    , ( "\u{1F643}", [ "upside_down_face", "face", "flipped", "silly", "smile" ] )
-    , ( "😉", [ "winking_face", "face", "happy", "mischievous", "secret", "smile", "eye" ] )
-    , ( "😊", [ "smiling_face_with_smiling_eyes", "face", "smile", "happy", "flushed", "crush", "embarrassed", "shy", "joy" ] )
-    , ( "😇", [ "smiling_face_with_halo", "face", "angel", "heaven", "halo" ] )
-    , ( "\u{1F970}", [ "smiling_face_with_hearts", "face", "love", "like", "affection", "valentines", "infatuation", "crush", "hearts", "adore" ] )
-    , ( "😍", [ "smiling_face_with_heart_eyes", "face", "love", "like", "affection", "valentines", "infatuation", "crush", "heart" ] )
-    , ( "\u{1F929}", [ "star_struck", "face", "smile", "starry", "eyes", "grinning" ] )
-    , ( "😘", [ "face_blowing_a_kiss", "face", "love", "like", "affection", "valentines", "infatuation", "kiss" ] )
-    , ( "😗", [ "kissing_face", "love", "like", "face", "valentines", "infatuation", "kiss" ] )
-    , ( "☺️", [ "smiling_face", "face", "blush", "massage", "happiness" ] )
-    , ( "😚", [ "kissing_face_with_closed_eyes", "face", "love", "like", "affection", "valentines", "infatuation", "kiss" ] )
-    , ( "😙", [ "kissing_face_with_smiling_eyes", "face", "affection", "valentines", "infatuation", "kiss" ] )
-    , ( "😋", [ "face_savoring_food", "happy", "joy", "tongue", "smile", "face", "silly", "yummy", "nom", "delicious", "savouring" ] )
-    , ( "😛", [ "face_with_tongue", "face", "prank", "childish", "playful", "mischievous", "smile", "tongue" ] )
-    , ( "😜", [ "winking_face_with_tongue", "face", "prank", "childish", "playful", "mischievous", "smile", "wink", "tongue" ] )
-    , ( "\u{1F92A}", [ "zany_face", "face", "goofy", "crazy" ] )
-    , ( "😝", [ "squinting_face_with_tongue", "face", "prank", "playful", "mischievous", "smile", "tongue" ] )
-    , ( "\u{1F911}", [ "money_mouth_face", "face", "rich", "dollar", "money" ] )
-    , ( "\u{1F917}", [ "hugging_face", "face", "smile", "hug" ] )
-    , ( "\u{1F92D}", [ "face_with_hand_over_mouth", "face", "whoops", "shock", "surprise" ] )
-    , ( "\u{1F92B}", [ "shushing_face", "face", "quiet", "shhh" ] )
-    , ( "\u{1F914}", [ "thinking_face", "face", "hmmm", "think", "consider" ] )
-    , ( "\u{1F910}", [ "zipper_mouth_face", "face", "sealed", "zipper", "secret" ] )
-    , ( "\u{1F928}", [ "face_with_raised_eyebrow", "face", "distrust", "scepticism", "disapproval", "disbelief", "surprise" ] )
-    , ( "😐", [ "neutral_face", "indifference", "meh", "neutral" ] )
-    , ( "😑", [ "expressionless_face", "face", "indifferent", "meh", "deadpan" ] )
-    , ( "😶", [ "face_without_mouth", "face", "hellokitty" ] )
-    , ( "😏", [ "smirking_face", "face", "smile", "mean", "prank", "smug", "sarcasm" ] )
-    , ( "😒", [ "unamused_face", "indifference", "bored", "straight face", "serious", "sarcasm", "unimpressed", "skeptical", "dubious", "side_eye" ] )
-    , ( "\u{1F644}", [ "face_with_rolling_eyes", "face", "eyeroll", "frustrated" ] )
-    , ( "😬", [ "grimacing_face", "face", "grimace", "teeth" ] )
-    , ( "\u{1F925}", [ "lying_face", "face", "lie", "pinocchio" ] )
-    , ( "😌", [ "relieved_face", "face", "relaxed", "phew", "massage", "happiness" ] )
-    , ( "😔", [ "pensive_face", "face", "sad", "depressed", "upset" ] )
-    , ( "😪", [ "sleepy_face", "face", "tired", "rest", "nap" ] )
-    , ( "\u{1F924}", [ "drooling_face", "face" ] )
-    , ( "😴", [ "sleeping_face", "face", "tired", "sleepy", "night", "zzz" ] )
-    , ( "😷", [ "face_with_medical_mask", "face", "sick", "ill", "disease" ] )
-    , ( "\u{1F912}", [ "face_with_thermometer", "sick", "temperature", "thermometer", "cold", "fever" ] )
-    , ( "\u{1F915}", [ "face_with_head_bandage", "injured", "clumsy", "bandage", "hurt" ] )
-    , ( "\u{1F922}", [ "nauseated_face", "face", "vomit", "gross", "green", "sick", "throw up", "ill" ] )
-    , ( "\u{1F92E}", [ "face_vomiting", "face", "sick" ] )
-    , ( "\u{1F927}", [ "sneezing_face", "face", "gesundheit", "sneeze", "sick", "allergy" ] )
-    , ( "\u{1F975}", [ "hot_face", "face", "feverish", "heat", "red", "sweating" ] )
-    , ( "\u{1F976}", [ "cold_face", "face", "blue", "freezing", "frozen", "frostbite", "icicles" ] )
-    , ( "\u{1F974}", [ "woozy_face", "face", "dizzy", "intoxicated", "tipsy", "wavy" ] )
-    , ( "😵", [ "dizzy_face", "spent", "unconscious", "xox", "dizzy" ] )
-    , ( "\u{1F92F}", [ "exploding_head", "face", "shocked", "mind", "blown" ] )
-    , ( "\u{1F920}", [ "cowboy_hat_face", "face", "cowgirl", "hat" ] )
-    , ( "\u{1F973}", [ "partying_face", "face", "celebration", "woohoo" ] )
-    , ( "😎", [ "smiling_face_with_sunglasses", "face", "cool", "smile", "summer", "beach", "sunglass" ] )
-    , ( "\u{1F913}", [ "nerd_face", "face", "nerdy", "geek", "dork" ] )
-    , ( "\u{1F9D0}", [ "face_with_monocle", "face", "stuffy", "wealthy" ] )
-    , ( "😕", [ "confused_face", "face", "indifference", "huh", "weird", "hmmm" ] )
-    , ( "😟", [ "worried_face", "face", "concern", "nervous" ] )
-    , ( "🙁", [ "slightly_frowning_face", "face", "frowning", "disappointed", "sad", "upset" ] )
-    , ( "☹️", [ "frowning_face", "face", "sad", "upset", "frown" ] )
-    , ( "😮", [ "face_with_open_mouth", "face", "surprise", "impressed", "wow", "whoa" ] )
-    , ( "😯", [ "hushed_face", "face", "woo", "shh" ] )
-    , ( "😲", [ "astonished_face", "face", "xox", "surprised", "poisoned" ] )
-    , ( "😳", [ "flushed_face", "face", "blush", "shy", "flattered" ] )
-    , ( "\u{1F97A}", [ "pleading_face", "face", "begging", "mercy" ] )
-    , ( "😦", [ "frowning_face_with_open_mouth", "face", "aw", "what" ] )
-    , ( "😧", [ "anguished_face", "face", "stunned", "nervous" ] )
-    , ( "😨", [ "fearful_face", "face", "scared", "terrified", "nervous", "oops", "huh" ] )
-    , ( "😰", [ "anxious_face_with_sweat", "face", "nervous", "sweat" ] )
-    , ( "😥", [ "sad_but_relieved_face", "face", "phew", "sweat", "nervous" ] )
-    , ( "😢", [ "crying_face", "face", "tears", "sad", "depressed", "upset" ] )
-    , ( "😭", [ "loudly_crying_face", "face", "cry", "tears", "sad", "upset", "depressed" ] )
-    , ( "😱", [ "face_screaming_in_fear", "face", "munch", "scared", "omg" ] )
-    , ( "😖", [ "confounded_face", "face", "confused", "sick", "unwell", "oops" ] )
-    , ( "😣", [ "persevering_face", "face", "sick", "no", "upset", "oops" ] )
-    , ( "😞", [ "disappointed_face", "face", "sad", "upset", "depressed" ] )
-    , ( "😓", [ "downcast_face_with_sweat", "face", "hot", "sad", "tired", "exercise" ] )
-    , ( "😩", [ "weary_face", "face", "tired", "sleepy", "sad", "frustrated", "upset" ] )
-    , ( "😫", [ "tired_face", "sick", "whine", "upset", "frustrated" ] )
-    , ( "\u{1F971}", [ "yawning_face", "tired", "sleepy" ] )
-    , ( "😤", [ "face_with_steam_from_nose", "face", "gas", "phew", "proud", "pride" ] )
-    , ( "😡", [ "pouting_face", "angry", "mad", "hate", "despise" ] )
-    , ( "😠", [ "angry_face", "mad", "face", "annoyed", "frustrated" ] )
-    , ( "\u{1F92C}", [ "face_with_symbols_on_mouth", "face", "swearing", "cursing", "cussing", "profanity", "expletive" ] )
-    , ( "😈", [ "smiling_face_with_horns", "devil", "horns" ] )
-    , ( "👿", [ "angry_face_with_horns", "devil", "angry", "horns" ] )
-    , ( "💀", [ "skull", "dead", "skeleton", "creepy", "death" ] )
-    , ( "☠️", [ "skull_and_crossbones", "poison", "danger", "deadly", "scary", "death", "pirate", "evil" ] )
-    , ( "💩", [ "pile_of_poo", "hankey", "shitface", "fail", "turd", "shit" ] )
-    , ( "\u{1F921}", [ "clown_face", "face" ] )
-    , ( "👹", [ "ogre", "monster", "red", "mask", "halloween", "scary", "creepy", "devil", "demon", "japanese", "ogre" ] )
-    , ( "👺", [ "goblin", "red", "evil", "mask", "monster", "scary", "creepy", "japanese", "goblin" ] )
-    , ( "👻", [ "ghost", "halloween", "spooky", "scary" ] )
-    , ( "👽", [ "alien", "UFO", "paul", "weird", "outer_space" ] )
-    , ( "👾", [ "alien_monster", "game", "arcade", "play" ] )
-    , ( "\u{1F916}", [ "robot", "computer", "machine", "bot" ] )
-    , ( "😺", [ "grinning_cat", "animal", "cats", "happy", "smile" ] )
-    , ( "😸", [ "grinning_cat_with_smiling_eyes", "animal", "cats", "smile" ] )
-    , ( "😹", [ "cat_with_tears_of_joy", "animal", "cats", "haha", "happy", "tears" ] )
-    , ( "😻", [ "smiling_cat_with_heart_eyes", "animal", "love", "like", "affection", "cats", "valentines", "heart" ] )
-    , ( "😼", [ "cat_with_wry_smile", "animal", "cats", "smirk" ] )
-    , ( "😽", [ "kissing_cat", "animal", "cats", "kiss" ] )
-    , ( "🙀", [ "weary_cat", "animal", "cats", "munch", "scared", "scream" ] )
-    , ( "😿", [ "crying_cat", "animal", "tears", "weep", "sad", "cats", "upset", "cry" ] )
-    , ( "😾", [ "pouting_cat", "animal", "cats" ] )
-    , ( "🙈", [ "see_no_evil_monkey", "monkey", "animal", "nature", "haha" ] )
-    , ( "🙉", [ "hear_no_evil_monkey", "animal", "monkey", "nature" ] )
-    , ( "🙊", [ "speak_no_evil_monkey", "monkey", "animal", "nature", "omg" ] )
-    , ( "💋", [ "kiss_mark", "face", "lips", "love", "like", "affection", "valentines" ] )
-    , ( "💌", [ "love_letter", "email", "like", "affection", "envelope", "valentines" ] )
-    , ( "💘", [ "heart_with_arrow", "love", "like", "heart", "affection", "valentines" ] )
-    , ( "💝", [ "heart_with_ribbon", "love", "valentines" ] )
-    , ( "💖", [ "sparkling_heart", "love", "like", "affection", "valentines" ] )
-    , ( "💗", [ "growing_heart", "like", "love", "affection", "valentines", "pink" ] )
-    , ( "💓", [ "beating_heart", "love", "like", "affection", "valentines", "pink", "heart" ] )
-    , ( "💞", [ "revolving_hearts", "love", "like", "affection", "valentines" ] )
-    , ( "💕", [ "two_hearts", "love", "like", "affection", "valentines", "heart" ] )
-    , ( "💟", [ "heart_decoration", "purple-square", "love", "like" ] )
-    , ( "❣️", [ "heart_exclamation", "decoration", "love" ] )
-    , ( "💔", [ "broken_heart", "sad", "sorry", "break", "heart", "heartbreak" ] )
-    , ( "❤️", [ "red_heart", "love", "like", "valentines" ] )
-    , ( "\u{1F9E1}", [ "orange_heart", "love", "like", "affection", "valentines" ] )
-    , ( "💛", [ "yellow_heart", "love", "like", "affection", "valentines" ] )
-    , ( "💚", [ "green_heart", "love", "like", "affection", "valentines" ] )
-    , ( "💙", [ "blue_heart", "love", "like", "affection", "valentines" ] )
-    , ( "💜", [ "purple_heart", "love", "like", "affection", "valentines" ] )
-    , ( "\u{1F90E}", [ "brown_heart", "coffee" ] )
-    , ( "\u{1F5A4}", [ "black_heart", "evil" ] )
-    , ( "\u{1F90D}", [ "white_heart", "pure" ] )
-    , ( "💯", [ "hundred_points", "score", "perfect", "numbers", "century", "exam", "quiz", "test", "pass", "hundred" ] )
-    , ( "💢", [ "anger_symbol", "angry", "mad" ] )
-    , ( "💥", [ "collision", "bomb", "explode", "explosion", "collision", "blown" ] )
-    , ( "💫", [ "dizzy", "star", "sparkle", "shoot", "magic" ] )
-    , ( "💦", [ "sweat_droplets", "water", "drip", "oops" ] )
-    , ( "💨", [ "dashing_away", "wind", "air", "fast", "shoo", "fart", "smoke", "puff" ] )
-    , ( "🕳️", [ "hole", "embarrassing" ] )
-    , ( "💣", [ "bomb", "boom", "explode", "explosion", "terrorism" ] )
-    , ( "💬", [ "speech_balloon", "bubble", "words", "message", "talk", "chatting" ] )
-    , ( "👁️\u{200D}🗨️", [ "eye_in_speech_bubble", "info" ] )
-    , ( "🗨️", [ "left_speech_bubble", "words", "message", "talk", "chatting" ] )
-    , ( "🗯️", [ "right_anger_bubble", "caption", "speech", "thinking", "mad" ] )
-    , ( "💭", [ "thought_balloon", "bubble", "cloud", "speech", "thinking", "dream" ] )
-    , ( "💤", [ "zzz", "sleepy", "tired", "dream" ] )
-    , ( "👋", [ "waving_hand", "hands", "gesture", "goodbye", "solong", "farewell", "hello", "hi", "palm" ] )
-    , ( "\u{1F91A}", [ "raised_back_of_hand", "fingers", "raised", "backhand" ] )
-    , ( "🖐️", [ "hand_with_fingers_splayed", "hand", "fingers", "palm" ] )
-    , ( "✋", [ "raised_hand", "fingers", "stop", "highfive", "palm", "ban" ] )
-    , ( "🖖", [ "vulcan_salute", "hand", "fingers", "spock", "star trek" ] )
-    , ( "👌", [ "ok_hand", "fingers", "limbs", "perfect", "ok", "okay" ] )
-    , ( "\u{1F90F}", [ "pinching_hand", "tiny", "small", "size" ] )
-    , ( "✌️", [ "victory_hand", "fingers", "ohyeah", "hand", "peace", "victory", "two" ] )
-    , ( "\u{1F91E}", [ "crossed_fingers", "good", "lucky" ] )
-    , ( "\u{1F91F}", [ "love_you_gesture", "hand", "fingers", "gesture" ] )
-    , ( "\u{1F918}", [ "sign_of_the_horns", "hand", "fingers", "evil_eye", "sign_of_horns", "rock_on" ] )
-    , ( "\u{1F919}", [ "call_me_hand", "hands", "gesture" ] )
-    , ( "👈", [ "backhand_index_pointing_left", "direction", "fingers", "hand", "left" ] )
-    , ( "👉", [ "backhand_index_pointing_right", "fingers", "hand", "direction", "right" ] )
-    , ( "👆", [ "backhand_index_pointing_up", "fingers", "hand", "direction", "up" ] )
-    , ( "🖕", [ "middle_finger", "hand", "fingers", "rude", "middle", "flipping" ] )
-    , ( "👇", [ "backhand_index_pointing_down", "fingers", "hand", "direction", "down" ] )
-    , ( "☝️", [ "index_pointing_up", "hand", "fingers", "direction", "up" ] )
-    , ( "👍", [ "thumbs_up", "thumbsup", "yes", "awesome", "good", "agree", "accept", "cool", "hand", "like" ] )
-    , ( "👎", [ "thumbs_down", "thumbsdown", "no", "dislike", "hand" ] )
-    , ( "✊", [ "raised_fist", "fingers", "hand", "grasp" ] )
-    , ( "👊", [ "oncoming_fist", "angry", "violence", "fist", "hit", "attack", "hand" ] )
-    , ( "\u{1F91B}", [ "left_facing_fist", "hand", "fistbump" ] )
-    , ( "\u{1F91C}", [ "right_facing_fist", "hand", "fistbump" ] )
-    , ( "👏", [ "clapping_hands", "hands", "praise", "applause", "congrats", "yay" ] )
-    , ( "🙌", [ "raising_hands", "gesture", "hooray", "yea", "celebration", "hands" ] )
-    , ( "👐", [ "open_hands", "fingers", "butterfly", "hands", "open" ] )
-    , ( "\u{1F932}", [ "palms_up_together", "hands", "gesture", "cupped", "prayer" ] )
-    , ( "\u{1F91D}", [ "handshake", "agreement", "shake" ] )
-    , ( "🙏", [ "folded_hands", "please", "hope", "wish", "namaste", "highfive" ] )
-    , ( "✍️", [ "writing_hand", "lower_left_ballpoint_pen", "stationery", "write", "compose" ] )
-    , ( "💅", [ "nail_polish", "beauty", "manicure", "finger", "fashion", "nail" ] )
-    , ( "\u{1F933}", [ "selfie", "camera", "phone" ] )
-    , ( "💪", [ "flexed_biceps", "arm", "flex", "hand", "summer", "strong", "biceps" ] )
-    , ( "\u{1F9BE}", [ "mechanical_arm", "accessibility" ] )
-    , ( "\u{1F9BF}", [ "mechanical_leg", "accessibility" ] )
-    , ( "\u{1F9B5}", [ "leg", "kick", "limb" ] )
-    , ( "\u{1F9B6}", [ "foot", "kick", "stomp" ] )
-    , ( "👂", [ "ear", "face", "hear", "sound", "listen" ] )
-    , ( "\u{1F9BB}", [ "ear_with_hearing_aid", "accessibility" ] )
-    , ( "👃", [ "nose", "smell", "sniff" ] )
-    , ( "\u{1F9E0}", [ "brain", "smart", "intelligent" ] )
-    , ( "\u{1F9B7}", [ "tooth", "teeth", "dentist" ] )
-    , ( "\u{1F9B4}", [ "bone", "skeleton" ] )
-    , ( "👀", [ "eyes", "look", "watch", "stalk", "peek", "see" ] )
-    , ( "👁️", [ "eye", "face", "look", "see", "watch", "stare" ] )
-    , ( "👅", [ "tongue", "mouth", "playful" ] )
-    , ( "👄", [ "mouth", "mouth", "kiss" ] )
-    , ( "👶", [ "baby", "child", "boy", "girl", "toddler" ] )
-    , ( "\u{1F9D2}", [ "child", "gender-neutral", "young" ] )
-    , ( "👦", [ "boy", "man", "male", "guy", "teenager" ] )
-    , ( "👧", [ "girl", "female", "woman", "teenager" ] )
-    , ( "\u{1F9D1}", [ "person", "gender-neutral", "person" ] )
-    , ( "👱", [ "person_blond_hair", "hairstyle" ] )
-    , ( "👨", [ "man", "mustache", "father", "dad", "guy", "classy", "sir", "moustache" ] )
-    , ( "\u{1F9D4}", [ "man_beard", "person", "bewhiskered" ] )
-    , ( "👨\u{200D}\u{1F9B0}", [ "man_red_hair", "hairstyle" ] )
-    , ( "👨\u{200D}\u{1F9B1}", [ "man_curly_hair", "hairstyle" ] )
-    , ( "👨\u{200D}\u{1F9B3}", [ "man_white_hair", "old", "elder" ] )
-    , ( "👨\u{200D}\u{1F9B2}", [ "man_bald", "hairless" ] )
-    , ( "👩", [ "woman", "female", "girls", "lady" ] )
-    , ( "👩\u{200D}\u{1F9B0}", [ "woman_red_hair", "hairstyle" ] )
-    , ( "\u{1F9D1}\u{200D}\u{1F9B0}", [ "person_red_hair", "hairstyle" ] )
-    , ( "👩\u{200D}\u{1F9B1}", [ "woman_curly_hair", "hairstyle" ] )
-    , ( "\u{1F9D1}\u{200D}\u{1F9B1}", [ "person_curly_hair", "hairstyle" ] )
-    , ( "👩\u{200D}\u{1F9B3}", [ "woman_white_hair", "old", "elder" ] )
-    , ( "\u{1F9D1}\u{200D}\u{1F9B3}", [ "person_white_hair", "elder", "old" ] )
-    , ( "👩\u{200D}\u{1F9B2}", [ "woman_bald", "hairless" ] )
-    , ( "\u{1F9D1}\u{200D}\u{1F9B2}", [ "person_bald", "hairless" ] )
-    , ( "👱\u{200D}♀️", [ "woman_blond_hair", "woman", "female", "girl", "blonde", "person" ] )
-    , ( "👱\u{200D}♂️", [ "man_blond_hair", "man", "male", "boy", "blonde", "guy", "person" ] )
-    , ( "\u{1F9D3}", [ "older_person", "human", "elder", "senior", "gender-neutral" ] )
-    , ( "👴", [ "old_man", "human", "male", "men", "old", "elder", "senior" ] )
-    , ( "👵", [ "old_woman", "human", "female", "women", "lady", "old", "elder", "senior" ] )
-    , ( "🙍", [ "person_frowning", "worried" ] )
-    , ( "🙍\u{200D}♂️", [ "man_frowning", "male", "boy", "man", "sad", "depressed", "discouraged", "unhappy" ] )
-    , ( "🙍\u{200D}♀️", [ "woman_frowning", "female", "girl", "woman", "sad", "depressed", "discouraged", "unhappy" ] )
-    , ( "🙎", [ "person_pouting", "upset" ] )
-    , ( "🙎\u{200D}♂️", [ "man_pouting", "male", "boy", "man" ] )
-    , ( "🙎\u{200D}♀️", [ "woman_pouting", "female", "girl", "woman" ] )
-    , ( "🙅", [ "person_gesturing_no", "decline" ] )
-    , ( "🙅\u{200D}♂️", [ "man_gesturing_no", "male", "boy", "man", "nope" ] )
-    , ( "🙅\u{200D}♀️", [ "woman_gesturing_no", "female", "girl", "woman", "nope" ] )
-    , ( "🙆", [ "person_gesturing_ok", "agree" ] )
-    , ( "🙆\u{200D}♂️", [ "man_gesturing_ok", "men", "boy", "male", "blue", "human", "man" ] )
-    , ( "🙆\u{200D}♀️", [ "woman_gesturing_ok", "women", "girl", "female", "pink", "human", "woman" ] )
-    , ( "💁", [ "person_tipping_hand", "information" ] )
-    , ( "💁\u{200D}♂️", [ "man_tipping_hand", "male", "boy", "man", "human", "information" ] )
-    , ( "💁\u{200D}♀️", [ "woman_tipping_hand", "female", "girl", "woman", "human", "information" ] )
-    , ( "🙋", [ "person_raising_hand", "question" ] )
-    , ( "🙋\u{200D}♂️", [ "man_raising_hand", "male", "boy", "man" ] )
-    , ( "🙋\u{200D}♀️", [ "woman_raising_hand", "female", "girl", "woman" ] )
-    , ( "\u{1F9CF}", [ "deaf_person", "accessibility" ] )
-    , ( "\u{1F9CF}\u{200D}♂️", [ "deaf_man", "accessibility" ] )
-    , ( "\u{1F9CF}\u{200D}♀️", [ "deaf_woman", "accessibility" ] )
-    , ( "🙇", [ "person_bowing", "respectiful" ] )
-    , ( "🙇\u{200D}♂️", [ "man_bowing", "man", "male", "boy" ] )
-    , ( "🙇\u{200D}♀️", [ "woman_bowing", "woman", "female", "girl" ] )
-    , ( "\u{1F926}", [ "person_facepalming", "disappointed" ] )
-    , ( "\u{1F926}\u{200D}♂️", [ "man_facepalming", "man", "male", "boy", "disbelief" ] )
-    , ( "\u{1F926}\u{200D}♀️", [ "woman_facepalming", "woman", "female", "girl", "disbelief" ] )
-    , ( "\u{1F937}", [ "person_shrugging", "regardless" ] )
-    , ( "\u{1F937}\u{200D}♂️", [ "man_shrugging", "man", "male", "boy", "confused", "indifferent", "doubt" ] )
-    , ( "\u{1F937}\u{200D}♀️", [ "woman_shrugging", "woman", "female", "girl", "confused", "indifferent", "doubt" ] )
-    , ( "\u{1F9D1}\u{200D}⚕️", [ "health_worker", "hospital" ] )
-    , ( "👨\u{200D}⚕️", [ "man_health_worker", "doctor", "nurse", "therapist", "healthcare", "man", "human" ] )
-    , ( "👩\u{200D}⚕️", [ "woman_health_worker", "doctor", "nurse", "therapist", "healthcare", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🎓", [ "student", "learn" ] )
-    , ( "👨\u{200D}🎓", [ "man_student", "graduate", "man", "human" ] )
-    , ( "👩\u{200D}🎓", [ "woman_student", "graduate", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🏫", [ "teacher", "professor" ] )
-    , ( "👨\u{200D}🏫", [ "man_teacher", "instructor", "professor", "man", "human" ] )
-    , ( "👩\u{200D}🏫", [ "woman_teacher", "instructor", "professor", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}⚖️", [ "judge", "law" ] )
-    , ( "👨\u{200D}⚖️", [ "man_judge", "justice", "court", "man", "human" ] )
-    , ( "👩\u{200D}⚖️", [ "woman_judge", "justice", "court", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🌾", [ "farmer", "crops" ] )
-    , ( "👨\u{200D}🌾", [ "man_farmer", "rancher", "gardener", "man", "human" ] )
-    , ( "👩\u{200D}🌾", [ "woman_farmer", "rancher", "gardener", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🍳", [ "cook", "food", "kitchen", "culinary" ] )
-    , ( "👨\u{200D}🍳", [ "man_cook", "chef", "man", "human" ] )
-    , ( "👩\u{200D}🍳", [ "woman_cook", "chef", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🔧", [ "mechanic", "worker", "technician" ] )
-    , ( "👨\u{200D}🔧", [ "man_mechanic", "plumber", "man", "human", "wrench" ] )
-    , ( "👩\u{200D}🔧", [ "woman_mechanic", "plumber", "woman", "human", "wrench" ] )
-    , ( "\u{1F9D1}\u{200D}🏭", [ "factory_worker", "labor" ] )
-    , ( "👨\u{200D}🏭", [ "man_factory_worker", "assembly", "industrial", "man", "human" ] )
-    , ( "👩\u{200D}🏭", [ "woman_factory_worker", "assembly", "industrial", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}💼", [ "office_worker", "business" ] )
-    , ( "👨\u{200D}💼", [ "man_office_worker", "business", "manager", "man", "human" ] )
-    , ( "👩\u{200D}💼", [ "woman_office_worker", "business", "manager", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🔬", [ "scientist", "chemistry" ] )
-    , ( "👨\u{200D}🔬", [ "man_scientist", "biologist", "chemist", "engineer", "physicist", "man", "human" ] )
-    , ( "👩\u{200D}🔬", [ "woman_scientist", "biologist", "chemist", "engineer", "physicist", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}💻", [ "technologist", "computer" ] )
-    , ( "👨\u{200D}💻", [ "man_technologist", "coder", "developer", "engineer", "programmer", "software", "man", "human", "laptop", "computer" ] )
-    , ( "👩\u{200D}💻", [ "woman_technologist", "coder", "developer", "engineer", "programmer", "software", "woman", "human", "laptop", "computer" ] )
-    , ( "\u{1F9D1}\u{200D}🎤", [ "singer", "song", "artist", "performer" ] )
-    , ( "👨\u{200D}🎤", [ "man_singer", "rockstar", "entertainer", "man", "human" ] )
-    , ( "👩\u{200D}🎤", [ "woman_singer", "rockstar", "entertainer", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🎨", [ "artist", "painting", "draw", "creativity" ] )
-    , ( "👨\u{200D}🎨", [ "man_artist", "painter", "man", "human" ] )
-    , ( "👩\u{200D}🎨", [ "woman_artist", "painter", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}✈️", [ "pilot", "fly", "plane", "airplane" ] )
-    , ( "👨\u{200D}✈️", [ "man_pilot", "aviator", "plane", "man", "human" ] )
-    , ( "👩\u{200D}✈️", [ "woman_pilot", "aviator", "plane", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🚀", [ "astronaut", "outerspace" ] )
-    , ( "👨\u{200D}🚀", [ "man_astronaut", "space", "rocket", "man", "human" ] )
-    , ( "👩\u{200D}🚀", [ "woman_astronaut", "space", "rocket", "woman", "human" ] )
-    , ( "\u{1F9D1}\u{200D}🚒", [ "firefighter", "fire" ] )
-    , ( "👨\u{200D}🚒", [ "man_firefighter", "fireman", "man", "human" ] )
-    , ( "👩\u{200D}🚒", [ "woman_firefighter", "fireman", "woman", "human" ] )
-    , ( "👮", [ "police_officer", "cop" ] )
-    , ( "👮\u{200D}♂️", [ "man_police_officer", "man", "police", "law", "legal", "enforcement", "arrest" ] )
-    , ( "👮\u{200D}♀️", [ "woman_police_officer", "woman", "police", "law", "legal", "enforcement", "arrest", "female" ] )
-    , ( "🕵️", [ "detective", "human", "spy", "detective" ] )
-    , ( "🕵️\u{200D}♂️", [ "man_detective", "crime" ] )
-    , ( "🕵️\u{200D}♀️", [ "woman_detective", "human", "spy", "detective", "female", "woman" ] )
-    , ( "💂", [ "guard", "protect" ] )
-    , ( "💂\u{200D}♂️", [ "man_guard", "uk", "gb", "british", "male", "guy", "royal" ] )
-    , ( "💂\u{200D}♀️", [ "woman_guard", "uk", "gb", "british", "female", "royal", "woman" ] )
-    , ( "👷", [ "construction_worker", "labor", "build" ] )
-    , ( "👷\u{200D}♂️", [ "man_construction_worker", "male", "human", "wip", "guy", "build", "construction", "worker", "labor" ] )
-    , ( "👷\u{200D}♀️", [ "woman_construction_worker", "female", "human", "wip", "build", "construction", "worker", "labor", "woman" ] )
-    , ( "\u{1F934}", [ "prince", "boy", "man", "male", "crown", "royal", "king" ] )
-    , ( "👸", [ "princess", "girl", "woman", "female", "blond", "crown", "royal", "queen" ] )
-    , ( "👳", [ "person_wearing_turban", "headdress" ] )
-    , ( "👳\u{200D}♂️", [ "man_wearing_turban", "male", "indian", "hinduism", "arabs" ] )
-    , ( "👳\u{200D}♀️", [ "woman_wearing_turban", "female", "indian", "hinduism", "arabs", "woman" ] )
-    , ( "👲", [ "man_with_skullcap", "male", "boy", "chinese" ] )
-    , ( "\u{1F9D5}", [ "woman_with_headscarf", "female", "hijab", "mantilla", "tichel" ] )
-    , ( "\u{1F935}", [ "man_in_tuxedo", "couple", "marriage", "wedding", "groom" ] )
-    , ( "👰", [ "bride_with_veil", "couple", "marriage", "wedding", "woman", "bride" ] )
-    , ( "\u{1F930}", [ "pregnant_woman", "baby" ] )
-    , ( "\u{1F931}", [ "breast_feeding", "nursing", "baby" ] )
-    , ( "👼", [ "baby_angel", "heaven", "wings", "halo" ] )
-    , ( "🎅", [ "santa_claus", "festival", "man", "male", "xmas", "father christmas" ] )
-    , ( "\u{1F936}", [ "mrs_claus", "woman", "female", "xmas", "mother christmas" ] )
-    , ( "\u{1F9B8}", [ "superhero", "marvel" ] )
-    , ( "\u{1F9B8}\u{200D}♂️", [ "man_superhero", "man", "male", "good", "hero", "superpowers" ] )
-    , ( "\u{1F9B8}\u{200D}♀️", [ "woman_superhero", "woman", "female", "good", "heroine", "superpowers" ] )
-    , ( "\u{1F9B9}", [ "supervillain", "marvel" ] )
-    , ( "\u{1F9B9}\u{200D}♂️", [ "man_supervillain", "man", "male", "evil", "bad", "criminal", "hero", "superpowers" ] )
-    , ( "\u{1F9B9}\u{200D}♀️", [ "woman_supervillain", "woman", "female", "evil", "bad", "criminal", "heroine", "superpowers" ] )
-    , ( "\u{1F9D9}", [ "mage", "magic" ] )
-    , ( "\u{1F9D9}\u{200D}♂️", [ "man_mage", "man", "male", "mage", "sorcerer" ] )
-    , ( "\u{1F9D9}\u{200D}♀️", [ "woman_mage", "woman", "female", "mage", "witch" ] )
-    , ( "\u{1F9DA}", [ "fairy", "wings", "magical" ] )
-    , ( "\u{1F9DA}\u{200D}♂️", [ "man_fairy", "man", "male" ] )
-    , ( "\u{1F9DA}\u{200D}♀️", [ "woman_fairy", "woman", "female" ] )
-    , ( "\u{1F9DB}", [ "vampire", "blood", "twilight" ] )
-    , ( "\u{1F9DB}\u{200D}♂️", [ "man_vampire", "man", "male", "dracula" ] )
-    , ( "\u{1F9DB}\u{200D}♀️", [ "woman_vampire", "woman", "female" ] )
-    , ( "\u{1F9DC}", [ "merperson", "sea" ] )
-    , ( "\u{1F9DC}\u{200D}♂️", [ "merman", "man", "male", "triton" ] )
-    , ( "\u{1F9DC}\u{200D}♀️", [ "mermaid", "woman", "female", "merwoman", "ariel" ] )
-    , ( "\u{1F9DD}", [ "elf", "magical" ] )
-    , ( "\u{1F9DD}\u{200D}♂️", [ "man_elf", "man", "male" ] )
-    , ( "\u{1F9DD}\u{200D}♀️", [ "woman_elf", "woman", "female" ] )
-    , ( "\u{1F9DE}", [ "genie", "magical", "wishes" ] )
-    , ( "\u{1F9DE}\u{200D}♂️", [ "man_genie", "man", "male" ] )
-    , ( "\u{1F9DE}\u{200D}♀️", [ "woman_genie", "woman", "female" ] )
-    , ( "\u{1F9DF}", [ "zombie", "dead" ] )
-    , ( "\u{1F9DF}\u{200D}♂️", [ "man_zombie", "man", "male", "dracula", "undead", "walking dead" ] )
-    , ( "\u{1F9DF}\u{200D}♀️", [ "woman_zombie", "woman", "female", "undead", "walking dead" ] )
-    , ( "💆", [ "person_getting_massage", "relax" ] )
-    , ( "💆\u{200D}♂️", [ "man_getting_massage", "male", "boy", "man", "head" ] )
-    , ( "💆\u{200D}♀️", [ "woman_getting_massage", "female", "girl", "woman", "head" ] )
-    , ( "💇", [ "person_getting_haircut", "hairstyle" ] )
-    , ( "💇\u{200D}♂️", [ "man_getting_haircut", "male", "boy", "man" ] )
-    , ( "💇\u{200D}♀️", [ "woman_getting_haircut", "female", "girl", "woman" ] )
-    , ( "🚶", [ "person_walking", "move" ] )
-    , ( "🚶\u{200D}♂️", [ "man_walking", "human", "feet", "steps" ] )
-    , ( "🚶\u{200D}♀️", [ "woman_walking", "human", "feet", "steps", "woman", "female" ] )
-    , ( "\u{1F9CD}", [ "person_standing", "still" ] )
-    , ( "\u{1F9CD}\u{200D}♂️", [ "man_standing", "still" ] )
-    , ( "\u{1F9CD}\u{200D}♀️", [ "woman_standing", "still" ] )
-    , ( "\u{1F9CE}", [ "person_kneeling", "pray", "respectful" ] )
-    , ( "\u{1F9CE}\u{200D}♂️", [ "man_kneeling", "pray", "respectful" ] )
-    , ( "\u{1F9CE}\u{200D}♀️", [ "woman_kneeling", "respectful", "pray" ] )
-    , ( "\u{1F9D1}\u{200D}\u{1F9AF}", [ "person_with_probing_cane", "blind" ] )
-    , ( "👨\u{200D}\u{1F9AF}", [ "man_with_probing_cane", "blind" ] )
-    , ( "👩\u{200D}\u{1F9AF}", [ "woman_with_probing_cane", "blind" ] )
-    , ( "\u{1F9D1}\u{200D}\u{1F9BC}", [ "person_in_motorized_wheelchair", "disability", "accessibility" ] )
-    , ( "👨\u{200D}\u{1F9BC}", [ "man_in_motorized_wheelchair", "disability", "accessibility" ] )
-    , ( "👩\u{200D}\u{1F9BC}", [ "woman_in_motorized_wheelchair", "disability", "accessibility" ] )
-    , ( "\u{1F9D1}\u{200D}\u{1F9BD}", [ "person_in_manual_wheelchair", "disability", "accessibility" ] )
-    , ( "👨\u{200D}\u{1F9BD}", [ "man_in_manual_wheelchair", "disability", "accessibility" ] )
-    , ( "👩\u{200D}\u{1F9BD}", [ "woman_in_manual_wheelchair", "disability", "accessibility" ] )
-    , ( "🏃", [ "person_running", "move" ] )
-    , ( "🏃\u{200D}♂️", [ "man_running", "man", "walking", "exercise", "race", "running" ] )
-    , ( "🏃\u{200D}♀️", [ "woman_running", "woman", "walking", "exercise", "race", "running", "female" ] )
-    , ( "💃", [ "woman_dancing", "female", "girl", "woman", "fun" ] )
-    , ( "\u{1F57A}", [ "man_dancing", "male", "boy", "fun", "dancer" ] )
-    , ( "🕴️", [ "man_in_suit_levitating", "suit", "business", "levitate", "hover", "jump" ] )
-    , ( "👯", [ "people_with_bunny_ears", "perform", "costume" ] )
-    , ( "👯\u{200D}♂️", [ "men_with_bunny_ears", "male", "bunny", "men", "boys" ] )
-    , ( "👯\u{200D}♀️", [ "women_with_bunny_ears", "female", "bunny", "women", "girls" ] )
-    , ( "\u{1F9D6}", [ "person_in_steamy_room", "relax", "spa" ] )
-    , ( "\u{1F9D6}\u{200D}♂️", [ "man_in_steamy_room", "male", "man", "spa", "steamroom", "sauna" ] )
-    , ( "\u{1F9D6}\u{200D}♀️", [ "woman_in_steamy_room", "female", "woman", "spa", "steamroom", "sauna" ] )
-    , ( "\u{1F9D7}", [ "person_climbing", "sport" ] )
-    , ( "\u{1F9D7}\u{200D}♂️", [ "man_climbing", "sports", "hobby", "man", "male", "rock" ] )
-    , ( "\u{1F9D7}\u{200D}♀️", [ "woman_climbing", "sports", "hobby", "woman", "female", "rock" ] )
-    , ( "\u{1F93A}", [ "person_fencing", "sports", "fencing", "sword" ] )
-    , ( "🏇", [ "horse_racing", "animal", "betting", "competition", "gambling", "luck" ] )
-    , ( "⛷️", [ "skier", "sports", "winter", "snow" ] )
-    , ( "🏂", [ "snowboarder", "sports", "winter" ] )
-    , ( "🏌️", [ "person_golfing", "sports", "business" ] )
-    , ( "🏌️\u{200D}♂️", [ "man_golfing", "sport" ] )
-    , ( "🏌️\u{200D}♀️", [ "woman_golfing", "sports", "business", "woman", "female" ] )
-    , ( "🏄", [ "person_surfing", "sport", "sea" ] )
-    , ( "🏄\u{200D}♂️", [ "man_surfing", "sports", "ocean", "sea", "summer", "beach" ] )
-    , ( "🏄\u{200D}♀️", [ "woman_surfing", "sports", "ocean", "sea", "summer", "beach", "woman", "female" ] )
-    , ( "🚣", [ "person_rowing_boat", "sport", "move" ] )
-    , ( "🚣\u{200D}♂️", [ "man_rowing_boat", "sports", "hobby", "water", "ship" ] )
-    , ( "🚣\u{200D}♀️", [ "woman_rowing_boat", "sports", "hobby", "water", "ship", "woman", "female" ] )
-    , ( "🏊", [ "person_swimming", "sport", "pool" ] )
-    , ( "🏊\u{200D}♂️", [ "man_swimming", "sports", "exercise", "human", "athlete", "water", "summer" ] )
-    , ( "🏊\u{200D}♀️", [ "woman_swimming", "sports", "exercise", "human", "athlete", "water", "summer", "woman", "female" ] )
-    , ( "⛹️", [ "person_bouncing_ball", "sports", "human" ] )
-    , ( "⛹️\u{200D}♂️", [ "man_bouncing_ball", "sport" ] )
-    , ( "⛹️\u{200D}♀️", [ "woman_bouncing_ball", "sports", "human", "woman", "female" ] )
-    , ( "🏋️", [ "person_lifting_weights", "sports", "training", "exercise" ] )
-    , ( "🏋️\u{200D}♂️", [ "man_lifting_weights", "sport" ] )
-    , ( "🏋️\u{200D}♀️", [ "woman_lifting_weights", "sports", "training", "exercise", "woman", "female" ] )
-    , ( "🚴", [ "person_biking", "sport", "move" ] )
-    , ( "🚴\u{200D}♂️", [ "man_biking", "sports", "bike", "exercise", "hipster" ] )
-    , ( "🚴\u{200D}♀️", [ "woman_biking", "sports", "bike", "exercise", "hipster", "woman", "female" ] )
-    , ( "🚵", [ "person_mountain_biking", "sport", "move" ] )
-    , ( "🚵\u{200D}♂️", [ "man_mountain_biking", "transportation", "sports", "human", "race", "bike" ] )
-    , ( "🚵\u{200D}♀️", [ "woman_mountain_biking", "transportation", "sports", "human", "race", "bike", "woman", "female" ] )
-    , ( "\u{1F938}", [ "person_cartwheeling", "sport", "gymnastic" ] )
-    , ( "\u{1F938}\u{200D}♂️", [ "man_cartwheeling", "gymnastics" ] )
-    , ( "\u{1F938}\u{200D}♀️", [ "woman_cartwheeling", "gymnastics" ] )
-    , ( "\u{1F93C}", [ "people_wrestling", "sport" ] )
-    , ( "\u{1F93C}\u{200D}♂️", [ "men_wrestling", "sports", "wrestlers" ] )
-    , ( "\u{1F93C}\u{200D}♀️", [ "women_wrestling", "sports", "wrestlers" ] )
-    , ( "\u{1F93D}", [ "person_playing_water_polo", "sport" ] )
-    , ( "\u{1F93D}\u{200D}♂️", [ "man_playing_water_polo", "sports", "pool" ] )
-    , ( "\u{1F93D}\u{200D}♀️", [ "woman_playing_water_polo", "sports", "pool" ] )
-    , ( "\u{1F93E}", [ "person_playing_handball", "sport" ] )
-    , ( "\u{1F93E}\u{200D}♂️", [ "man_playing_handball", "sports" ] )
-    , ( "\u{1F93E}\u{200D}♀️", [ "woman_playing_handball", "sports" ] )
-    , ( "\u{1F939}", [ "person_juggling", "performance", "balance" ] )
-    , ( "\u{1F939}\u{200D}♂️", [ "man_juggling", "juggle", "balance", "skill", "multitask" ] )
-    , ( "\u{1F939}\u{200D}♀️", [ "woman_juggling", "juggle", "balance", "skill", "multitask" ] )
-    , ( "\u{1F9D8}", [ "person_in_lotus_position", "meditate" ] )
-    , ( "\u{1F9D8}\u{200D}♂️", [ "man_in_lotus_position", "man", "male", "meditation", "yoga", "serenity", "zen", "mindfulness" ] )
-    , ( "\u{1F9D8}\u{200D}♀️", [ "woman_in_lotus_position", "woman", "female", "meditation", "yoga", "serenity", "zen", "mindfulness" ] )
-    , ( "🛀", [ "person_taking_bath", "clean", "shower", "bathroom" ] )
-    , ( "🛌", [ "person_in_bed", "bed", "rest" ] )
-    , ( "\u{1F9D1}\u{200D}\u{1F91D}\u{200D}\u{1F9D1}", [ "people_holding_hands", "friendship" ] )
-    , ( "👭", [ "women_holding_hands", "pair", "friendship", "couple", "love", "like", "female", "people", "human" ] )
-    , ( "👫", [ "woman_and_man_holding_hands", "pair", "people", "human", "love", "date", "dating", "like", "affection", "valentines", "marriage" ] )
-    , ( "👬", [ "men_holding_hands", "pair", "couple", "love", "like", "bromance", "friendship", "people", "human" ] )
-    , ( "💏", [ "kiss", "pair", "valentines", "love", "like", "dating", "marriage" ] )
-    , ( "👩\u{200D}❤️\u{200D}💋\u{200D}👨", [ "kiss_woman_man", "love" ] )
-    , ( "👨\u{200D}❤️\u{200D}💋\u{200D}👨", [ "kiss_man_man", "pair", "valentines", "love", "like", "dating", "marriage" ] )
-    , ( "👩\u{200D}❤️\u{200D}💋\u{200D}👩", [ "kiss_woman_woman", "pair", "valentines", "love", "like", "dating", "marriage" ] )
-    , ( "💑", [ "couple_with_heart", "pair", "love", "like", "affection", "human", "dating", "valentines", "marriage" ] )
-    , ( "👩\u{200D}❤️\u{200D}👨", [ "couple_with_heart_woman_man", "love" ] )
-    , ( "👨\u{200D}❤️\u{200D}👨", [ "couple_with_heart_man_man", "pair", "love", "like", "affection", "human", "dating", "valentines", "marriage" ] )
-    , ( "👩\u{200D}❤️\u{200D}👩", [ "couple_with_heart_woman_woman", "pair", "love", "like", "affection", "human", "dating", "valentines", "marriage" ] )
-    , ( "👪", [ "family", "home", "parents", "child", "mom", "dad", "father", "mother", "people", "human" ] )
-    , ( "👨\u{200D}👩\u{200D}👦", [ "family_man_woman_boy", "love" ] )
-    , ( "👨\u{200D}👩\u{200D}👧", [ "family_man_woman_girl", "home", "parents", "people", "human", "child" ] )
-    , ( "👨\u{200D}👩\u{200D}👧\u{200D}👦", [ "family_man_woman_girl_boy", "home", "parents", "people", "human", "children" ] )
-    , ( "👨\u{200D}👩\u{200D}👦\u{200D}👦", [ "family_man_woman_boy_boy", "home", "parents", "people", "human", "children" ] )
-    , ( "👨\u{200D}👩\u{200D}👧\u{200D}👧", [ "family_man_woman_girl_girl", "home", "parents", "people", "human", "children" ] )
-    , ( "👨\u{200D}👨\u{200D}👦", [ "family_man_man_boy", "home", "parents", "people", "human", "children" ] )
-    , ( "👨\u{200D}👨\u{200D}👧", [ "family_man_man_girl", "home", "parents", "people", "human", "children" ] )
-    , ( "👨\u{200D}👨\u{200D}👧\u{200D}👦", [ "family_man_man_girl_boy", "home", "parents", "people", "human", "children" ] )
-    , ( "👨\u{200D}👨\u{200D}👦\u{200D}👦", [ "family_man_man_boy_boy", "home", "parents", "people", "human", "children" ] )
-    , ( "👨\u{200D}👨\u{200D}👧\u{200D}👧", [ "family_man_man_girl_girl", "home", "parents", "people", "human", "children" ] )
-    , ( "👩\u{200D}👩\u{200D}👦", [ "family_woman_woman_boy", "home", "parents", "people", "human", "children" ] )
-    , ( "👩\u{200D}👩\u{200D}👧", [ "family_woman_woman_girl", "home", "parents", "people", "human", "children" ] )
-    , ( "👩\u{200D}👩\u{200D}👧\u{200D}👦", [ "family_woman_woman_girl_boy", "home", "parents", "people", "human", "children" ] )
-    , ( "👩\u{200D}👩\u{200D}👦\u{200D}👦", [ "family_woman_woman_boy_boy", "home", "parents", "people", "human", "children" ] )
-    , ( "👩\u{200D}👩\u{200D}👧\u{200D}👧", [ "family_woman_woman_girl_girl", "home", "parents", "people", "human", "children" ] )
-    , ( "👨\u{200D}👦", [ "family_man_boy", "home", "parent", "people", "human", "child" ] )
-    , ( "👨\u{200D}👦\u{200D}👦", [ "family_man_boy_boy", "home", "parent", "people", "human", "children" ] )
-    , ( "👨\u{200D}👧", [ "family_man_girl", "home", "parent", "people", "human", "child" ] )
-    , ( "👨\u{200D}👧\u{200D}👦", [ "family_man_girl_boy", "home", "parent", "people", "human", "children" ] )
-    , ( "👨\u{200D}👧\u{200D}👧", [ "family_man_girl_girl", "home", "parent", "people", "human", "children" ] )
-    , ( "👩\u{200D}👦", [ "family_woman_boy", "home", "parent", "people", "human", "child" ] )
-    , ( "👩\u{200D}👦\u{200D}👦", [ "family_woman_boy_boy", "home", "parent", "people", "human", "children" ] )
-    , ( "👩\u{200D}👧", [ "family_woman_girl", "home", "parent", "people", "human", "child" ] )
-    , ( "👩\u{200D}👧\u{200D}👦", [ "family_woman_girl_boy", "home", "parent", "people", "human", "children" ] )
-    , ( "👩\u{200D}👧\u{200D}👧", [ "family_woman_girl_girl", "home", "parent", "people", "human", "children" ] )
-    , ( "🗣️", [ "speaking_head", "user", "person", "human", "sing", "say", "talk" ] )
-    , ( "👤", [ "bust_in_silhouette", "user", "person", "human" ] )
-    , ( "👥", [ "busts_in_silhouette", "user", "person", "human", "group", "team" ] )
-    , ( "👣", [ "footprints", "feet", "tracking", "walking", "beach" ] )
-    , ( "🐵", [ "monkey_face", "animal", "nature", "circus" ] )
-    , ( "🐒", [ "monkey", "animal", "nature", "banana", "circus" ] )
-    , ( "\u{1F98D}", [ "gorilla", "animal", "nature", "circus" ] )
-    , ( "\u{1F9A7}", [ "orangutan", "animal" ] )
-    , ( "🐶", [ "dog_face", "animal", "friend", "nature", "woof", "puppy", "pet", "faithful" ] )
-    , ( "🐕", [ "dog", "animal", "nature", "friend", "doge", "pet", "faithful" ] )
-    , ( "\u{1F9AE}", [ "guide_dog", "animal", "blind" ] )
-    , ( "🐕\u{200D}\u{1F9BA}", [ "service_dog", "blind", "animal" ] )
-    , ( "🐩", [ "poodle", "dog", "animal", "nature", "pet" ] )
-    , ( "🐺", [ "wolf", "animal", "nature", "wild" ] )
-    , ( "\u{1F98A}", [ "fox", "animal", "nature", "face" ] )
-    , ( "\u{1F99D}", [ "raccoon", "animal", "nature" ] )
-    , ( "🐱", [ "cat_face", "animal", "meow", "nature", "pet", "kitten" ] )
-    , ( "🐈", [ "cat", "animal", "meow", "pet", "cats" ] )
-    , ( "\u{1F981}", [ "lion", "animal", "nature" ] )
-    , ( "🐯", [ "tiger_face", "animal", "cat", "danger", "wild", "nature", "roar" ] )
-    , ( "🐅", [ "tiger", "animal", "nature", "roar" ] )
-    , ( "🐆", [ "leopard", "animal", "nature" ] )
-    , ( "🐴", [ "horse_face", "animal", "brown", "nature" ] )
-    , ( "🐎", [ "horse", "animal", "gamble", "luck" ] )
-    , ( "\u{1F984}", [ "unicorn", "animal", "nature", "mystical" ] )
-    , ( "\u{1F993}", [ "zebra", "animal", "nature", "stripes", "safari" ] )
-    , ( "\u{1F98C}", [ "deer", "animal", "nature", "horns", "venison" ] )
-    , ( "🐮", [ "cow_face", "beef", "ox", "animal", "nature", "moo", "milk" ] )
-    , ( "🐂", [ "ox", "animal", "cow", "beef" ] )
-    , ( "🐃", [ "water_buffalo", "animal", "nature", "ox", "cow" ] )
-    , ( "🐄", [ "cow", "beef", "ox", "animal", "nature", "moo", "milk" ] )
-    , ( "🐷", [ "pig_face", "animal", "oink", "nature" ] )
-    , ( "🐖", [ "pig", "animal", "nature" ] )
-    , ( "🐗", [ "boar", "animal", "nature" ] )
-    , ( "🐽", [ "pig_nose", "animal", "oink" ] )
-    , ( "🐏", [ "ram", "animal", "sheep", "nature" ] )
-    , ( "🐑", [ "ewe", "animal", "nature", "wool", "shipit" ] )
-    , ( "🐐", [ "goat", "animal", "nature" ] )
-    , ( "🐪", [ "camel", "animal", "hot", "desert", "hump" ] )
-    , ( "🐫", [ "two_hump_camel", "animal", "nature", "hot", "desert", "hump" ] )
-    , ( "\u{1F999}", [ "llama", "animal", "nature", "alpaca" ] )
-    , ( "\u{1F992}", [ "giraffe", "animal", "nature", "spots", "safari" ] )
-    , ( "🐘", [ "elephant", "animal", "nature", "nose", "th", "circus" ] )
-    , ( "\u{1F98F}", [ "rhinoceros", "animal", "nature", "horn" ] )
-    , ( "\u{1F99B}", [ "hippopotamus", "animal", "nature" ] )
-    , ( "🐭", [ "mouse_face", "animal", "nature", "cheese_wedge", "rodent" ] )
-    , ( "🐁", [ "mouse", "animal", "nature", "rodent" ] )
-    , ( "🐀", [ "rat", "animal", "mouse", "rodent" ] )
-    , ( "🐹", [ "hamster", "animal", "nature" ] )
-    , ( "🐰", [ "rabbit_face", "animal", "nature", "pet", "spring", "magic", "bunny" ] )
-    , ( "🐇", [ "rabbit", "animal", "nature", "pet", "magic", "spring" ] )
-    , ( "🐿️", [ "chipmunk", "animal", "nature", "rodent", "squirrel" ] )
-    , ( "\u{1F994}", [ "hedgehog", "animal", "nature", "spiny" ] )
-    , ( "\u{1F987}", [ "bat", "animal", "nature", "blind", "vampire" ] )
-    , ( "🐻", [ "bear", "animal", "nature", "wild" ] )
-    , ( "🐨", [ "koala", "animal", "nature" ] )
-    , ( "🐼", [ "panda", "animal", "nature", "panda" ] )
-    , ( "\u{1F9A5}", [ "sloth", "animal" ] )
-    , ( "\u{1F9A6}", [ "otter", "animal" ] )
-    , ( "\u{1F9A8}", [ "skunk", "animal" ] )
-    , ( "\u{1F998}", [ "kangaroo", "animal", "nature", "australia", "joey", "hop", "marsupial" ] )
-    , ( "\u{1F9A1}", [ "badger", "animal", "nature", "honey" ] )
-    , ( "🐾", [ "paw_prints", "animal", "tracking", "footprints", "dog", "cat", "pet", "feet" ] )
-    , ( "\u{1F983}", [ "turkey", "animal", "bird" ] )
-    , ( "🐔", [ "chicken", "animal", "cluck", "nature", "bird" ] )
-    , ( "🐓", [ "rooster", "animal", "nature", "chicken" ] )
-    , ( "🐣", [ "hatching_chick", "animal", "chicken", "egg", "born", "baby", "bird" ] )
-    , ( "🐤", [ "baby_chick", "animal", "chicken", "bird" ] )
-    , ( "🐥", [ "front_facing_baby_chick", "animal", "chicken", "baby", "bird" ] )
-    , ( "🐦", [ "bird", "animal", "nature", "fly", "tweet", "spring" ] )
-    , ( "🐧", [ "penguin", "animal", "nature" ] )
-    , ( "🕊️", [ "dove", "animal", "bird" ] )
-    , ( "\u{1F985}", [ "eagle", "animal", "nature", "bird" ] )
-    , ( "\u{1F986}", [ "duck", "animal", "nature", "bird", "mallard" ] )
-    , ( "\u{1F9A2}", [ "swan", "animal", "nature", "bird" ] )
-    , ( "\u{1F989}", [ "owl", "animal", "nature", "bird", "hoot" ] )
-    , ( "\u{1F9A9}", [ "flamingo", "animal" ] )
-    , ( "\u{1F99A}", [ "peacock", "animal", "nature", "peahen", "bird" ] )
-    , ( "\u{1F99C}", [ "parrot", "animal", "nature", "bird", "pirate", "talk" ] )
-    , ( "🐸", [ "frog", "animal", "nature", "croak", "toad" ] )
-    , ( "🐊", [ "crocodile", "animal", "nature", "reptile", "lizard", "alligator" ] )
-    , ( "🐢", [ "turtle", "animal", "slow", "nature", "tortoise" ] )
-    , ( "\u{1F98E}", [ "lizard", "animal", "nature", "reptile" ] )
-    , ( "🐍", [ "snake", "animal", "evil", "nature", "hiss", "python" ] )
-    , ( "🐲", [ "dragon_face", "animal", "myth", "nature", "chinese", "green" ] )
-    , ( "🐉", [ "dragon", "animal", "myth", "nature", "chinese", "green" ] )
-    , ( "\u{1F995}", [ "sauropod", "animal", "nature", "dinosaur", "brachiosaurus", "brontosaurus", "diplodocus", "extinct" ] )
-    , ( "\u{1F996}", [ "t_rex", "animal", "nature", "dinosaur", "tyrannosaurus", "extinct" ] )
-    , ( "🐳", [ "spouting_whale", "animal", "nature", "sea", "ocean" ] )
-    , ( "🐋", [ "whale", "animal", "nature", "sea", "ocean" ] )
-    , ( "🐬", [ "dolphin", "animal", "nature", "fish", "sea", "ocean", "flipper", "fins", "beach" ] )
-    , ( "🐟", [ "fish", "animal", "food", "nature" ] )
-    , ( "🐠", [ "tropical_fish", "animal", "swim", "ocean", "beach", "nemo" ] )
-    , ( "🐡", [ "blowfish", "animal", "nature", "food", "sea", "ocean" ] )
-    , ( "\u{1F988}", [ "shark", "animal", "nature", "fish", "sea", "ocean", "jaws", "fins", "beach" ] )
-    , ( "🐙", [ "octopus", "animal", "creature", "ocean", "sea", "nature", "beach" ] )
-    , ( "🐚", [ "spiral_shell", "nature", "sea", "beach" ] )
-    , ( "🐌", [ "snail", "slow", "animal", "shell" ] )
-    , ( "\u{1F98B}", [ "butterfly", "animal", "insect", "nature", "caterpillar" ] )
-    , ( "🐛", [ "bug", "animal", "insect", "nature", "worm" ] )
-    , ( "🐜", [ "ant", "animal", "insect", "nature", "bug" ] )
-    , ( "🐝", [ "honeybee", "animal", "insect", "nature", "bug", "spring", "honey" ] )
-    , ( "🐞", [ "lady_beetle", "animal", "insect", "nature", "ladybug" ] )
-    , ( "\u{1F997}", [ "cricket", "animal", "cricket", "chirp" ] )
-    , ( "🕷️", [ "spider", "animal", "arachnid" ] )
-    , ( "🕸️", [ "spider_web", "animal", "insect", "arachnid", "silk" ] )
-    , ( "\u{1F982}", [ "scorpion", "animal", "arachnid" ] )
-    , ( "\u{1F99F}", [ "mosquito", "animal", "nature", "insect", "malaria" ] )
-    , ( "\u{1F9A0}", [ "microbe", "amoeba", "bacteria", "germs" ] )
-    , ( "💐", [ "bouquet", "flowers", "nature", "spring" ] )
-    , ( "🌸", [ "cherry_blossom", "nature", "plant", "spring", "flower" ] )
-    , ( "💮", [ "white_flower", "japanese", "spring" ] )
-    , ( "🏵️", [ "rosette", "flower", "decoration", "military" ] )
-    , ( "🌹", [ "rose", "flowers", "valentines", "love", "spring" ] )
-    , ( "\u{1F940}", [ "wilted_flower", "plant", "nature", "flower" ] )
-    , ( "🌺", [ "hibiscus", "plant", "vegetable", "flowers", "beach" ] )
-    , ( "🌻", [ "sunflower", "nature", "plant", "fall" ] )
-    , ( "🌼", [ "blossom", "nature", "flowers", "yellow" ] )
-    , ( "🌷", [ "tulip", "flowers", "plant", "nature", "summer", "spring" ] )
-    , ( "🌱", [ "seedling", "plant", "nature", "grass", "lawn", "spring" ] )
-    , ( "🌲", [ "evergreen_tree", "plant", "nature" ] )
-    , ( "🌳", [ "deciduous_tree", "plant", "nature" ] )
-    , ( "🌴", [ "palm_tree", "plant", "vegetable", "nature", "summer", "beach", "mojito", "tropical" ] )
-    , ( "🌵", [ "cactus", "vegetable", "plant", "nature" ] )
-    , ( "🌾", [ "sheaf_of_rice", "nature", "plant" ] )
-    , ( "🌿", [ "herb", "vegetable", "plant", "medicine", "weed", "grass", "lawn" ] )
-    , ( "☘️", [ "shamrock", "vegetable", "plant", "nature", "irish", "clover" ] )
-    , ( "🍀", [ "four_leaf_clover", "vegetable", "plant", "nature", "lucky", "irish" ] )
-    , ( "🍁", [ "maple_leaf", "nature", "plant", "vegetable", "ca", "fall" ] )
-    , ( "🍂", [ "fallen_leaf", "nature", "plant", "vegetable", "leaves" ] )
-    , ( "🍃", [ "leaf_fluttering_in_wind", "nature", "plant", "tree", "vegetable", "grass", "lawn", "spring" ] )
-    , ( "🍇", [ "grapes", "fruit", "food", "wine" ] )
-    , ( "🍈", [ "melon", "fruit", "nature", "food" ] )
-    , ( "🍉", [ "watermelon", "fruit", "food", "picnic", "summer" ] )
-    , ( "🍊", [ "tangerine", "food", "fruit", "nature", "orange" ] )
-    , ( "🍋", [ "lemon", "fruit", "nature" ] )
-    , ( "🍌", [ "banana", "fruit", "food", "monkey" ] )
-    , ( "🍍", [ "pineapple", "fruit", "nature", "food" ] )
-    , ( "\u{1F96D}", [ "mango", "fruit", "food", "tropical" ] )
-    , ( "🍎", [ "red_apple", "fruit", "mac", "school" ] )
-    , ( "🍏", [ "green_apple", "fruit", "nature" ] )
-    , ( "🍐", [ "pear", "fruit", "nature", "food" ] )
-    , ( "🍑", [ "peach", "fruit", "nature", "food" ] )
-    , ( "🍒", [ "cherries", "food", "fruit" ] )
-    , ( "🍓", [ "strawberry", "fruit", "food", "nature" ] )
-    , ( "\u{1F95D}", [ "kiwi_fruit", "fruit", "food" ] )
-    , ( "🍅", [ "tomato", "fruit", "vegetable", "nature", "food" ] )
-    , ( "\u{1F965}", [ "coconut", "fruit", "nature", "food", "palm" ] )
-    , ( "\u{1F951}", [ "avocado", "fruit", "food" ] )
-    , ( "🍆", [ "eggplant", "vegetable", "nature", "food", "aubergine" ] )
-    , ( "\u{1F954}", [ "potato", "food", "tuber", "vegatable", "starch" ] )
-    , ( "\u{1F955}", [ "carrot", "vegetable", "food", "orange" ] )
-    , ( "🌽", [ "ear_of_corn", "food", "vegetable", "plant" ] )
-    , ( "🌶️", [ "hot_pepper", "food", "spicy", "chilli", "chili" ] )
-    , ( "\u{1F952}", [ "cucumber", "fruit", "food", "pickle" ] )
-    , ( "\u{1F96C}", [ "leafy_green", "food", "vegetable", "plant", "bok choy", "cabbage", "kale", "lettuce" ] )
-    , ( "\u{1F966}", [ "broccoli", "fruit", "food", "vegetable" ] )
-    , ( "\u{1F9C4}", [ "garlic", "food", "spice", "cook" ] )
-    , ( "\u{1F9C5}", [ "onion", "cook", "food", "spice" ] )
-    , ( "🍄", [ "mushroom", "plant", "vegetable" ] )
-    , ( "\u{1F95C}", [ "peanuts", "food", "nut" ] )
-    , ( "🌰", [ "chestnut", "food", "squirrel" ] )
-    , ( "🍞", [ "bread", "food", "wheat", "breakfast", "toast" ] )
-    , ( "\u{1F950}", [ "croissant", "food", "bread", "french" ] )
-    , ( "\u{1F956}", [ "baguette_bread", "food", "bread", "french" ] )
-    , ( "\u{1F968}", [ "pretzel", "food", "bread", "twisted" ] )
-    , ( "\u{1F96F}", [ "bagel", "food", "bread", "bakery", "schmear" ] )
-    , ( "\u{1F95E}", [ "pancakes", "food", "breakfast", "flapjacks", "hotcakes" ] )
-    , ( "\u{1F9C7}", [ "waffle", "food", "breakfast" ] )
-    , ( "\u{1F9C0}", [ "cheese_wedge", "food", "chadder" ] )
-    , ( "🍖", [ "meat_on_bone", "good", "food", "drumstick" ] )
-    , ( "🍗", [ "poultry_leg", "food", "meat", "drumstick", "bird", "chicken", "turkey" ] )
-    , ( "\u{1F969}", [ "cut_of_meat", "food", "cow", "meat", "cut", "chop", "lambchop", "porkchop" ] )
-    , ( "\u{1F953}", [ "bacon", "food", "breakfast", "pork", "pig", "meat" ] )
-    , ( "🍔", [ "hamburger", "meat", "fast food", "beef", "cheeseburger", "mcdonalds", "burger king" ] )
-    , ( "🍟", [ "french_fries", "chips", "snack", "fast food" ] )
-    , ( "🍕", [ "pizza", "food", "party" ] )
-    , ( "\u{1F32D}", [ "hot_dog", "food", "frankfurter" ] )
-    , ( "\u{1F96A}", [ "sandwich", "food", "lunch", "bread" ] )
-    , ( "\u{1F32E}", [ "taco", "food", "mexican" ] )
-    , ( "\u{1F32F}", [ "burrito", "food", "mexican" ] )
-    , ( "\u{1F959}", [ "stuffed_flatbread", "food", "flatbread", "stuffed", "gyro" ] )
-    , ( "\u{1F9C6}", [ "falafel", "food" ] )
-    , ( "\u{1F95A}", [ "egg", "food", "chicken", "breakfast" ] )
-    , ( "🍳", [ "cooking", "food", "breakfast", "kitchen", "egg" ] )
-    , ( "\u{1F958}", [ "shallow_pan_of_food", "food", "cooking", "casserole", "paella" ] )
-    , ( "🍲", [ "pot_of_food", "food", "meat", "soup" ] )
-    , ( "\u{1F963}", [ "bowl_with_spoon", "food", "breakfast", "cereal", "oatmeal", "porridge" ] )
-    , ( "\u{1F957}", [ "green_salad", "food", "healthy", "lettuce" ] )
-    , ( "\u{1F37F}", [ "popcorn", "food", "movie theater", "films", "snack" ] )
-    , ( "\u{1F9C8}", [ "butter", "food", "cook" ] )
-    , ( "\u{1F9C2}", [ "salt", "condiment", "shaker" ] )
-    , ( "\u{1F96B}", [ "canned_food", "food", "soup" ] )
-    , ( "🍱", [ "bento_box", "food", "japanese", "box" ] )
-    , ( "🍘", [ "rice_cracker", "food", "japanese" ] )
-    , ( "🍙", [ "rice_ball", "food", "japanese" ] )
-    , ( "🍚", [ "cooked_rice", "food", "china", "asian" ] )
-    , ( "🍛", [ "curry_rice", "food", "spicy", "hot", "indian" ] )
-    , ( "🍜", [ "steaming_bowl", "food", "japanese", "noodle", "chopsticks" ] )
-    , ( "🍝", [ "spaghetti", "food", "italian", "noodle" ] )
-    , ( "🍠", [ "roasted_sweet_potato", "food", "nature" ] )
-    , ( "🍢", [ "oden", "food", "japanese" ] )
-    , ( "🍣", [ "sushi", "food", "fish", "japanese", "rice" ] )
-    , ( "🍤", [ "fried_shrimp", "food", "animal", "appetizer", "summer" ] )
-    , ( "🍥", [ "fish_cake_with_swirl", "food", "japan", "sea", "beach", "narutomaki", "pink", "swirl", "kamaboko", "surimi", "ramen" ] )
-    , ( "\u{1F96E}", [ "moon_cake", "food", "autumn" ] )
-    , ( "🍡", [ "dango", "food", "dessert", "sweet", "japanese", "barbecue", "meat" ] )
-    , ( "\u{1F95F}", [ "dumpling", "food", "empanada", "pierogi", "potsticker" ] )
-    , ( "\u{1F960}", [ "fortune_cookie", "food", "prophecy" ] )
-    , ( "\u{1F961}", [ "takeout_box", "food", "leftovers" ] )
-    , ( "\u{1F980}", [ "crab", "animal", "crustacean" ] )
-    , ( "\u{1F99E}", [ "lobster", "animal", "nature", "bisque", "claws", "seafood" ] )
-    , ( "\u{1F990}", [ "shrimp", "animal", "ocean", "nature", "seafood" ] )
-    , ( "\u{1F991}", [ "squid", "animal", "nature", "ocean", "sea" ] )
-    , ( "\u{1F9AA}", [ "oyster", "food" ] )
-    , ( "🍦", [ "soft_ice_cream", "food", "hot", "dessert", "summer" ] )
-    , ( "🍧", [ "shaved_ice", "hot", "dessert", "summer" ] )
-    , ( "🍨", [ "ice_cream", "food", "hot", "dessert" ] )
-    , ( "🍩", [ "doughnut", "food", "dessert", "snack", "sweet", "donut" ] )
-    , ( "🍪", [ "cookie", "food", "snack", "oreo", "chocolate", "sweet", "dessert" ] )
-    , ( "🎂", [ "birthday_cake", "food", "dessert", "cake" ] )
-    , ( "🍰", [ "shortcake", "food", "dessert" ] )
-    , ( "\u{1F9C1}", [ "cupcake", "food", "dessert", "bakery", "sweet" ] )
-    , ( "\u{1F967}", [ "pie", "food", "dessert", "pastry" ] )
-    , ( "🍫", [ "chocolate_bar", "food", "snack", "dessert", "sweet" ] )
-    , ( "🍬", [ "candy", "snack", "dessert", "sweet", "lolly" ] )
-    , ( "🍭", [ "lollipop", "food", "snack", "candy", "sweet" ] )
-    , ( "🍮", [ "custard", "dessert", "food" ] )
-    , ( "🍯", [ "honey_pot", "bees", "sweet", "kitchen" ] )
-    , ( "🍼", [ "baby_bottle", "food", "container", "milk" ] )
-    , ( "\u{1F95B}", [ "glass_of_milk", "beverage", "drink", "cow" ] )
-    , ( "☕", [ "hot_beverage", "beverage", "caffeine", "latte", "espresso" ] )
-    , ( "🍵", [ "teacup_without_handle", "drink", "bowl", "breakfast", "green", "british" ] )
-    , ( "🍶", [ "sake", "wine", "drink", "drunk", "beverage", "japanese", "alcohol", "booze" ] )
-    , ( "\u{1F37E}", [ "bottle_with_popping_cork", "drink", "wine", "bottle", "celebration" ] )
-    , ( "🍷", [ "wine_glass", "drink", "beverage", "drunk", "alcohol", "booze" ] )
-    , ( "🍸", [ "cocktail_glass", "drink", "drunk", "alcohol", "beverage", "booze", "mojito" ] )
-    , ( "🍹", [ "tropical_drink", "beverage", "cocktail", "summer", "beach", "alcohol", "booze", "mojito" ] )
-    , ( "🍺", [ "beer_mug", "relax", "beverage", "drink", "drunk", "party", "pub", "summer", "alcohol", "booze" ] )
-    , ( "🍻", [ "clinking_beer_mugs", "relax", "beverage", "drink", "drunk", "party", "pub", "summer", "alcohol", "booze" ] )
-    , ( "\u{1F942}", [ "clinking_glasses", "beverage", "drink", "party", "alcohol", "celebrate", "cheers", "wine", "champagne", "toast" ] )
-    , ( "\u{1F943}", [ "tumbler_glass", "drink", "beverage", "drunk", "alcohol", "liquor", "booze", "bourbon", "scotch", "whisky", "glass", "shot" ] )
-    , ( "\u{1F964}", [ "cup_with_straw", "drink", "soda" ] )
-    , ( "\u{1F9C3}", [ "beverage_box", "drink" ] )
-    , ( "\u{1F9C9}", [ "mate", "drink", "tea", "beverage" ] )
-    , ( "\u{1F9CA}", [ "ice", "water", "cold" ] )
-    , ( "\u{1F962}", [ "chopsticks", "food" ] )
-    , ( "🍽️", [ "fork_and_knife_with_plate", "food", "eat", "meal", "lunch", "dinner", "restaurant" ] )
-    , ( "🍴", [ "fork_and_knife", "cutlery", "kitchen" ] )
-    , ( "\u{1F944}", [ "spoon", "cutlery", "kitchen", "tableware" ] )
-    , ( "🔪", [ "kitchen_knife", "knife", "blade", "cutlery", "kitchen", "weapon" ] )
-    , ( "\u{1F3FA}", [ "amphora", "vase", "jar" ] )
-    , ( "🌍", [ "globe_showing_europe_africa", "globe", "world", "international" ] )
-    , ( "🌎", [ "globe_showing_americas", "globe", "world", "USA", "international" ] )
-    , ( "🌏", [ "globe_showing_asia_australia", "globe", "world", "east", "international" ] )
-    , ( "🌐", [ "globe_with_meridians", "earth", "international", "world", "internet", "interweb", "i18n" ] )
-    , ( "🗺️", [ "world_map", "location", "direction" ] )
-    , ( "🗾", [ "map_of_japan", "nation", "country", "japanese", "asia" ] )
-    , ( "\u{1F9ED}", [ "compass", "magnetic", "navigation", "orienteering" ] )
-    , ( "🏔️", [ "snow_capped_mountain", "photo", "nature", "environment", "winter", "cold" ] )
-    , ( "⛰️", [ "mountain", "photo", "nature", "environment" ] )
-    , ( "🌋", [ "volcano", "photo", "nature", "disaster" ] )
-    , ( "🗻", [ "mount_fuji", "photo", "mountain", "nature", "japanese" ] )
-    , ( "🏕️", [ "camping", "photo", "outdoors", "tent" ] )
-    , ( "🏖️", [ "beach_with_umbrella", "weather", "summer", "sunny", "sand", "mojito" ] )
-    , ( "🏜️", [ "desert", "photo", "warm", "saharah" ] )
-    , ( "🏝️", [ "desert_island", "photo", "tropical", "mojito" ] )
-    , ( "🏞️", [ "national_park", "photo", "environment", "nature" ] )
-    , ( "🏟️", [ "stadium", "photo", "place", "sports", "concert", "venue" ] )
-    , ( "🏛️", [ "classical_building", "art", "culture", "history" ] )
-    , ( "🏗️", [ "building_construction", "wip", "working", "progress" ] )
-    , ( "\u{1F9F1}", [ "brick", "bricks" ] )
-    , ( "🏘️", [ "houses", "buildings", "photo" ] )
-    , ( "🏚️", [ "derelict_house", "abandon", "evict", "broken", "building" ] )
-    , ( "🏠", [ "house", "building", "home" ] )
-    , ( "🏡", [ "house_with_garden", "home", "plant", "nature" ] )
-    , ( "🏢", [ "office_building", "building", "bureau", "work" ] )
-    , ( "🏣", [ "japanese_post_office", "building", "envelope", "communication" ] )
-    , ( "🏤", [ "post_office", "building", "email" ] )
-    , ( "🏥", [ "hospital", "building", "health", "surgery", "doctor" ] )
-    , ( "🏦", [ "bank", "building", "money", "sales", "cash", "business", "enterprise" ] )
-    , ( "🏨", [ "hotel", "building", "accomodation", "checkin" ] )
-    , ( "🏩", [ "love_hotel", "like", "affection", "dating" ] )
-    , ( "🏪", [ "convenience_store", "building", "shopping", "groceries" ] )
-    , ( "🏫", [ "school", "building", "student", "education", "learn", "teach" ] )
-    , ( "🏬", [ "department_store", "building", "shopping", "mall" ] )
-    , ( "🏭", [ "factory", "building", "industry", "pollution", "smoke" ] )
-    , ( "🏯", [ "japanese_castle", "photo", "building" ] )
-    , ( "🏰", [ "castle", "building", "royalty", "history" ] )
-    , ( "💒", [ "wedding", "love", "like", "affection", "couple", "marriage", "bride", "groom" ] )
-    , ( "🗼", [ "tokyo_tower", "photo", "japanese" ] )
-    , ( "🗽", [ "statue_of_liberty", "american", "newyork" ] )
-    , ( "⛪", [ "church", "building", "religion", "christ" ] )
-    , ( "\u{1F54C}", [ "mosque", "islam", "worship", "minaret" ] )
-    , ( "\u{1F6D5}", [ "hindu_temple", "religion" ] )
-    , ( "\u{1F54D}", [ "synagogue", "judaism", "worship", "temple", "jewish" ] )
-    , ( "⛩️", [ "shinto_shrine", "temple", "japan", "kyoto" ] )
-    , ( "\u{1F54B}", [ "kaaba", "mecca", "mosque", "islam" ] )
-    , ( "⛲", [ "fountain", "photo", "summer", "water", "fresh" ] )
-    , ( "⛺", [ "tent", "photo", "camping", "outdoors" ] )
-    , ( "🌁", [ "foggy", "photo", "mountain" ] )
-    , ( "🌃", [ "night_with_stars", "evening", "city", "downtown" ] )
-    , ( "🏙️", [ "cityscape", "photo", "night life", "urban" ] )
-    , ( "🌄", [ "sunrise_over_mountains", "view", "vacation", "photo" ] )
-    , ( "🌅", [ "sunrise", "morning", "view", "vacation", "photo" ] )
-    , ( "🌆", [ "cityscape_at_dusk", "photo", "evening", "sky", "buildings" ] )
-    , ( "🌇", [ "sunset", "photo", "good morning", "dawn" ] )
-    , ( "🌉", [ "bridge_at_night", "photo", "sanfrancisco" ] )
-    , ( "♨️", [ "hot_springs", "bath", "warm", "relax" ] )
-    , ( "🎠", [ "carousel_horse", "photo", "carnival" ] )
-    , ( "🎡", [ "ferris_wheel", "photo", "carnival", "londoneye" ] )
-    , ( "🎢", [ "roller_coaster", "carnival", "playground", "photo", "fun" ] )
-    , ( "💈", [ "barber_pole", "hair", "salon", "style" ] )
-    , ( "🎪", [ "circus_tent", "festival", "carnival", "party" ] )
-    , ( "🚂", [ "locomotive", "transportation", "vehicle", "train" ] )
-    , ( "🚃", [ "railway_car", "transportation", "vehicle" ] )
-    , ( "🚄", [ "high_speed_train", "transportation", "vehicle" ] )
-    , ( "🚅", [ "bullet_train", "transportation", "vehicle", "speed", "fast", "public", "travel" ] )
-    , ( "🚆", [ "train", "transportation", "vehicle" ] )
-    , ( "🚇", [ "metro", "transportation", "blue-square", "mrt", "underground", "tube" ] )
-    , ( "🚈", [ "light_rail", "transportation", "vehicle" ] )
-    , ( "🚉", [ "station", "transportation", "vehicle", "public" ] )
-    , ( "🚊", [ "tram", "transportation", "vehicle" ] )
-    , ( "🚝", [ "monorail", "transportation", "vehicle" ] )
-    , ( "🚞", [ "mountain_railway", "transportation", "vehicle" ] )
-    , ( "🚋", [ "tram_car", "transportation", "vehicle", "carriage", "public", "travel" ] )
-    , ( "🚌", [ "bus", "car", "vehicle", "transportation" ] )
-    , ( "🚍", [ "oncoming_bus", "vehicle", "transportation" ] )
-    , ( "🚎", [ "trolleybus", "bart", "transportation", "vehicle" ] )
-    , ( "🚐", [ "minibus", "vehicle", "car", "transportation" ] )
-    , ( "🚑", [ "ambulance", "health", "hospital" ] )
-    , ( "🚒", [ "fire_engine", "transportation", "cars", "vehicle" ] )
-    , ( "🚓", [ "police_car", "vehicle", "cars", "transportation", "law", "legal", "enforcement" ] )
-    , ( "🚔", [ "oncoming_police_car", "vehicle", "law", "legal", "enforcement" ] )
-    , ( "🚕", [ "taxi", "uber", "vehicle", "cars", "transportation" ] )
-    , ( "🚖", [ "oncoming_taxi", "vehicle", "cars", "uber" ] )
-    , ( "🚗", [ "automobile", "red", "transportation", "vehicle" ] )
-    , ( "🚘", [ "oncoming_automobile", "car", "vehicle", "transportation" ] )
-    , ( "🚙", [ "sport_utility_vehicle", "transportation", "vehicle" ] )
-    , ( "🚚", [ "delivery_truck", "cars", "transportation" ] )
-    , ( "🚛", [ "articulated_lorry", "vehicle", "cars", "transportation", "express" ] )
-    , ( "🚜", [ "tractor", "vehicle", "car", "farming", "agriculture" ] )
-    , ( "🏎️", [ "racing_car", "sports", "race", "fast", "formula", "f1" ] )
-    , ( "🏍️", [ "motorcycle", "race", "sports", "fast" ] )
-    , ( "\u{1F6F5}", [ "motor_scooter", "vehicle", "vespa", "sasha" ] )
-    , ( "\u{1F9BD}", [ "manual_wheelchair", "accessibility" ] )
-    , ( "\u{1F9BC}", [ "motorized_wheelchair", "accessibility" ] )
-    , ( "\u{1F6FA}", [ "auto_rickshaw", "move", "transportation" ] )
-    , ( "🚲", [ "bicycle", "sports", "bicycle", "exercise", "hipster" ] )
-    , ( "\u{1F6F4}", [ "kick_scooter", "vehicle", "kick", "razor" ] )
-    , ( "\u{1F6F9}", [ "skateboard", "board" ] )
-    , ( "🚏", [ "bus_stop", "transportation", "wait" ] )
-    , ( "🛣️", [ "motorway", "road", "cupertino", "interstate", "highway" ] )
-    , ( "🛤️", [ "railway_track", "train", "transportation" ] )
-    , ( "🛢️", [ "oil_drum", "barrell" ] )
-    , ( "⛽", [ "fuel_pump", "gas station", "petroleum" ] )
-    , ( "🚨", [ "police_car_light", "police", "ambulance", "emergency", "alert", "error", "pinged", "law", "legal" ] )
-    , ( "🚥", [ "horizontal_traffic_light", "transportation", "signal" ] )
-    , ( "🚦", [ "vertical_traffic_light", "transportation", "driving" ] )
-    , ( "\u{1F6D1}", [ "stop_sign", "stop" ] )
-    , ( "🚧", [ "construction", "wip", "progress", "caution", "warning" ] )
-    , ( "⚓", [ "anchor", "ship", "ferry", "sea", "boat" ] )
-    , ( "⛵", [ "sailboat", "ship", "summer", "transportation", "water", "sailing" ] )
-    , ( "\u{1F6F6}", [ "canoe", "boat", "paddle", "water", "ship" ] )
-    , ( "🚤", [ "speedboat", "ship", "transportation", "vehicle", "summer" ] )
-    , ( "🛳️", [ "passenger_ship", "yacht", "cruise", "ferry" ] )
-    , ( "⛴️", [ "ferry", "boat", "ship", "yacht" ] )
-    , ( "🛥️", [ "motor_boat", "ship" ] )
-    , ( "🚢", [ "ship", "transportation", "titanic", "deploy" ] )
-    , ( "✈️", [ "airplane", "vehicle", "transportation", "flight", "fly" ] )
-    , ( "🛩️", [ "small_airplane", "flight", "transportation", "fly", "vehicle" ] )
-    , ( "🛫", [ "airplane_departure", "airport", "flight", "landing" ] )
-    , ( "🛬", [ "airplane_arrival", "airport", "flight", "boarding" ] )
-    , ( "\u{1FA82}", [ "parachute", "fly", "glide" ] )
-    , ( "💺", [ "seat", "sit", "airplane", "transport", "bus", "flight", "fly" ] )
-    , ( "🚁", [ "helicopter", "transportation", "vehicle", "fly" ] )
-    , ( "🚟", [ "suspension_railway", "vehicle", "transportation" ] )
-    , ( "🚠", [ "mountain_cableway", "transportation", "vehicle", "ski" ] )
-    , ( "🚡", [ "aerial_tramway", "transportation", "vehicle", "ski" ] )
-    , ( "🛰️", [ "satellite", "communication", "gps", "orbit", "spaceflight", "NASA", "ISS" ] )
-    , ( "🚀", [ "rocket", "launch", "ship", "staffmode", "NASA", "outer space", "outer_space", "fly" ] )
-    , ( "\u{1F6F8}", [ "flying_saucer", "transportation", "vehicle", "ufo" ] )
-    , ( "🛎️", [ "bellhop_bell", "service" ] )
-    , ( "\u{1F9F3}", [ "luggage", "packing", "travel" ] )
-    , ( "⌛", [ "hourglass_done", "time", "clock", "oldschool", "limit", "exam", "quiz", "test" ] )
-    , ( "⏳", [ "hourglass_not_done", "oldschool", "time", "countdown" ] )
-    , ( "⌚", [ "watch", "time", "accessories" ] )
-    , ( "⏰", [ "alarm_clock", "time", "wake" ] )
-    , ( "⏱️", [ "stopwatch", "time", "deadline" ] )
-    , ( "⏲️", [ "timer_clock", "alarm" ] )
-    , ( "🕰️", [ "mantelpiece_clock", "time" ] )
-    , ( "🕛", [ "twelve_o_clock", "time", "noon", "midnight", "midday", "late", "early", "schedule" ] )
-    , ( "🕧", [ "twelve_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕐", [ "one_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕜", [ "one_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕑", [ "two_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕝", [ "two_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕒", [ "three_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕞", [ "three_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕓", [ "four_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕟", [ "four_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕔", [ "five_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕠", [ "five_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕕", [ "six_o_clock", "time", "late", "early", "schedule", "dawn", "dusk" ] )
-    , ( "🕡", [ "six_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕖", [ "seven_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕢", [ "seven_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕗", [ "eight_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕣", [ "eight_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕘", [ "nine_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕤", [ "nine_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕙", [ "ten_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕥", [ "ten_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🕚", [ "eleven_o_clock", "time", "late", "early", "schedule" ] )
-    , ( "🕦", [ "eleven_thirty", "time", "late", "early", "schedule" ] )
-    , ( "🌑", [ "new_moon", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌒", [ "waxing_crescent_moon", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌓", [ "first_quarter_moon", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌔", [ "waxing_gibbous_moon", "nature", "night", "sky", "gray", "twilight", "planet", "space", "evening", "sleep" ] )
-    , ( "🌕", [ "full_moon", "nature", "yellow", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌖", [ "waning_gibbous_moon", "nature", "twilight", "planet", "space", "night", "evening", "sleep", "waxing_gibbous_moon" ] )
-    , ( "🌗", [ "last_quarter_moon", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌘", [ "waning_crescent_moon", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌙", [ "crescent_moon", "night", "sleep", "sky", "evening", "magic" ] )
-    , ( "🌚", [ "new_moon_face", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌛", [ "first_quarter_moon_face", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌜", [ "last_quarter_moon_face", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌡️", [ "thermometer", "weather", "temperature", "hot", "cold" ] )
-    , ( "☀️", [ "sun", "weather", "nature", "brightness", "summer", "beach", "spring" ] )
-    , ( "🌝", [ "full_moon_face", "nature", "twilight", "planet", "space", "night", "evening", "sleep" ] )
-    , ( "🌞", [ "sun_with_face", "nature", "morning", "sky" ] )
-    , ( "\u{1FA90}", [ "ringed_planet", "outerspace" ] )
-    , ( "⭐", [ "star", "night", "yellow" ] )
-    , ( "🌟", [ "glowing_star", "night", "sparkle", "awesome", "good", "magic" ] )
-    , ( "🌠", [ "shooting_star", "night", "photo" ] )
-    , ( "🌌", [ "milky_way", "photo", "space", "stars" ] )
-    , ( "☁️", [ "cloud", "weather", "sky" ] )
-    , ( "⛅", [ "sun_behind_cloud", "weather", "nature", "cloudy", "morning", "fall", "spring" ] )
-    , ( "⛈️", [ "cloud_with_lightning_and_rain", "weather", "lightning" ] )
-    , ( "🌤️", [ "sun_behind_small_cloud", "weather" ] )
-    , ( "🌥️", [ "sun_behind_large_cloud", "weather" ] )
-    , ( "🌦️", [ "sun_behind_rain_cloud", "weather" ] )
-    , ( "🌧️", [ "cloud_with_rain", "weather" ] )
-    , ( "🌨️", [ "cloud_with_snow", "weather" ] )
-    , ( "🌩️", [ "cloud_with_lightning", "weather", "thunder" ] )
-    , ( "🌪️", [ "tornado", "weather", "cyclone", "twister" ] )
-    , ( "🌫️", [ "fog", "weather" ] )
-    , ( "🌬️", [ "wind_face", "gust", "air" ] )
-    , ( "🌀", [ "cyclone", "weather", "swirl", "blue", "cloud", "vortex", "spiral", "whirlpool", "spin", "tornado", "hurricane", "typhoon" ] )
-    , ( "🌈", [ "rainbow", "nature", "happy", "unicorn_face", "photo", "sky", "spring" ] )
-    , ( "🌂", [ "closed_umbrella", "weather", "rain", "drizzle" ] )
-    , ( "☂️", [ "umbrella", "weather", "spring" ] )
-    , ( "☔", [ "umbrella_with_rain_drops", "rainy", "weather", "spring" ] )
-    , ( "⛱️", [ "umbrella_on_ground", "weather", "summer" ] )
-    , ( "⚡", [ "high_voltage", "thunder", "weather", "lightning bolt", "fast" ] )
-    , ( "❄️", [ "snowflake", "winter", "season", "cold", "weather", "christmas", "xmas" ] )
-    , ( "☃️", [ "snowman", "winter", "season", "cold", "weather", "christmas", "xmas", "frozen" ] )
-    , ( "⛄", [ "snowman_without_snow", "winter", "season", "cold", "weather", "christmas", "xmas", "frozen", "without_snow" ] )
-    , ( "☄️", [ "comet", "space" ] )
-    , ( "🔥", [ "fire", "hot", "cook", "flame" ] )
-    , ( "💧", [ "droplet", "water", "drip", "faucet", "spring" ] )
-    , ( "🌊", [ "water_wave", "sea", "water", "wave", "nature", "tsunami", "disaster" ] )
-    , ( "🎃", [ "jack_o_lantern", "halloween", "light", "pumpkin", "creepy", "fall" ] )
-    , ( "🎄", [ "christmas_tree", "festival", "vacation", "december", "xmas", "celebration" ] )
-    , ( "🎆", [ "fireworks", "photo", "festival", "carnival", "congratulations" ] )
-    , ( "🎇", [ "sparkler", "stars", "night", "shine" ] )
-    , ( "\u{1F9E8}", [ "firecracker", "dynamite", "boom", "explode", "explosion", "explosive" ] )
-    , ( "✨", [ "sparkles", "stars", "shine", "shiny", "cool", "awesome", "good", "magic" ] )
-    , ( "🎈", [ "balloon", "party", "celebration", "birthday", "circus" ] )
-    , ( "🎉", [ "party_popper", "party", "congratulations", "birthday", "magic", "circus", "celebration" ] )
-    , ( "🎊", [ "confetti_ball", "festival", "party", "birthday", "circus" ] )
-    , ( "🎋", [ "tanabata_tree", "plant", "nature", "branch", "summer" ] )
-    , ( "🎍", [ "pine_decoration", "plant", "nature", "vegetable", "panda", "pine_decoration" ] )
-    , ( "🎎", [ "japanese_dolls", "japanese", "toy", "kimono" ] )
-    , ( "🎏", [ "carp_streamer", "fish", "japanese", "koinobori", "carp", "banner" ] )
-    , ( "🎐", [ "wind_chime", "nature", "ding", "spring", "bell" ] )
-    , ( "🎑", [ "moon_viewing_ceremony", "photo", "japan", "asia", "tsukimi" ] )
-    , ( "\u{1F9E7}", [ "red_envelope", "gift" ] )
-    , ( "🎀", [ "ribbon", "decoration", "pink", "girl", "bowtie" ] )
-    , ( "🎁", [ "wrapped_gift", "present", "birthday", "christmas", "xmas" ] )
-    , ( "🎗️", [ "reminder_ribbon", "sports", "cause", "support", "awareness" ] )
-    , ( "🎟️", [ "admission_tickets", "sports", "concert", "entrance" ] )
-    , ( "🎫", [ "ticket", "event", "concert", "pass" ] )
-    , ( "🎖️", [ "military_medal", "award", "winning", "army" ] )
-    , ( "🏆", [ "trophy", "win", "award", "contest", "place", "ftw", "ceremony" ] )
-    , ( "🏅", [ "sports_medal", "award", "winning" ] )
-    , ( "\u{1F947}", [ "award", "winning", "first" ] )
-    , ( "\u{1F948}", [ "award", "second" ] )
-    , ( "\u{1F949}", [ "award", "third" ] )
-    , ( "⚽", [ "soccer_ball", "sports", "football" ] )
-    , ( "⚾", [ "baseball", "sports", "balls" ] )
-    , ( "\u{1F94E}", [ "softball", "sports", "balls" ] )
-    , ( "🏀", [ "basketball", "sports", "balls", "NBA" ] )
-    , ( "\u{1F3D0}", [ "volleyball", "sports", "balls" ] )
-    , ( "🏈", [ "american_football", "sports", "balls", "NFL" ] )
-    , ( "🏉", [ "rugby_football", "sports", "team" ] )
-    , ( "🎾", [ "tennis", "sports", "balls", "green" ] )
-    , ( "\u{1F94F}", [ "flying_disc", "sports", "frisbee", "ultimate" ] )
-    , ( "🎳", [ "bowling", "sports", "fun", "play" ] )
-    , ( "\u{1F3CF}", [ "cricket_game", "sports" ] )
-    , ( "\u{1F3D1}", [ "field_hockey", "sports" ] )
-    , ( "\u{1F3D2}", [ "ice_hockey", "sports" ] )
-    , ( "\u{1F94D}", [ "lacrosse", "sports", "ball", "stick" ] )
-    , ( "\u{1F3D3}", [ "ping_pong", "sports", "pingpong" ] )
-    , ( "\u{1F3F8}", [ "badminton", "sports" ] )
-    , ( "\u{1F94A}", [ "boxing_glove", "sports", "fighting" ] )
-    , ( "\u{1F94B}", [ "martial_arts_uniform", "judo", "karate", "taekwondo" ] )
-    , ( "\u{1F945}", [ "goal_net", "sports" ] )
-    , ( "⛳", [ "flag_in_hole", "sports", "business", "flag", "hole", "summer" ] )
-    , ( "⛸️", [ "ice_skate", "sports" ] )
-    , ( "🎣", [ "fishing_pole", "food", "hobby", "summer" ] )
-    , ( "\u{1F93F}", [ "diving_mask", "sport", "ocean" ] )
-    , ( "🎽", [ "running_shirt", "play", "pageant" ] )
-    , ( "🎿", [ "skis", "sports", "winter", "cold", "snow" ] )
-    , ( "\u{1F6F7}", [ "sled", "sleigh", "luge", "toboggan" ] )
-    , ( "\u{1F94C}", [ "curling_stone", "sports" ] )
-    , ( "🎯", [ "direct_hit", "game", "play", "bar", "target", "bullseye" ] )
-    , ( "\u{1FA80}", [ "yo_yo", "toy" ] )
-    , ( "\u{1FA81}", [ "kite", "wind", "fly" ] )
-    , ( "🎱", [ "pool_8_ball", "pool", "hobby", "game", "luck", "magic" ] )
-    , ( "🔮", [ "crystal_ball", "disco", "party", "magic", "circus", "fortune_teller" ] )
-    , ( "\u{1F9FF}", [ "nazar_amulet", "bead", "charm" ] )
-    , ( "🎮", [ "video_game", "play", "console", "PS4", "controller" ] )
-    , ( "🕹️", [ "joystick", "game", "play" ] )
-    , ( "🎰", [ "slot_machine", "bet", "gamble", "vegas", "fruit machine", "luck", "casino" ] )
-    , ( "🎲", [ "game_die", "dice", "random", "tabletop", "play", "luck" ] )
-    , ( "\u{1F9E9}", [ "puzzle_piece", "interlocking", "puzzle", "piece" ] )
-    , ( "\u{1F9F8}", [ "teddy_bear", "plush", "stuffed" ] )
-    , ( "♠️", [ "spade_suit", "poker", "cards", "suits", "magic" ] )
-    , ( "♥️", [ "heart_suit", "poker", "cards", "magic", "suits" ] )
-    , ( "♦️", [ "diamond_suit", "poker", "cards", "magic", "suits" ] )
-    , ( "♣️", [ "club_suit", "poker", "cards", "magic", "suits" ] )
-    , ( "♟️", [ "chess_pawn", "expendable" ] )
-    , ( "🃏", [ "joker", "poker", "cards", "game", "play", "magic" ] )
-    , ( "🀄", [ "mahjong_red_dragon", "game", "play", "chinese", "kanji" ] )
-    , ( "🎴", [ "flower_playing_cards", "game", "sunset", "red" ] )
-    , ( "🎭", [ "performing_arts", "acting", "theater", "drama" ] )
-    , ( "🖼️", [ "framed_picture", "photography" ] )
-    , ( "🎨", [ "artist_palette", "design", "paint", "draw", "colors" ] )
-    , ( "\u{1F9F5}", [ "thread", "needle", "sewing", "spool", "string" ] )
-    , ( "\u{1F9F6}", [ "yarn", "ball", "crochet", "knit" ] )
-    , ( "👓", [ "glasses", "fashion", "accessories", "eyesight", "nerdy", "dork", "geek" ] )
-    , ( "🕶️", [ "sunglasses", "face", "cool", "accessories" ] )
-    , ( "\u{1F97D}", [ "goggles", "eyes", "protection", "safety" ] )
-    , ( "\u{1F97C}", [ "lab_coat", "doctor", "experiment", "scientist", "chemist" ] )
-    , ( "\u{1F9BA}", [ "safety_vest", "protection" ] )
-    , ( "👔", [ "necktie", "shirt", "suitup", "formal", "fashion", "cloth", "business" ] )
-    , ( "👕", [ "t_shirt", "fashion", "cloth", "casual", "shirt", "tee" ] )
-    , ( "👖", [ "jeans", "fashion", "shopping" ] )
-    , ( "\u{1F9E3}", [ "scarf", "neck", "winter", "clothes" ] )
-    , ( "\u{1F9E4}", [ "gloves", "hands", "winter", "clothes" ] )
-    , ( "\u{1F9E5}", [ "coat", "jacket" ] )
-    , ( "\u{1F9E6}", [ "socks", "stockings", "clothes" ] )
-    , ( "👗", [ "dress", "clothes", "fashion", "shopping" ] )
-    , ( "👘", [ "kimono", "dress", "fashion", "women", "female", "japanese" ] )
-    , ( "\u{1F97B}", [ "sari", "dress" ] )
-    , ( "\u{1FA71}", [ "one_piece_swimsuit", "fashion" ] )
-    , ( "\u{1FA72}", [ "briefs", "clothing" ] )
-    , ( "\u{1FA73}", [ "shorts", "clothing" ] )
-    , ( "👙", [ "bikini", "swimming", "female", "woman", "girl", "fashion", "beach", "summer" ] )
-    , ( "👚", [ "woman_s_clothes", "fashion", "shopping_bags", "female" ] )
-    , ( "👛", [ "purse", "fashion", "accessories", "money", "sales", "shopping" ] )
-    , ( "👜", [ "handbag", "fashion", "accessory", "accessories", "shopping" ] )
-    , ( "👝", [ "clutch_bag", "bag", "accessories", "shopping" ] )
-    , ( "🛍️", [ "shopping_bags", "mall", "buy", "purchase" ] )
-    , ( "🎒", [ "backpack", "student", "education", "bag", "backpack" ] )
-    , ( "👞", [ "man_s_shoe", "fashion", "male" ] )
-    , ( "👟", [ "running_shoe", "shoes", "sports", "sneakers" ] )
-    , ( "\u{1F97E}", [ "hiking_boot", "backpacking", "camping", "hiking" ] )
-    , ( "\u{1F97F}", [ "flat_shoe", "ballet", "slip-on", "slipper" ] )
-    , ( "👠", [ "high_heeled_shoe", "fashion", "shoes", "female", "pumps", "stiletto" ] )
-    , ( "👡", [ "woman_s_sandal", "shoes", "fashion", "flip flops" ] )
-    , ( "\u{1FA70}", [ "ballet_shoes", "dance" ] )
-    , ( "👢", [ "woman_s_boot", "shoes", "fashion" ] )
-    , ( "👑", [ "crown", "king", "kod", "leader", "royalty", "lord" ] )
-    , ( "👒", [ "woman_s_hat", "fashion", "accessories", "female", "lady", "spring" ] )
-    , ( "🎩", [ "top_hat", "magic", "gentleman", "classy", "circus" ] )
-    , ( "🎓", [ "graduation_cap", "school", "college", "degree", "university", "graduation", "cap", "hat", "legal", "learn", "education" ] )
-    , ( "\u{1F9E2}", [ "billed_cap", "cap", "baseball" ] )
-    , ( "⛑️", [ "rescue_worker_s_helmet", "construction", "build" ] )
-    , ( "\u{1F4FF}", [ "prayer_beads", "dhikr", "religious" ] )
-    , ( "💄", [ "lipstick", "female", "girl", "fashion", "woman" ] )
-    , ( "💍", [ "ring", "wedding", "propose", "marriage", "valentines", "diamond", "fashion", "jewelry", "gem", "engagement" ] )
-    , ( "💎", [ "gem_stone", "blue", "ruby", "diamond", "jewelry" ] )
-    , ( "🔇", [ "muted_speaker", "sound", "volume", "silence", "quiet" ] )
-    , ( "🔈", [ "speaker_low_volume", "sound", "volume", "silence", "broadcast" ] )
-    , ( "🔉", [ "speaker_medium_volume", "volume", "speaker", "broadcast" ] )
-    , ( "🔊", [ "speaker_high_volume", "volume", "noise", "noisy", "speaker", "broadcast" ] )
-    , ( "📢", [ "loudspeaker", "volume", "sound" ] )
-    , ( "📣", [ "megaphone", "sound", "speaker", "volume" ] )
-    , ( "📯", [ "postal_horn", "instrument", "music" ] )
-    , ( "🔔", [ "bell", "sound", "notification", "christmas", "xmas", "chime" ] )
-    , ( "🔕", [ "bell_with_slash", "sound", "volume", "mute", "quiet", "silent" ] )
-    , ( "🎼", [ "musical_score", "treble", "clef", "compose" ] )
-    , ( "🎵", [ "musical_note", "score", "tone", "sound" ] )
-    , ( "🎶", [ "musical_notes", "music", "score" ] )
-    , ( "🎙️", [ "studio_microphone", "sing", "recording", "artist", "talkshow" ] )
-    , ( "🎚️", [ "level_slider", "scale" ] )
-    , ( "🎛️", [ "control_knobs", "dial" ] )
-    , ( "🎤", [ "microphone", "sound", "music", "PA", "sing", "talkshow" ] )
-    , ( "🎧", [ "headphone", "music", "score", "gadgets" ] )
-    , ( "📻", [ "radio", "communication", "music", "podcast", "program" ] )
-    , ( "🎷", [ "saxophone", "music", "instrument", "jazz", "blues" ] )
-    , ( "🎸", [ "guitar", "music", "instrument" ] )
-    , ( "🎹", [ "musical_keyboard", "piano", "instrument", "compose" ] )
-    , ( "🎺", [ "trumpet", "music", "brass" ] )
-    , ( "🎻", [ "violin", "music", "instrument", "orchestra", "symphony" ] )
-    , ( "\u{1FA95}", [ "banjo", "music", "instructment" ] )
-    , ( "\u{1F941}", [ "drum", "music", "instrument", "drumsticks", "snare" ] )
-    , ( "📱", [ "mobile_phone", "technology", "apple", "gadgets", "dial" ] )
-    , ( "📲", [ "mobile_phone_with_arrow", "iphone", "incoming" ] )
-    , ( "☎️", [ "telephone", "technology", "communication", "dial", "telephone" ] )
-    , ( "📞", [ "telephone_receiver", "technology", "communication", "dial" ] )
-    , ( "📟", [ "pager", "bbcall", "oldschool" ] )
-    , ( "📠", [ "fax_machine", "communication", "technology" ] )
-    , ( "🔋", [ "battery", "power", "energy", "sustain" ] )
-    , ( "🔌", [ "electric_plug", "charger", "power" ] )
-    , ( "💻", [ "laptop", "technology", "laptop", "screen", "display", "monitor" ] )
-    , ( "🖥️", [ "desktop_computer", "technology", "computing", "screen" ] )
-    , ( "🖨️", [ "printer", "paper", "ink" ] )
-    , ( "⌨️", [ "keyboard", "technology", "computer", "type", "input", "text" ] )
-    , ( "🖱️", [ "computer_mouse", "click" ] )
-    , ( "🖲️", [ "trackball", "technology", "trackpad" ] )
-    , ( "💽", [ "computer_disk", "technology", "record", "data", "disk" ] )
-    , ( "💾", [ "floppy_disk", "oldschool", "technology", "save" ] )
-    , ( "💿", [ "optical_disk", "technology", "dvd", "disk", "disc" ] )
-    , ( "📀", [ "dvd", "cd", "disk", "disc" ] )
-    , ( "\u{1F9EE}", [ "abacus", "calculation" ] )
-    , ( "🎥", [ "movie_camera", "film", "record" ] )
-    , ( "🎞️", [ "film_frames", "movie" ] )
-    , ( "📽️", [ "film_projector", "video", "tape", "record", "movie" ] )
-    , ( "🎬", [ "clapper_board", "movie", "film", "record" ] )
-    , ( "📺", [ "television", "technology", "program", "oldschool", "show", "television" ] )
-    , ( "📷", [ "camera", "gadgets", "photography" ] )
-    , ( "📸", [ "camera_with_flash", "photography", "gadgets" ] )
-    , ( "📹", [ "video_camera", "film", "record" ] )
-    , ( "📼", [ "videocassette", "record", "video", "oldschool" ] )
-    , ( "🔍", [ "magnifying_glass_tilted_left", "search", "zoom", "find", "detective" ] )
-    , ( "🔎", [ "magnifying_glass_tilted_right", "search", "zoom", "find", "detective" ] )
-    , ( "🕯️", [ "candle", "fire", "wax" ] )
-    , ( "💡", [ "light_bulb", "light", "electricity", "idea" ] )
-    , ( "🔦", [ "flashlight", "dark", "camping", "sight", "night" ] )
-    , ( "🏮", [ "red_paper_lantern", "light", "paper", "halloween", "spooky" ] )
-    , ( "\u{1FA94}", [ "diya_lamp", "lighting" ] )
-    , ( "📔", [ "notebook_with_decorative_cover", "classroom", "notes", "record", "paper", "study" ] )
-    , ( "📕", [ "closed_book", "read", "library", "knowledge", "textbook", "learn" ] )
-    , ( "📖", [ "open_book", "book", "read", "library", "knowledge", "literature", "learn", "study" ] )
-    , ( "📗", [ "green_book", "read", "library", "knowledge", "study" ] )
-    , ( "📘", [ "blue_book", "read", "library", "knowledge", "learn", "study" ] )
-    , ( "📙", [ "orange_book", "read", "library", "knowledge", "textbook", "study" ] )
-    , ( "📚", [ "books", "literature", "library", "study" ] )
-    , ( "📓", [ "notebook", "stationery", "record", "notes", "paper", "study" ] )
-    , ( "📒", [ "ledger", "notes", "paper" ] )
-    , ( "📃", [ "page_with_curl", "documents", "office", "paper" ] )
-    , ( "📜", [ "scroll", "documents", "ancient", "history", "paper" ] )
-    , ( "📄", [ "page_facing_up", "documents", "office", "paper", "information" ] )
-    , ( "📰", [ "newspaper", "press", "headline" ] )
-    , ( "🗞️", [ "rolled_up_newspaper", "press", "headline" ] )
-    , ( "📑", [ "bookmark_tabs", "favorite", "save", "order", "tidy" ] )
-    , ( "🔖", [ "bookmark", "favorite", "label", "save" ] )
-    , ( "🏷️", [ "label", "sale", "tag" ] )
-    , ( "💰", [ "money_bag", "dollar", "payment", "coins", "sale" ] )
-    , ( "💴", [ "yen_banknote", "money", "sales", "japanese", "dollar", "currency" ] )
-    , ( "💵", [ "dollar_banknote", "money", "sales", "bill", "currency" ] )
-    , ( "💶", [ "euro_banknote", "money", "sales", "dollar", "currency" ] )
-    , ( "💷", [ "pound_banknote", "british", "sterling", "money", "sales", "bills", "uk", "england", "currency" ] )
-    , ( "💸", [ "money_with_wings", "dollar", "bills", "payment", "sale" ] )
-    , ( "💳", [ "credit_card", "money", "sales", "dollar", "bill", "payment", "shopping" ] )
-    , ( "\u{1F9FE}", [ "receipt", "accounting", "expenses" ] )
-    , ( "💹", [ "chart_increasing_with_yen", "green-square", "graph", "presentation", "stats" ] )
-    , ( "💱", [ "currency_exchange", "money", "sales", "dollar", "travel" ] )
-    , ( "💲", [ "heavy_dollar_sign", "money", "sales", "payment", "currency", "buck" ] )
-    , ( "✉️", [ "envelope", "letter", "postal", "inbox", "communication" ] )
-    , ( "📧", [ "e_mail", "communication", "inbox" ] )
-    , ( "📨", [ "incoming_envelope", "email", "inbox" ] )
-    , ( "📩", [ "envelope_with_arrow", "email", "communication" ] )
-    , ( "📤", [ "outbox_tray", "inbox", "email" ] )
-    , ( "📥", [ "inbox_tray", "email", "documents" ] )
-    , ( "📦", [ "package", "mail", "gift", "cardboard", "box", "moving" ] )
-    , ( "📫", [ "closed_mailbox_with_raised_flag", "email", "inbox", "communication" ] )
-    , ( "📪", [ "closed_mailbox_with_lowered_flag", "email", "communication", "inbox" ] )
-    , ( "📬", [ "open_mailbox_with_raised_flag", "email", "inbox", "communication" ] )
-    , ( "📭", [ "open_mailbox_with_lowered_flag", "email", "inbox" ] )
-    , ( "📮", [ "postbox", "email", "letter", "envelope" ] )
-    , ( "🗳️", [ "ballot_box_with_ballot", "election", "vote" ] )
-    , ( "✏️", [ "pencil", "stationery", "write", "paper", "writing", "school", "study" ] )
-    , ( "✒️", [ "black_nib", "pen", "stationery", "writing", "write" ] )
-    , ( "🖋️", [ "fountain_pen", "stationery", "writing", "write" ] )
-    , ( "🖊️", [ "pen", "stationery", "writing", "write" ] )
-    , ( "🖌️", [ "paintbrush", "drawing", "creativity", "art" ] )
-    , ( "🖍️", [ "crayon", "drawing", "creativity" ] )
-    , ( "📝", [ "memo", "write", "documents", "stationery", "pencil", "paper", "writing", "legal", "exam", "quiz", "test", "study", "compose" ] )
-    , ( "💼", [ "briefcase", "business", "documents", "work", "law", "legal", "job", "career" ] )
-    , ( "📁", [ "file_folder", "documents", "business", "office" ] )
-    , ( "📂", [ "open_file_folder", "documents", "load" ] )
-    , ( "🗂️", [ "card_index_dividers", "organizing", "business", "stationery" ] )
-    , ( "📅", [ "calendar", "calendar", "schedule" ] )
-    , ( "📆", [ "tear_off_calendar", "schedule", "date", "planning" ] )
-    , ( "🗒️", [ "spiral_notepad", "memo", "stationery" ] )
-    , ( "🗓️", [ "spiral_calendar", "date", "schedule", "planning" ] )
-    , ( "📇", [ "card_index", "business", "stationery" ] )
-    , ( "📈", [ "chart_increasing", "graph", "presentation", "stats", "recovery", "business", "economics", "money", "sales", "good", "success" ] )
-    , ( "📉", [ "chart_decreasing", "graph", "presentation", "stats", "recession", "business", "economics", "money", "sales", "bad", "failure" ] )
-    , ( "📊", [ "bar_chart", "graph", "presentation", "stats" ] )
-    , ( "📋", [ "clipboard", "stationery", "documents" ] )
-    , ( "📌", [ "pushpin", "stationery", "mark", "here" ] )
-    , ( "📍", [ "round_pushpin", "stationery", "location", "map", "here" ] )
-    , ( "📎", [ "paperclip", "documents", "stationery" ] )
-    , ( "🖇️", [ "linked_paperclips", "documents", "stationery" ] )
-    , ( "📏", [ "straight_ruler", "stationery", "calculate", "length", "math", "school", "drawing", "architect", "sketch" ] )
-    , ( "📐", [ "triangular_ruler", "stationery", "math", "architect", "sketch" ] )
-    , ( "✂️", [ "scissors", "stationery", "cut" ] )
-    , ( "🗃️", [ "card_file_box", "business", "stationery" ] )
-    , ( "🗄️", [ "file_cabinet", "filing", "organizing" ] )
-    , ( "🗑️", [ "wastebasket", "bin", "trash", "rubbish", "garbage", "toss" ] )
-    , ( "🔒", [ "locked", "security", "password", "padlock" ] )
-    , ( "🔓", [ "unlocked", "privacy", "security" ] )
-    , ( "🔏", [ "locked_with_pen", "security", "secret" ] )
-    , ( "🔐", [ "locked_with_key", "security", "privacy" ] )
-    , ( "🔑", [ "key", "lock", "door", "password" ] )
-    , ( "🗝️", [ "old_key", "lock", "door", "password" ] )
-    , ( "🔨", [ "hammer", "tools", "build", "create" ] )
-    , ( "\u{1FA93}", [ "axe", "tool", "chop", "cut" ] )
-    , ( "⛏️", [ "pick", "tools", "dig" ] )
-    , ( "⚒️", [ "hammer_and_pick", "tools", "build", "create" ] )
-    , ( "🛠️", [ "hammer_and_wrench", "tools", "build", "create" ] )
-    , ( "🗡️", [ "dagger", "weapon" ] )
-    , ( "⚔️", [ "crossed_swords", "weapon" ] )
-    , ( "🔫", [ "pistol", "violence", "weapon", "pistol", "revolver" ] )
-    , ( "\u{1F3F9}", [ "bow_and_arrow", "sports" ] )
-    , ( "🛡️", [ "shield", "protection", "security" ] )
-    , ( "🔧", [ "wrench", "tools", "diy", "ikea", "fix", "maintainer" ] )
-    , ( "🔩", [ "nut_and_bolt", "handy", "tools", "fix" ] )
-    , ( "⚙️", [ "gear", "cog" ] )
-    , ( "🗜️", [ "clamp", "tool" ] )
-    , ( "⚖️", [ "balance_scale", "law", "fairness", "weight" ] )
-    , ( "\u{1F9AF}", [ "probing_cane", "accessibility" ] )
-    , ( "🔗", [ "link", "rings", "url" ] )
-    , ( "⛓️", [ "chains", "lock", "arrest" ] )
-    , ( "\u{1F9F0}", [ "toolbox", "tools", "diy", "fix", "maintainer", "mechanic" ] )
-    , ( "\u{1F9F2}", [ "magnet", "attraction", "magnetic" ] )
-    , ( "⚗️", [ "alembic", "distilling", "science", "experiment", "chemistry" ] )
-    , ( "\u{1F9EA}", [ "test_tube", "chemistry", "experiment", "lab", "science" ] )
-    , ( "\u{1F9EB}", [ "petri_dish", "bacteria", "biology", "culture", "lab" ] )
-    , ( "\u{1F9EC}", [ "dna", "biologist", "genetics", "life" ] )
-    , ( "🔬", [ "microscope", "laboratory", "experiment", "zoomin", "science", "study" ] )
-    , ( "🔭", [ "telescope", "stars", "space", "zoom", "science", "astronomy" ] )
-    , ( "📡", [ "satellite_antenna", "communication", "future", "radio", "space" ] )
-    , ( "💉", [ "syringe", "health", "hospital", "drugs", "blood", "medicine", "needle", "doctor", "nurse" ] )
-    , ( "\u{1FA78}", [ "drop_of_blood", "period", "hurt", "harm", "wound" ] )
-    , ( "💊", [ "pill", "health", "medicine", "doctor", "pharmacy", "drug" ] )
-    , ( "\u{1FA79}", [ "adhesive_bandage", "heal" ] )
-    , ( "\u{1FA7A}", [ "stethoscope", "health" ] )
-    , ( "🚪", [ "door", "house", "entry", "exit" ] )
-    , ( "🛏️", [ "bed", "sleep", "rest" ] )
-    , ( "🛋️", [ "couch_and_lamp", "read", "chill" ] )
-    , ( "\u{1FA91}", [ "chair", "sit", "furniture" ] )
-    , ( "🚽", [ "toilet", "restroom", "wc", "washroom", "bathroom", "potty" ] )
-    , ( "🚿", [ "shower", "clean", "water", "bathroom" ] )
-    , ( "🛁", [ "bathtub", "clean", "shower", "bathroom" ] )
-    , ( "\u{1FA92}", [ "razor", "cut" ] )
-    , ( "\u{1F9F4}", [ "lotion_bottle", "moisturizer", "sunscreen" ] )
-    , ( "\u{1F9F7}", [ "safety_pin", "diaper" ] )
-    , ( "\u{1F9F9}", [ "broom", "cleaning", "sweeping", "witch" ] )
-    , ( "\u{1F9FA}", [ "basket", "laundry" ] )
-    , ( "\u{1F9FB}", [ "roll_of_paper", "roll" ] )
-    , ( "\u{1F9FC}", [ "soap", "bar", "bathing", "cleaning", "lather" ] )
-    , ( "\u{1F9FD}", [ "sponge", "absorbing", "cleaning", "porous" ] )
-    , ( "\u{1F9EF}", [ "fire_extinguisher", "quench" ] )
-    , ( "\u{1F6D2}", [ "shopping_cart", "trolley" ] )
-    , ( "🚬", [ "cigarette", "kills", "tobacco", "cigarette", "joint", "smoke" ] )
-    , ( "⚰️", [ "coffin", "vampire", "dead", "die", "death", "rip", "graveyard", "cemetery", "casket", "funeral", "box" ] )
-    , ( "⚱️", [ "funeral_urn", "dead", "die", "death", "rip", "ashes" ] )
-    , ( "🗿", [ "moai", "rock", "easter island", "moai" ] )
-    , ( "🏧", [ "atm_sign", "money", "sales", "cash", "blue-square", "payment", "bank" ] )
-    , ( "🚮", [ "litter_in_bin_sign", "blue-square", "sign", "human", "info" ] )
-    , ( "🚰", [ "potable_water", "blue-square", "liquid", "restroom", "cleaning", "faucet" ] )
-    , ( "♿", [ "wheelchair_symbol", "blue-square", "disabled", "accessibility" ] )
-    , ( "🚹", [ "men_s_room", "toilet", "restroom", "wc", "blue-square", "gender", "male" ] )
-    , ( "🚺", [ "women_s_room", "purple-square", "woman", "female", "toilet", "loo", "restroom", "gender" ] )
-    , ( "🚻", [ "restroom", "blue-square", "toilet", "refresh", "wc", "gender" ] )
-    , ( "🚼", [ "baby_symbol", "orange-square", "child" ] )
-    , ( "🚾", [ "water_closet", "toilet", "restroom", "blue-square" ] )
-    , ( "🛂", [ "passport_control", "custom", "blue-square" ] )
-    , ( "🛃", [ "customs", "passport", "border", "blue-square" ] )
-    , ( "🛄", [ "baggage_claim", "blue-square", "airport", "transport" ] )
-    , ( "🛅", [ "left_luggage", "blue-square", "travel" ] )
-    , ( "⚠️", [ "warning", "exclamation", "wip", "alert", "error", "problem", "issue" ] )
-    , ( "🚸", [ "children_crossing", "school", "warning", "danger", "sign", "driving", "yellow-diamond" ] )
-    , ( "⛔", [ "no_entry", "limit", "security", "privacy", "bad", "denied", "stop", "circle" ] )
-    , ( "🚫", [ "prohibited", "forbid", "stop", "limit", "denied", "disallow", "circle" ] )
-    , ( "🚳", [ "no_bicycles", "cyclist", "prohibited", "circle" ] )
-    , ( "🚭", [ "no_smoking", "cigarette", "blue-square", "smell", "smoke" ] )
-    , ( "🚯", [ "no_littering", "trash", "bin", "garbage", "circle" ] )
-    , ( "🚱", [ "non_potable_water", "drink", "faucet", "tap", "circle" ] )
-    , ( "🚷", [ "no_pedestrians", "rules", "crossing", "walking", "circle" ] )
-    , ( "📵", [ "no_mobile_phones", "iphone", "mute", "circle" ] )
-    , ( "🔞", [ "no_one_under_eighteen", "drink", "pub", "night", "minor", "circle" ] )
-    , ( "☢️", [ "radioactive", "nuclear", "danger" ] )
-    , ( "☣️", [ "biohazard", "danger" ] )
-    , ( "⬆️", [ "up_arrow", "blue-square", "continue", "top", "direction" ] )
-    , ( "↗️", [ "up_right_arrow", "blue-square", "point", "direction", "diagonal", "northeast" ] )
-    , ( "➡️", [ "right_arrow", "blue-square", "next" ] )
-    , ( "↘️", [ "down_right_arrow", "blue-square", "direction", "diagonal", "southeast" ] )
-    , ( "⬇️", [ "down_arrow", "blue-square", "direction", "bottom" ] )
-    , ( "↙️", [ "down_left_arrow", "blue-square", "direction", "diagonal", "southwest" ] )
-    , ( "⬅️", [ "left_arrow", "blue-square", "previous", "back" ] )
-    , ( "↖️", [ "up_left_arrow", "blue-square", "point", "direction", "diagonal", "northwest" ] )
-    , ( "↕️", [ "up_down_arrow", "blue-square", "direction", "way", "vertical" ] )
-    , ( "↔️", [ "left_right_arrow", "shape", "direction", "horizontal", "sideways" ] )
-    , ( "↩️", [ "right_arrow_curving_left", "back", "return", "blue-square", "undo", "enter" ] )
-    , ( "↪️", [ "left_arrow_curving_right", "blue-square", "return", "rotate", "direction" ] )
-    , ( "⤴️", [ "right_arrow_curving_up", "blue-square", "direction", "top" ] )
-    , ( "⤵️", [ "right_arrow_curving_down", "blue-square", "direction", "bottom" ] )
-    , ( "🔃", [ "clockwise_vertical_arrows", "sync", "cycle", "round", "repeat" ] )
-    , ( "🔄", [ "counterclockwise_arrows_button", "blue-square", "sync", "cycle" ] )
-    , ( "🔙", [ "back_arrow", "arrow", "words", "return" ] )
-    , ( "🔚", [ "end_arrow", "words", "arrow" ] )
-    , ( "🔛", [ "on_arrow", "arrow", "words" ] )
-    , ( "🔜", [ "soon_arrow", "arrow", "words" ] )
-    , ( "🔝", [ "top_arrow", "words", "blue-square" ] )
-    , ( "\u{1F6D0}", [ "place_of_worship", "religion", "church", "temple", "prayer" ] )
-    , ( "⚛️", [ "atom_symbol", "science", "physics", "chemistry" ] )
-    , ( "🕉️", [ "om", "hinduism", "buddhism", "sikhism", "jainism" ] )
-    , ( "✡️", [ "star_of_david", "judaism" ] )
-    , ( "☸️", [ "wheel_of_dharma", "hinduism", "buddhism", "sikhism", "jainism" ] )
-    , ( "☯️", [ "yin_yang", "balance" ] )
-    , ( "✝️", [ "latin_cross", "christianity" ] )
-    , ( "☦️", [ "orthodox_cross", "suppedaneum", "religion" ] )
-    , ( "☪️", [ "star_and_crescent", "islam" ] )
-    , ( "☮️", [ "peace_symbol", "hippie" ] )
-    , ( "\u{1F54E}", [ "menorah", "hanukkah", "candles", "jewish" ] )
-    , ( "🔯", [ "dotted_six_pointed_star", "purple-square", "religion", "jewish", "hexagram" ] )
-    , ( "♈", [ "aries", "sign", "purple-square", "zodiac", "astrology" ] )
-    , ( "♉", [ "taurus", "purple-square", "sign", "zodiac", "astrology" ] )
-    , ( "♊", [ "gemini", "sign", "zodiac", "purple-square", "astrology" ] )
-    , ( "♋", [ "cancer", "sign", "zodiac", "purple-square", "astrology" ] )
-    , ( "♌", [ "leo", "sign", "purple-square", "zodiac", "astrology" ] )
-    , ( "♍", [ "virgo", "sign", "zodiac", "purple-square", "astrology" ] )
-    , ( "♎", [ "libra", "sign", "purple-square", "zodiac", "astrology" ] )
-    , ( "♏", [ "scorpio", "sign", "zodiac", "purple-square", "astrology", "scorpio" ] )
-    , ( "♐", [ "sagittarius", "sign", "zodiac", "purple-square", "astrology" ] )
-    , ( "♑", [ "capricorn", "sign", "zodiac", "purple-square", "astrology" ] )
-    , ( "♒", [ "aquarius", "sign", "purple-square", "zodiac", "astrology" ] )
-    , ( "♓", [ "pisces", "purple-square", "sign", "zodiac", "astrology" ] )
-    , ( "⛎", [ "ophiuchus", "sign", "purple-square", "constellation", "astrology" ] )
-    , ( "🔀", [ "shuffle_tracks_button", "blue-square", "shuffle", "music", "random" ] )
-    , ( "🔁", [ "repeat_button", "loop", "record" ] )
-    , ( "🔂", [ "repeat_single_button", "blue-square", "loop" ] )
-    , ( "▶️", [ "play_button", "blue-square", "right", "direction", "play" ] )
-    , ( "⏩", [ "fast_forward_button", "blue-square", "play", "speed", "continue" ] )
-    , ( "⏭️", [ "next_track_button", "forward", "next", "blue-square" ] )
-    , ( "⏯️", [ "play_or_pause_button", "blue-square", "play", "pause" ] )
-    , ( "◀️", [ "reverse_button", "blue-square", "left", "direction" ] )
-    , ( "⏪", [ "fast_reverse_button", "play", "blue-square" ] )
-    , ( "⏮️", [ "last_track_button", "backward" ] )
-    , ( "🔼", [ "upwards_button", "blue-square", "triangle", "direction", "point", "forward", "top" ] )
-    , ( "⏫", [ "fast_up_button", "blue-square", "direction", "top" ] )
-    , ( "🔽", [ "downwards_button", "blue-square", "direction", "bottom" ] )
-    , ( "⏬", [ "fast_down_button", "blue-square", "direction", "bottom" ] )
-    , ( "⏸️", [ "pause_button", "pause", "blue-square" ] )
-    , ( "⏹️", [ "stop_button", "blue-square" ] )
-    , ( "⏺️", [ "record_button", "blue-square" ] )
-    , ( "⏏️", [ "eject_button", "blue-square" ] )
-    , ( "🎦", [ "cinema", "blue-square", "record", "film", "movie", "curtain", "stage", "theater" ] )
-    , ( "🔅", [ "dim_button", "sun", "afternoon", "warm", "summer" ] )
-    , ( "🔆", [ "bright_button", "sun", "light" ] )
-    , ( "📶", [ "antenna_bars", "blue-square", "reception", "phone", "internet", "connection", "wifi", "bluetooth", "bars" ] )
-    , ( "📳", [ "vibration_mode", "orange-square", "phone" ] )
-    , ( "📴", [ "mobile_phone_off", "mute", "orange-square", "silence", "quiet" ] )
-    , ( "♀️", [ "female_sign", "woman", "women", "lady", "girl" ] )
-    , ( "♂️", [ "male_sign", "man", "boy", "men" ] )
-    , ( "⚕️", [ "medical_symbol", "health", "hospital" ] )
-    , ( "♾️", [ "infinity", "forever" ] )
-    , ( "♻️", [ "recycling_symbol", "arrow", "environment", "garbage", "trash" ] )
-    , ( "⚜️", [ "fleur_de_lis", "decorative", "scout" ] )
-    , ( "🔱", [ "trident_emblem", "weapon", "spear" ] )
-    , ( "📛", [ "name_badge", "fire", "forbid" ] )
-    , ( "🔰", [ "japanese_symbol_for_beginner", "badge", "shield" ] )
-    , ( "⭕", [ "hollow_red_circle", "circle", "round" ] )
-    , ( "✅", [ "check_mark_button", "green-square", "ok", "agree", "vote", "election", "answer", "tick" ] )
-    , ( "☑️", [ "check_box_with_check", "ok", "agree", "confirm", "black-square", "vote", "election", "yes", "tick" ] )
-    , ( "✔️", [ "check_mark", "ok", "nike", "answer", "yes", "tick" ] )
-    , ( "✖️", [ "multiplication_sign", "math", "calculation" ] )
-    , ( "❌", [ "cross_mark", "no", "delete", "remove", "cancel", "red" ] )
-    , ( "❎", [ "cross_mark_button", "x", "green-square", "no", "deny" ] )
-    , ( "➕", [ "plus_sign", "math", "calculation", "addition", "more", "increase" ] )
-    , ( "➖", [ "minus_sign", "math", "calculation", "subtract", "less" ] )
-    , ( "➗", [ "division_sign", "divide", "math", "calculation" ] )
-    , ( "➰", [ "curly_loop", "scribble", "draw", "shape", "squiggle" ] )
-    , ( "➿", [ "double_curly_loop", "tape", "cassette" ] )
-    , ( "〽️", [ "part_alternation_mark", "graph", "presentation", "stats", "business", "economics", "bad" ] )
-    , ( "✳️", [ "eight_spoked_asterisk", "star", "sparkle", "green-square" ] )
-    , ( "✴️", [ "eight_pointed_star", "orange-square", "shape", "polygon" ] )
-    , ( "❇️", [ "sparkle", "stars", "green-square", "awesome", "good", "fireworks" ] )
-    , ( "‼️", [ "double_exclamation_mark", "exclamation", "surprise" ] )
-    , ( "⁉️", [ "exclamation_question_mark", "wat", "punctuation", "surprise" ] )
-    , ( "❓", [ "question_mark", "doubt", "confused" ] )
-    , ( "❔", [ "white_question_mark", "doubts", "gray", "huh", "confused" ] )
-    , ( "❕", [ "white_exclamation_mark", "surprise", "punctuation", "gray", "wow", "warning" ] )
-    , ( "❗", [ "exclamation_mark", "heavy_exclamation_mark", "danger", "surprise", "punctuation", "wow", "warning" ] )
-    , ( "〰️", [ "wavy_dash", "draw", "line", "moustache", "mustache", "squiggle", "scribble" ] )
-    , ( "©️", [ "copyright", "ip", "license", "circle", "law", "legal" ] )
-    , ( "®️", [ "registered", "alphabet", "circle" ] )
-    , ( "™️", [ "trade_mark", "trademark", "brand", "law", "legal" ] )
-    , ( "#️⃣", [ "keycap_", "symbol", "blue-square", "twitter" ] )
-    , ( "*️⃣", [ "keycap_", "star", "keycap" ] )
-    , ( "0️⃣", [ "keycap_0", "numbers", "blue-square", "null" ] )
-    , ( "1️⃣", [ "keycap_1", "blue-square", "numbers" ] )
-    , ( "2️⃣", [ "keycap_2", "numbers", "prime", "blue-square" ] )
-    , ( "3️⃣", [ "keycap_3", "numbers", "prime", "blue-square" ] )
-    , ( "4️⃣", [ "keycap_4", "numbers", "blue-square" ] )
-    , ( "5️⃣", [ "keycap_5", "numbers", "blue-square", "prime" ] )
-    , ( "6️⃣", [ "keycap_6", "numbers", "blue-square" ] )
-    , ( "7️⃣", [ "keycap_7", "numbers", "blue-square", "prime" ] )
-    , ( "8️⃣", [ "keycap_8", "blue-square", "numbers" ] )
-    , ( "9️⃣", [ "keycap_9", "blue-square", "numbers" ] )
-    , ( "🔟", [ "keycap_10", "numbers", "blue-square" ] )
-    , ( "🔠", [ "input_latin_uppercase", "alphabet", "words", "blue-square" ] )
-    , ( "🔡", [ "input_latin_lowercase", "blue-square", "alphabet" ] )
-    , ( "🔢", [ "input_numbers", "numbers", "blue-square" ] )
-    , ( "🔣", [ "input_symbols", "blue-square", "music", "note", "ampersand", "percent", "glyphs", "characters" ] )
-    , ( "🔤", [ "input_latin_letters", "blue-square", "alphabet" ] )
-    , ( "🅰️", [ "a_button", "red-square", "alphabet", "letter" ] )
-    , ( "🆎", [ "ab_button", "red-square", "alphabet" ] )
-    , ( "🅱️", [ "b_button", "red-square", "alphabet", "letter" ] )
-    , ( "🆑", [ "cl_button", "alphabet", "words", "red-square" ] )
-    , ( "🆒", [ "cool_button", "words", "blue-square" ] )
-    , ( "🆓", [ "free_button", "blue-square", "words" ] )
-    , ( "ℹ️", [ "information", "blue-square", "alphabet", "letter" ] )
-    , ( "🆔", [ "id_button", "purple-square", "words" ] )
-    , ( "Ⓜ️", [ "circled_m", "alphabet", "blue-circle", "letter" ] )
-    , ( "🆕", [ "new_button", "blue-square", "words", "start" ] )
-    , ( "🆖", [ "ng_button", "blue-square", "words", "shape", "icon" ] )
-    , ( "🅾️", [ "o_button", "alphabet", "red-square", "letter" ] )
-    , ( "🆗", [ "ok_button", "good", "agree", "yes", "blue-square" ] )
-    , ( "🅿️", [ "p_button", "cars", "blue-square", "alphabet", "letter" ] )
-    , ( "🆘", [ "sos_button", "help", "red-square", "words", "emergency" ] )
-    , ( "🆙", [ "up_button", "blue-square", "above", "high" ] )
-    , ( "🆚", [ "vs_button", "words", "orange-square" ] )
-    , ( "🈁", [ "japanese_here_button", "blue-square", "here", "katakana", "japanese", "destination" ] )
-    , ( "🈂️", [ "japanese_service_charge_button", "japanese", "blue-square", "katakana" ] )
-    , ( "🈷️", [ "japanese_monthly_amount_button", "chinese", "month", "moon", "japanese", "orange-square", "kanji" ] )
-    , ( "🈶", [ "japanese_not_free_of_charge_button", "orange-square", "chinese", "have", "kanji" ] )
-    , ( "🈯", [ "japanese_reserved_button", "chinese", "point", "green-square", "kanji" ] )
-    , ( "🉐", [ "japanese_bargain_button", "chinese", "kanji", "obtain", "get", "circle" ] )
-    , ( "🈹", [ "japanese_discount_button", "cut", "divide", "chinese", "kanji", "pink-square" ] )
-    , ( "🈚", [ "japanese_free_of_charge_button", "nothing", "chinese", "kanji", "japanese", "orange-square" ] )
-    , ( "🈲", [ "japanese_prohibited_button", "kanji", "japanese", "chinese", "forbidden", "limit", "restricted", "red-square" ] )
-    , ( "🉑", [ "japanese_acceptable_button", "ok", "good", "chinese", "kanji", "agree", "yes", "orange-circle" ] )
-    , ( "🈸", [ "japanese_application_button", "chinese", "japanese", "kanji", "orange-square" ] )
-    , ( "🈴", [ "japanese_passing_grade_button", "japanese", "chinese", "join", "kanji", "red-square" ] )
-    , ( "🈳", [ "japanese_vacancy_button", "kanji", "japanese", "chinese", "empty", "sky", "blue-square" ] )
-    , ( "㊗️", [ "japanese_congratulations_button", "chinese", "kanji", "japanese", "red-circle" ] )
-    , ( "㊙️", [ "japanese_secret_button", "privacy", "chinese", "sshh", "kanji", "red-circle" ] )
-    , ( "🈺", [ "japanese_open_for_business_button", "japanese", "opening hours", "orange-square" ] )
-    , ( "🈵", [ "japanese_no_vacancy_button", "full", "chinese", "japanese", "red-square", "kanji" ] )
-    , ( "🔴", [ "red_circle", "shape", "error", "danger" ] )
-    , ( "\u{1F7E0}", [ "orange_circle", "round" ] )
-    , ( "\u{1F7E1}", [ "yellow_circle", "round" ] )
-    , ( "\u{1F7E2}", [ "green_circle", "round" ] )
-    , ( "🔵", [ "blue_circle", "shape", "icon", "button" ] )
-    , ( "\u{1F7E3}", [ "purple_circle", "round" ] )
-    , ( "\u{1F7E4}", [ "brown_circle", "round" ] )
-    , ( "⚫", [ "black_circle", "shape", "button", "round" ] )
-    , ( "⚪", [ "white_circle", "shape", "round" ] )
-    , ( "\u{1F7E5}", [ "red_square" ] )
-    , ( "\u{1F7E7}", [ "orange_square" ] )
-    , ( "\u{1F7E8}", [ "yellow_square" ] )
-    , ( "\u{1F7E9}", [ "green_square" ] )
-    , ( "\u{1F7E6}", [ "blue_square" ] )
-    , ( "\u{1F7EA}", [ "purple_square" ] )
-    , ( "\u{1F7EB}", [ "brown_square" ] )
-    , ( "⬛", [ "black_large_square", "shape", "icon", "button" ] )
-    , ( "⬜", [ "white_large_square", "shape", "icon", "stone", "button" ] )
-    , ( "◼️", [ "black_medium_square", "shape", "button", "icon" ] )
-    , ( "◻️", [ "white_medium_square", "shape", "stone", "icon" ] )
-    , ( "◾", [ "black_medium_small_square", "icon", "shape", "button" ] )
-    , ( "◽", [ "white_medium_small_square", "shape", "stone", "icon", "button" ] )
-    , ( "▪️", [ "black_small_square", "shape", "icon" ] )
-    , ( "▫️", [ "white_small_square", "shape", "icon" ] )
-    , ( "🔶", [ "large_orange_diamond", "shape", "jewel", "gem" ] )
-    , ( "🔷", [ "large_blue_diamond", "shape", "jewel", "gem" ] )
-    , ( "🔸", [ "small_orange_diamond", "shape", "jewel", "gem" ] )
-    , ( "🔹", [ "small_blue_diamond", "shape", "jewel", "gem" ] )
-    , ( "🔺", [ "red_triangle_pointed_up", "shape", "direction", "up", "top" ] )
-    , ( "🔻", [ "red_triangle_pointed_down", "shape", "direction", "bottom" ] )
-    , ( "💠", [ "diamond_with_a_dot", "jewel", "blue", "gem", "crystal", "fancy" ] )
-    , ( "🔘", [ "radio_button", "input", "old", "music", "circle" ] )
-    , ( "🔳", [ "white_square_button", "shape", "input" ] )
-    , ( "🔲", [ "black_square_button", "shape", "input", "frame" ] )
-    , ( "🏁", [ "chequered_flag", "contest", "finishline", "race", "gokart" ] )
-    , ( "🚩", [ "triangular_flag", "mark", "milestone", "place" ] )
-    , ( "🎌", [ "crossed_flags", "japanese", "nation", "country", "border" ] )
-    , ( "🏴", [ "black_flag", "pirate" ] )
-    , ( "🏳️", [ "white_flag", "losing", "loser", "lost", "surrender", "give up", "fail" ] )
-    , ( "🏳️\u{200D}🌈", [ "rainbow_flag", "flag", "rainbow", "pride", "gay", "lgbt", "glbt", "queer", "homosexual", "lesbian", "bisexual", "transgender" ] )
-    , ( "🏴\u{200D}☠️", [ "pirate_flag", "skull", "crossbones", "flag", "banner" ] )
-    , ( "🇦🇨", [ "flag_ascension_island" ] )
-    , ( "🇦🇩", [ "flag_andorra", "ad", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇪", [ "flag_united_arab_emirates", "united", "arab", "emirates", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇫", [ "flag_afghanistan", "af", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇬", [ "flag_antigua_barbuda", "antigua", "barbuda", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇮", [ "flag_anguilla", "ai", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇱", [ "flag_albania", "al", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇲", [ "flag_armenia", "am", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇴", [ "flag_angola", "ao", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇶", [ "flag_antarctica", "aq", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇷", [ "flag_argentina", "ar", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇸", [ "flag_american_samoa", "american", "ws", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇹", [ "flag_austria", "at", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇺", [ "flag_australia", "au", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇼", [ "flag_aruba", "aw", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇽", [ "flag_aland_islands", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇦🇿", [ "flag_azerbaijan", "az", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇦", [ "flag_bosnia_herzegovina", "bosnia", "herzegovina", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇧", [ "flag_barbados", "bb", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇩", [ "flag_bangladesh", "bd", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇪", [ "flag_belgium", "be", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇫", [ "flag_burkina_faso", "burkina", "faso", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇬", [ "flag_bulgaria", "bg", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇭", [ "flag_bahrain", "bh", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇮", [ "flag_burundi", "bi", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇯", [ "flag_benin", "bj", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇱", [ "flag_st_barthelemy", "saint", "barthélemy", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇲", [ "flag_bermuda", "bm", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇳", [ "flag_brunei", "bn", "darussalam", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇴", [ "flag_bolivia", "bo", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇶", [ "flag_caribbean_netherlands", "bonaire", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇷", [ "flag_brazil", "br", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇸", [ "flag_bahamas", "bs", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇹", [ "flag_bhutan", "bt", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇻", [ "flag_bouvet_island", "norway" ] )
-    , ( "🇧🇼", [ "flag_botswana", "bw", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇾", [ "flag_belarus", "by", "flag", "nation", "country", "banner" ] )
-    , ( "🇧🇿", [ "flag_belize", "bz", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇦", [ "flag_canada", "ca", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇨", [ "flag_cocos_islands", "cocos", "keeling", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇩", [ "flag_congo_kinshasa", "congo", "democratic", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇫", [ "flag_central_african_republic", "central", "african", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇬", [ "flag_congo_brazzaville", "congo", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇭", [ "flag_switzerland", "ch", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇮", [ "flag_cote_d_ivoire", "ivory", "coast", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇰", [ "flag_cook_islands", "cook", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇱", [ "flag_chile", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇲", [ "flag_cameroon", "cm", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇳", [ "flag_china", "china", "chinese", "prc", "flag", "country", "nation", "banner" ] )
-    , ( "🇨🇴", [ "flag_colombia", "co", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇵", [ "flag_clipperton_island" ] )
-    , ( "🇨🇷", [ "flag_costa_rica", "costa", "rica", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇺", [ "flag_cuba", "cu", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇻", [ "flag_cape_verde", "cabo", "verde", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇼", [ "flag_curacao", "curaçao", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇽", [ "flag_christmas_island", "christmas", "island", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇾", [ "flag_cyprus", "cy", "flag", "nation", "country", "banner" ] )
-    , ( "🇨🇿", [ "flag_czechia", "cz", "flag", "nation", "country", "banner" ] )
-    , ( "🇩🇪", [ "flag_germany", "german", "nation", "flag", "country", "banner" ] )
-    , ( "🇩🇬", [ "flag_diego_garcia" ] )
-    , ( "🇩🇯", [ "flag_djibouti", "dj", "flag", "nation", "country", "banner" ] )
-    , ( "🇩🇰", [ "flag_denmark", "dk", "flag", "nation", "country", "banner" ] )
-    , ( "🇩🇲", [ "flag_dominica", "dm", "flag", "nation", "country", "banner" ] )
-    , ( "🇩🇴", [ "flag_dominican_republic", "dominican", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇩🇿", [ "flag_algeria", "dz", "flag", "nation", "country", "banner" ] )
-    , ( "🇪🇦", [ "flag_ceuta_melilla" ] )
-    , ( "🇪🇨", [ "flag_ecuador", "ec", "flag", "nation", "country", "banner" ] )
-    , ( "🇪🇪", [ "flag_estonia", "ee", "flag", "nation", "country", "banner" ] )
-    , ( "🇪🇬", [ "flag_egypt", "eg", "flag", "nation", "country", "banner" ] )
-    , ( "🇪🇭", [ "flag_western_sahara", "western", "sahara", "flag", "nation", "country", "banner" ] )
-    , ( "🇪🇷", [ "flag_eritrea", "er", "flag", "nation", "country", "banner" ] )
-    , ( "🇪🇸", [ "flag_spain", "spain", "flag", "nation", "country", "banner" ] )
-    , ( "🇪🇹", [ "flag_ethiopia", "et", "flag", "nation", "country", "banner" ] )
-    , ( "🇪🇺", [ "flag_european_union", "european", "union", "flag", "banner" ] )
-    , ( "🇫🇮", [ "flag_finland", "fi", "flag", "nation", "country", "banner" ] )
-    , ( "🇫🇯", [ "flag_fiji", "fj", "flag", "nation", "country", "banner" ] )
-    , ( "🇫🇰", [ "flag_falkland_islands", "falkland", "islands", "malvinas", "flag", "nation", "country", "banner" ] )
-    , ( "🇫🇲", [ "flag_micronesia", "micronesia", "federated", "states", "flag", "nation", "country", "banner" ] )
-    , ( "🇫🇴", [ "flag_faroe_islands", "faroe", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇫🇷", [ "flag_france", "banner", "flag", "nation", "france", "french", "country" ] )
-    , ( "🇬🇦", [ "flag_gabon", "ga", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇧", [ "flag_united_kingdom", "united", "kingdom", "great", "britain", "northern", "ireland", "flag", "nation", "country", "banner", "british", "UK", "english", "england", "union jack" ] )
-    , ( "🇬🇩", [ "flag_grenada", "gd", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇪", [ "flag_georgia", "ge", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇫", [ "flag_french_guiana", "french", "guiana", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇬", [ "flag_guernsey", "gg", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇭", [ "flag_ghana", "gh", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇮", [ "flag_gibraltar", "gi", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇱", [ "flag_greenland", "gl", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇲", [ "flag_gambia", "gm", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇳", [ "flag_guinea", "gn", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇵", [ "flag_guadeloupe", "gp", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇶", [ "flag_equatorial_guinea", "equatorial", "gn", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇷", [ "flag_greece", "gr", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇸", [ "flag_south_georgia_south_sandwich_islands", "south", "georgia", "sandwich", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇹", [ "flag_guatemala", "gt", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇺", [ "flag_guam", "gu", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇼", [ "flag_guinea_bissau", "gw", "bissau", "flag", "nation", "country", "banner" ] )
-    , ( "🇬🇾", [ "flag_guyana", "gy", "flag", "nation", "country", "banner" ] )
-    , ( "🇭🇰", [ "flag_hong_kong_sar_china", "hong", "kong", "flag", "nation", "country", "banner" ] )
-    , ( "🇭🇲", [ "flag_heard_mcdonald_islands" ] )
-    , ( "🇭🇳", [ "flag_honduras", "hn", "flag", "nation", "country", "banner" ] )
-    , ( "🇭🇷", [ "flag_croatia", "hr", "flag", "nation", "country", "banner" ] )
-    , ( "🇭🇹", [ "flag_haiti", "ht", "flag", "nation", "country", "banner" ] )
-    , ( "🇭🇺", [ "flag_hungary", "hu", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇨", [ "flag_canary_islands", "canary", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇩", [ "flag_indonesia", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇪", [ "flag_ireland", "ie", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇱", [ "flag_israel", "il", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇲", [ "flag_isle_of_man", "isle", "man", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇳", [ "flag_india", "in", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇴", [ "flag_british_indian_ocean_territory", "british", "indian", "ocean", "territory", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇶", [ "flag_iraq", "iq", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇷", [ "flag_iran", "iran", "islamic", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇸", [ "flag_iceland", "is", "flag", "nation", "country", "banner" ] )
-    , ( "🇮🇹", [ "flag_italy", "italy", "flag", "nation", "country", "banner" ] )
-    , ( "🇯🇪", [ "flag_jersey", "je", "flag", "nation", "country", "banner" ] )
-    , ( "🇯🇲", [ "flag_jamaica", "jm", "flag", "nation", "country", "banner" ] )
-    , ( "🇯🇴", [ "flag_jordan", "jo", "flag", "nation", "country", "banner" ] )
-    , ( "🇯🇵", [ "flag_japan", "japanese", "nation", "flag", "country", "banner" ] )
-    , ( "🇰🇪", [ "flag_kenya", "ke", "flag", "nation", "country", "banner" ] )
-    , ( "🇰🇬", [ "flag_kyrgyzstan", "kg", "flag", "nation", "country", "banner" ] )
-    , ( "🇰🇭", [ "flag_cambodia", "kh", "flag", "nation", "country", "banner" ] )
-    , ( "🇰🇮", [ "flag_kiribati", "ki", "flag", "nation", "country", "banner" ] )
-    , ( "🇰🇲", [ "flag_comoros", "km", "flag", "nation", "country", "banner" ] )
-    , ( "🇰🇳", [ "flag_st_kitts_nevis", "saint", "kitts", "nevis", "flag", "nation", "country", "banner" ] )
-    , ( "🇰🇵", [ "flag_north_korea", "north", "korea", "nation", "flag", "country", "banner" ] )
-    , ( "🇰🇷", [ "flag_south_korea", "south", "korea", "nation", "flag", "country", "banner" ] )
-    , ( "🇰🇼", [ "flag_kuwait", "kw", "flag", "nation", "country", "banner" ] )
-    , ( "🇰🇾", [ "flag_cayman_islands", "cayman", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇰🇿", [ "flag_kazakhstan", "kz", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇦", [ "flag_laos", "lao", "democratic", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇧", [ "flag_lebanon", "lb", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇨", [ "flag_st_lucia", "saint", "lucia", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇮", [ "flag_liechtenstein", "li", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇰", [ "flag_sri_lanka", "sri", "lanka", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇷", [ "flag_liberia", "lr", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇸", [ "flag_lesotho", "ls", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇹", [ "flag_lithuania", "lt", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇺", [ "flag_luxembourg", "lu", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇻", [ "flag_latvia", "lv", "flag", "nation", "country", "banner" ] )
-    , ( "🇱🇾", [ "flag_libya", "ly", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇦", [ "flag_morocco", "ma", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇨", [ "flag_monaco", "mc", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇩", [ "flag_moldova", "moldova", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇪", [ "flag_montenegro", "me", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇫", [ "flag_st_martin" ] )
-    , ( "🇲🇬", [ "flag_madagascar", "mg", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇭", [ "flag_marshall_islands", "marshall", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇰", [ "flag_north_macedonia", "macedonia", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇱", [ "flag_mali", "ml", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇲", [ "flag_myanmar", "mm", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇳", [ "flag_mongolia", "mn", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇴", [ "flag_macao_sar_china", "macao", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇵", [ "flag_northern_mariana_islands", "northern", "mariana", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇶", [ "flag_martinique", "mq", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇷", [ "flag_mauritania", "mr", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇸", [ "flag_montserrat", "ms", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇹", [ "flag_malta", "mt", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇺", [ "flag_mauritius", "mu", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇻", [ "flag_maldives", "mv", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇼", [ "flag_malawi", "mw", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇽", [ "flag_mexico", "mx", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇾", [ "flag_malaysia", "my", "flag", "nation", "country", "banner" ] )
-    , ( "🇲🇿", [ "flag_mozambique", "mz", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇦", [ "flag_namibia", "na", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇨", [ "flag_new_caledonia", "new", "caledonia", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇪", [ "flag_niger", "ne", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇫", [ "flag_norfolk_island", "norfolk", "island", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇬", [ "flag_nigeria", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇮", [ "flag_nicaragua", "ni", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇱", [ "flag_netherlands", "nl", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇴", [ "flag_norway", "no", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇵", [ "flag_nepal", "np", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇷", [ "flag_nauru", "nr", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇺", [ "flag_niue", "nu", "flag", "nation", "country", "banner" ] )
-    , ( "🇳🇿", [ "flag_new_zealand", "new", "zealand", "flag", "nation", "country", "banner" ] )
-    , ( "🇴🇲", [ "flag_oman", "om_symbol", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇦", [ "flag_panama", "pa", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇪", [ "flag_peru", "pe", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇫", [ "flag_french_polynesia", "french", "polynesia", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇬", [ "flag_papua_new_guinea", "papua", "new", "guinea", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇭", [ "flag_philippines", "ph", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇰", [ "flag_pakistan", "pk", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇱", [ "flag_poland", "pl", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇲", [ "flag_st_pierre_miquelon", "saint", "pierre", "miquelon", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇳", [ "flag_pitcairn_islands", "pitcairn", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇷", [ "flag_puerto_rico", "puerto", "rico", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇸", [ "flag_palestinian_territories", "palestine", "palestinian", "territories", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇹", [ "flag_portugal", "pt", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇼", [ "flag_palau", "pw", "flag", "nation", "country", "banner" ] )
-    , ( "🇵🇾", [ "flag_paraguay", "py", "flag", "nation", "country", "banner" ] )
-    , ( "🇶🇦", [ "flag_qatar", "qa", "flag", "nation", "country", "banner" ] )
-    , ( "🇷🇪", [ "flag_reunion", "réunion", "flag", "nation", "country", "banner" ] )
-    , ( "🇷🇴", [ "flag_romania", "ro", "flag", "nation", "country", "banner" ] )
-    , ( "🇷🇸", [ "flag_serbia", "rs", "flag", "nation", "country", "banner" ] )
-    , ( "🇷🇺", [ "flag_russia", "russian", "federation", "flag", "nation", "country", "banner" ] )
-    , ( "🇷🇼", [ "flag_rwanda", "rw", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇦", [ "flag_saudi_arabia", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇧", [ "flag_solomon_islands", "solomon", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇨", [ "flag_seychelles", "sc", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇩", [ "flag_sudan", "sd", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇪", [ "flag_sweden", "se", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇬", [ "flag_singapore", "sg", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇭", [ "flag_st_helena", "saint", "helena", "ascension", "tristan", "cunha", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇮", [ "flag_slovenia", "si", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇯", [ "flag_svalbard_jan_mayen" ] )
-    , ( "🇸🇰", [ "flag_slovakia", "sk", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇱", [ "flag_sierra_leone", "sierra", "leone", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇲", [ "flag_san_marino", "san", "marino", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇳", [ "flag_senegal", "sn", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇴", [ "flag_somalia", "so", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇷", [ "flag_suriname", "sr", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇸", [ "flag_south_sudan", "south", "sd", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇹", [ "flag_sao_tome_principe", "sao", "tome", "principe", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇻", [ "flag_el_salvador", "el", "salvador", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇽", [ "flag_sint_maarten", "sint", "maarten", "dutch", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇾", [ "flag_syria", "syrian", "arab", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇸🇿", [ "flag_eswatini", "sz", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇦", [ "flag_tristan_da_cunha" ] )
-    , ( "🇹🇨", [ "flag_turks_caicos_islands", "turks", "caicos", "islands", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇩", [ "flag_chad", "td", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇫", [ "flag_french_southern_territories", "french", "southern", "territories", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇬", [ "flag_togo", "tg", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇭", [ "flag_thailand", "th", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇯", [ "flag_tajikistan", "tj", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇰", [ "flag_tokelau", "tk", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇱", [ "flag_timor_leste", "timor", "leste", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇲", [ "flag_turkmenistan", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇳", [ "flag_tunisia", "tn", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇴", [ "flag_tonga", "to", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇷", [ "flag_turkey", "turkey", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇹", [ "flag_trinidad_tobago", "trinidad", "tobago", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇻", [ "flag_tuvalu", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇼", [ "flag_taiwan", "tw", "flag", "nation", "country", "banner" ] )
-    , ( "🇹🇿", [ "flag_tanzania", "tanzania", "united", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇺🇦", [ "flag_ukraine", "ua", "flag", "nation", "country", "banner" ] )
-    , ( "🇺🇬", [ "flag_uganda", "ug", "flag", "nation", "country", "banner" ] )
-    , ( "🇺🇲", [ "flag_u_s_outlying_islands" ] )
-    , ( "🇺🇳", [ "flag_united_nations", "un", "flag", "banner" ] )
-    , ( "🇺🇸", [ "flag_united_states", "united", "states", "america", "flag", "nation", "country", "banner" ] )
-    , ( "🇺🇾", [ "flag_uruguay", "uy", "flag", "nation", "country", "banner" ] )
-    , ( "🇺🇿", [ "flag_uzbekistan", "uz", "flag", "nation", "country", "banner" ] )
-    , ( "🇻🇦", [ "flag_vatican_city", "vatican", "city", "flag", "nation", "country", "banner" ] )
-    , ( "🇻🇨", [ "flag_st_vincent_grenadines", "saint", "vincent", "grenadines", "flag", "nation", "country", "banner" ] )
-    , ( "🇻🇪", [ "flag_venezuela", "ve", "bolivarian", "republic", "flag", "nation", "country", "banner" ] )
-    , ( "🇻🇬", [ "flag_british_virgin_islands", "british", "virgin", "islands", "bvi", "flag", "nation", "country", "banner" ] )
-    , ( "🇻🇮", [ "flag_u_s_virgin_islands", "virgin", "islands", "us", "flag", "nation", "country", "banner" ] )
-    , ( "🇻🇳", [ "flag_vietnam", "viet", "nam", "flag", "nation", "country", "banner" ] )
-    , ( "🇻🇺", [ "flag_vanuatu", "vu", "flag", "nation", "country", "banner" ] )
-    , ( "🇼🇫", [ "flag_wallis_futuna", "wallis", "futuna", "flag", "nation", "country", "banner" ] )
-    , ( "🇼🇸", [ "flag_samoa", "ws", "flag", "nation", "country", "banner" ] )
-    , ( "🇽🇰", [ "flag_kosovo", "xk", "flag", "nation", "country", "banner" ] )
-    , ( "🇾🇪", [ "flag_yemen", "ye", "flag", "nation", "country", "banner" ] )
-    , ( "🇾🇹", [ "flag_mayotte", "yt", "flag", "nation", "country", "banner" ] )
-    , ( "🇿🇦", [ "flag_south_africa", "south", "africa", "flag", "nation", "country", "banner" ] )
-    , ( "🇿🇲", [ "flag_zambia", "zm", "flag", "nation", "country", "banner" ] )
-    , ( "🇿🇼", [ "flag_zimbabwe", "zw", "flag", "nation", "country", "banner" ] )
-    , ( "🏴\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}", [ "flag_england", "flag", "english" ] )
-    , ( "🏴\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}", [ "flag_scotland", "flag", "scottish" ] )
-    , ( "🏴\u{E0067}\u{E0062}\u{E0077}\u{E006C}\u{E0073}\u{E007F}", [ "flag_wales", "flag", "welsh" ] )
-    , ( "\u{1F972}", [ "smiling face with tear", "sad", "cry", "pretend" ] )
-    , ( "\u{1F978}", [ "disguised face", "pretent", "brows", "glasses", "moustache" ] )
-    , ( "\u{1F90C}", [ "pinched fingers", "size", "tiny", "small" ] )
-    , ( "\u{1FAC0}", [ "anatomical heart", "health", "heartbeat" ] )
-    , ( "\u{1FAC1}", [ "lungs", "breathe" ] )
-    , ( "\u{1F977}", [ "ninja", "ninjutsu", "skills", "japanese" ] )
-    , ( "\u{1F935}\u{200D}♂️", [ "man in tuxedo", "formal", "fashion" ] )
-    , ( "\u{1F935}\u{200D}♀️", [ "woman in tuxedo", "formal", "fashion" ] )
-    , ( "👰\u{200D}♂️", [ "man with veil", "wedding", "marriage" ] )
-    , ( "👰\u{200D}♀️", [ "woman with veil", "wedding", "marriage" ] )
-    , ( "👩\u{200D}🍼", [ "woman feeding baby", "birth", "food" ] )
-    , ( "👨\u{200D}🍼", [ "man feeding baby", "birth", "food" ] )
-    , ( "\u{1F9D1}\u{200D}🍼", [ "person feeding baby", "birth", "food" ] )
-    , ( "\u{1F9D1}\u{200D}🎄", [ "mx claus", "christmas" ] )
-    , ( "\u{1FAC2}", [ "people hugging", "care" ] )
-    , ( "🐈\u{200D}⬛", [ "black cat", "superstition", "luck" ] )
-    , ( "\u{1F9AC}", [ "bison", "ox" ] )
-    , ( "\u{1F9A3}", [ "mammoth", "elephant", "tusks" ] )
-    , ( "\u{1F9AB}", [ "beaver", "animal", "rodent" ] )
-    , ( "🐻\u{200D}❄️", [ "polar bear", "animal", "arctic" ] )
-    , ( "\u{1F9A4}", [ "dodo", "animal", "bird" ] )
-    , ( "\u{1FAB6}", [ "feather", "bird", "fly" ] )
-    , ( "\u{1F9AD}", [ "seal", "animal", "creature", "sea" ] )
-    , ( "\u{1FAB2}", [ "beetle", "insect" ] )
-    , ( "\u{1FAB3}", [ "cockroach", "insect", "pests" ] )
-    , ( "\u{1FAB0}", [ "fly", "insect" ] )
-    , ( "\u{1FAB1}", [ "worm", "animal" ] )
-    , ( "\u{1FAB4}", [ "potted plant", "greenery", "house" ] )
-    , ( "\u{1FAD0}", [ "blueberries", "fruit" ] )
-    , ( "\u{1FAD2}", [ "olive", "fruit" ] )
-    , ( "\u{1FAD1}", [ "bell pepper", "fruit", "plant" ] )
-    , ( "\u{1FAD3}", [ "flatbread", "flour", "food" ] )
-    , ( "\u{1FAD4}", [ "tamale", "food", "masa" ] )
-    , ( "\u{1FAD5}", [ "fondue", "cheese", "pot", "food" ] )
-    , ( "\u{1FAD6}", [ "teapot", "drink", "hot" ] )
-    , ( "\u{1F9CB}", [ "bubble tea", "taiwan", "boba", "milk tea", "straw" ] )
-    , ( "\u{1FAA8}", [ "rock", "stone" ] )
-    , ( "\u{1FAB5}", [ "wood", "nature", "timber", "trunk" ] )
-    , ( "\u{1F6D6}", [ "hut", "house", "structure" ] )
-    , ( "\u{1F6FB}", [ "pickup truck", "car", "transportation" ] )
-    , ( "\u{1F6FC}", [ "roller skate", "footwear", "sports" ] )
-    , ( "\u{1FA84}", [ "magic wand", "supernature", "power" ] )
-    , ( "\u{1FA85}", [ "pinata", "mexico", "candy", "celebration" ] )
-    , ( "\u{1FA86}", [ "nesting dolls", "matryoshka", "toy" ] )
-    , ( "\u{1FAA1}", [ "sewing needle", "stitches" ] )
-    , ( "\u{1FAA2}", [ "knot", "rope", "scout" ] )
-    , ( "\u{1FA74}", [ "thong sandal", "footwear", "summer" ] )
-    , ( "\u{1FA96}", [ "military helmet", "army", "protection" ] )
-    , ( "\u{1FA97}", [ "accordion", "music" ] )
-    , ( "\u{1FA98}", [ "long drum", "music" ] )
-    , ( "\u{1FA99}", [ "coin", "money", "currency" ] )
-    , ( "\u{1FA83}", [ "boomerang", "weapon" ] )
-    , ( "\u{1FA9A}", [ "carpentry saw", "cut", "chop" ] )
-    , ( "\u{1FA9B}", [ "screwdriver", "tools" ] )
-    , ( "\u{1FA9D}", [ "hook", "tools" ] )
-    , ( "\u{1FA9C}", [ "ladder", "tools" ] )
-    , ( "\u{1F6D7}", [ "elevator", "lift" ] )
-    , ( "\u{1FA9E}", [ "mirror", "reflection" ] )
-    , ( "\u{1FA9F}", [ "window", "scenery" ] )
-    , ( "\u{1FAA0}", [ "plunger", "toilet" ] )
-    , ( "\u{1FAA4}", [ "mouse trap", "cheese" ] )
-    , ( "\u{1FAA3}", [ "bucket", "water", "container" ] )
-    , ( "\u{1FAA5}", [ "toothbrush", "hygiene", "dental" ] )
-    , ( "\u{1FAA6}", [ "headstone", "death", "rip", "grave" ] )
-    , ( "\u{1FAA7}", [ "placard", "announcement" ] )
-    , ( "⚧️", [ "transgender symbol", "lgbtq" ] )
-    , ( "🏳️\u{200D}⚧️", [ "transgender flag", "lgbtq" ] )
-    ]
+    [("\u{1f600}", ["joy", "smile", "happy", "face", "grinning", "grinning_face", "grin"]),
+ ("\u{1f603}", ["joy", "funny", "smile", "big", "with", "grinning_face_with_big_eyes", "face", "grinning", "happy", "haha", "eyes"]),
+ ("\u{1f604}", ["joy", "funny", "like", "with", "happy", "face", "smiling", "grinning", "laugh", "grinning_face_with_smiling_eyes", "haha", "eyes"]),
+ ("\u{1f601}", ["joy", "smile", "beaming_face_with_smiling_eyes", "kawaii", "with", "happy", "face", "smiling", "beaming", "eyes"]),
+ ("\u{1f606}", ["joy", "squinting", "XD", "happy", "face", "grinning", "laugh", "glad", "haha", "lol", "satisfied", "grinning_squinting_face"]),
+ ("\u{1f605}", ["smile", "relief", "with", "happy", "face", "grinning", "laugh", "grinning_face_with_sweat", "sweat", "hot"]),
+ ("\u{1f923}", ["laughing", "the", "face", "floor", "on", "haha", "lol", "rolling", "rolling_on_the_floor_laughing"]),
+ ("\u{1f602}", ["joy", "with", "weep", "happy", "tears", "face", "face_with_tears_of_joy", "happytears", "haha", "cry", "of"]),
+ ("\u{1f642}", ["smile", "face", "smiling", "slightly", "slightly_smiling_face"]),
+ ("\u{1f643}", ["flipped", "smile", "face", "upside-down", "silly", "upside_down_face"]),
+ ("\u{1f609}", ["smile", "happy", "face", "winking_face", "mischievous", "winking", "eye", "secret"]),
+ ("\u{1f60a}", ["joy", "shy", "crush", "smiling_face_with_smiling_eyes", "smile", "flushed", "with", "happy", "face", "smiling", "embarrassed", "eyes"]),
+ ("\u{1f607}", ["with", "angel", "heaven", "face", "smiling", "halo", "smiling_face_with_halo"]),
+ ("\u{1f970}", ["crush", "smiling_face_with_hearts", "valentines", "like", "adore", "with", "love", "face", "smiling", "infatuation", "hearts", "affection"]),
+ ("\u{1f60d}", ["smiling_face_with_heart_eyes", "crush", "valentines", "like", "heart", "with", "love", "face", "smiling", "infatuation", "heart-eyes", "affection"]),
+ ("\u{1f929}", ["smile", "face", "star-struck", "grinning", "star_struck", "starry", "eyes"]),
+ ("\u{1f618}", ["blowing", "valentines", "like", "love", "a", "face", "face_blowing_a_kiss", "infatuation", "kiss", "affection"]),
+ ("\u{1f617}", ["valentines", "like", "kissing_face", "kissing", "love", "face", "infatuation", "kiss"]),
+ ("\u{263a}", ["face", "smiling"]),
+ ("\u{1f61a}", ["valentines", "like", "kissing", "with", "love", "face", "kiss", "closed", "infatuation", "affection", "eyes", "kissing_face_with_closed_eyes"]),
+ ("\u{1f619}", ["valentines", "kissing", "with", "kissing_face_with_smiling_eyes", "smiling", "face", "kiss", "infatuation", "eyes", "affection"]),
+ ("\u{1f972}", ["tear", "face", "with", "smiling"]),
+ ("\u{1f60b}", ["face_savoring_food", "joy", "savouring", "food", "smile", "happy", "savoring", "face", "silly", "nom", "delicious", "yummy", "tongue"]),
+ ("\u{1f61b}", ["childish", "playful", "smile", "with", "face", "prank", "mischievous", "face_with_tongue", "tongue"]),
+ ("\u{1f61c}", ["childish", "playful", "smile", "with", "face", "winking_face_with_tongue", "prank", "mischievous", "wink", "winking", "tongue"]),
+ ("\u{1f92a}", ["zany_face", "crazy", "face", "goofy", "zany"]),
+ ("\u{1f61d}", ["squinting_face_with_tongue", "squinting", "playful", "smile", "with", "face", "prank", "mischievous", "tongue"]),
+ ("\u{1f911}", ["dollar", "money_mouth_face", "rich", "money-mouth", "face", "money"]),
+ ("\u{1f917}", ["hugging_face", "smile", "hugging", "hug", "face"]),
+ ("\u{1f92d}", ["whoops", "mouth", "with", "face", "face_with_hand_over_mouth", "surprise", "shock", "hand", "over"]),
+ ("\u{1f92b}", ["shhh", "quiet", "shushing_face", "face", "shushing"]),
+ ("\u{1f914}", ["hmmm", "thinking_face", "thinking", "face", "think", "consider"]),
+ ("\u{1f910}", ["zipper-mouth", "zipper", "face", "zipper_mouth_face", "secret", "sealed"]),
+ ("\u{1f928}", ["scepticism", "disbelief", "with", "face", "surprise", "disapproval", "distrust", "raised", "eyebrow", "face_with_raised_eyebrow"]),
+ ("\u{1f610}", ["neutral_face", "neutral", "indifference", "face", "meh"]),
+ ("\u{1f611}", ["indifferent", "deadpan", "face", "expressionless", "expressionless_face", "meh"]),
+ ("\u{1f636}", ["hellokitty", "mouth", "face", "face_without_mouth", "without"]),
+ ("\u{1f636}\u{200d}\u{1f32b}\u{fe0f}", ["clouds", "in", "face"]),
+ ("\u{1f60f}", ["smug", "smile", "smirking_face", "face", "mean", "prank", "sarcasm", "smirking"]),
+ ("\u{1f612}", ["serious", "indifference", "dubious", "side_eye", "skeptical", "bored", "face", "unamused_face", "sarcasm", "unamused", "straight face", "unimpressed"]),
+ ("\u{1f644}", ["eyeroll", "face_with_rolling_eyes", "frustrated", "with", "face", "rolling", "eyes"]),
+ ("\u{1f62c}", ["teeth", "grimacing", "face", "grimace", "grimacing_face"]),
+ ("\u{1f62e}\u{200d}\u{1f4a8}", ["exhaling", "face"]),
+ ("\u{1f925}", ["lying", "face", "lie", "pinocchio", "lying_face"]),
+ ("\u{1f60c}", ["relieved_face", "face", "happiness", "phew", "massage", "relieved", "relaxed"]),
+ ("\u{1f614}", ["depressed", "pensive", "face", "pensive_face", "upset", "sad"]),
+ ("\u{1f62a}", ["sleepy_face", "face", "tired", "sleepy", "nap", "rest"]),
+ ("\u{1f924}", ["drooling_face", "drooling", "face"]),
+ ("\u{1f634}", ["face", "tired", "sleeping", "sleepy", "zzz", "sleeping_face", "night"]),
+ ("\u{1f637}", ["sick", "medical", "face_with_medical_mask", "with", "ill", "face", "disease", "mask"]),
+ ("\u{1f912}", ["fever", "sick", "with", "cold", "face", "temperature", "thermometer", "face_with_thermometer"]),
+ ("\u{1f915}", ["bandage", "injured", "clumsy", "with", "face_with_head_bandage", "face", "head-bandage", "hurt"]),
+ ("\u{1f922}", ["nauseated_face", "vomit", "sick", "ill", "face", "throw up", "nauseated", "green", "gross"]),
+ ("\u{1f92e}", ["vomiting", "face_vomiting", "sick", "face"]),
+ ("\u{1f927}", ["sneeze", "sick", "sneezing", "allergy", "face", "sneezing_face", "gesundheit"]),
+ ("\u{1f975}", ["red", "face", "heat", "sweating", "feverish", "hot_face", "hot"]),
+ ("\u{1f976}", ["freezing", "icicles", "frostbite", "blue", "cold", "face", "frozen", "cold_face"]),
+ ("\u{1f974}", ["wavy", "intoxicated", "tipsy", "face", "dizzy", "woozy", "woozy_face"]),
+ ("\u{1f635}", ["dizzy_face", "spent", "knocked-out", "face", "dizzy", "xox", "unconscious"]),
+ ("\u{1f635}\u{200d}\u{1f4ab}", ["spiral", "with", "eyes", "face"]),
+ ("\u{1f92f}", ["shocked", "face", "exploding_head", "mind", "blown", "head", "exploding"]),
+ ("\u{1f920}", ["hat", "cowboy_hat_face", "face", "cowboy", "cowgirl"]),
+ ("\u{1f973}", ["partying", "partying_face", "celebration", "face", "woohoo"]),
+ ("\u{1f978}", ["disguised", "face"]),
+ ("\u{1f60e}", ["sunglass", "beach", "smiling_face_with_sunglasses", "smile", "sunglasses", "with", "summer", "face", "smiling", "cool"]),
+ ("\u{1f913}", ["nerd", "nerdy", "nerd_face", "geek", "face", "dork"]),
+ ("\u{1f9d0}", ["wealthy", "with", "face", "stuffy", "monocle", "face_with_monocle"]),
+ ("\u{1f615}", ["huh", "indifference", "hmmm", "weird", "face", "confused_face", "confused"]),
+ ("\u{1f61f}", ["concern", "face", "worried_face", "worried", "nervous"]),
+ ("\u{1f641}", ["frowning", "disappointed", "face", "slightly", "slightly_frowning_face", "upset", "sad"]),
+ ("\u{2639}", ["frowning", "face"]),
+ ("\u{1f62e}", ["impressed", "whoa", "wow", "mouth", "with", "face", "surprise", "open", "face_with_open_mouth"]),
+ ("\u{1f62f}", ["shh", "hushed", "hushed_face", "face", "woo"]),
+ ("\u{1f632}", ["astonished", "face", "poisoned", "xox", "astonished_face", "surprised"]),
+ ("\u{1f633}", ["shy", "flushed", "blush", "face", "flattered", "flushed_face"]),
+ ("\u{1f97a}", ["begging", "mercy", "pleading", "face", "pleading_face"]),
+ ("\u{1f626}", ["frowning_face_with_open_mouth", "frowning", "what", "aw", "mouth", "with", "face", "open"]),
+ ("\u{1f627}", ["anguished_face", "face", "anguished", "stunned", "nervous"]),
+ ("\u{1f628}", ["oops", "huh", "fearful_face", "terrified", "face", "fearful", "scared", "nervous"]),
+ ("\u{1f630}", ["anxious_face_with_sweat", "anxious", "with", "face", "sweat", "nervous"]),
+ ("\u{1f625}", ["sweat", "sad_but_relieved_face", "nervous", "face", "but", "phew", "relieved", "sad"]),
+ ("\u{1f622}", ["depressed", "tears", "face", "crying_face", "crying", "upset", "sad"]),
+ ("\u{1f62d}", ["depressed", "loudly_crying_face", "face", "loudly", "tears", "crying", "cry", "upset", "sad"]),
+ ("\u{1f631}", ["face_screaming_in_fear", "munch", "omg", "in", "face", "fear", "screaming", "scared"]),
+ ("\u{1f616}", ["oops", "sick", "confounded_face", "face", "unwell", "confounded", "confused"]),
+ ("\u{1f623}", ["oops", "persevering", "sick", "persevering_face", "face", "no", "upset"]),
+ ("\u{1f61e}", ["depressed", "disappointed", "face", "disappointed_face", "upset", "sad"]),
+ ("\u{1f613}", ["downcast_face_with_sweat", "with", "exercise", "face", "tired", "downcast", "sweat", "sad", "hot"]),
+ ("\u{1f629}", ["frustrated", "weary", "face", "tired", "sleepy", "weary_face", "upset", "sad"]),
+ ("\u{1f62b}", ["tired_face", "sick", "frustrated", "whine", "face", "tired", "upset"]),
+ ("\u{1f971}", ["yawning_face", "yawning", "face", "tired", "sleepy"]),
+ ("\u{1f624}", ["proud", "face_with_steam_from_nose", "with", "steam", "face", "phew", "pride", "gas", "nose", "from"]),
+ ("\u{1f621}", ["despise", "angry", "pouting_face", "pouting", "mad", "hate", "face"]),
+ ("\u{1f620}", ["angry", "frustrated", "mad", "face", "annoyed", "angry_face"]),
+ ("\u{1f92c}", ["expletive", "face_with_symbols_on_mouth", "mouth", "with", "cussing", "symbols", "face", "swearing", "on", "profanity", "cursing"]),
+ ("\u{1f608}", ["smiling_face_with_horns", "with", "devil", "face", "smiling", "horns"]),
+ ("\u{1f47f}", ["angry_face_with_horns", "angry", "with", "devil", "face", "horns"]),
+ ("\u{1f480}", ["creepy", "skull", "death", "dead", "skeleton"]),
+ ("\u{2620}", ["crossbones", "skull", "and"]),
+ ("\u{1f4a9}", ["hankey", "shitface", "pile_of_poo", "fail", "shit", "pile", "turd", "poo", "of"]),
+ ("\u{1f921}", ["clown", "clown_face", "face"]),
+ ("\u{1f479}", ["japanese", "halloween", "demon", "monster", "scary", "creepy", "red", "devil", "ogre", "mask"]),
+ ("\u{1f47a}", ["japanese", "monster", "scary", "creepy", "red", "evil", "goblin", "mask"]),
+ ("\u{1f47b}", ["spooky", "ghost", "halloween", "scary"]),
+ ("\u{1f47d}", ["outer_space", "weird", "alien", "UFO", "paul"]),
+ ("\u{1f47e}", ["game", "monster", "alien_monster", "alien", "play", "arcade"]),
+ ("\u{1f916}", ["machine", "computer", "bot", "robot"]),
+ ("\u{1f63a}", ["grinning_cat", "smile", "animal", "cat", "cats", "happy", "grinning"]),
+ ("\u{1f638}", ["grinning_cat_with_smiling_eyes", "smile", "animal", "cat", "with", "cats", "smiling", "grinning", "eyes"]),
+ ("\u{1f639}", ["joy", "animal", "cat", "with", "cats", "happy", "tears", "cat_with_tears_of_joy", "haha", "of"]),
+ ("\u{1f63b}", ["smiling_cat_with_heart_eyes", "valentines", "like", "heart", "animal", "cat", "with", "love", "cats", "smiling", "heart-eyes", "affection"]),
+ ("\u{1f63c}", ["smile", "animal", "cat", "with", "cats", "smirk", "cat_with_wry_smile", "wry"]),
+ ("\u{1f63d}", ["animal", "cat", "kissing", "cats", "kissing_cat", "kiss"]),
+ ("\u{1f640}", ["scream", "munch", "animal", "cat", "weary", "cats", "weary_cat", "scared"]),
+ ("\u{1f63f}", ["crying_cat", "animal", "cat", "cats", "sad", "tears", "crying", "cry", "upset", "weep"]),
+ ("\u{1f63e}", ["animal", "cat", "pouting", "cats", "pouting_cat"]),
+ ("\u{1f648}", ["animal", "nature", "monkey", "see-no-evil", "haha", "see_no_evil_monkey"]),
+ ("\u{1f649}", ["animal", "nature", "hear_no_evil_monkey", "hear-no-evil", "monkey"]),
+ ("\u{1f64a}", ["animal", "omg", "nature", "monkey", "speak_no_evil_monkey", "speak-no-evil"]),
+ ("\u{1f48b}", ["lips", "valentines", "like", "mark", "love", "face", "kiss_mark", "kiss", "affection"]),
+ ("\u{1f48c}", ["letter", "like", "envelope", "valentines", "love", "love_letter", "email", "affection"]),
+ ("\u{1f498}", ["valentines", "like", "heart", "heart_with_arrow", "with", "love", "affection", "arrow"]),
+ ("\u{1f49d}", ["heart_with_ribbon", "valentines", "heart", "love", "ribbon", "with"]),
+ ("\u{1f496}", ["valentines", "like", "heart", "love", "sparkling_heart", "sparkling", "affection"]),
+ ("\u{1f497}", ["growing", "growing_heart", "like", "valentines", "heart", "love", "pink", "affection"]),
+ ("\u{1f493}", ["valentines", "like", "heart", "love", "pink", "beating", "beating_heart", "affection"]),
+ ("\u{1f49e}", ["valentines", "like", "affection", "love", "hearts", "revolving", "revolving_hearts"]),
+ ("\u{1f495}", ["valentines", "like", "heart", "two", "love", "hearts", "two_hearts", "affection"]),
+ ("\u{1f49f}", ["purple-square", "like", "heart", "decoration", "love", "heart_decoration"]),
+ ("\u{2763}", ["heart", "exclamation"]),
+ ("\u{1f494}", ["heartbreak", "heart", "broken_heart", "broken", "sorry", "break", "sad"]),
+ ("\u{2764}\u{fe0f}\u{200d}\u{1f525}", ["heart", "fire", "on"]),
+ ("\u{2764}\u{fe0f}\u{200d}\u{1fa79}", ["heart", "mending"]),
+ ("\u{2764}", ["heart", "red"]),
+ ("\u{1f9e1}", ["orange", "valentines", "like", "orange_heart", "heart", "love", "affection"]),
+ ("\u{1f49b}", ["valentines", "like", "heart", "love", "yellow_heart", "yellow", "affection"]),
+ ("\u{1f49a}", ["valentines", "like", "heart", "love", "green", "green_heart", "affection"]),
+ ("\u{1f499}", ["valentines", "like", "heart", "blue", "love", "blue_heart", "affection"]),
+ ("\u{1f49c}", ["purple", "like", "valentines", "heart", "love", "purple_heart", "affection"]),
+ ("\u{1f90e}", ["heart", "coffee", "brown", "brown_heart"]),
+ ("\u{1f5a4}", ["heart", "black", "black_heart", "evil"]),
+ ("\u{1f90d}", ["white", "heart", "white_heart", "pure"]),
+ ("\u{1f4af}", ["hundred_points", "exam", "test", "points", "numbers", "century", "perfect", "hundred", "score", "pass", "quiz"]),
+ ("\u{1f4a2}", ["angry", "anger_symbol", "mad", "symbol", "anger"]),
+ ("\u{1f4a5}", ["collision", "blown", "explode", "bomb", "explosion"]),
+ ("\u{1f4ab}", ["star", "magic", "dizzy", "sparkle", "shoot"]),
+ ("\u{1f4a6}", ["drip", "oops", "droplets", "sweat_droplets", "sweat", "water"]),
+ ("\u{1f4a8}", ["away", "air", "wind", "dashing_away", "fast", "puff", "dashing", "shoo", "fart", "smoke"]),
+ ("\u{1f573}", ["hole"]),
+ ("\u{1f4a3}", ["boom", "terrorism", "explode", "bomb", "explosion"]),
+ ("\u{1f4ac}", ["bubble", "speech_balloon", "message", "talk", "speech", "words", "balloon", "chatting"]),
+ ("\u{1f441}\u{fe0f}\u{200d}\u{1f5e8}\u{fe0f}", ["bubble", "in", "speech", "eye_in_speech_bubble", "info", "eye"]),
+ ("\u{1f5e8}", ["left", "bubble", "speech"]),
+ ("\u{1f5ef}", ["bubble", "right", "anger"]),
+ ("\u{1f4ad}", ["bubble", "thinking", "thought", "cloud", "speech", "balloon", "thought_balloon", "dream"]),
+ ("\u{1f4a4}", ["tired", "zzz", "sleepy", "dream"]),
+ ("\u{1f44b}", ["hello", "farewell", "waving", "solong", "hi", "hands", "palm", "waving_hand", "goodbye", "hand", "gesture"]),
+ ("\u{1f44b}\u{1f3fb}", ["skin", "waving", "light", "hand:", "tone"]),
+ ("\u{1f44b}\u{1f3fc}", ["skin", "medium-light", "waving", "hand:", "tone"]),
+ ("\u{1f44b}\u{1f3fd}", ["skin", "medium", "waving", "hand:", "tone"]),
+ ("\u{1f44b}\u{1f3fe}", ["skin", "waving", "medium-dark", "hand:", "tone"]),
+ ("\u{1f44b}\u{1f3ff}", ["skin", "dark", "waving", "hand:", "tone"]),
+ ("\u{1f91a}", ["raised_back_of_hand", "backhand", "back", "hand", "fingers", "raised", "of"]),
+ ("\u{1f91a}\u{1f3fb}", ["skin", "light", "back", "hand:", "tone", "raised", "of"]),
+ ("\u{1f91a}\u{1f3fc}", ["skin", "medium-light", "back", "hand:", "tone", "raised", "of"]),
+ ("\u{1f91a}\u{1f3fd}", ["skin", "medium", "back", "hand:", "tone", "raised", "of"]),
+ ("\u{1f91a}\u{1f3fe}", ["skin", "medium-dark", "back", "hand:", "tone", "raised", "of"]),
+ ("\u{1f91a}\u{1f3ff}", ["skin", "dark", "back", "hand:", "tone", "raised", "of"]),
+ ("\u{1f590}", ["hand", "fingers", "with", "splayed"]),
+ ("\u{1f590}\u{1f3fb}", ["skin", "splayed:", "light", "with", "hand", "fingers", "tone"]),
+ ("\u{1f590}\u{1f3fc}", ["skin", "medium-light", "splayed:", "with", "hand", "fingers", "tone"]),
+ ("\u{1f590}\u{1f3fd}", ["skin", "medium", "splayed:", "with", "hand", "fingers", "tone"]),
+ ("\u{1f590}\u{1f3fe}", ["skin", "splayed:", "with", "medium-dark", "hand", "fingers", "tone"]),
+ ("\u{1f590}\u{1f3ff}", ["skin", "splayed:", "dark", "with", "hand", "fingers", "tone"]),
+ ("\u{270b}", ["highfive", "stop", "raised_hand", "palm", "ban", "hand", "fingers", "raised"]),
+ ("\u{270b}\u{1f3fb}", ["skin", "light", "hand:", "tone", "raised"]),
+ ("\u{270b}\u{1f3fc}", ["skin", "medium-light", "hand:", "tone", "raised"]),
+ ("\u{270b}\u{1f3fd}", ["skin", "medium", "hand:", "tone", "raised"]),
+ ("\u{270b}\u{1f3fe}", ["skin", "medium-dark", "hand:", "tone", "raised"]),
+ ("\u{270b}\u{1f3ff}", ["skin", "dark", "hand:", "tone", "raised"]),
+ ("\u{1f596}", ["vulcan_salute", "vulcan", "salute", "spock", "star trek", "hand", "fingers"]),
+ ("\u{1f596}\u{1f3fb}", ["skin", "vulcan", "light", "salute:", "tone"]),
+ ("\u{1f596}\u{1f3fc}", ["skin", "vulcan", "medium-light", "salute:", "tone"]),
+ ("\u{1f596}\u{1f3fd}", ["skin", "vulcan", "medium", "salute:", "tone"]),
+ ("\u{1f596}\u{1f3fe}", ["skin", "vulcan", "medium-dark", "salute:", "tone"]),
+ ("\u{1f596}\u{1f3ff}", ["skin", "vulcan", "dark", "salute:", "tone"]),
+ ("\u{1f44c}", ["limbs", "ok", "ok_hand", "okay", "perfect", "hand", "fingers", "OK"]),
+ ("\u{1f44c}\u{1f3fb}", ["skin", "light", "hand:", "tone", "OK"]),
+ ("\u{1f44c}\u{1f3fc}", ["skin", "medium-light", "hand:", "tone", "OK"]),
+ ("\u{1f44c}\u{1f3fd}", ["skin", "medium", "hand:", "tone", "OK"]),
+ ("\u{1f44c}\u{1f3fe}", ["skin", "medium-dark", "hand:", "tone", "OK"]),
+ ("\u{1f44c}\u{1f3ff}", ["skin", "dark", "hand:", "tone", "OK"]),
+ ("\u{1f90c}", ["pinched", "fingers"]),
+ ("\u{1f90c}\u{1f3fb}", ["skin", "light", "fingers:", "pinched", "tone"]),
+ ("\u{1f90c}\u{1f3fc}", ["skin", "medium-light", "fingers:", "pinched", "tone"]),
+ ("\u{1f90c}\u{1f3fd}", ["skin", "medium", "fingers:", "pinched", "tone"]),
+ ("\u{1f90c}\u{1f3fe}", ["skin", "medium-dark", "fingers:", "pinched", "tone"]),
+ ("\u{1f90c}\u{1f3ff}", ["skin", "dark", "fingers:", "pinched", "tone"]),
+ ("\u{1f90f}", ["tiny", "pinching_hand", "size", "small", "hand", "pinching"]),
+ ("\u{1f90f}\u{1f3fb}", ["skin", "light", "hand:", "tone", "pinching"]),
+ ("\u{1f90f}\u{1f3fc}", ["skin", "medium-light", "hand:", "tone", "pinching"]),
+ ("\u{1f90f}\u{1f3fd}", ["skin", "medium", "hand:", "tone", "pinching"]),
+ ("\u{1f90f}\u{1f3fe}", ["skin", "medium-dark", "hand:", "tone", "pinching"]),
+ ("\u{1f90f}\u{1f3ff}", ["skin", "dark", "hand:", "tone", "pinching"]),
+ ("\u{270c}", ["hand", "victory"]),
+ ("\u{270c}\u{1f3fb}", ["skin", "light", "victory", "hand:", "tone"]),
+ ("\u{270c}\u{1f3fc}", ["skin", "medium-light", "victory", "hand:", "tone"]),
+ ("\u{270c}\u{1f3fd}", ["skin", "medium", "victory", "hand:", "tone"]),
+ ("\u{270c}\u{1f3fe}", ["skin", "medium-dark", "victory", "hand:", "tone"]),
+ ("\u{270c}\u{1f3ff}", ["skin", "dark", "victory", "hand:", "tone"]),
+ ("\u{1f91e}", ["lucky", "good", "fingers", "crossed", "crossed_fingers"]),
+ ("\u{1f91e}\u{1f3fb}", ["skin", "light", "fingers:", "tone", "crossed"]),
+ ("\u{1f91e}\u{1f3fc}", ["skin", "medium-light", "fingers:", "tone", "crossed"]),
+ ("\u{1f91e}\u{1f3fd}", ["skin", "medium", "fingers:", "tone", "crossed"]),
+ ("\u{1f91e}\u{1f3fe}", ["skin", "medium-dark", "fingers:", "tone", "crossed"]),
+ ("\u{1f91e}\u{1f3ff}", ["skin", "dark", "fingers:", "tone", "crossed"]),
+ ("\u{1f91f}", ["love-you", "love_you_gesture", "hand", "fingers", "gesture"]),
+ ("\u{1f91f}\u{1f3fb}", ["skin", "gesture:", "light", "love-you", "tone"]),
+ ("\u{1f91f}\u{1f3fc}", ["skin", "medium-light", "gesture:", "love-you", "tone"]),
+ ("\u{1f91f}\u{1f3fd}", ["skin", "medium", "gesture:", "love-you", "tone"]),
+ ("\u{1f91f}\u{1f3fe}", ["skin", "gesture:", "medium-dark", "love-you", "tone"]),
+ ("\u{1f91f}\u{1f3ff}", ["skin", "gesture:", "dark", "love-you", "tone"]),
+ ("\u{1f918}", ["evil_eye", "rock_on", "the", "sign", "sign_of_the_horns", "sign_of_horns", "horns", "hand", "fingers", "of"]),
+ ("\u{1f918}\u{1f3fb}", ["skin", "light", "the", "sign", "tone", "horns:", "of"]),
+ ("\u{1f918}\u{1f3fc}", ["skin", "medium-light", "the", "sign", "tone", "horns:", "of"]),
+ ("\u{1f918}\u{1f3fd}", ["skin", "medium", "the", "sign", "tone", "horns:", "of"]),
+ ("\u{1f918}\u{1f3fe}", ["skin", "medium-dark", "the", "sign", "tone", "horns:", "of"]),
+ ("\u{1f918}\u{1f3ff}", ["skin", "dark", "the", "sign", "tone", "horns:", "of"]),
+ ("\u{1f919}", ["call_me_hand", "hands", "call", "me", "hand", "gesture"]),
+ ("\u{1f919}\u{1f3fb}", ["skin", "light", "hand:", "call", "me", "tone"]),
+ ("\u{1f919}\u{1f3fc}", ["skin", "medium-light", "hand:", "call", "me", "tone"]),
+ ("\u{1f919}\u{1f3fd}", ["skin", "medium", "hand:", "call", "me", "tone"]),
+ ("\u{1f919}\u{1f3fe}", ["skin", "medium-dark", "hand:", "call", "me", "tone"]),
+ ("\u{1f919}\u{1f3ff}", ["skin", "dark", "hand:", "call", "me", "tone"]),
+ ("\u{1f448}", ["left", "index", "backhand_index_pointing_left", "backhand", "hand", "fingers", "direction", "pointing"]),
+ ("\u{1f448}\u{1f3fb}", ["index", "skin", "backhand", "light", "tone", "pointing", "left:"]),
+ ("\u{1f448}\u{1f3fc}", ["index", "medium-light", "skin", "backhand", "tone", "pointing", "left:"]),
+ ("\u{1f448}\u{1f3fd}", ["index", "skin", "medium", "backhand", "tone", "pointing", "left:"]),
+ ("\u{1f448}\u{1f3fe}", ["index", "skin", "backhand", "medium-dark", "tone", "pointing", "left:"]),
+ ("\u{1f448}\u{1f3ff}", ["index", "skin", "dark", "backhand", "tone", "pointing", "left:"]),
+ ("\u{1f449}", ["index", "backhand", "right", "backhand_index_pointing_right", "hand", "fingers", "direction", "pointing"]),
+ ("\u{1f449}\u{1f3fb}", ["index", "skin", "backhand", "light", "tone", "right:", "pointing"]),
+ ("\u{1f449}\u{1f3fc}", ["index", "medium-light", "skin", "backhand", "tone", "right:", "pointing"]),
+ ("\u{1f449}\u{1f3fd}", ["index", "skin", "medium", "backhand", "tone", "right:", "pointing"]),
+ ("\u{1f449}\u{1f3fe}", ["index", "skin", "backhand", "medium-dark", "tone", "right:", "pointing"]),
+ ("\u{1f449}\u{1f3ff}", ["index", "skin", "dark", "backhand", "tone", "right:", "pointing"]),
+ ("\u{1f446}", ["index", "backhand", "backhand_index_pointing_up", "up", "hand", "fingers", "direction", "pointing"]),
+ ("\u{1f446}\u{1f3fb}", ["index", "skin", "backhand", "light", "pointing", "tone", "up:"]),
+ ("\u{1f446}\u{1f3fc}", ["index", "medium-light", "skin", "backhand", "pointing", "tone", "up:"]),
+ ("\u{1f446}\u{1f3fd}", ["index", "skin", "medium", "backhand", "pointing", "tone", "up:"]),
+ ("\u{1f446}\u{1f3fe}", ["index", "skin", "backhand", "medium-dark", "pointing", "tone", "up:"]),
+ ("\u{1f446}\u{1f3ff}", ["index", "skin", "dark", "backhand", "pointing", "tone", "up:"]),
+ ("\u{1f595}", ["middle", "flipping", "middle_finger", "rude", "hand", "fingers", "finger"]),
+ ("\u{1f595}\u{1f3fb}", ["skin", "middle", "light", "finger:", "tone"]),
+ ("\u{1f595}\u{1f3fc}", ["skin", "medium-light", "middle", "finger:", "tone"]),
+ ("\u{1f595}\u{1f3fd}", ["skin", "middle", "medium", "finger:", "tone"]),
+ ("\u{1f595}\u{1f3fe}", ["skin", "middle", "medium-dark", "finger:", "tone"]),
+ ("\u{1f595}\u{1f3ff}", ["skin", "middle", "dark", "finger:", "tone"]),
+ ("\u{1f447}", ["index", "down", "backhand", "backhand_index_pointing_down", "hand", "fingers", "direction", "pointing"]),
+ ("\u{1f447}\u{1f3fb}", ["index", "skin", "backhand", "light", "down:", "tone", "pointing"]),
+ ("\u{1f447}\u{1f3fc}", ["index", "medium-light", "skin", "backhand", "down:", "tone", "pointing"]),
+ ("\u{1f447}\u{1f3fd}", ["index", "skin", "medium", "backhand", "down:", "tone", "pointing"]),
+ ("\u{1f447}\u{1f3fe}", ["index", "skin", "backhand", "medium-dark", "down:", "tone", "pointing"]),
+ ("\u{1f447}\u{1f3ff}", ["index", "skin", "dark", "backhand", "down:", "tone", "pointing"]),
+ ("\u{261d}", ["index", "up", "pointing"]),
+ ("\u{261d}\u{1f3fb}", ["index", "skin", "light", "pointing", "tone", "up:"]),
+ ("\u{261d}\u{1f3fc}", ["index", "medium-light", "skin", "pointing", "tone", "up:"]),
+ ("\u{261d}\u{1f3fd}", ["index", "skin", "medium", "pointing", "tone", "up:"]),
+ ("\u{261d}\u{1f3fe}", ["index", "skin", "medium-dark", "pointing", "tone", "up:"]),
+ ("\u{261d}\u{1f3ff}", ["index", "skin", "dark", "pointing", "tone", "up:"]),
+ ("\u{1f44d}", ["like", "yes", "agree", "thumbs", "good", "up", "awesome", "accept", "thumbs_up", "thumbsup", "hand", "cool"]),
+ ("\u{1f44d}\u{1f3fb}", ["skin", "light", "thumbs", "tone", "up:"]),
+ ("\u{1f44d}\u{1f3fc}", ["skin", "medium-light", "thumbs", "tone", "up:"]),
+ ("\u{1f44d}\u{1f3fd}", ["skin", "medium", "thumbs", "tone", "up:"]),
+ ("\u{1f44d}\u{1f3fe}", ["skin", "medium-dark", "thumbs", "tone", "up:"]),
+ ("\u{1f44d}\u{1f3ff}", ["skin", "dark", "thumbs", "tone", "up:"]),
+ ("\u{1f44e}", ["dislike", "down", "thumbs", "no", "thumbs_down", "thumbsdown", "hand"]),
+ ("\u{1f44e}\u{1f3fb}", ["skin", "light", "thumbs", "down:", "tone"]),
+ ("\u{1f44e}\u{1f3fc}", ["skin", "medium-light", "thumbs", "down:", "tone"]),
+ ("\u{1f44e}\u{1f3fd}", ["skin", "medium", "thumbs", "down:", "tone"]),
+ ("\u{1f44e}\u{1f3fe}", ["skin", "medium-dark", "thumbs", "down:", "tone"]),
+ ("\u{1f44e}\u{1f3ff}", ["skin", "dark", "thumbs", "down:", "tone"]),
+ ("\u{270a}", ["raised_fist", "grasp", "fist", "hand", "fingers", "raised"]),
+ ("\u{270a}\u{1f3fb}", ["skin", "light", "fist:", "tone", "raised"]),
+ ("\u{270a}\u{1f3fc}", ["skin", "medium-light", "fist:", "tone", "raised"]),
+ ("\u{270a}\u{1f3fd}", ["skin", "medium", "fist:", "tone", "raised"]),
+ ("\u{270a}\u{1f3fe}", ["skin", "medium-dark", "fist:", "tone", "raised"]),
+ ("\u{270a}\u{1f3ff}", ["skin", "dark", "fist:", "tone", "raised"]),
+ ("\u{1f44a}", ["angry", "hit", "oncoming_fist", "oncoming", "fist", "hand", "violence", "attack"]),
+ ("\u{1f44a}\u{1f3fb}", ["skin", "light", "fist:", "oncoming", "tone"]),
+ ("\u{1f44a}\u{1f3fc}", ["skin", "medium-light", "fist:", "oncoming", "tone"]),
+ ("\u{1f44a}\u{1f3fd}", ["skin", "medium", "fist:", "oncoming", "tone"]),
+ ("\u{1f44a}\u{1f3fe}", ["skin", "medium-dark", "fist:", "oncoming", "tone"]),
+ ("\u{1f44a}\u{1f3ff}", ["skin", "dark", "fist:", "oncoming", "tone"]),
+ ("\u{1f91b}", ["left_facing_fist", "left-facing", "fist", "hand", "fistbump"]),
+ ("\u{1f91b}\u{1f3fb}", ["skin", "left-facing", "light", "fist:", "tone"]),
+ ("\u{1f91b}\u{1f3fc}", ["skin", "medium-light", "left-facing", "fist:", "tone"]),
+ ("\u{1f91b}\u{1f3fd}", ["skin", "left-facing", "medium", "fist:", "tone"]),
+ ("\u{1f91b}\u{1f3fe}", ["skin", "left-facing", "medium-dark", "fist:", "tone"]),
+ ("\u{1f91b}\u{1f3ff}", ["skin", "left-facing", "dark", "fist:", "tone"]),
+ ("\u{1f91c}", ["right-facing", "right_facing_fist", "fist", "hand", "fistbump"]),
+ ("\u{1f91c}\u{1f3fb}", ["skin", "right-facing", "light", "fist:", "tone"]),
+ ("\u{1f91c}\u{1f3fc}", ["skin", "medium-light", "right-facing", "fist:", "tone"]),
+ ("\u{1f91c}\u{1f3fd}", ["skin", "medium", "right-facing", "fist:", "tone"]),
+ ("\u{1f91c}\u{1f3fe}", ["skin", "right-facing", "medium-dark", "fist:", "tone"]),
+ ("\u{1f91c}\u{1f3ff}", ["skin", "right-facing", "dark", "fist:", "tone"]),
+ ("\u{1f44f}", ["clapping", "yay", "clapping_hands", "praise", "applause", "hands", "congrats"]),
+ ("\u{1f44f}\u{1f3fb}", ["skin", "clapping", "light", "tone", "hands:"]),
+ ("\u{1f44f}\u{1f3fc}", ["skin", "medium-light", "clapping", "tone", "hands:"]),
+ ("\u{1f44f}\u{1f3fd}", ["skin", "medium", "clapping", "tone", "hands:"]),
+ ("\u{1f44f}\u{1f3fe}", ["skin", "clapping", "medium-dark", "tone", "hands:"]),
+ ("\u{1f44f}\u{1f3ff}", ["skin", "clapping", "dark", "tone", "hands:"]),
+ ("\u{1f64c}", ["yea", "gesture", "raising", "celebration", "hands", "hooray", "raising_hands"]),
+ ("\u{1f64c}\u{1f3fb}", ["skin", "light", "raising", "tone", "hands:"]),
+ ("\u{1f64c}\u{1f3fc}", ["skin", "medium-light", "raising", "tone", "hands:"]),
+ ("\u{1f64c}\u{1f3fd}", ["skin", "medium", "raising", "tone", "hands:"]),
+ ("\u{1f64c}\u{1f3fe}", ["skin", "medium-dark", "raising", "tone", "hands:"]),
+ ("\u{1f64c}\u{1f3ff}", ["skin", "dark", "raising", "tone", "hands:"]),
+ ("\u{1f450}", ["open_hands", "hands", "open", "fingers", "butterfly"]),
+ ("\u{1f450}\u{1f3fb}", ["skin", "light", "open", "tone", "hands:"]),
+ ("\u{1f450}\u{1f3fc}", ["skin", "medium-light", "open", "tone", "hands:"]),
+ ("\u{1f450}\u{1f3fd}", ["skin", "medium", "open", "tone", "hands:"]),
+ ("\u{1f450}\u{1f3fe}", ["skin", "medium-dark", "open", "tone", "hands:"]),
+ ("\u{1f450}\u{1f3ff}", ["skin", "dark", "open", "tone", "hands:"]),
+ ("\u{1f932}", ["prayer", "gesture", "palms_up_together", "up", "hands", "cupped", "together", "palms"]),
+ ("\u{1f932}\u{1f3fb}", ["skin", "light", "up", "tone", "together:", "palms"]),
+ ("\u{1f932}\u{1f3fc}", ["skin", "medium-light", "up", "tone", "together:", "palms"]),
+ ("\u{1f932}\u{1f3fd}", ["skin", "medium", "up", "tone", "together:", "palms"]),
+ ("\u{1f932}\u{1f3fe}", ["skin", "medium-dark", "up", "tone", "together:", "palms"]),
+ ("\u{1f932}\u{1f3ff}", ["skin", "dark", "up", "tone", "together:", "palms"]),
+ ("\u{1f91d}", ["shake", "handshake", "agreement"]),
+ ("\u{1f64f}", ["folded", "highfive", "namaste", "hope", "wish", "hands", "please", "folded_hands"]),
+ ("\u{1f64f}\u{1f3fb}", ["skin", "folded", "light", "tone", "hands:"]),
+ ("\u{1f64f}\u{1f3fc}", ["skin", "medium-light", "folded", "tone", "hands:"]),
+ ("\u{1f64f}\u{1f3fd}", ["skin", "folded", "medium", "tone", "hands:"]),
+ ("\u{1f64f}\u{1f3fe}", ["skin", "folded", "medium-dark", "tone", "hands:"]),
+ ("\u{1f64f}\u{1f3ff}", ["skin", "folded", "dark", "tone", "hands:"]),
+ ("\u{270d}", ["hand", "writing"]),
+ ("\u{270d}\u{1f3fb}", ["skin", "light", "hand:", "tone", "writing"]),
+ ("\u{270d}\u{1f3fc}", ["skin", "medium-light", "hand:", "tone", "writing"]),
+ ("\u{270d}\u{1f3fd}", ["skin", "medium", "hand:", "tone", "writing"]),
+ ("\u{270d}\u{1f3fe}", ["skin", "medium-dark", "hand:", "tone", "writing"]),
+ ("\u{270d}\u{1f3ff}", ["skin", "dark", "hand:", "tone", "writing"]),
+ ("\u{1f485}", ["nail", "beauty", "polish", "fashion", "manicure", "nail_polish", "finger"]),
+ ("\u{1f485}\u{1f3fb}", ["skin", "nail", "light", "tone", "polish:"]),
+ ("\u{1f485}\u{1f3fc}", ["skin", "nail", "medium-light", "tone", "polish:"]),
+ ("\u{1f485}\u{1f3fd}", ["skin", "nail", "medium", "tone", "polish:"]),
+ ("\u{1f485}\u{1f3fe}", ["skin", "nail", "medium-dark", "tone", "polish:"]),
+ ("\u{1f485}\u{1f3ff}", ["skin", "nail", "dark", "tone", "polish:"]),
+ ("\u{1f933}", ["selfie", "camera", "phone"]),
+ ("\u{1f933}\u{1f3fb}", ["selfie:", "tone", "skin", "light"]),
+ ("\u{1f933}\u{1f3fc}", ["selfie:", "medium-light", "skin", "tone"]),
+ ("\u{1f933}\u{1f3fd}", ["selfie:", "skin", "tone", "medium"]),
+ ("\u{1f933}\u{1f3fe}", ["selfie:", "skin", "tone", "medium-dark"]),
+ ("\u{1f933}\u{1f3ff}", ["selfie:", "skin", "tone", "dark"]),
+ ("\u{1f4aa}", ["flexed_biceps", "flex", "flexed", "summer", "biceps", "strong", "arm", "hand"]),
+ ("\u{1f4aa}\u{1f3fb}", ["skin", "biceps:", "light", "flexed", "tone"]),
+ ("\u{1f4aa}\u{1f3fc}", ["skin", "medium-light", "biceps:", "flexed", "tone"]),
+ ("\u{1f4aa}\u{1f3fd}", ["skin", "medium", "biceps:", "flexed", "tone"]),
+ ("\u{1f4aa}\u{1f3fe}", ["skin", "biceps:", "medium-dark", "flexed", "tone"]),
+ ("\u{1f4aa}\u{1f3ff}", ["skin", "dark", "biceps:", "flexed", "tone"]),
+ ("\u{1f9be}", ["mechanical_arm", "arm", "accessibility", "mechanical"]),
+ ("\u{1f9bf}", ["leg", "accessibility", "mechanical_leg", "mechanical"]),
+ ("\u{1f9b5}", ["leg", "limb", "kick"]),
+ ("\u{1f9b5}\u{1f3fb}", ["skin", "tone", "light", "leg:"]),
+ ("\u{1f9b5}\u{1f3fc}", ["skin", "medium-light", "tone", "leg:"]),
+ ("\u{1f9b5}\u{1f3fd}", ["skin", "medium", "tone", "leg:"]),
+ ("\u{1f9b5}\u{1f3fe}", ["skin", "tone", "leg:", "medium-dark"]),
+ ("\u{1f9b5}\u{1f3ff}", ["skin", "tone", "leg:", "dark"]),
+ ("\u{1f9b6}", ["foot", "stomp", "kick"]),
+ ("\u{1f9b6}\u{1f3fb}", ["foot:", "skin", "tone", "light"]),
+ ("\u{1f9b6}\u{1f3fc}", ["foot:", "skin", "medium-light", "tone"]),
+ ("\u{1f9b6}\u{1f3fd}", ["foot:", "skin", "tone", "medium"]),
+ ("\u{1f9b6}\u{1f3fe}", ["foot:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9b6}\u{1f3ff}", ["foot:", "skin", "tone", "dark"]),
+ ("\u{1f442}", ["ear", "sound", "face", "hear", "listen"]),
+ ("\u{1f442}\u{1f3fb}", ["ear:", "skin", "tone", "light"]),
+ ("\u{1f442}\u{1f3fc}", ["ear:", "skin", "medium-light", "tone"]),
+ ("\u{1f442}\u{1f3fd}", ["ear:", "skin", "tone", "medium"]),
+ ("\u{1f442}\u{1f3fe}", ["ear:", "skin", "tone", "medium-dark"]),
+ ("\u{1f442}\u{1f3ff}", ["ear:", "skin", "tone", "dark"]),
+ ("\u{1f9bb}", ["aid", "ear", "hearing", "ear_with_hearing_aid", "with", "accessibility"]),
+ ("\u{1f9bb}\u{1f3fb}", ["skin", "ear", "hearing", "with", "aid:", "light", "tone"]),
+ ("\u{1f9bb}\u{1f3fc}", ["skin", "medium-light", "ear", "hearing", "with", "aid:", "tone"]),
+ ("\u{1f9bb}\u{1f3fd}", ["skin", "medium", "ear", "hearing", "with", "aid:", "tone"]),
+ ("\u{1f9bb}\u{1f3fe}", ["skin", "ear", "hearing", "with", "aid:", "medium-dark", "tone"]),
+ ("\u{1f9bb}\u{1f3ff}", ["skin", "ear", "dark", "hearing", "with", "aid:", "tone"]),
+ ("\u{1f443}", ["smell", "nose", "sniff"]),
+ ("\u{1f443}\u{1f3fb}", ["nose:", "skin", "tone", "light"]),
+ ("\u{1f443}\u{1f3fc}", ["nose:", "skin", "medium-light", "tone"]),
+ ("\u{1f443}\u{1f3fd}", ["nose:", "skin", "tone", "medium"]),
+ ("\u{1f443}\u{1f3fe}", ["nose:", "skin", "tone", "medium-dark"]),
+ ("\u{1f443}\u{1f3ff}", ["nose:", "skin", "tone", "dark"]),
+ ("\u{1f9e0}", ["brain", "intelligent", "smart"]),
+ ("\u{1fac0}", ["heart", "anatomical"]),
+ ("\u{1fac1}", ["lungs"]),
+ ("\u{1f9b7}", ["tooth", "teeth", "dentist"]),
+ ("\u{1f9b4}", ["bone", "skeleton"]),
+ ("\u{1f440}", ["watch", "stalk", "peek", "see", "look", "eyes"]),
+ ("\u{1f441}", ["eye"]),
+ ("\u{1f445}", ["mouth", "tongue", "playful"]),
+ ("\u{1f444}", ["mouth", "kiss"]),
+ ("\u{1f476}", ["baby", "toddler", "child", "girl", "boy"]),
+ ("\u{1f476}\u{1f3fb}", ["baby:", "tone", "skin", "light"]),
+ ("\u{1f476}\u{1f3fc}", ["baby:", "medium-light", "skin", "tone"]),
+ ("\u{1f476}\u{1f3fd}", ["baby:", "skin", "tone", "medium"]),
+ ("\u{1f476}\u{1f3fe}", ["baby:", "skin", "tone", "medium-dark"]),
+ ("\u{1f476}\u{1f3ff}", ["baby:", "skin", "tone", "dark"]),
+ ("\u{1f9d2}", ["gender-neutral", "child", "young"]),
+ ("\u{1f9d2}\u{1f3fb}", ["skin", "tone", "child:", "light"]),
+ ("\u{1f9d2}\u{1f3fc}", ["skin", "medium-light", "child:", "tone"]),
+ ("\u{1f9d2}\u{1f3fd}", ["skin", "child:", "tone", "medium"]),
+ ("\u{1f9d2}\u{1f3fe}", ["skin", "child:", "tone", "medium-dark"]),
+ ("\u{1f9d2}\u{1f3ff}", ["skin", "child:", "tone", "dark"]),
+ ("\u{1f466}", ["man", "male", "teenager", "guy", "boy"]),
+ ("\u{1f466}\u{1f3fb}", ["skin", "boy:", "tone", "light"]),
+ ("\u{1f466}\u{1f3fc}", ["medium-light", "boy:", "skin", "tone"]),
+ ("\u{1f466}\u{1f3fd}", ["skin", "boy:", "tone", "medium"]),
+ ("\u{1f466}\u{1f3fe}", ["skin", "boy:", "tone", "medium-dark"]),
+ ("\u{1f466}\u{1f3ff}", ["skin", "boy:", "tone", "dark"]),
+ ("\u{1f467}", ["girl", "woman", "female", "teenager"]),
+ ("\u{1f467}\u{1f3fb}", ["skin", "tone", "light", "girl:"]),
+ ("\u{1f467}\u{1f3fc}", ["skin", "medium-light", "tone", "girl:"]),
+ ("\u{1f467}\u{1f3fd}", ["skin", "tone", "medium", "girl:"]),
+ ("\u{1f467}\u{1f3fe}", ["skin", "tone", "medium-dark", "girl:"]),
+ ("\u{1f467}\u{1f3ff}", ["skin", "tone", "girl:", "dark"]),
+ ("\u{1f9d1}", ["gender-neutral", "person"]),
+ ("\u{1f9d1}\u{1f3fb}", ["person:", "tone", "skin", "light"]),
+ ("\u{1f9d1}\u{1f3fc}", ["person:", "medium-light", "skin", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}", ["person:", "skin", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}", ["person:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}", ["person:", "skin", "tone", "dark"]),
+ ("\u{1f471}", ["hair", "blond", "person_blond_hair", "person:", "hairstyle"]),
+ ("\u{1f471}\u{1f3fb}", ["skin", "hair", "light", "tone,", "blond", "person:"]),
+ ("\u{1f471}\u{1f3fc}", ["skin", "medium-light", "hair", "tone,", "blond", "person:"]),
+ ("\u{1f471}\u{1f3fd}", ["skin", "medium", "hair", "tone,", "blond", "person:"]),
+ ("\u{1f471}\u{1f3fe}", ["skin", "hair", "medium-dark", "tone,", "blond", "person:"]),
+ ("\u{1f471}\u{1f3ff}", ["skin", "dark", "hair", "tone,", "blond", "person:"]),
+ ("\u{1f468}", ["man", "sir", "dad", "classy", "moustache", "mustache", "guy", "father"]),
+ ("\u{1f468}\u{1f3fb}", ["man:", "tone", "skin", "light"]),
+ ("\u{1f468}\u{1f3fc}", ["man:", "medium-light", "skin", "tone"]),
+ ("\u{1f468}\u{1f3fd}", ["man:", "skin", "tone", "medium"]),
+ ("\u{1f468}\u{1f3fe}", ["man:", "skin", "tone", "medium-dark"]),
+ ("\u{1f468}\u{1f3ff}", ["man:", "skin", "tone", "dark"]),
+ ("\u{1f9d4}", ["man_beard", "bewhiskered", "beard", "person", "person:"]),
+ ("\u{1f9d4}\u{1f3fb}", ["skin", "beard", "light", "tone,", "person:"]),
+ ("\u{1f9d4}\u{1f3fc}", ["skin", "medium-light", "beard", "tone,", "person:"]),
+ ("\u{1f9d4}\u{1f3fd}", ["skin", "medium", "beard", "tone,", "person:"]),
+ ("\u{1f9d4}\u{1f3fe}", ["skin", "beard", "medium-dark", "tone,", "person:"]),
+ ("\u{1f9d4}\u{1f3ff}", ["skin", "dark", "beard", "tone,", "person:"]),
+ ("\u{1f9d4}\u{200d}\u{2642}\u{fe0f}", ["man:", "beard"]),
+ ("\u{1f9d4}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["skin", "beard", "light", "man:", "tone,"]),
+ ("\u{1f9d4}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["skin", "medium-light", "beard", "man:", "tone,"]),
+ ("\u{1f9d4}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["skin", "medium", "beard", "man:", "tone,"]),
+ ("\u{1f9d4}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["skin", "beard", "medium-dark", "man:", "tone,"]),
+ ("\u{1f9d4}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["skin", "dark", "beard", "man:", "tone,"]),
+ ("\u{1f9d4}\u{200d}\u{2640}\u{fe0f}", ["beard", "woman:"]),
+ ("\u{1f9d4}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "beard", "light", "tone,", "woman:"]),
+ ("\u{1f9d4}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "beard", "tone,", "woman:"]),
+ ("\u{1f9d4}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "beard", "tone,", "woman:"]),
+ ("\u{1f9d4}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "beard", "medium-dark", "tone,", "woman:"]),
+ ("\u{1f9d4}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "beard", "tone,", "woman:"]),
+ ("\u{1f468}\u{200d}\u{1f9b0}", ["hair", "man_red_hair", "red", "man:", "hairstyle"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f9b0}", ["skin", "hair", "light", "red", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f9b0}", ["skin", "medium-light", "hair", "red", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f9b0}", ["skin", "medium", "hair", "red", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f9b0}", ["skin", "hair", "medium-dark", "red", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f9b0}", ["skin", "dark", "hair", "red", "man:", "tone,"]),
+ ("\u{1f468}\u{200d}\u{1f9b1}", ["hair", "curly", "man:", "man_curly_hair", "hairstyle"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f9b1}", ["skin", "hair", "light", "curly", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f9b1}", ["skin", "medium-light", "hair", "curly", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f9b1}", ["skin", "medium", "hair", "curly", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f9b1}", ["skin", "hair", "medium-dark", "curly", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f9b1}", ["skin", "dark", "hair", "curly", "man:", "tone,"]),
+ ("\u{1f468}\u{200d}\u{1f9b3}", ["old", "elder", "hair", "man:", "man_white_hair", "white"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f9b3}", ["skin", "hair", "light", "man:", "tone,", "white"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f9b3}", ["skin", "medium-light", "hair", "man:", "tone,", "white"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f9b3}", ["skin", "medium", "hair", "man:", "tone,", "white"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f9b3}", ["skin", "hair", "medium-dark", "man:", "tone,", "white"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f9b3}", ["skin", "dark", "hair", "man:", "tone,", "white"]),
+ ("\u{1f468}\u{200d}\u{1f9b2}", ["man_bald", "man:", "hairless", "bald"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f9b2}", ["skin", "light", "bald", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f9b2}", ["skin", "medium-light", "bald", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f9b2}", ["skin", "medium", "bald", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f9b2}", ["skin", "medium-dark", "bald", "man:", "tone,"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f9b2}", ["skin", "dark", "bald", "man:", "tone,"]),
+ ("\u{1f469}", ["woman", "girls", "female", "lady"]),
+ ("\u{1f469}\u{1f3fb}", ["skin", "tone", "light", "woman:"]),
+ ("\u{1f469}\u{1f3fc}", ["skin", "medium-light", "tone", "woman:"]),
+ ("\u{1f469}\u{1f3fd}", ["skin", "medium", "tone", "woman:"]),
+ ("\u{1f469}\u{1f3fe}", ["skin", "tone", "woman:", "medium-dark"]),
+ ("\u{1f469}\u{1f3ff}", ["skin", "tone", "woman:", "dark"]),
+ ("\u{1f469}\u{200d}\u{1f9b0}", ["hair", "red", "woman_red_hair", "woman:", "hairstyle"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f9b0}", ["skin", "hair", "light", "red", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f9b0}", ["skin", "medium-light", "hair", "red", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f9b0}", ["skin", "medium", "hair", "red", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f9b0}", ["skin", "hair", "red", "medium-dark", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f9b0}", ["skin", "dark", "hair", "red", "tone,", "woman:"]),
+ ("\u{1f9d1}\u{200d}\u{1f9b0}", ["hair", "red", "person_red_hair", "person:", "hairstyle"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f9b0}", ["skin", "hair", "light", "red", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f9b0}", ["skin", "medium-light", "hair", "red", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f9b0}", ["skin", "medium", "hair", "red", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f9b0}", ["skin", "hair", "medium-dark", "red", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f9b0}", ["skin", "dark", "hair", "red", "tone,", "person:"]),
+ ("\u{1f469}\u{200d}\u{1f9b1}", ["hair", "curly", "woman_curly_hair", "woman:", "hairstyle"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f9b1}", ["skin", "hair", "light", "curly", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f9b1}", ["skin", "medium-light", "hair", "curly", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f9b1}", ["skin", "medium", "hair", "curly", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f9b1}", ["skin", "hair", "medium-dark", "curly", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f9b1}", ["skin", "dark", "hair", "curly", "tone,", "woman:"]),
+ ("\u{1f9d1}\u{200d}\u{1f9b1}", ["hair", "curly", "person_curly_hair", "person:", "hairstyle"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f9b1}", ["skin", "hair", "light", "curly", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f9b1}", ["skin", "medium-light", "hair", "curly", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f9b1}", ["skin", "medium", "hair", "curly", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f9b1}", ["skin", "hair", "medium-dark", "curly", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f9b1}", ["skin", "dark", "hair", "curly", "tone,", "person:"]),
+ ("\u{1f469}\u{200d}\u{1f9b3}", ["old", "woman_white_hair", "hair", "elder", "white", "woman:"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f9b3}", ["skin", "hair", "light", "tone,", "white", "woman:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f9b3}", ["skin", "medium-light", "hair", "tone,", "white", "woman:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f9b3}", ["skin", "medium", "hair", "tone,", "white", "woman:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f9b3}", ["skin", "hair", "medium-dark", "tone,", "white", "woman:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f9b3}", ["skin", "dark", "hair", "tone,", "white", "woman:"]),
+ ("\u{1f9d1}\u{200d}\u{1f9b3}", ["old", "elder", "hair", "person_white_hair", "white", "person:"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f9b3}", ["skin", "hair", "light", "tone,", "white", "person:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f9b3}", ["skin", "medium-light", "hair", "tone,", "white", "person:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f9b3}", ["skin", "medium", "hair", "tone,", "white", "person:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f9b3}", ["skin", "hair", "medium-dark", "tone,", "white", "person:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f9b3}", ["skin", "dark", "hair", "tone,", "white", "person:"]),
+ ("\u{1f469}\u{200d}\u{1f9b2}", ["woman_bald", "woman:", "hairless", "bald"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f9b2}", ["skin", "light", "bald", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f9b2}", ["skin", "medium-light", "bald", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f9b2}", ["skin", "medium", "bald", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f9b2}", ["skin", "medium-dark", "bald", "tone,", "woman:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f9b2}", ["skin", "dark", "bald", "tone,", "woman:"]),
+ ("\u{1f9d1}\u{200d}\u{1f9b2}", ["person:", "person_bald", "hairless", "bald"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f9b2}", ["skin", "light", "bald", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f9b2}", ["skin", "medium-light", "bald", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f9b2}", ["skin", "medium", "bald", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f9b2}", ["skin", "medium-dark", "bald", "tone,", "person:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f9b2}", ["skin", "dark", "bald", "tone,", "person:"]),
+ ("\u{1f471}\u{200d}\u{2640}\u{fe0f}", ["blonde", "hair", "person", "woman", "blond", "female", "girl", "woman_blond_hair", "woman:"]),
+ ("\u{1f471}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "hair", "light", "tone,", "blond", "woman:"]),
+ ("\u{1f471}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "hair", "tone,", "blond", "woman:"]),
+ ("\u{1f471}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "hair", "tone,", "blond", "woman:"]),
+ ("\u{1f471}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "hair", "medium-dark", "tone,", "blond", "woman:"]),
+ ("\u{1f471}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "hair", "tone,", "blond", "woman:"]),
+ ("\u{1f471}\u{200d}\u{2642}\u{fe0f}", ["man_blond_hair", "man", "male", "hair", "person", "man:", "blond", "guy", "boy", "blonde"]),
+ ("\u{1f471}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["skin", "hair", "light", "man:", "blond", "tone,"]),
+ ("\u{1f471}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["skin", "medium-light", "hair", "man:", "blond", "tone,"]),
+ ("\u{1f471}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["skin", "medium", "hair", "man:", "blond", "tone,"]),
+ ("\u{1f471}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["skin", "hair", "medium-dark", "man:", "blond", "tone,"]),
+ ("\u{1f471}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["skin", "dark", "hair", "man:", "blond", "tone,"]),
+ ("\u{1f9d3}", ["human", "elder", "person", "older_person", "senior", "gender-neutral", "older"]),
+ ("\u{1f9d3}\u{1f3fb}", ["skin", "light", "older", "person:", "tone"]),
+ ("\u{1f9d3}\u{1f3fc}", ["skin", "medium-light", "older", "person:", "tone"]),
+ ("\u{1f9d3}\u{1f3fd}", ["skin", "medium", "older", "person:", "tone"]),
+ ("\u{1f9d3}\u{1f3fe}", ["skin", "medium-dark", "older", "person:", "tone"]),
+ ("\u{1f9d3}\u{1f3ff}", ["skin", "dark", "older", "person:", "tone"]),
+ ("\u{1f474}", ["old", "man", "male", "human", "elder", "old_man", "men", "senior"]),
+ ("\u{1f474}\u{1f3fb}", ["old", "skin", "light", "man:", "tone"]),
+ ("\u{1f474}\u{1f3fc}", ["old", "skin", "medium-light", "man:", "tone"]),
+ ("\u{1f474}\u{1f3fd}", ["old", "skin", "medium", "man:", "tone"]),
+ ("\u{1f474}\u{1f3fe}", ["old", "skin", "medium-dark", "man:", "tone"]),
+ ("\u{1f474}\u{1f3ff}", ["old", "skin", "dark", "man:", "tone"]),
+ ("\u{1f475}", ["old", "human", "elder", "lady", "old_woman", "woman", "female", "senior", "women"]),
+ ("\u{1f475}\u{1f3fb}", ["old", "skin", "light", "tone", "woman:"]),
+ ("\u{1f475}\u{1f3fc}", ["old", "skin", "medium-light", "tone", "woman:"]),
+ ("\u{1f475}\u{1f3fd}", ["old", "skin", "medium", "tone", "woman:"]),
+ ("\u{1f475}\u{1f3fe}", ["old", "skin", "medium-dark", "tone", "woman:"]),
+ ("\u{1f475}\u{1f3ff}", ["old", "skin", "dark", "tone", "woman:"]),
+ ("\u{1f64d}", ["worried", "frowning", "person", "person_frowning"]),
+ ("\u{1f64d}\u{1f3fb}", ["skin", "frowning:", "light", "person", "tone"]),
+ ("\u{1f64d}\u{1f3fc}", ["skin", "medium-light", "frowning:", "person", "tone"]),
+ ("\u{1f64d}\u{1f3fd}", ["skin", "medium", "frowning:", "person", "tone"]),
+ ("\u{1f64d}\u{1f3fe}", ["skin", "frowning:", "person", "medium-dark", "tone"]),
+ ("\u{1f64d}\u{1f3ff}", ["skin", "dark", "frowning:", "person", "tone"]),
+ ("\u{1f64d}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "depressed", "frowning", "discouraged", "unhappy", "man_frowning", "boy", "sad"]),
+ ("\u{1f64d}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "frowning:", "light", "tone"]),
+ ("\u{1f64d}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "frowning:", "tone"]),
+ ("\u{1f64d}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "frowning:", "tone"]),
+ ("\u{1f64d}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "frowning:", "medium-dark", "tone"]),
+ ("\u{1f64d}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "frowning:", "tone"]),
+ ("\u{1f64d}\u{200d}\u{2640}\u{fe0f}", ["depressed", "frowning", "discouraged", "unhappy", "woman", "female", "girl", "woman_frowning", "sad"]),
+ ("\u{1f64d}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "frowning:", "light", "woman", "tone"]),
+ ("\u{1f64d}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "frowning:", "woman", "tone"]),
+ ("\u{1f64d}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "frowning:", "woman", "tone"]),
+ ("\u{1f64d}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "frowning:", "medium-dark", "woman", "tone"]),
+ ("\u{1f64d}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "frowning:", "woman", "tone"]),
+ ("\u{1f64e}", ["upset", "pouting", "person", "person_pouting"]),
+ ("\u{1f64e}\u{1f3fb}", ["skin", "pouting:", "light", "person", "tone"]),
+ ("\u{1f64e}\u{1f3fc}", ["skin", "medium-light", "pouting:", "person", "tone"]),
+ ("\u{1f64e}\u{1f3fd}", ["skin", "medium", "pouting:", "person", "tone"]),
+ ("\u{1f64e}\u{1f3fe}", ["skin", "pouting:", "person", "medium-dark", "tone"]),
+ ("\u{1f64e}\u{1f3ff}", ["skin", "dark", "pouting:", "person", "tone"]),
+ ("\u{1f64e}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "boy", "pouting", "man_pouting"]),
+ ("\u{1f64e}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "pouting:", "light", "tone"]),
+ ("\u{1f64e}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "pouting:", "tone"]),
+ ("\u{1f64e}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "pouting:", "tone"]),
+ ("\u{1f64e}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "pouting:", "medium-dark", "tone"]),
+ ("\u{1f64e}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "pouting:", "tone"]),
+ ("\u{1f64e}\u{200d}\u{2640}\u{fe0f}", ["woman_pouting", "pouting", "woman", "female", "girl"]),
+ ("\u{1f64e}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "pouting:", "light", "woman", "tone"]),
+ ("\u{1f64e}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "pouting:", "woman", "tone"]),
+ ("\u{1f64e}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "pouting:", "woman", "tone"]),
+ ("\u{1f64e}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "pouting:", "medium-dark", "woman", "tone"]),
+ ("\u{1f64e}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "pouting:", "woman", "tone"]),
+ ("\u{1f645}", ["gesturing", "NO", "decline", "person", "person_gesturing_no"]),
+ ("\u{1f645}\u{1f3fb}", ["gesturing", "skin", "NO:", "light", "person", "tone"]),
+ ("\u{1f645}\u{1f3fc}", ["gesturing", "skin", "medium-light", "NO:", "person", "tone"]),
+ ("\u{1f645}\u{1f3fd}", ["gesturing", "skin", "medium", "NO:", "person", "tone"]),
+ ("\u{1f645}\u{1f3fe}", ["gesturing", "skin", "NO:", "person", "medium-dark", "tone"]),
+ ("\u{1f645}\u{1f3ff}", ["gesturing", "skin", "dark", "NO:", "person", "tone"]),
+ ("\u{1f645}\u{200d}\u{2642}\u{fe0f}", ["man", "gesturing", "male", "NO", "nope", "man_gesturing_no", "boy"]),
+ ("\u{1f645}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "gesturing", "NO:", "light", "tone"]),
+ ("\u{1f645}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "gesturing", "medium-light", "skin", "NO:", "tone"]),
+ ("\u{1f645}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "gesturing", "medium", "NO:", "tone"]),
+ ("\u{1f645}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "gesturing", "NO:", "medium-dark", "tone"]),
+ ("\u{1f645}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "gesturing", "dark", "NO:", "tone"]),
+ ("\u{1f645}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "NO", "nope", "woman", "female", "girl", "woman_gesturing_no"]),
+ ("\u{1f645}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "NO:", "light", "woman", "tone"]),
+ ("\u{1f645}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "medium-light", "NO:", "woman", "tone"]),
+ ("\u{1f645}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "medium", "NO:", "woman", "tone"]),
+ ("\u{1f645}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "NO:", "medium-dark", "woman", "tone"]),
+ ("\u{1f645}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "dark", "NO:", "woman", "tone"]),
+ ("\u{1f646}", ["gesturing", "person_gesturing_ok", "agree", "person", "OK"]),
+ ("\u{1f646}\u{1f3fb}", ["gesturing", "skin", "light", "person", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fc}", ["gesturing", "skin", "medium-light", "person", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fd}", ["gesturing", "skin", "medium", "person", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fe}", ["gesturing", "skin", "medium-dark", "person", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3ff}", ["gesturing", "skin", "dark", "person", "OK:", "tone"]),
+ ("\u{1f646}\u{200d}\u{2642}\u{fe0f}", ["man", "gesturing", "male", "human", "blue", "men", "OK", "boy", "man_gesturing_ok"]),
+ ("\u{1f646}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "gesturing", "light", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "gesturing", "medium-light", "skin", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "gesturing", "medium", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "gesturing", "medium-dark", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "gesturing", "dark", "OK:", "tone"]),
+ ("\u{1f646}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "human", "woman", "female", "pink", "girl", "woman_gesturing_ok", "OK", "women"]),
+ ("\u{1f646}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "light", "woman", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "medium-light", "woman", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "medium", "woman", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "medium-dark", "woman", "OK:", "tone"]),
+ ("\u{1f646}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["gesturing", "skin", "dark", "woman", "OK:", "tone"]),
+ ("\u{1f481}", ["person_tipping_hand", "tipping", "information", "person", "hand"]),
+ ("\u{1f481}\u{1f3fb}", ["skin", "tipping", "person", "light", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fc}", ["skin", "medium-light", "tipping", "person", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fd}", ["skin", "medium", "tipping", "person", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fe}", ["skin", "tipping", "person", "medium-dark", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3ff}", ["skin", "dark", "tipping", "person", "hand:", "tone"]),
+ ("\u{1f481}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "human", "man_tipping_hand", "tipping", "information", "hand", "boy"]),
+ ("\u{1f481}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "tipping", "light", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "tipping", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "tipping", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "tipping", "medium-dark", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "tipping", "hand:", "tone"]),
+ ("\u{1f481}\u{200d}\u{2640}\u{fe0f}", ["human", "tipping", "information", "woman", "female", "woman_tipping_hand", "girl", "hand"]),
+ ("\u{1f481}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "tipping", "light", "woman", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "tipping", "woman", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "tipping", "woman", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "tipping", "medium-dark", "woman", "hand:", "tone"]),
+ ("\u{1f481}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "tipping", "woman", "hand:", "tone"]),
+ ("\u{1f64b}", ["question", "person", "raising", "hand", "person_raising_hand"]),
+ ("\u{1f64b}\u{1f3fb}", ["skin", "light", "person", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fc}", ["skin", "medium-light", "person", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fd}", ["skin", "medium", "person", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fe}", ["skin", "medium-dark", "person", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3ff}", ["skin", "dark", "person", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "raising", "man_raising_hand", "hand", "boy"]),
+ ("\u{1f64b}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "raising", "hand:", "tone"]),
+ ("\u{1f64b}\u{200d}\u{2640}\u{fe0f}", ["woman_raising_hand", "raising", "woman", "female", "girl", "hand"]),
+ ("\u{1f64b}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "raising", "woman", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "raising", "woman", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "raising", "woman", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "raising", "woman", "hand:", "tone"]),
+ ("\u{1f64b}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "raising", "woman", "hand:", "tone"]),
+ ("\u{1f9cf}", ["deaf_person", "person", "deaf", "accessibility"]),
+ ("\u{1f9cf}\u{1f3fb}", ["skin", "deaf", "light", "person:", "tone"]),
+ ("\u{1f9cf}\u{1f3fc}", ["skin", "medium-light", "deaf", "person:", "tone"]),
+ ("\u{1f9cf}\u{1f3fd}", ["skin", "medium", "deaf", "person:", "tone"]),
+ ("\u{1f9cf}\u{1f3fe}", ["skin", "deaf", "medium-dark", "person:", "tone"]),
+ ("\u{1f9cf}\u{1f3ff}", ["skin", "deaf", "dark", "person:", "tone"]),
+ ("\u{1f9cf}\u{200d}\u{2642}\u{fe0f}", ["man", "deaf_man", "deaf", "accessibility"]),
+ ("\u{1f9cf}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["skin", "deaf", "light", "man:", "tone"]),
+ ("\u{1f9cf}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["skin", "medium-light", "deaf", "man:", "tone"]),
+ ("\u{1f9cf}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["skin", "medium", "deaf", "man:", "tone"]),
+ ("\u{1f9cf}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["skin", "deaf", "medium-dark", "man:", "tone"]),
+ ("\u{1f9cf}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["skin", "deaf", "dark", "man:", "tone"]),
+ ("\u{1f9cf}\u{200d}\u{2640}\u{fe0f}", ["woman", "deaf_woman", "deaf", "accessibility"]),
+ ("\u{1f9cf}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "deaf", "light", "tone", "woman:"]),
+ ("\u{1f9cf}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "deaf", "tone", "woman:"]),
+ ("\u{1f9cf}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "deaf", "tone", "woman:"]),
+ ("\u{1f9cf}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "deaf", "medium-dark", "tone", "woman:"]),
+ ("\u{1f9cf}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "deaf", "dark", "tone", "woman:"]),
+ ("\u{1f647}", ["person_bowing", "respectiful", "bowing", "person"]),
+ ("\u{1f647}\u{1f3fb}", ["skin", "bowing:", "light", "person", "tone"]),
+ ("\u{1f647}\u{1f3fc}", ["skin", "medium-light", "bowing:", "person", "tone"]),
+ ("\u{1f647}\u{1f3fd}", ["skin", "medium", "bowing:", "person", "tone"]),
+ ("\u{1f647}\u{1f3fe}", ["skin", "bowing:", "person", "medium-dark", "tone"]),
+ ("\u{1f647}\u{1f3ff}", ["skin", "dark", "bowing:", "person", "tone"]),
+ ("\u{1f647}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "bowing", "man_bowing", "boy"]),
+ ("\u{1f647}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "bowing:", "light", "tone"]),
+ ("\u{1f647}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "bowing:", "tone"]),
+ ("\u{1f647}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "bowing:", "tone"]),
+ ("\u{1f647}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "bowing:", "medium-dark", "tone"]),
+ ("\u{1f647}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "bowing:", "tone"]),
+ ("\u{1f647}\u{200d}\u{2640}\u{fe0f}", ["bowing", "woman", "female", "woman_bowing", "girl"]),
+ ("\u{1f647}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "bowing:", "light", "woman", "tone"]),
+ ("\u{1f647}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "bowing:", "woman", "tone"]),
+ ("\u{1f647}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "bowing:", "woman", "tone"]),
+ ("\u{1f647}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "bowing:", "medium-dark", "woman", "tone"]),
+ ("\u{1f647}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "bowing:", "woman", "tone"]),
+ ("\u{1f926}", ["facepalming", "person", "disappointed", "person_facepalming"]),
+ ("\u{1f926}\u{1f3fb}", ["skin", "facepalming:", "light", "person", "tone"]),
+ ("\u{1f926}\u{1f3fc}", ["skin", "medium-light", "facepalming:", "person", "tone"]),
+ ("\u{1f926}\u{1f3fd}", ["skin", "medium", "facepalming:", "person", "tone"]),
+ ("\u{1f926}\u{1f3fe}", ["skin", "facepalming:", "person", "medium-dark", "tone"]),
+ ("\u{1f926}\u{1f3ff}", ["skin", "dark", "facepalming:", "person", "tone"]),
+ ("\u{1f926}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "man_facepalming", "disbelief", "facepalming", "boy"]),
+ ("\u{1f926}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "facepalming:", "light", "tone"]),
+ ("\u{1f926}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "facepalming:", "tone"]),
+ ("\u{1f926}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "facepalming:", "tone"]),
+ ("\u{1f926}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "facepalming:", "medium-dark", "tone"]),
+ ("\u{1f926}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "facepalming:", "tone"]),
+ ("\u{1f926}\u{200d}\u{2640}\u{fe0f}", ["disbelief", "facepalming", "woman", "woman_facepalming", "female", "girl"]),
+ ("\u{1f926}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "facepalming:", "light", "woman", "tone"]),
+ ("\u{1f926}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "facepalming:", "woman", "tone"]),
+ ("\u{1f926}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "facepalming:", "woman", "tone"]),
+ ("\u{1f926}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "facepalming:", "medium-dark", "woman", "tone"]),
+ ("\u{1f926}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "facepalming:", "woman", "tone"]),
+ ("\u{1f937}", ["person_shrugging", "shrugging", "regardless", "person"]),
+ ("\u{1f937}\u{1f3fb}", ["skin", "light", "person", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fc}", ["skin", "medium-light", "person", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fd}", ["skin", "medium", "person", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fe}", ["skin", "person", "medium-dark", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3ff}", ["skin", "dark", "person", "tone", "shrugging:"]),
+ ("\u{1f937}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "indifferent", "shrugging", "man_shrugging", "doubt", "confused", "boy"]),
+ ("\u{1f937}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "tone", "shrugging:"]),
+ ("\u{1f937}\u{200d}\u{2640}\u{fe0f}", ["indifferent", "woman", "shrugging", "female", "woman_shrugging", "doubt", "girl", "confused"]),
+ ("\u{1f937}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "tone", "shrugging:"]),
+ ("\u{1f937}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "tone", "shrugging:"]),
+ ("\u{1f9d1}\u{200d}\u{2695}\u{fe0f}", ["health_worker", "worker", "hospital", "health"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2695}\u{fe0f}", ["skin", "light", "worker:", "tone", "health"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2695}\u{fe0f}", ["skin", "medium-light", "worker:", "tone", "health"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2695}\u{fe0f}", ["skin", "medium", "worker:", "tone", "health"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2695}\u{fe0f}", ["skin", "medium-dark", "worker:", "tone", "health"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2695}\u{fe0f}", ["skin", "dark", "worker:", "tone", "health"]),
+ ("\u{1f468}\u{200d}\u{2695}\u{fe0f}", ["man", "human", "healthcare", "doctor", "worker", "therapist", "nurse", "man_health_worker", "health"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2695}\u{fe0f}", ["man", "skin", "light", "worker:", "tone", "health"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2695}\u{fe0f}", ["man", "skin", "medium-light", "worker:", "tone", "health"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2695}\u{fe0f}", ["man", "skin", "medium", "worker:", "tone", "health"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2695}\u{fe0f}", ["man", "skin", "medium-dark", "worker:", "tone", "health"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2695}\u{fe0f}", ["man", "skin", "dark", "worker:", "tone", "health"]),
+ ("\u{1f469}\u{200d}\u{2695}\u{fe0f}", ["human", "healthcare", "doctor", "worker", "woman", "therapist", "nurse", "woman_health_worker", "health"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2695}\u{fe0f}", ["skin", "light", "woman", "worker:", "tone", "health"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2695}\u{fe0f}", ["skin", "medium-light", "woman", "worker:", "tone", "health"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2695}\u{fe0f}", ["skin", "medium", "woman", "worker:", "tone", "health"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2695}\u{fe0f}", ["skin", "medium-dark", "woman", "worker:", "tone", "health"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2695}\u{fe0f}", ["skin", "dark", "woman", "worker:", "tone", "health"]),
+ ("\u{1f9d1}\u{200d}\u{1f393}", ["student", "learn"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f393}", ["student:", "skin", "tone", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f393}", ["student:", "skin", "medium-light", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f393}", ["student:", "skin", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f393}", ["student:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f393}", ["student:", "skin", "tone", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f393}", ["man", "human", "graduate", "student", "man_student"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f393}", ["man", "skin", "light", "student:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f393}", ["man", "skin", "medium-light", "student:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f393}", ["man", "skin", "medium", "student:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f393}", ["man", "skin", "medium-dark", "student:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f393}", ["man", "skin", "dark", "student:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f393}", ["human", "graduate", "woman", "student", "woman_student"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f393}", ["skin", "light", "woman", "student:", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f393}", ["skin", "medium-light", "woman", "student:", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f393}", ["skin", "medium", "woman", "student:", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f393}", ["skin", "medium-dark", "woman", "student:", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f393}", ["skin", "dark", "woman", "student:", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f3eb}", ["professor", "teacher"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f3eb}", ["skin", "teacher:", "tone", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f3eb}", ["medium-light", "teacher:", "skin", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f3eb}", ["skin", "teacher:", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f3eb}", ["skin", "teacher:", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f3eb}", ["skin", "teacher:", "tone", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f3eb}", ["man", "human", "man_teacher", "teacher", "professor", "instructor"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f3eb}", ["man", "skin", "light", "teacher:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f3eb}", ["man", "skin", "medium-light", "teacher:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f3eb}", ["man", "skin", "medium", "teacher:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f3eb}", ["man", "skin", "medium-dark", "teacher:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f3eb}", ["man", "skin", "dark", "teacher:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f3eb}", ["woman_teacher", "human", "teacher", "professor", "woman", "instructor"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f3eb}", ["skin", "light", "woman", "teacher:", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f3eb}", ["skin", "medium-light", "woman", "teacher:", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f3eb}", ["skin", "medium", "woman", "teacher:", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f3eb}", ["skin", "medium-dark", "woman", "teacher:", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f3eb}", ["skin", "dark", "woman", "teacher:", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{2696}\u{fe0f}", ["law", "judge"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2696}\u{fe0f}", ["judge:", "tone", "skin", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2696}\u{fe0f}", ["judge:", "medium-light", "skin", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2696}\u{fe0f}", ["judge:", "skin", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2696}\u{fe0f}", ["judge:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2696}\u{fe0f}", ["judge:", "skin", "tone", "dark"]),
+ ("\u{1f468}\u{200d}\u{2696}\u{fe0f}", ["man", "man_judge", "human", "judge", "court", "justice"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2696}\u{fe0f}", ["man", "skin", "judge:", "light", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2696}\u{fe0f}", ["man", "skin", "medium-light", "judge:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2696}\u{fe0f}", ["man", "skin", "medium", "judge:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2696}\u{fe0f}", ["man", "skin", "judge:", "medium-dark", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2696}\u{fe0f}", ["man", "skin", "dark", "judge:", "tone"]),
+ ("\u{1f469}\u{200d}\u{2696}\u{fe0f}", ["human", "judge", "woman", "court", "justice", "woman_judge"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2696}\u{fe0f}", ["skin", "judge:", "light", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2696}\u{fe0f}", ["skin", "medium-light", "judge:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2696}\u{fe0f}", ["skin", "medium", "judge:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2696}\u{fe0f}", ["skin", "judge:", "medium-dark", "woman", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2696}\u{fe0f}", ["skin", "dark", "judge:", "woman", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f33e}", ["farmer", "crops"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f33e}", ["skin", "tone", "farmer:", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f33e}", ["skin", "medium-light", "tone", "farmer:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f33e}", ["skin", "tone", "farmer:", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f33e}", ["skin", "tone", "farmer:", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f33e}", ["skin", "tone", "farmer:", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f33e}", ["man", "human", "farmer", "rancher", "gardener", "man_farmer"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f33e}", ["man", "skin", "farmer:", "light", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f33e}", ["man", "skin", "medium-light", "farmer:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f33e}", ["man", "skin", "medium", "farmer:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f33e}", ["man", "skin", "farmer:", "medium-dark", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f33e}", ["man", "skin", "dark", "farmer:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f33e}", ["human", "woman_farmer", "woman", "farmer", "rancher", "gardener"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f33e}", ["skin", "farmer:", "light", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f33e}", ["skin", "medium-light", "farmer:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f33e}", ["skin", "medium", "farmer:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f33e}", ["skin", "farmer:", "medium-dark", "woman", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f33e}", ["skin", "dark", "farmer:", "woman", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f373}", ["kitchen", "food", "cook", "culinary"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f373}", ["cook:", "skin", "tone", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f373}", ["cook:", "skin", "medium-light", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f373}", ["cook:", "skin", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f373}", ["cook:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f373}", ["cook:", "skin", "tone", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f373}", ["man", "human", "cook", "chef", "man_cook"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f373}", ["man", "skin", "light", "cook:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f373}", ["man", "skin", "medium-light", "cook:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f373}", ["man", "skin", "medium", "cook:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f373}", ["man", "skin", "medium-dark", "cook:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f373}", ["man", "skin", "dark", "cook:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f373}", ["human", "cook", "chef", "woman", "woman_cook"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f373}", ["skin", "light", "woman", "cook:", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f373}", ["skin", "medium-light", "woman", "cook:", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f373}", ["skin", "medium", "woman", "cook:", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f373}", ["skin", "medium-dark", "woman", "cook:", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f373}", ["skin", "dark", "woman", "cook:", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f527}", ["worker", "technician", "mechanic"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f527}", ["skin", "tone", "light", "mechanic:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f527}", ["skin", "medium-light", "tone", "mechanic:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f527}", ["skin", "tone", "medium", "mechanic:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f527}", ["skin", "tone", "medium-dark", "mechanic:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f527}", ["skin", "tone", "mechanic:", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f527}", ["man", "human", "plumber", "man_mechanic", "mechanic", "wrench"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f527}", ["man", "skin", "light", "mechanic:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f527}", ["man", "skin", "medium-light", "mechanic:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f527}", ["man", "skin", "medium", "mechanic:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f527}", ["man", "skin", "medium-dark", "mechanic:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f527}", ["man", "skin", "dark", "mechanic:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f527}", ["human", "plumber", "woman_mechanic", "woman", "mechanic", "wrench"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f527}", ["skin", "light", "mechanic:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f527}", ["skin", "medium-light", "mechanic:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f527}", ["skin", "medium", "mechanic:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f527}", ["skin", "medium-dark", "mechanic:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f527}", ["skin", "dark", "mechanic:", "woman", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f3ed}", ["factory_worker", "factory", "worker", "labor"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f3ed}", ["factory", "skin", "light", "worker:", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f3ed}", ["factory", "medium-light", "skin", "worker:", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f3ed}", ["factory", "skin", "medium", "worker:", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f3ed}", ["factory", "skin", "medium-dark", "worker:", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f3ed}", ["factory", "skin", "dark", "worker:", "tone"]),
+ ("\u{1f468}\u{200d}\u{1f3ed}", ["man", "factory", "human", "industrial", "worker", "assembly", "man_factory_worker"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f3ed}", ["man", "factory", "skin", "light", "worker:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f3ed}", ["man", "factory", "skin", "medium-light", "worker:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f3ed}", ["man", "factory", "skin", "medium", "worker:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f3ed}", ["man", "factory", "skin", "medium-dark", "worker:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f3ed}", ["man", "factory", "skin", "dark", "worker:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f3ed}", ["human", "factory", "industrial", "worker", "woman_factory_worker", "assembly", "woman"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f3ed}", ["factory", "skin", "light", "woman", "worker:", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f3ed}", ["factory", "skin", "medium-light", "woman", "worker:", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f3ed}", ["factory", "skin", "medium", "woman", "worker:", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f3ed}", ["factory", "skin", "medium-dark", "woman", "worker:", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f3ed}", ["factory", "skin", "dark", "woman", "worker:", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f4bc}", ["worker", "office", "office_worker", "business"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f4bc}", ["skin", "light", "worker:", "tone", "office"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f4bc}", ["skin", "medium-light", "worker:", "tone", "office"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f4bc}", ["skin", "medium", "worker:", "tone", "office"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f4bc}", ["skin", "medium-dark", "worker:", "tone", "office"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f4bc}", ["skin", "dark", "worker:", "tone", "office"]),
+ ("\u{1f468}\u{200d}\u{1f4bc}", ["man", "human", "worker", "man_office_worker", "manager", "office", "business"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f4bc}", ["man", "skin", "light", "worker:", "tone", "office"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f4bc}", ["man", "skin", "medium-light", "worker:", "tone", "office"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f4bc}", ["man", "skin", "medium", "worker:", "tone", "office"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f4bc}", ["man", "skin", "medium-dark", "worker:", "tone", "office"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f4bc}", ["man", "skin", "dark", "worker:", "tone", "office"]),
+ ("\u{1f469}\u{200d}\u{1f4bc}", ["human", "worker", "woman", "woman_office_worker", "manager", "office", "business"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f4bc}", ["skin", "light", "woman", "worker:", "tone", "office"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f4bc}", ["skin", "medium-light", "woman", "worker:", "tone", "office"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f4bc}", ["skin", "medium", "woman", "worker:", "tone", "office"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f4bc}", ["skin", "medium-dark", "woman", "worker:", "tone", "office"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f4bc}", ["skin", "dark", "woman", "worker:", "tone", "office"]),
+ ("\u{1f9d1}\u{200d}\u{1f52c}", ["chemistry", "scientist"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f52c}", ["scientist:", "tone", "skin", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f52c}", ["scientist:", "medium-light", "skin", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f52c}", ["scientist:", "skin", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f52c}", ["scientist:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f52c}", ["scientist:", "skin", "tone", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f52c}", ["man", "human", "chemist", "man_scientist", "engineer", "physicist", "biologist", "scientist"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f52c}", ["man", "skin", "scientist:", "light", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f52c}", ["man", "skin", "medium-light", "scientist:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f52c}", ["man", "skin", "medium", "scientist:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f52c}", ["man", "skin", "scientist:", "medium-dark", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f52c}", ["man", "skin", "dark", "scientist:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f52c}", ["human", "chemist", "engineer", "physicist", "biologist", "woman", "woman_scientist", "scientist"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f52c}", ["skin", "scientist:", "light", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f52c}", ["skin", "medium-light", "scientist:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f52c}", ["skin", "medium", "scientist:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f52c}", ["skin", "scientist:", "medium-dark", "woman", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f52c}", ["skin", "dark", "scientist:", "woman", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f4bb}", ["computer", "technologist"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f4bb}", ["skin", "tone", "technologist:", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f4bb}", ["skin", "medium-light", "technologist:", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f4bb}", ["skin", "technologist:", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f4bb}", ["skin", "technologist:", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f4bb}", ["skin", "technologist:", "tone", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f4bb}", ["man", "software", "human", "engineer", "coder", "man_technologist", "developer", "programmer", "computer", "technologist", "laptop"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f4bb}", ["man", "skin", "light", "tone", "technologist:"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f4bb}", ["man", "skin", "medium-light", "tone", "technologist:"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f4bb}", ["man", "skin", "medium", "tone", "technologist:"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f4bb}", ["man", "skin", "medium-dark", "tone", "technologist:"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f4bb}", ["man", "skin", "dark", "tone", "technologist:"]),
+ ("\u{1f469}\u{200d}\u{1f4bb}", ["software", "human", "engineer", "coder", "developer", "programmer", "woman", "computer", "technologist", "woman_technologist", "laptop"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f4bb}", ["skin", "light", "woman", "tone", "technologist:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f4bb}", ["skin", "medium-light", "woman", "tone", "technologist:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f4bb}", ["skin", "medium", "woman", "tone", "technologist:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f4bb}", ["skin", "medium-dark", "woman", "tone", "technologist:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f4bb}", ["skin", "dark", "woman", "tone", "technologist:"]),
+ ("\u{1f9d1}\u{200d}\u{1f3a4}", ["performer", "song", "singer", "artist"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f3a4}", ["skin", "tone", "light", "singer:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f3a4}", ["skin", "medium-light", "tone", "singer:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f3a4}", ["skin", "medium", "tone", "singer:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f3a4}", ["skin", "tone", "singer:", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f3a4}", ["skin", "tone", "singer:", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f3a4}", ["man", "human", "entertainer", "singer", "rockstar", "man_singer"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f3a4}", ["man", "skin", "singer:", "light", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f3a4}", ["man", "skin", "medium-light", "singer:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f3a4}", ["man", "skin", "medium", "singer:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f3a4}", ["man", "skin", "singer:", "medium-dark", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f3a4}", ["man", "skin", "singer:", "dark", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f3a4}", ["human", "woman_singer", "entertainer", "woman", "singer", "rockstar"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f3a4}", ["skin", "singer:", "light", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f3a4}", ["skin", "medium-light", "singer:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f3a4}", ["skin", "medium", "singer:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f3a4}", ["skin", "singer:", "medium-dark", "woman", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f3a4}", ["skin", "singer:", "dark", "woman", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f3a8}", ["painting", "draw", "creativity", "artist"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f3a8}", ["skin", "tone", "light", "artist:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f3a8}", ["skin", "medium-light", "tone", "artist:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f3a8}", ["skin", "medium", "tone", "artist:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f3a8}", ["skin", "tone", "artist:", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f3a8}", ["skin", "tone", "artist:", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f3a8}", ["man", "human", "man_artist", "painter", "artist"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f3a8}", ["man", "skin", "artist:", "light", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f3a8}", ["man", "skin", "medium-light", "artist:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f3a8}", ["man", "skin", "medium", "artist:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f3a8}", ["man", "skin", "artist:", "medium-dark", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f3a8}", ["man", "skin", "artist:", "dark", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f3a8}", ["human", "woman_artist", "woman", "painter", "artist"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f3a8}", ["skin", "artist:", "light", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f3a8}", ["skin", "medium-light", "artist:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f3a8}", ["skin", "medium", "artist:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f3a8}", ["skin", "artist:", "medium-dark", "woman", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f3a8}", ["skin", "artist:", "dark", "woman", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{2708}\u{fe0f}", ["plane", "fly", "pilot", "airplane"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2708}\u{fe0f}", ["skin", "tone", "light", "pilot:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2708}\u{fe0f}", ["skin", "medium-light", "tone", "pilot:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2708}\u{fe0f}", ["skin", "tone", "medium", "pilot:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2708}\u{fe0f}", ["skin", "tone", "medium-dark", "pilot:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2708}\u{fe0f}", ["skin", "tone", "pilot:", "dark"]),
+ ("\u{1f468}\u{200d}\u{2708}\u{fe0f}", ["man", "human", "aviator", "man_pilot", "pilot", "plane"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2708}\u{fe0f}", ["man", "skin", "light", "tone", "pilot:"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2708}\u{fe0f}", ["man", "skin", "medium-light", "tone", "pilot:"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2708}\u{fe0f}", ["man", "skin", "medium", "tone", "pilot:"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2708}\u{fe0f}", ["man", "skin", "medium-dark", "tone", "pilot:"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2708}\u{fe0f}", ["man", "skin", "dark", "tone", "pilot:"]),
+ ("\u{1f469}\u{200d}\u{2708}\u{fe0f}", ["human", "aviator", "woman_pilot", "woman", "pilot", "plane"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2708}\u{fe0f}", ["skin", "light", "woman", "tone", "pilot:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2708}\u{fe0f}", ["skin", "medium-light", "woman", "tone", "pilot:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2708}\u{fe0f}", ["skin", "medium", "woman", "tone", "pilot:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2708}\u{fe0f}", ["skin", "medium-dark", "woman", "tone", "pilot:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2708}\u{fe0f}", ["skin", "dark", "woman", "tone", "pilot:"]),
+ ("\u{1f9d1}\u{200d}\u{1f680}", ["astronaut", "outerspace"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f680}", ["astronaut:", "skin", "tone", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f680}", ["astronaut:", "skin", "medium-light", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f680}", ["astronaut:", "skin", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f680}", ["astronaut:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f680}", ["astronaut:", "skin", "tone", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f680}", ["man", "human", "space", "man_astronaut", "astronaut", "rocket"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f680}", ["man", "skin", "light", "astronaut:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f680}", ["man", "skin", "medium-light", "astronaut:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f680}", ["man", "skin", "medium", "astronaut:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f680}", ["man", "skin", "medium-dark", "astronaut:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f680}", ["man", "skin", "dark", "astronaut:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f680}", ["human", "space", "woman_astronaut", "woman", "astronaut", "rocket"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f680}", ["skin", "light", "woman", "astronaut:", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f680}", ["skin", "medium-light", "woman", "astronaut:", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f680}", ["skin", "medium", "woman", "astronaut:", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f680}", ["skin", "medium-dark", "woman", "astronaut:", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f680}", ["skin", "dark", "woman", "astronaut:", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f692}", ["firefighter", "fire"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f692}", ["skin", "firefighter:", "tone", "light"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f692}", ["medium-light", "firefighter:", "skin", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f692}", ["skin", "firefighter:", "tone", "medium"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f692}", ["skin", "firefighter:", "tone", "medium-dark"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f692}", ["skin", "firefighter:", "tone", "dark"]),
+ ("\u{1f468}\u{200d}\u{1f692}", ["man", "fireman", "human", "man_firefighter", "firefighter"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f692}", ["man", "skin", "firefighter:", "light", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f692}", ["man", "skin", "medium-light", "firefighter:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f692}", ["man", "skin", "medium", "firefighter:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f692}", ["man", "skin", "firefighter:", "medium-dark", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f692}", ["man", "skin", "dark", "firefighter:", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f692}", ["woman_firefighter", "fireman", "human", "firefighter", "woman"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f692}", ["skin", "firefighter:", "light", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f692}", ["skin", "medium-light", "firefighter:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f692}", ["skin", "medium", "firefighter:", "woman", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f692}", ["skin", "firefighter:", "medium-dark", "woman", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f692}", ["skin", "dark", "firefighter:", "woman", "tone"]),
+ ("\u{1f46e}", ["officer", "cop", "police_officer", "police"]),
+ ("\u{1f46e}\u{1f3fb}", ["skin", "officer:", "light", "police", "tone"]),
+ ("\u{1f46e}\u{1f3fc}", ["skin", "medium-light", "officer:", "police", "tone"]),
+ ("\u{1f46e}\u{1f3fd}", ["skin", "medium", "officer:", "police", "tone"]),
+ ("\u{1f46e}\u{1f3fe}", ["skin", "officer:", "medium-dark", "police", "tone"]),
+ ("\u{1f46e}\u{1f3ff}", ["skin", "dark", "officer:", "police", "tone"]),
+ ("\u{1f46e}\u{200d}\u{2642}\u{fe0f}", ["man", "enforcement", "arrest", "officer", "law", "police", "man_police_officer", "legal"]),
+ ("\u{1f46e}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "officer:", "light", "police", "tone"]),
+ ("\u{1f46e}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "officer:", "police", "tone"]),
+ ("\u{1f46e}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "officer:", "police", "tone"]),
+ ("\u{1f46e}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "officer:", "medium-dark", "police", "tone"]),
+ ("\u{1f46e}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "officer:", "police", "tone"]),
+ ("\u{1f46e}\u{200d}\u{2640}\u{fe0f}", ["enforcement", "arrest", "officer", "law", "police", "woman", "female", "woman_police_officer", "legal"]),
+ ("\u{1f46e}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "officer:", "light", "police", "woman", "tone"]),
+ ("\u{1f46e}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "officer:", "police", "woman", "tone"]),
+ ("\u{1f46e}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "officer:", "police", "woman", "tone"]),
+ ("\u{1f46e}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "officer:", "medium-dark", "police", "woman", "tone"]),
+ ("\u{1f46e}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "officer:", "police", "woman", "tone"]),
+ ("\u{1f575}", ["detective"]),
+ ("\u{1f575}\u{1f3fb}", ["skin", "tone", "detective:", "light"]),
+ ("\u{1f575}\u{1f3fc}", ["skin", "medium-light", "detective:", "tone"]),
+ ("\u{1f575}\u{1f3fd}", ["skin", "detective:", "tone", "medium"]),
+ ("\u{1f575}\u{1f3fe}", ["skin", "detective:", "tone", "medium-dark"]),
+ ("\u{1f575}\u{1f3ff}", ["skin", "detective:", "tone", "dark"]),
+ ("\u{1f575}\u{fe0f}\u{200d}\u{2642}\u{fe0f}", ["man", "detective", "crime", "man_detective"]),
+ ("\u{1f575}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "tone", "detective:"]),
+ ("\u{1f575}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "tone", "detective:"]),
+ ("\u{1f575}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "tone", "detective:"]),
+ ("\u{1f575}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "tone", "detective:"]),
+ ("\u{1f575}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "tone", "detective:"]),
+ ("\u{1f575}\u{fe0f}\u{200d}\u{2640}\u{fe0f}", ["human", "spy", "detective", "woman_detective", "woman", "female"]),
+ ("\u{1f575}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "tone", "detective:"]),
+ ("\u{1f575}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "tone", "detective:"]),
+ ("\u{1f575}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "tone", "detective:"]),
+ ("\u{1f575}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "tone", "detective:"]),
+ ("\u{1f575}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "tone", "detective:"]),
+ ("\u{1f482}", ["protect", "guard"]),
+ ("\u{1f482}\u{1f3fb}", ["guard:", "tone", "skin", "light"]),
+ ("\u{1f482}\u{1f3fc}", ["guard:", "medium-light", "skin", "tone"]),
+ ("\u{1f482}\u{1f3fd}", ["guard:", "skin", "tone", "medium"]),
+ ("\u{1f482}\u{1f3fe}", ["guard:", "skin", "tone", "medium-dark"]),
+ ("\u{1f482}\u{1f3ff}", ["guard:", "skin", "tone", "dark"]),
+ ("\u{1f482}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "guard", "man_guard", "british", "gb", "royal", "uk", "guy"]),
+ ("\u{1f482}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "guard:", "light", "tone"]),
+ ("\u{1f482}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "guard:", "tone"]),
+ ("\u{1f482}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "guard:", "tone"]),
+ ("\u{1f482}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "guard:", "medium-dark", "tone"]),
+ ("\u{1f482}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "guard:", "tone"]),
+ ("\u{1f482}\u{200d}\u{2640}\u{fe0f}", ["guard", "british", "woman", "gb", "female", "royal", "uk", "woman_guard"]),
+ ("\u{1f482}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "guard:", "light", "woman", "tone"]),
+ ("\u{1f482}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "guard:", "woman", "tone"]),
+ ("\u{1f482}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "guard:", "woman", "tone"]),
+ ("\u{1f482}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "guard:", "medium-dark", "woman", "tone"]),
+ ("\u{1f482}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "guard:", "woman", "tone"]),
+ ("\u{1f977}", ["ninja"]),
+ ("\u{1f977}\u{1f3fb}", ["skin", "tone", "light", "ninja:"]),
+ ("\u{1f977}\u{1f3fc}", ["skin", "medium-light", "tone", "ninja:"]),
+ ("\u{1f977}\u{1f3fd}", ["skin", "tone", "medium", "ninja:"]),
+ ("\u{1f977}\u{1f3fe}", ["skin", "tone", "medium-dark", "ninja:"]),
+ ("\u{1f977}\u{1f3ff}", ["skin", "tone", "dark", "ninja:"]),
+ ("\u{1f477}", ["worker", "build", "construction_worker", "labor", "construction"]),
+ ("\u{1f477}\u{1f3fb}", ["skin", "light", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fc}", ["skin", "medium-light", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fd}", ["skin", "medium", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fe}", ["skin", "medium-dark", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3ff}", ["skin", "dark", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "human", "wip", "worker", "man_construction_worker", "build", "labor", "guy", "construction"]),
+ ("\u{1f477}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{200d}\u{2640}\u{fe0f}", ["human", "wip", "worker", "woman", "woman_construction_worker", "female", "build", "labor", "construction"]),
+ ("\u{1f477}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "worker:", "tone", "construction"]),
+ ("\u{1f477}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "worker:", "tone", "construction"]),
+ ("\u{1f934}", ["man", "male", "king", "crown", "royal", "prince", "boy"]),
+ ("\u{1f934}\u{1f3fb}", ["skin", "tone", "light", "prince:"]),
+ ("\u{1f934}\u{1f3fc}", ["skin", "medium-light", "tone", "prince:"]),
+ ("\u{1f934}\u{1f3fd}", ["skin", "tone", "medium", "prince:"]),
+ ("\u{1f934}\u{1f3fe}", ["skin", "tone", "medium-dark", "prince:"]),
+ ("\u{1f934}\u{1f3ff}", ["skin", "tone", "prince:", "dark"]),
+ ("\u{1f478}", ["queen", "crown", "princess", "woman", "royal", "female", "blond", "girl"]),
+ ("\u{1f478}\u{1f3fb}", ["skin", "tone", "princess:", "light"]),
+ ("\u{1f478}\u{1f3fc}", ["skin", "medium-light", "tone", "princess:"]),
+ ("\u{1f478}\u{1f3fd}", ["skin", "tone", "princess:", "medium"]),
+ ("\u{1f478}\u{1f3fe}", ["skin", "tone", "princess:", "medium-dark"]),
+ ("\u{1f478}\u{1f3ff}", ["skin", "tone", "princess:", "dark"]),
+ ("\u{1f473}", ["wearing", "person", "person_wearing_turban", "headdress", "turban"]),
+ ("\u{1f473}\u{1f3fb}", ["skin", "wearing", "light", "person", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fc}", ["skin", "medium-light", "wearing", "person", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fd}", ["skin", "medium", "wearing", "person", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fe}", ["skin", "wearing", "person", "medium-dark", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3ff}", ["skin", "dark", "wearing", "person", "turban:", "tone"]),
+ ("\u{1f473}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "wearing", "hinduism", "man_wearing_turban", "arabs", "indian", "turban"]),
+ ("\u{1f473}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "wearing", "light", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "wearing", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "wearing", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "wearing", "medium-dark", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "wearing", "turban:", "tone"]),
+ ("\u{1f473}\u{200d}\u{2640}\u{fe0f}", ["woman_wearing_turban", "wearing", "woman", "hinduism", "female", "arabs", "indian", "turban"]),
+ ("\u{1f473}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "wearing", "light", "woman", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "wearing", "woman", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "wearing", "woman", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "wearing", "medium-dark", "woman", "turban:", "tone"]),
+ ("\u{1f473}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "wearing", "woman", "turban:", "tone"]),
+ ("\u{1f472}", ["skullcap", "male", "chinese", "man_with_skullcap", "with", "person", "boy"]),
+ ("\u{1f472}\u{1f3fb}", ["skin", "light", "with", "person", "skullcap:", "tone"]),
+ ("\u{1f472}\u{1f3fc}", ["skin", "medium-light", "with", "person", "skullcap:", "tone"]),
+ ("\u{1f472}\u{1f3fd}", ["skin", "medium", "with", "person", "skullcap:", "tone"]),
+ ("\u{1f472}\u{1f3fe}", ["skin", "with", "medium-dark", "person", "skullcap:", "tone"]),
+ ("\u{1f472}\u{1f3ff}", ["skin", "dark", "with", "person", "skullcap:", "tone"]),
+ ("\u{1f9d5}", ["hijab", "with", "woman_with_headscarf", "woman", "female", "headscarf", "mantilla", "tichel"]),
+ ("\u{1f9d5}\u{1f3fb}", ["skin", "with", "light", "woman", "headscarf:", "tone"]),
+ ("\u{1f9d5}\u{1f3fc}", ["skin", "medium-light", "with", "woman", "headscarf:", "tone"]),
+ ("\u{1f9d5}\u{1f3fd}", ["skin", "medium", "with", "woman", "headscarf:", "tone"]),
+ ("\u{1f9d5}\u{1f3fe}", ["skin", "with", "medium-dark", "woman", "headscarf:", "tone"]),
+ ("\u{1f9d5}\u{1f3ff}", ["skin", "dark", "with", "woman", "headscarf:", "tone"]),
+ ("\u{1f935}", ["tuxedo", "groom", "man_in_tuxedo", "person", "in", "marriage", "couple", "wedding"]),
+ ("\u{1f935}\u{1f3fb}", ["skin", "light", "person", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fc}", ["skin", "medium-light", "person", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fd}", ["skin", "medium", "person", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fe}", ["skin", "person", "medium-dark", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3ff}", ["skin", "dark", "person", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{200d}\u{2642}\u{fe0f}", ["man", "tuxedo", "fashion", "in", "man in tuxedo", "formal"]),
+ ("\u{1f935}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "in", "medium-dark", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "in", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{200d}\u{2640}\u{fe0f}", ["tuxedo", "fashion", "in", "woman", "woman in tuxedo", "formal"]),
+ ("\u{1f935}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "in", "woman", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "in", "woman", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "in", "woman", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "in", "medium-dark", "woman", "tuxedo:", "tone"]),
+ ("\u{1f935}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "in", "woman", "tuxedo:", "tone"]),
+ ("\u{1f470}", ["veil", "bride", "with", "person", "marriage", "woman", "couple", "bride_with_veil", "wedding"]),
+ ("\u{1f470}\u{1f3fb}", ["skin", "veil:", "with", "person", "light", "tone"]),
+ ("\u{1f470}\u{1f3fc}", ["skin", "medium-light", "veil:", "with", "person", "tone"]),
+ ("\u{1f470}\u{1f3fd}", ["skin", "veil:", "medium", "with", "person", "tone"]),
+ ("\u{1f470}\u{1f3fe}", ["skin", "veil:", "with", "person", "medium-dark", "tone"]),
+ ("\u{1f470}\u{1f3ff}", ["skin", "veil:", "dark", "with", "person", "tone"]),
+ ("\u{1f470}\u{200d}\u{2642}\u{fe0f}", ["man", "veil", "with", "marriage", "man with veil", "wedding"]),
+ ("\u{1f470}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "veil:", "with", "light", "tone"]),
+ ("\u{1f470}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "veil:", "with", "tone"]),
+ ("\u{1f470}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "veil:", "medium", "with", "tone"]),
+ ("\u{1f470}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "veil:", "with", "medium-dark", "tone"]),
+ ("\u{1f470}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "veil:", "dark", "with", "tone"]),
+ ("\u{1f470}\u{200d}\u{2640}\u{fe0f}", ["veil", "woman with veil", "with", "marriage", "woman", "wedding"]),
+ ("\u{1f470}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "veil:", "with", "light", "woman", "tone"]),
+ ("\u{1f470}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "veil:", "with", "woman", "tone"]),
+ ("\u{1f470}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "veil:", "medium", "with", "woman", "tone"]),
+ ("\u{1f470}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "veil:", "with", "medium-dark", "woman", "tone"]),
+ ("\u{1f470}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "veil:", "dark", "with", "woman", "tone"]),
+ ("\u{1f930}", ["woman", "pregnant", "pregnant_woman", "baby"]),
+ ("\u{1f930}\u{1f3fb}", ["skin", "pregnant", "light", "tone", "woman:"]),
+ ("\u{1f930}\u{1f3fc}", ["skin", "medium-light", "pregnant", "tone", "woman:"]),
+ ("\u{1f930}\u{1f3fd}", ["skin", "pregnant", "medium", "tone", "woman:"]),
+ ("\u{1f930}\u{1f3fe}", ["skin", "pregnant", "medium-dark", "tone", "woman:"]),
+ ("\u{1f930}\u{1f3ff}", ["skin", "pregnant", "dark", "tone", "woman:"]),
+ ("\u{1f931}", ["breast-feeding", "nursing", "breast_feeding", "baby"]),
+ ("\u{1f931}\u{1f3fb}", ["skin", "tone", "light", "breast-feeding:"]),
+ ("\u{1f931}\u{1f3fc}", ["skin", "medium-light", "tone", "breast-feeding:"]),
+ ("\u{1f931}\u{1f3fd}", ["skin", "tone", "medium", "breast-feeding:"]),
+ ("\u{1f931}\u{1f3fe}", ["skin", "tone", "medium-dark", "breast-feeding:"]),
+ ("\u{1f931}\u{1f3ff}", ["skin", "tone", "dark", "breast-feeding:"]),
+ ("\u{1f469}\u{200d}\u{1f37c}", ["birth", "food", "baby", "woman", "woman feeding baby", "feeding"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f37c}", ["skin", "baby:", "light", "woman", "tone", "feeding"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f37c}", ["skin", "medium-light", "baby:", "woman", "tone", "feeding"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f37c}", ["skin", "medium", "baby:", "woman", "tone", "feeding"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f37c}", ["skin", "baby:", "medium-dark", "woman", "tone", "feeding"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f37c}", ["skin", "dark", "baby:", "woman", "tone", "feeding"]),
+ ("\u{1f468}\u{200d}\u{1f37c}", ["man", "birth", "food", "baby", "man feeding baby", "feeding"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f37c}", ["man", "skin", "baby:", "light", "tone", "feeding"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f37c}", ["man", "skin", "medium-light", "baby:", "tone", "feeding"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f37c}", ["man", "skin", "medium", "baby:", "tone", "feeding"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f37c}", ["man", "skin", "baby:", "medium-dark", "tone", "feeding"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f37c}", ["man", "skin", "dark", "baby:", "tone", "feeding"]),
+ ("\u{1f9d1}\u{200d}\u{1f37c}", ["birth", "food", "person", "baby", "person feeding baby", "feeding"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f37c}", ["skin", "baby:", "light", "person", "tone", "feeding"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f37c}", ["skin", "medium-light", "baby:", "person", "tone", "feeding"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f37c}", ["skin", "medium", "baby:", "person", "tone", "feeding"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f37c}", ["skin", "baby:", "medium-dark", "person", "tone", "feeding"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f37c}", ["skin", "dark", "baby:", "person", "tone", "feeding"]),
+ ("\u{1f47c}", ["angel", "heaven", "baby", "halo", "wings", "baby_angel"]),
+ ("\u{1f47c}\u{1f3fb}", ["skin", "light", "baby", "tone", "angel:"]),
+ ("\u{1f47c}\u{1f3fc}", ["skin", "medium-light", "baby", "tone", "angel:"]),
+ ("\u{1f47c}\u{1f3fd}", ["skin", "medium", "baby", "tone", "angel:"]),
+ ("\u{1f47c}\u{1f3fe}", ["skin", "medium-dark", "baby", "tone", "angel:"]),
+ ("\u{1f47c}\u{1f3ff}", ["skin", "dark", "baby", "tone", "angel:"]),
+ ("\u{1f385}", ["man", "male", "festival", "Santa", "santa_claus", "Claus", "father christmas", "xmas"]),
+ ("\u{1f385}\u{1f3fb}", ["skin", "Santa", "light", "Claus:", "tone"]),
+ ("\u{1f385}\u{1f3fc}", ["skin", "medium-light", "Santa", "Claus:", "tone"]),
+ ("\u{1f385}\u{1f3fd}", ["skin", "medium", "Santa", "Claus:", "tone"]),
+ ("\u{1f385}\u{1f3fe}", ["skin", "Santa", "medium-dark", "Claus:", "tone"]),
+ ("\u{1f385}\u{1f3ff}", ["skin", "dark", "Santa", "Claus:", "tone"]),
+ ("\u{1f936}", ["mother christmas", "Mrs.", "mrs_claus", "woman", "Claus", "female", "xmas"]),
+ ("\u{1f936}\u{1f3fb}", ["skin", "Mrs.", "light", "Claus:", "tone"]),
+ ("\u{1f936}\u{1f3fc}", ["skin", "medium-light", "Mrs.", "Claus:", "tone"]),
+ ("\u{1f936}\u{1f3fd}", ["skin", "medium", "Mrs.", "Claus:", "tone"]),
+ ("\u{1f936}\u{1f3fe}", ["skin", "Mrs.", "medium-dark", "Claus:", "tone"]),
+ ("\u{1f936}\u{1f3ff}", ["skin", "dark", "Mrs.", "Claus:", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f384}", ["christmas", "claus", "mx", "mx claus"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f384}", ["skin", "light", "mx", "tone", "claus:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f384}", ["skin", "medium-light", "mx", "tone", "claus:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f384}", ["skin", "medium", "mx", "tone", "claus:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f384}", ["skin", "medium-dark", "mx", "tone", "claus:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f384}", ["skin", "dark", "mx", "tone", "claus:"]),
+ ("\u{1f9b8}", ["superhero", "marvel"]),
+ ("\u{1f9b8}\u{1f3fb}", ["skin", "tone", "light", "superhero:"]),
+ ("\u{1f9b8}\u{1f3fc}", ["skin", "medium-light", "tone", "superhero:"]),
+ ("\u{1f9b8}\u{1f3fd}", ["skin", "tone", "medium", "superhero:"]),
+ ("\u{1f9b8}\u{1f3fe}", ["skin", "tone", "medium-dark", "superhero:"]),
+ ("\u{1f9b8}\u{1f3ff}", ["skin", "tone", "dark", "superhero:"]),
+ ("\u{1f9b8}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "hero", "superpowers", "good", "superhero", "man_superhero"]),
+ ("\u{1f9b8}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "superhero:", "light", "tone"]),
+ ("\u{1f9b8}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "superhero:", "tone"]),
+ ("\u{1f9b8}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "superhero:", "tone"]),
+ ("\u{1f9b8}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "superhero:", "medium-dark", "tone"]),
+ ("\u{1f9b8}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "superhero:", "tone"]),
+ ("\u{1f9b8}\u{200d}\u{2640}\u{fe0f}", ["woman_superhero", "superpowers", "good", "woman", "female", "heroine", "superhero"]),
+ ("\u{1f9b8}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "superhero:", "light", "woman", "tone"]),
+ ("\u{1f9b8}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "superhero:", "woman", "tone"]),
+ ("\u{1f9b8}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "superhero:", "woman", "tone"]),
+ ("\u{1f9b8}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "superhero:", "medium-dark", "woman", "tone"]),
+ ("\u{1f9b8}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "superhero:", "woman", "tone"]),
+ ("\u{1f9b9}", ["marvel", "supervillain"]),
+ ("\u{1f9b9}\u{1f3fb}", ["supervillain:", "skin", "tone", "light"]),
+ ("\u{1f9b9}\u{1f3fc}", ["supervillain:", "skin", "medium-light", "tone"]),
+ ("\u{1f9b9}\u{1f3fd}", ["supervillain:", "skin", "tone", "medium"]),
+ ("\u{1f9b9}\u{1f3fe}", ["supervillain:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9b9}\u{1f3ff}", ["supervillain:", "skin", "tone", "dark"]),
+ ("\u{1f9b9}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "hero", "bad", "supervillain", "superpowers", "evil", "man_supervillain", "criminal"]),
+ ("\u{1f9b9}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{200d}\u{2640}\u{fe0f}", ["bad", "supervillain", "superpowers", "evil", "woman", "woman_supervillain", "female", "heroine", "criminal"]),
+ ("\u{1f9b9}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "supervillain:", "tone"]),
+ ("\u{1f9b9}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "supervillain:", "tone"]),
+ ("\u{1f9d9}", ["mage", "magic"]),
+ ("\u{1f9d9}\u{1f3fb}", ["skin", "tone", "mage:", "light"]),
+ ("\u{1f9d9}\u{1f3fc}", ["skin", "medium-light", "tone", "mage:"]),
+ ("\u{1f9d9}\u{1f3fd}", ["skin", "tone", "mage:", "medium"]),
+ ("\u{1f9d9}\u{1f3fe}", ["skin", "tone", "mage:", "medium-dark"]),
+ ("\u{1f9d9}\u{1f3ff}", ["skin", "tone", "mage:", "dark"]),
+ ("\u{1f9d9}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "sorcerer", "man_mage", "mage"]),
+ ("\u{1f9d9}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "mage:", "light", "tone"]),
+ ("\u{1f9d9}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "mage:", "tone"]),
+ ("\u{1f9d9}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "mage:", "tone"]),
+ ("\u{1f9d9}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "mage:", "medium-dark", "tone"]),
+ ("\u{1f9d9}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "mage:", "tone"]),
+ ("\u{1f9d9}\u{200d}\u{2640}\u{fe0f}", ["woman_mage", "woman", "mage", "female", "witch"]),
+ ("\u{1f9d9}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "mage:", "light", "woman", "tone"]),
+ ("\u{1f9d9}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "mage:", "woman", "tone"]),
+ ("\u{1f9d9}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "mage:", "woman", "tone"]),
+ ("\u{1f9d9}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "mage:", "medium-dark", "woman", "tone"]),
+ ("\u{1f9d9}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "mage:", "woman", "tone"]),
+ ("\u{1f9da}", ["magical", "fairy", "wings"]),
+ ("\u{1f9da}\u{1f3fb}", ["skin", "tone", "light", "fairy:"]),
+ ("\u{1f9da}\u{1f3fc}", ["skin", "medium-light", "tone", "fairy:"]),
+ ("\u{1f9da}\u{1f3fd}", ["skin", "tone", "medium", "fairy:"]),
+ ("\u{1f9da}\u{1f3fe}", ["skin", "tone", "medium-dark", "fairy:"]),
+ ("\u{1f9da}\u{1f3ff}", ["skin", "tone", "fairy:", "dark"]),
+ ("\u{1f9da}\u{200d}\u{2642}\u{fe0f}", ["man", "man_fairy", "male", "fairy"]),
+ ("\u{1f9da}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "fairy:", "tone"]),
+ ("\u{1f9da}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "fairy:", "tone"]),
+ ("\u{1f9da}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "fairy:", "tone"]),
+ ("\u{1f9da}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "fairy:", "tone"]),
+ ("\u{1f9da}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "fairy:", "tone"]),
+ ("\u{1f9da}\u{200d}\u{2640}\u{fe0f}", ["woman", "female", "fairy", "woman_fairy"]),
+ ("\u{1f9da}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "fairy:", "woman", "tone"]),
+ ("\u{1f9da}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "fairy:", "woman", "tone"]),
+ ("\u{1f9da}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "fairy:", "woman", "tone"]),
+ ("\u{1f9da}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "fairy:", "woman", "tone"]),
+ ("\u{1f9da}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "fairy:", "woman", "tone"]),
+ ("\u{1f9db}", ["vampire", "twilight", "blood"]),
+ ("\u{1f9db}\u{1f3fb}", ["skin", "tone", "light", "vampire:"]),
+ ("\u{1f9db}\u{1f3fc}", ["skin", "medium-light", "tone", "vampire:"]),
+ ("\u{1f9db}\u{1f3fd}", ["skin", "medium", "tone", "vampire:"]),
+ ("\u{1f9db}\u{1f3fe}", ["skin", "tone", "vampire:", "medium-dark"]),
+ ("\u{1f9db}\u{1f3ff}", ["skin", "tone", "vampire:", "dark"]),
+ ("\u{1f9db}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "dracula", "vampire", "man_vampire"]),
+ ("\u{1f9db}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "vampire:", "tone"]),
+ ("\u{1f9db}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "vampire:", "tone"]),
+ ("\u{1f9db}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "vampire:", "tone"]),
+ ("\u{1f9db}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "vampire:", "tone"]),
+ ("\u{1f9db}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "vampire:", "tone"]),
+ ("\u{1f9db}\u{200d}\u{2640}\u{fe0f}", ["woman", "vampire", "woman_vampire", "female"]),
+ ("\u{1f9db}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "vampire:", "tone"]),
+ ("\u{1f9db}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "vampire:", "tone"]),
+ ("\u{1f9db}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "vampire:", "tone"]),
+ ("\u{1f9db}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "vampire:", "tone"]),
+ ("\u{1f9db}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "vampire:", "tone"]),
+ ("\u{1f9dc}", ["sea", "merperson"]),
+ ("\u{1f9dc}\u{1f3fb}", ["skin", "tone", "merperson:", "light"]),
+ ("\u{1f9dc}\u{1f3fc}", ["skin", "medium-light", "merperson:", "tone"]),
+ ("\u{1f9dc}\u{1f3fd}", ["skin", "merperson:", "tone", "medium"]),
+ ("\u{1f9dc}\u{1f3fe}", ["skin", "merperson:", "tone", "medium-dark"]),
+ ("\u{1f9dc}\u{1f3ff}", ["skin", "merperson:", "tone", "dark"]),
+ ("\u{1f9dc}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "triton", "merman"]),
+ ("\u{1f9dc}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["skin", "tone", "light", "merman:"]),
+ ("\u{1f9dc}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["skin", "medium-light", "tone", "merman:"]),
+ ("\u{1f9dc}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["skin", "medium", "tone", "merman:"]),
+ ("\u{1f9dc}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["skin", "tone", "merman:", "medium-dark"]),
+ ("\u{1f9dc}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["skin", "tone", "merman:", "dark"]),
+ ("\u{1f9dc}\u{200d}\u{2640}\u{fe0f}", ["woman", "merwoman", "female", "ariel", "mermaid"]),
+ ("\u{1f9dc}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["mermaid:", "skin", "tone", "light"]),
+ ("\u{1f9dc}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["mermaid:", "skin", "medium-light", "tone"]),
+ ("\u{1f9dc}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["mermaid:", "skin", "tone", "medium"]),
+ ("\u{1f9dc}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["mermaid:", "skin", "tone", "medium-dark"]),
+ ("\u{1f9dc}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["mermaid:", "skin", "tone", "dark"]),
+ ("\u{1f9dd}", ["magical", "elf"]),
+ ("\u{1f9dd}\u{1f3fb}", ["skin", "tone", "light", "elf:"]),
+ ("\u{1f9dd}\u{1f3fc}", ["skin", "medium-light", "tone", "elf:"]),
+ ("\u{1f9dd}\u{1f3fd}", ["skin", "medium", "tone", "elf:"]),
+ ("\u{1f9dd}\u{1f3fe}", ["skin", "tone", "elf:", "medium-dark"]),
+ ("\u{1f9dd}\u{1f3ff}", ["skin", "tone", "elf:", "dark"]),
+ ("\u{1f9dd}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "man_elf", "elf"]),
+ ("\u{1f9dd}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "elf:", "light", "tone"]),
+ ("\u{1f9dd}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "elf:", "tone"]),
+ ("\u{1f9dd}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "elf:", "tone"]),
+ ("\u{1f9dd}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "elf:", "medium-dark", "tone"]),
+ ("\u{1f9dd}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "elf:", "dark", "tone"]),
+ ("\u{1f9dd}\u{200d}\u{2640}\u{fe0f}", ["woman", "female", "woman_elf", "elf"]),
+ ("\u{1f9dd}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "elf:", "light", "woman", "tone"]),
+ ("\u{1f9dd}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "elf:", "woman", "tone"]),
+ ("\u{1f9dd}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "elf:", "woman", "tone"]),
+ ("\u{1f9dd}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "elf:", "medium-dark", "woman", "tone"]),
+ ("\u{1f9dd}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "elf:", "dark", "woman", "tone"]),
+ ("\u{1f9de}", ["genie", "wishes", "magical"]),
+ ("\u{1f9de}\u{200d}\u{2642}\u{fe0f}", ["man", "man_genie", "genie", "male"]),
+ ("\u{1f9de}\u{200d}\u{2640}\u{fe0f}", ["woman", "genie", "woman_genie", "female"]),
+ ("\u{1f9df}", ["zombie", "dead"]),
+ ("\u{1f9df}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "dracula", "undead", "walking dead", "man_zombie", "zombie"]),
+ ("\u{1f9df}\u{200d}\u{2640}\u{fe0f}", ["undead", "walking dead", "woman", "female", "woman_zombie", "zombie"]),
+ ("\u{1f486}", ["getting", "person", "person_getting_massage", "massage", "relax"]),
+ ("\u{1f486}\u{1f3fb}", ["getting", "skin", "light", "person", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fc}", ["getting", "skin", "medium-light", "person", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fd}", ["getting", "skin", "medium", "person", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fe}", ["getting", "skin", "person", "medium-dark", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3ff}", ["getting", "skin", "dark", "person", "massage:", "tone"]),
+ ("\u{1f486}\u{200d}\u{2642}\u{fe0f}", ["man", "getting", "male", "head", "man_getting_massage", "massage", "boy"]),
+ ("\u{1f486}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "getting", "skin", "light", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "getting", "skin", "medium-light", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "getting", "skin", "medium", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "getting", "skin", "medium-dark", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "getting", "skin", "dark", "massage:", "tone"]),
+ ("\u{1f486}\u{200d}\u{2640}\u{fe0f}", ["getting", "woman", "woman_getting_massage", "female", "head", "girl", "massage"]),
+ ("\u{1f486}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "light", "woman", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "medium-light", "woman", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "medium", "woman", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "medium-dark", "woman", "massage:", "tone"]),
+ ("\u{1f486}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "dark", "woman", "massage:", "tone"]),
+ ("\u{1f487}", ["getting", "person", "person_getting_haircut", "hairstyle", "haircut"]),
+ ("\u{1f487}\u{1f3fb}", ["getting", "skin", "light", "person", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fc}", ["getting", "skin", "medium-light", "person", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fd}", ["getting", "skin", "medium", "person", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fe}", ["getting", "skin", "person", "medium-dark", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3ff}", ["getting", "skin", "dark", "person", "tone", "haircut:"]),
+ ("\u{1f487}\u{200d}\u{2642}\u{fe0f}", ["man", "getting", "male", "haircut", "boy", "man_getting_haircut"]),
+ ("\u{1f487}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "getting", "light", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "getting", "medium-light", "skin", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "getting", "medium", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "getting", "medium-dark", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "getting", "dark", "tone", "haircut:"]),
+ ("\u{1f487}\u{200d}\u{2640}\u{fe0f}", ["getting", "woman", "female", "girl", "woman_getting_haircut", "haircut"]),
+ ("\u{1f487}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "light", "woman", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "medium-light", "woman", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "medium", "woman", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "medium-dark", "woman", "tone", "haircut:"]),
+ ("\u{1f487}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["getting", "skin", "dark", "woman", "tone", "haircut:"]),
+ ("\u{1f6b6}", ["person_walking", "move", "person", "walking"]),
+ ("\u{1f6b6}\u{1f3fb}", ["skin", "light", "person", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fc}", ["skin", "medium-light", "person", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fd}", ["skin", "medium", "person", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fe}", ["skin", "person", "medium-dark", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3ff}", ["skin", "dark", "person", "walking:", "tone"]),
+ ("\u{1f6b6}\u{200d}\u{2642}\u{fe0f}", ["man", "human", "man_walking", "walking", "steps", "feet"]),
+ ("\u{1f6b6}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "walking:", "tone"]),
+ ("\u{1f6b6}\u{200d}\u{2640}\u{fe0f}", ["human", "walking", "woman_walking", "steps", "woman", "feet", "female"]),
+ ("\u{1f6b6}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "walking:", "tone"]),
+ ("\u{1f6b6}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "walking:", "tone"]),
+ ("\u{1f9cd}", ["still", "person_standing", "standing", "person"]),
+ ("\u{1f9cd}\u{1f3fb}", ["skin", "light", "person", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fc}", ["skin", "medium-light", "person", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fd}", ["skin", "medium", "person", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fe}", ["skin", "person", "medium-dark", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3ff}", ["skin", "dark", "person", "tone", "standing:"]),
+ ("\u{1f9cd}\u{200d}\u{2642}\u{fe0f}", ["man", "man_standing", "standing", "still"]),
+ ("\u{1f9cd}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "tone", "standing:"]),
+ ("\u{1f9cd}\u{200d}\u{2640}\u{fe0f}", ["woman", "standing", "still", "woman_standing"]),
+ ("\u{1f9cd}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "tone", "standing:"]),
+ ("\u{1f9cd}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "tone", "standing:"]),
+ ("\u{1f9ce}", ["respectful", "kneeling", "person", "pray", "person_kneeling"]),
+ ("\u{1f9ce}\u{1f3fb}", ["skin", "kneeling:", "light", "person", "tone"]),
+ ("\u{1f9ce}\u{1f3fc}", ["skin", "medium-light", "kneeling:", "person", "tone"]),
+ ("\u{1f9ce}\u{1f3fd}", ["skin", "kneeling:", "medium", "person", "tone"]),
+ ("\u{1f9ce}\u{1f3fe}", ["skin", "kneeling:", "person", "medium-dark", "tone"]),
+ ("\u{1f9ce}\u{1f3ff}", ["skin", "kneeling:", "dark", "person", "tone"]),
+ ("\u{1f9ce}\u{200d}\u{2642}\u{fe0f}", ["man", "respectful", "kneeling", "pray", "man_kneeling"]),
+ ("\u{1f9ce}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "kneeling:", "light", "tone"]),
+ ("\u{1f9ce}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "kneeling:", "tone"]),
+ ("\u{1f9ce}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "kneeling:", "tone"]),
+ ("\u{1f9ce}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "kneeling:", "medium-dark", "tone"]),
+ ("\u{1f9ce}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "kneeling:", "dark", "tone"]),
+ ("\u{1f9ce}\u{200d}\u{2640}\u{fe0f}", ["woman_kneeling", "respectful", "kneeling", "woman", "pray"]),
+ ("\u{1f9ce}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "kneeling:", "light", "woman", "tone"]),
+ ("\u{1f9ce}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "kneeling:", "woman", "tone"]),
+ ("\u{1f9ce}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "kneeling:", "woman", "tone"]),
+ ("\u{1f9ce}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "kneeling:", "medium-dark", "woman", "tone"]),
+ ("\u{1f9ce}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "kneeling:", "dark", "woman", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f9af}", ["cane", "with", "person_with_probing_cane", "person", "blind", "white"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f9af}", ["skin", "cane:", "with", "person", "light", "white", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f9af}", ["skin", "medium-light", "cane:", "with", "person", "white", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f9af}", ["skin", "medium", "cane:", "with", "person", "white", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f9af}", ["skin", "cane:", "with", "person", "medium-dark", "white", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f9af}", ["skin", "dark", "cane:", "with", "person", "white", "tone"]),
+ ("\u{1f468}\u{200d}\u{1f9af}", ["man", "cane", "with", "blind", "man_with_probing_cane", "white"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f9af}", ["man", "skin", "cane:", "with", "light", "white", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f9af}", ["man", "skin", "medium-light", "cane:", "with", "white", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f9af}", ["man", "skin", "medium", "cane:", "with", "white", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f9af}", ["man", "skin", "cane:", "with", "medium-dark", "white", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f9af}", ["man", "skin", "dark", "cane:", "with", "white", "tone"]),
+ ("\u{1f469}\u{200d}\u{1f9af}", ["cane", "woman_with_probing_cane", "with", "blind", "woman", "white"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f9af}", ["skin", "cane:", "with", "light", "woman", "white", "tone"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f9af}", ["skin", "medium-light", "cane:", "with", "woman", "white", "tone"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f9af}", ["skin", "medium", "cane:", "with", "woman", "white", "tone"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f9af}", ["skin", "cane:", "with", "medium-dark", "woman", "white", "tone"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f9af}", ["skin", "dark", "cane:", "with", "woman", "white", "tone"]),
+ ("\u{1f9d1}\u{200d}\u{1f9bc}", ["wheelchair", "disability", "person", "in", "motorized", "person_in_motorized_wheelchair", "accessibility"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f9bc}", ["skin", "light", "person", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f9bc}", ["skin", "medium-light", "person", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f9bc}", ["skin", "medium", "person", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f9bc}", ["skin", "person", "medium-dark", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f9bc}", ["skin", "dark", "person", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{200d}\u{1f9bc}", ["man", "wheelchair", "disability", "man_in_motorized_wheelchair", "in", "motorized", "accessibility"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f9bc}", ["man", "skin", "light", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f9bc}", ["man", "skin", "medium-light", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f9bc}", ["man", "skin", "medium", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f9bc}", ["man", "skin", "in", "medium-dark", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f9bc}", ["man", "skin", "dark", "in", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{200d}\u{1f9bc}", ["wheelchair", "disability", "woman_in_motorized_wheelchair", "in", "woman", "motorized", "accessibility"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f9bc}", ["skin", "light", "in", "woman", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f9bc}", ["skin", "medium-light", "in", "woman", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f9bc}", ["skin", "medium", "in", "woman", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f9bc}", ["skin", "in", "medium-dark", "woman", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f9bc}", ["skin", "dark", "in", "woman", "motorized", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{200d}\u{1f9bd}", ["wheelchair", "disability", "manual", "person_in_manual_wheelchair", "person", "in", "accessibility"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f9bd}", ["skin", "manual", "light", "person", "in", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f9bd}", ["skin", "medium-light", "manual", "person", "in", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f9bd}", ["skin", "medium", "manual", "person", "in", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f9bd}", ["skin", "manual", "medium-dark", "person", "in", "tone", "wheelchair:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f9bd}", ["skin", "manual", "dark", "person", "in", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{200d}\u{1f9bd}", ["man", "man_in_manual_wheelchair", "wheelchair", "disability", "manual", "in", "accessibility"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f9bd}", ["man", "skin", "manual", "light", "in", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f9bd}", ["man", "skin", "medium-light", "manual", "in", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f9bd}", ["man", "skin", "medium", "manual", "in", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f9bd}", ["man", "skin", "manual", "medium-dark", "in", "tone", "wheelchair:"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f9bd}", ["man", "skin", "manual", "dark", "in", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{200d}\u{1f9bd}", ["wheelchair", "disability", "manual", "in", "woman", "woman_in_manual_wheelchair", "accessibility"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f9bd}", ["skin", "manual", "light", "in", "woman", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f9bd}", ["skin", "medium-light", "manual", "in", "woman", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f9bd}", ["skin", "medium", "manual", "in", "woman", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f9bd}", ["skin", "manual", "medium-dark", "in", "woman", "tone", "wheelchair:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f9bd}", ["skin", "manual", "dark", "in", "woman", "tone", "wheelchair:"]),
+ ("\u{1f3c3}", ["running", "move", "person", "person_running"]),
+ ("\u{1f3c3}\u{1f3fb}", ["skin", "light", "person", "running:", "tone"]),
+ ("\u{1f3c3}\u{1f3fc}", ["skin", "medium-light", "person", "running:", "tone"]),
+ ("\u{1f3c3}\u{1f3fd}", ["skin", "medium", "person", "running:", "tone"]),
+ ("\u{1f3c3}\u{1f3fe}", ["skin", "medium-dark", "person", "running:", "tone"]),
+ ("\u{1f3c3}\u{1f3ff}", ["skin", "dark", "person", "running:", "tone"]),
+ ("\u{1f3c3}\u{200d}\u{2642}\u{fe0f}", ["man", "walking", "man_running", "exercise", "running", "race"]),
+ ("\u{1f3c3}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "running:", "tone"]),
+ ("\u{1f3c3}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "running:", "tone"]),
+ ("\u{1f3c3}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "running:", "tone"]),
+ ("\u{1f3c3}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "running:", "tone"]),
+ ("\u{1f3c3}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "running:", "tone"]),
+ ("\u{1f3c3}\u{200d}\u{2640}\u{fe0f}", ["woman_running", "walking", "exercise", "woman", "female", "running", "race"]),
+ ("\u{1f3c3}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "running:", "woman", "tone"]),
+ ("\u{1f3c3}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "running:", "woman", "tone"]),
+ ("\u{1f3c3}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "running:", "woman", "tone"]),
+ ("\u{1f3c3}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "running:", "woman", "tone"]),
+ ("\u{1f3c3}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "running:", "woman", "tone"]),
+ ("\u{1f483}", ["woman_dancing", "dancing", "fun", "woman", "female", "girl"]),
+ ("\u{1f483}\u{1f3fb}", ["skin", "dancing:", "light", "woman", "tone"]),
+ ("\u{1f483}\u{1f3fc}", ["skin", "medium-light", "dancing:", "woman", "tone"]),
+ ("\u{1f483}\u{1f3fd}", ["skin", "medium", "dancing:", "woman", "tone"]),
+ ("\u{1f483}\u{1f3fe}", ["skin", "dancing:", "medium-dark", "woman", "tone"]),
+ ("\u{1f483}\u{1f3ff}", ["skin", "dark", "dancing:", "woman", "tone"]),
+ ("\u{1f57a}", ["man", "male", "man_dancing", "dancing", "fun", "dancer", "boy"]),
+ ("\u{1f57a}\u{1f3fb}", ["man", "skin", "dancing:", "light", "tone"]),
+ ("\u{1f57a}\u{1f3fc}", ["man", "skin", "medium-light", "dancing:", "tone"]),
+ ("\u{1f57a}\u{1f3fd}", ["man", "skin", "medium", "dancing:", "tone"]),
+ ("\u{1f57a}\u{1f3fe}", ["man", "skin", "dancing:", "medium-dark", "tone"]),
+ ("\u{1f57a}\u{1f3ff}", ["man", "skin", "dark", "dancing:", "tone"]),
+ ("\u{1f574}", ["suit", "person", "levitating", "in"]),
+ ("\u{1f574}\u{1f3fb}", ["skin", "light", "levitating:", "person", "suit", "in", "tone"]),
+ ("\u{1f574}\u{1f3fc}", ["skin", "medium-light", "levitating:", "person", "suit", "in", "tone"]),
+ ("\u{1f574}\u{1f3fd}", ["skin", "medium", "levitating:", "person", "suit", "in", "tone"]),
+ ("\u{1f574}\u{1f3fe}", ["skin", "levitating:", "person", "suit", "medium-dark", "in", "tone"]),
+ ("\u{1f574}\u{1f3ff}", ["skin", "dark", "levitating:", "person", "suit", "in", "tone"]),
+ ("\u{1f46f}", ["ears", "with", "perform", "costume", "people", "bunny", "people_with_bunny_ears"]),
+ ("\u{1f46f}\u{200d}\u{2642}\u{fe0f}", ["male", "ears", "men_with_bunny_ears", "with", "boys", "men", "bunny"]),
+ ("\u{1f46f}\u{200d}\u{2640}\u{fe0f}", ["ears", "with", "female", "women_with_bunny_ears", "girls", "bunny", "women"]),
+ ("\u{1f9d6}", ["room", "person", "in", "person_in_steamy_room", "spa", "steamy", "relax"]),
+ ("\u{1f9d6}\u{1f3fb}", ["skin", "light", "person", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fc}", ["skin", "medium-light", "person", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fd}", ["skin", "medium", "person", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fe}", ["skin", "person", "medium-dark", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3ff}", ["skin", "dark", "person", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "man_in_steamy_room", "room", "sauna", "in", "steamroom", "spa", "steamy"]),
+ ("\u{1f9d6}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "in", "medium-dark", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "in", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{200d}\u{2640}\u{fe0f}", ["room", "woman_in_steamy_room", "sauna", "in", "woman", "female", "steamroom", "spa", "steamy"]),
+ ("\u{1f9d6}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "in", "woman", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "in", "woman", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "in", "woman", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "in", "medium-dark", "woman", "room:", "tone", "steamy"]),
+ ("\u{1f9d6}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "in", "woman", "room:", "tone", "steamy"]),
+ ("\u{1f9d7}", ["sport", "person", "person_climbing", "climbing"]),
+ ("\u{1f9d7}\u{1f3fb}", ["skin", "light", "person", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fc}", ["skin", "medium-light", "person", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fd}", ["skin", "medium", "person", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fe}", ["skin", "person", "medium-dark", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3ff}", ["skin", "dark", "person", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "rock", "hobby", "sports", "man_climbing", "climbing"]),
+ ("\u{1f9d7}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{200d}\u{2640}\u{fe0f}", ["rock", "hobby", "sports", "woman", "woman_climbing", "female", "climbing"]),
+ ("\u{1f9d7}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "climbing:", "tone"]),
+ ("\u{1f9d7}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "climbing:", "tone"]),
+ ("\u{1f93a}", ["sword", "fencing", "person_fencing", "person", "sports"]),
+ ("\u{1f3c7}", ["horse_racing", "animal", "gambling", "competition", "horse", "racing", "betting", "luck"]),
+ ("\u{1f3c7}\u{1f3fb}", ["skin", "light", "horse", "tone", "racing:"]),
+ ("\u{1f3c7}\u{1f3fc}", ["skin", "medium-light", "horse", "tone", "racing:"]),
+ ("\u{1f3c7}\u{1f3fd}", ["skin", "medium", "horse", "tone", "racing:"]),
+ ("\u{1f3c7}\u{1f3fe}", ["skin", "medium-dark", "horse", "tone", "racing:"]),
+ ("\u{1f3c7}\u{1f3ff}", ["skin", "dark", "horse", "tone", "racing:"]),
+ ("\u{26f7}", ["skier"]),
+ ("\u{1f3c2}", ["winter", "snowboarder", "sports"]),
+ ("\u{1f3c2}\u{1f3fb}", ["skin", "tone", "light", "snowboarder:"]),
+ ("\u{1f3c2}\u{1f3fc}", ["skin", "medium-light", "tone", "snowboarder:"]),
+ ("\u{1f3c2}\u{1f3fd}", ["skin", "tone", "medium", "snowboarder:"]),
+ ("\u{1f3c2}\u{1f3fe}", ["skin", "tone", "medium-dark", "snowboarder:"]),
+ ("\u{1f3c2}\u{1f3ff}", ["skin", "tone", "snowboarder:", "dark"]),
+ ("\u{1f3cc}", ["golfing", "person"]),
+ ("\u{1f3cc}\u{1f3fb}", ["skin", "golfing:", "person", "light", "tone"]),
+ ("\u{1f3cc}\u{1f3fc}", ["skin", "medium-light", "golfing:", "person", "tone"]),
+ ("\u{1f3cc}\u{1f3fd}", ["skin", "medium", "golfing:", "person", "tone"]),
+ ("\u{1f3cc}\u{1f3fe}", ["skin", "golfing:", "person", "medium-dark", "tone"]),
+ ("\u{1f3cc}\u{1f3ff}", ["skin", "dark", "golfing:", "person", "tone"]),
+ ("\u{1f3cc}\u{fe0f}\u{200d}\u{2642}\u{fe0f}", ["man", "golfing", "sport", "man_golfing"]),
+ ("\u{1f3cc}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "golfing:", "light", "tone"]),
+ ("\u{1f3cc}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "golfing:", "tone"]),
+ ("\u{1f3cc}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "golfing:", "tone"]),
+ ("\u{1f3cc}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "golfing:", "medium-dark", "tone"]),
+ ("\u{1f3cc}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "golfing:", "tone"]),
+ ("\u{1f3cc}\u{fe0f}\u{200d}\u{2640}\u{fe0f}", ["sports", "woman", "golfing", "female", "woman_golfing", "business"]),
+ ("\u{1f3cc}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "golfing:", "light", "woman", "tone"]),
+ ("\u{1f3cc}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "golfing:", "woman", "tone"]),
+ ("\u{1f3cc}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "golfing:", "woman", "tone"]),
+ ("\u{1f3cc}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "golfing:", "medium-dark", "woman", "tone"]),
+ ("\u{1f3cc}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "golfing:", "woman", "tone"]),
+ ("\u{1f3c4}", ["person_surfing", "sea", "surfing", "sport", "person"]),
+ ("\u{1f3c4}\u{1f3fb}", ["skin", "surfing:", "light", "person", "tone"]),
+ ("\u{1f3c4}\u{1f3fc}", ["skin", "medium-light", "surfing:", "person", "tone"]),
+ ("\u{1f3c4}\u{1f3fd}", ["skin", "medium", "surfing:", "person", "tone"]),
+ ("\u{1f3c4}\u{1f3fe}", ["skin", "surfing:", "medium-dark", "person", "tone"]),
+ ("\u{1f3c4}\u{1f3ff}", ["skin", "surfing:", "dark", "person", "tone"]),
+ ("\u{1f3c4}\u{200d}\u{2642}\u{fe0f}", ["man", "beach", "sea", "ocean", "surfing", "man_surfing", "summer", "sports"]),
+ ("\u{1f3c4}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "surfing:", "light", "tone"]),
+ ("\u{1f3c4}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "surfing:", "tone"]),
+ ("\u{1f3c4}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "surfing:", "tone"]),
+ ("\u{1f3c4}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "surfing:", "medium-dark", "tone"]),
+ ("\u{1f3c4}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "surfing:", "dark", "tone"]),
+ ("\u{1f3c4}\u{200d}\u{2640}\u{fe0f}", ["beach", "sea", "ocean", "surfing", "summer", "sports", "woman", "female", "woman_surfing"]),
+ ("\u{1f3c4}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "surfing:", "light", "woman", "tone"]),
+ ("\u{1f3c4}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "surfing:", "woman", "tone"]),
+ ("\u{1f3c4}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "surfing:", "woman", "tone"]),
+ ("\u{1f3c4}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "surfing:", "medium-dark", "woman", "tone"]),
+ ("\u{1f3c4}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "surfing:", "dark", "woman", "tone"]),
+ ("\u{1f6a3}", ["rowing", "boat", "sport", "person", "move", "person_rowing_boat"]),
+ ("\u{1f6a3}\u{1f3fb}", ["rowing", "skin", "boat:", "light", "person", "tone"]),
+ ("\u{1f6a3}\u{1f3fc}", ["rowing", "skin", "medium-light", "boat:", "person", "tone"]),
+ ("\u{1f6a3}\u{1f3fd}", ["rowing", "skin", "medium", "boat:", "person", "tone"]),
+ ("\u{1f6a3}\u{1f3fe}", ["rowing", "skin", "boat:", "person", "medium-dark", "tone"]),
+ ("\u{1f6a3}\u{1f3ff}", ["rowing", "skin", "dark", "boat:", "person", "tone"]),
+ ("\u{1f6a3}\u{200d}\u{2642}\u{fe0f}", ["man", "rowing", "boat", "hobby", "sports", "man_rowing_boat", "ship", "water"]),
+ ("\u{1f6a3}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "rowing", "boat:", "light", "tone"]),
+ ("\u{1f6a3}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "rowing", "boat:", "tone"]),
+ ("\u{1f6a3}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "rowing", "medium", "boat:", "tone"]),
+ ("\u{1f6a3}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "rowing", "boat:", "medium-dark", "tone"]),
+ ("\u{1f6a3}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "rowing", "dark", "boat:", "tone"]),
+ ("\u{1f6a3}\u{200d}\u{2640}\u{fe0f}", ["rowing", "boat", "woman_rowing_boat", "hobby", "sports", "woman", "female", "ship", "water"]),
+ ("\u{1f6a3}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["rowing", "skin", "boat:", "light", "woman", "tone"]),
+ ("\u{1f6a3}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["rowing", "skin", "medium-light", "boat:", "woman", "tone"]),
+ ("\u{1f6a3}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["rowing", "skin", "medium", "boat:", "woman", "tone"]),
+ ("\u{1f6a3}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["rowing", "skin", "boat:", "medium-dark", "woman", "tone"]),
+ ("\u{1f6a3}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["rowing", "skin", "dark", "boat:", "woman", "tone"]),
+ ("\u{1f3ca}", ["swimming", "sport", "person", "person_swimming", "pool"]),
+ ("\u{1f3ca}\u{1f3fb}", ["skin", "light", "person", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{1f3fc}", ["skin", "medium-light", "person", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{1f3fd}", ["skin", "medium", "person", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{1f3fe}", ["skin", "medium-dark", "person", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{1f3ff}", ["skin", "dark", "person", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{200d}\u{2642}\u{fe0f}", ["man", "swimming", "human", "man_swimming", "athlete", "exercise", "summer", "sports", "water"]),
+ ("\u{1f3ca}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "swimming:", "tone"]),
+ ("\u{1f3ca}\u{200d}\u{2640}\u{fe0f}", ["swimming", "human", "athlete", "exercise", "summer", "sports", "woman", "woman_swimming", "female", "water"]),
+ ("\u{1f3ca}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "swimming:", "woman", "tone"]),
+ ("\u{1f3ca}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "swimming:", "woman", "tone"]),
+ ("\u{1f3ca}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "swimming:", "woman", "tone"]),
+ ("\u{1f3ca}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "swimming:", "woman", "tone"]),
+ ("\u{1f3ca}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "swimming:", "woman", "tone"]),
+ ("\u{26f9}", ["bouncing", "ball", "person"]),
+ ("\u{26f9}\u{1f3fb}", ["skin", "ball:", "light", "person", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fc}", ["skin", "medium-light", "ball:", "person", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fd}", ["skin", "ball:", "medium", "person", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fe}", ["skin", "ball:", "person", "medium-dark", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3ff}", ["skin", "ball:", "dark", "person", "bouncing", "tone"]),
+ ("\u{26f9}\u{fe0f}\u{200d}\u{2642}\u{fe0f}", ["man", "ball", "sport", "man_bouncing_ball", "bouncing"]),
+ ("\u{26f9}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "ball:", "light", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "ball:", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "ball:", "medium", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "ball:", "medium-dark", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "ball:", "dark", "bouncing", "tone"]),
+ ("\u{26f9}\u{fe0f}\u{200d}\u{2640}\u{fe0f}", ["human", "ball", "sports", "woman", "woman_bouncing_ball", "female", "bouncing"]),
+ ("\u{26f9}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "ball:", "light", "woman", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "ball:", "woman", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "ball:", "medium", "woman", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "ball:", "medium-dark", "woman", "bouncing", "tone"]),
+ ("\u{26f9}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "ball:", "dark", "woman", "bouncing", "tone"]),
+ ("\u{1f3cb}", ["weights", "lifting", "person"]),
+ ("\u{1f3cb}\u{1f3fb}", ["skin", "lifting", "weights:", "light", "person", "tone"]),
+ ("\u{1f3cb}\u{1f3fc}", ["skin", "medium-light", "lifting", "weights:", "person", "tone"]),
+ ("\u{1f3cb}\u{1f3fd}", ["skin", "lifting", "medium", "weights:", "person", "tone"]),
+ ("\u{1f3cb}\u{1f3fe}", ["skin", "lifting", "weights:", "medium-dark", "person", "tone"]),
+ ("\u{1f3cb}\u{1f3ff}", ["skin", "lifting", "weights:", "dark", "person", "tone"]),
+ ("\u{1f3cb}\u{fe0f}\u{200d}\u{2642}\u{fe0f}", ["man", "lifting", "sport", "man_lifting_weights", "weights"]),
+ ("\u{1f3cb}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "lifting", "weights:", "light", "tone"]),
+ ("\u{1f3cb}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "lifting", "weights:", "tone"]),
+ ("\u{1f3cb}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "lifting", "medium", "weights:", "tone"]),
+ ("\u{1f3cb}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "lifting", "weights:", "medium-dark", "tone"]),
+ ("\u{1f3cb}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "lifting", "weights:", "dark", "tone"]),
+ ("\u{1f3cb}\u{fe0f}\u{200d}\u{2640}\u{fe0f}", ["lifting", "exercise", "sports", "woman", "weights", "female", "training", "woman_lifting_weights"]),
+ ("\u{1f3cb}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "lifting", "weights:", "light", "woman", "tone"]),
+ ("\u{1f3cb}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "lifting", "weights:", "woman", "tone"]),
+ ("\u{1f3cb}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "lifting", "medium", "weights:", "woman", "tone"]),
+ ("\u{1f3cb}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "lifting", "weights:", "medium-dark", "woman", "tone"]),
+ ("\u{1f3cb}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "lifting", "weights:", "dark", "woman", "tone"]),
+ ("\u{1f6b4}", ["biking", "sport", "person", "person_biking", "move"]),
+ ("\u{1f6b4}\u{1f3fb}", ["skin", "light", "person", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fc}", ["skin", "medium-light", "person", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fd}", ["skin", "medium", "person", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fe}", ["skin", "person", "medium-dark", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3ff}", ["skin", "dark", "person", "biking:", "tone"]),
+ ("\u{1f6b4}\u{200d}\u{2642}\u{fe0f}", ["man", "biking", "hipster", "bike", "exercise", "sports", "man_biking"]),
+ ("\u{1f6b4}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "biking:", "tone"]),
+ ("\u{1f6b4}\u{200d}\u{2640}\u{fe0f}", ["woman_biking", "biking", "hipster", "bike", "exercise", "sports", "woman", "female"]),
+ ("\u{1f6b4}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "biking:", "tone"]),
+ ("\u{1f6b4}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "biking:", "tone"]),
+ ("\u{1f6b5}", ["mountain", "biking", "person_mountain_biking", "sport", "person", "move"]),
+ ("\u{1f6b5}\u{1f3fb}", ["mountain", "skin", "light", "person", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fc}", ["mountain", "skin", "medium-light", "person", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fd}", ["skin", "mountain", "medium", "person", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fe}", ["mountain", "skin", "person", "medium-dark", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3ff}", ["mountain", "skin", "dark", "person", "biking:", "tone"]),
+ ("\u{1f6b5}\u{200d}\u{2642}\u{fe0f}", ["man", "mountain", "man_mountain_biking", "biking", "transportation", "human", "bike", "sports", "race"]),
+ ("\u{1f6b5}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "mountain", "skin", "light", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "mountain", "skin", "medium-light", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "mountain", "skin", "medium", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "mountain", "skin", "medium-dark", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "mountain", "skin", "dark", "biking:", "tone"]),
+ ("\u{1f6b5}\u{200d}\u{2640}\u{fe0f}", ["human", "mountain", "biking", "transportation", "woman_mountain_biking", "bike", "sports", "woman", "female", "race"]),
+ ("\u{1f6b5}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["mountain", "skin", "light", "woman", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["mountain", "skin", "medium-light", "woman", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["mountain", "skin", "medium", "woman", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["mountain", "skin", "medium-dark", "woman", "biking:", "tone"]),
+ ("\u{1f6b5}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["mountain", "skin", "dark", "woman", "biking:", "tone"]),
+ ("\u{1f938}", ["sport", "person", "person_cartwheeling", "gymnastic", "cartwheeling"]),
+ ("\u{1f938}\u{1f3fb}", ["skin", "light", "person", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fc}", ["skin", "medium-light", "person", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fd}", ["skin", "medium", "person", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fe}", ["skin", "person", "medium-dark", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3ff}", ["skin", "dark", "person", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{200d}\u{2642}\u{fe0f}", ["man", "cartwheeling", "man_cartwheeling", "gymnastics"]),
+ ("\u{1f938}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{200d}\u{2640}\u{fe0f}", ["woman", "cartwheeling", "woman_cartwheeling", "gymnastics"]),
+ ("\u{1f938}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "tone", "cartwheeling:"]),
+ ("\u{1f938}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "tone", "cartwheeling:"]),
+ ("\u{1f93c}", ["people_wrestling", "people", "sport", "wrestling"]),
+ ("\u{1f93c}\u{200d}\u{2642}\u{fe0f}", ["men_wrestling", "sports", "men", "wrestling", "wrestlers"]),
+ ("\u{1f93c}\u{200d}\u{2640}\u{fe0f}", ["women_wrestling", "sports", "women", "wrestling", "wrestlers"]),
+ ("\u{1f93d}", ["polo", "sport", "person", "playing", "water", "person_playing_water_polo"]),
+ ("\u{1f93d}\u{1f3fb}", ["skin", "light", "person", "polo:", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fc}", ["skin", "medium-light", "polo:", "person", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fd}", ["skin", "medium", "polo:", "person", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fe}", ["skin", "polo:", "medium-dark", "person", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3ff}", ["skin", "dark", "polo:", "person", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{200d}\u{2642}\u{fe0f}", ["man", "polo", "sports", "pool", "playing", "man_playing_water_polo", "water"]),
+ ("\u{1f93d}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "polo:", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "polo:", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "polo:", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "polo:", "medium-dark", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "polo:", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{200d}\u{2640}\u{fe0f}", ["woman_playing_water_polo", "polo", "sports", "woman", "pool", "playing", "water"]),
+ ("\u{1f93d}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "polo:", "woman", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "polo:", "woman", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "polo:", "woman", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "polo:", "medium-dark", "woman", "playing", "tone", "water"]),
+ ("\u{1f93d}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "polo:", "woman", "playing", "tone", "water"]),
+ ("\u{1f93e}", ["sport", "person", "playing", "person_playing_handball", "handball"]),
+ ("\u{1f93e}\u{1f3fb}", ["handball:", "skin", "light", "person", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fc}", ["handball:", "skin", "medium-light", "person", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fd}", ["handball:", "skin", "medium", "person", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fe}", ["handball:", "skin", "person", "medium-dark", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3ff}", ["handball:", "skin", "dark", "person", "playing", "tone"]),
+ ("\u{1f93e}\u{200d}\u{2642}\u{fe0f}", ["man", "sports", "playing", "man_playing_handball", "handball"]),
+ ("\u{1f93e}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "handball:", "light", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "handball:", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "handball:", "medium", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "handball:", "medium-dark", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "handball:", "dark", "playing", "tone"]),
+ ("\u{1f93e}\u{200d}\u{2640}\u{fe0f}", ["sports", "woman", "playing", "handball", "woman_playing_handball"]),
+ ("\u{1f93e}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["handball:", "skin", "light", "woman", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["handball:", "skin", "medium-light", "woman", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["handball:", "skin", "medium", "woman", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["handball:", "skin", "medium-dark", "woman", "playing", "tone"]),
+ ("\u{1f93e}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["handball:", "skin", "dark", "woman", "playing", "tone"]),
+ ("\u{1f939}", ["person_juggling", "person", "balance", "performance", "juggling"]),
+ ("\u{1f939}\u{1f3fb}", ["skin", "light", "person", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fc}", ["skin", "medium-light", "person", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fd}", ["skin", "medium", "person", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fe}", ["skin", "person", "medium-dark", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3ff}", ["skin", "dark", "person", "tone", "juggling:"]),
+ ("\u{1f939}\u{200d}\u{2642}\u{fe0f}", ["man", "multitask", "man_juggling", "juggle", "balance", "skill", "juggling"]),
+ ("\u{1f939}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "tone", "juggling:"]),
+ ("\u{1f939}\u{200d}\u{2640}\u{fe0f}", ["multitask", "juggle", "balance", "woman", "skill", "woman_juggling", "juggling"]),
+ ("\u{1f939}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "woman", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "woman", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "woman", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "woman", "tone", "juggling:"]),
+ ("\u{1f939}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "woman", "tone", "juggling:"]),
+ ("\u{1f9d8}", ["position", "person_in_lotus_position", "person", "in", "lotus", "meditate"]),
+ ("\u{1f9d8}\u{1f3fb}", ["skin", "light", "person", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fc}", ["skin", "medium-light", "person", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fd}", ["skin", "medium", "person", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fe}", ["skin", "medium-dark", "person", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3ff}", ["skin", "dark", "person", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{200d}\u{2642}\u{fe0f}", ["man", "male", "meditation", "man_in_lotus_position", "position", "serenity", "yoga", "in", "lotus", "zen", "mindfulness"]),
+ ("\u{1f9d8}\u{1f3fb}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "light", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fc}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-light", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fd}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fe}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "medium-dark", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3ff}\u{200d}\u{2642}\u{fe0f}", ["man", "skin", "dark", "in", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{200d}\u{2640}\u{fe0f}", ["serenity", "meditation", "position", "yoga", "in", "woman", "lotus", "female", "woman_in_lotus_position", "zen", "mindfulness"]),
+ ("\u{1f9d8}\u{1f3fb}\u{200d}\u{2640}\u{fe0f}", ["skin", "light", "in", "woman", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fc}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-light", "in", "woman", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fd}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium", "in", "woman", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3fe}\u{200d}\u{2640}\u{fe0f}", ["skin", "medium-dark", "in", "woman", "lotus", "tone", "position:"]),
+ ("\u{1f9d8}\u{1f3ff}\u{200d}\u{2640}\u{fe0f}", ["skin", "dark", "in", "woman", "lotus", "tone", "position:"]),
+ ("\u{1f6c0}", ["taking", "person", "bathroom", "shower", "clean", "bath", "person_taking_bath"]),
+ ("\u{1f6c0}\u{1f3fb}", ["skin", "light", "taking", "person", "bath:", "tone"]),
+ ("\u{1f6c0}\u{1f3fc}", ["skin", "medium-light", "taking", "person", "bath:", "tone"]),
+ ("\u{1f6c0}\u{1f3fd}", ["skin", "medium", "taking", "person", "bath:", "tone"]),
+ ("\u{1f6c0}\u{1f3fe}", ["skin", "taking", "person", "medium-dark", "bath:", "tone"]),
+ ("\u{1f6c0}\u{1f3ff}", ["skin", "dark", "taking", "person", "bath:", "tone"]),
+ ("\u{1f6cc}", ["bed", "person", "in", "person_in_bed", "rest"]),
+ ("\u{1f6cc}\u{1f3fb}", ["skin", "light", "person", "in", "tone", "bed:"]),
+ ("\u{1f6cc}\u{1f3fc}", ["skin", "medium-light", "person", "in", "tone", "bed:"]),
+ ("\u{1f6cc}\u{1f3fd}", ["skin", "medium", "person", "in", "tone", "bed:"]),
+ ("\u{1f6cc}\u{1f3fe}", ["skin", "person", "medium-dark", "in", "tone", "bed:"]),
+ ("\u{1f6cc}\u{1f3ff}", ["skin", "dark", "person", "in", "tone", "bed:"]),
+ ("\u{1f9d1}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}", ["people", "friendship", "hands", "people_holding_hands", "holding"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "people", "light", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "people", "light", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "people", "medium", "light", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "people", "light", "medium-dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "people", "dark", "light", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "medium-light", "people", "light", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "people", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "medium-light", "people", "medium", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "medium-light", "people", "medium-dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "medium-light", "people", "dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "people", "medium", "light", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "people", "medium", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "people", "medium", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "people", "medium", "medium-dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "people", "medium", "dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "people", "light", "medium-dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "people", "medium-dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "people", "medium", "medium-dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "people", "medium-dark", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "people", "dark", "medium-dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "people", "dark", "light", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "people", "dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "people", "medium", "dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "people", "dark", "medium-dark", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "people", "dark", "tone", "holding", "hands:"]),
+ ("\u{1f46d}", ["human", "people", "pair", "like", "women_holding_hands", "friendship", "love", "hands", "female", "couple", "holding", "women"]),
+ ("\u{1f46d}\u{1f3fb}", ["skin", "light", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "light", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "light", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "light", "medium-dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "dark", "light", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "medium-light", "light", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f46d}\u{1f3fc}", ["skin", "medium-light", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium-light", "medium", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "medium-light", "medium-dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "medium-light", "dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "medium", "light", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "medium", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f46d}\u{1f3fd}", ["skin", "medium", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "medium", "medium-dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "medium", "dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "light", "medium-dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "medium-dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "medium-dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f46d}\u{1f3fe}", ["skin", "medium-dark", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "dark", "medium-dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "dark", "light", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "dark", "medium-dark", "tone,", "tone", "holding", "hands:", "women"]),
+ ("\u{1f46d}\u{1f3ff}", ["skin", "dark", "tone", "holding", "hands:", "women"]),
+ ("\u{1f46b}", ["man", "human", "people", "valentines", "pair", "woman_and_man_holding_hands", "like", "love", "date", "marriage", "woman", "hands", "holding", "and", "dating", "affection"]),
+ ("\u{1f46b}\u{1f3fb}", ["man", "skin", "light", "woman", "and", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fc}", ["man", "skin", "medium-light", "light", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fd}", ["man", "skin", "medium", "light", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fe}", ["man", "skin", "light", "medium-dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3ff}", ["man", "skin", "dark", "light", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fb}", ["man", "skin", "medium-light", "light", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f46b}\u{1f3fc}", ["man", "skin", "medium-light", "woman", "and", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fd}", ["man", "skin", "medium-light", "medium", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fe}", ["man", "skin", "medium-light", "medium-dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3ff}", ["man", "skin", "medium-light", "dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fb}", ["man", "skin", "medium", "light", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fc}", ["man", "skin", "medium-light", "medium", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f46b}\u{1f3fd}", ["man", "skin", "medium", "woman", "and", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fe}", ["man", "skin", "medium", "medium-dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3ff}", ["man", "skin", "medium", "dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fb}", ["man", "skin", "light", "medium-dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fc}", ["man", "skin", "medium-light", "medium-dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fd}", ["man", "skin", "medium", "medium-dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f46b}\u{1f3fe}", ["man", "skin", "medium-dark", "woman", "and", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3ff}", ["man", "skin", "dark", "medium-dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fb}", ["man", "skin", "dark", "light", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fc}", ["man", "skin", "medium-light", "dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fd}", ["man", "skin", "medium", "dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fe}", ["man", "skin", "dark", "medium-dark", "woman", "and", "tone,", "tone", "holding", "hands:"]),
+ ("\u{1f46b}\u{1f3ff}", ["man", "skin", "dark", "woman", "and", "tone", "holding", "hands:"]),
+ ("\u{1f46c}", ["human", "people", "pair", "like", "bromance", "love", "men_holding_hands", "friendship", "hands", "men", "couple", "holding"]),
+ ("\u{1f46c}\u{1f3fb}", ["skin", "light", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "medium-light", "light", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "medium", "light", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "light", "medium-dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "dark", "light", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "medium-light", "light", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f46c}\u{1f3fc}", ["skin", "medium-light", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "medium-light", "medium", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "medium-light", "medium-dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "medium-light", "dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "medium", "light", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "medium-light", "medium", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f46c}\u{1f3fd}", ["skin", "medium", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "medium", "medium-dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "medium", "dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "light", "medium-dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "medium-light", "medium-dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "medium", "medium-dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f46c}\u{1f3fe}", ["skin", "medium-dark", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "dark", "medium-dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "dark", "light", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "medium-light", "dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "medium", "dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{1f91d}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "dark", "medium-dark", "tone,", "men", "tone", "holding", "hands:"]),
+ ("\u{1f46c}\u{1f3ff}", ["skin", "dark", "men", "tone", "holding", "hands:"]),
+ ("\u{1f48f}", ["valentines", "like", "pair", "love", "marriage", "dating", "kiss"]),
+ ("\u{1f48f}\u{1f3fb}", ["kiss:", "skin", "tone", "light"]),
+ ("\u{1f48f}\u{1f3fc}", ["kiss:", "skin", "medium-light", "tone"]),
+ ("\u{1f48f}\u{1f3fd}", ["kiss:", "skin", "tone", "medium"]),
+ ("\u{1f48f}\u{1f3fe}", ["kiss:", "skin", "tone", "medium-dark"]),
+ ("\u{1f48f}\u{1f3ff}", ["kiss:", "skin", "tone", "dark"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "person,", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "person,", "medium", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "person,", "kiss:", "light", "medium-dark", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "person,", "dark", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "medium-light", "person,", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "medium-light", "person,", "medium", "kiss:", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "medium-light", "person,", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "medium-light", "person,", "dark", "kiss:", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "person,", "medium", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "person,", "medium", "kiss:", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "person,", "medium", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "person,", "medium", "dark", "kiss:", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "person,", "kiss:", "light", "medium-dark", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "person,", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "person,", "medium", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "person,", "dark", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "person,", "dark", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "person,", "dark", "kiss:", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "person,", "medium", "dark", "kiss:", "tone,", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "person,", "dark", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f469}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}", ["man", "kiss:", "love", "woman,", "kiss_woman_man"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "kiss:", "light", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "kiss:", "light", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "medium-light", "man,", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "medium-light", "man,", "kiss:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "medium-light", "man,", "medium", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "medium-light", "man,", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "medium-light", "man,", "dark", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "medium", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "medium", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "kiss:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "medium", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "medium", "dark", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "kiss:", "light", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "kiss:", "medium-dark", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "dark", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "dark", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "dark", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "dark", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "kiss:", "tone", "woman,"]),
+ ("\u{1f468}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}", ["man", "man,", "valentines", "pair", "like", "kiss:", "love", "marriage", "kiss_man_man", "dating"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "kiss:", "light", "tone"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "kiss:", "light", "medium-dark", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "medium-light", "man,", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "medium-light", "man,", "kiss:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "medium-light", "man,", "medium", "kiss:", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "medium-light", "man,", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "medium-light", "man,", "dark", "kiss:", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "medium", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "medium", "kiss:", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "kiss:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "medium", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "medium", "dark", "kiss:", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "kiss:", "light", "medium-dark", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "kiss:", "medium-dark", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "dark", "kiss:", "light", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "dark", "kiss:", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "dark", "kiss:", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "dark", "kiss:", "medium-dark", "tone,", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "kiss:", "tone"]),
+ ("\u{1f469}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}", ["valentines", "pair", "like", "kiss:", "love", "marriage", "dating", "woman", "kiss_woman_woman", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "kiss:", "light", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "kiss:", "light", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "dark", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "medium-light", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "kiss:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium-light", "medium", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "medium-light", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "medium-light", "dark", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "medium", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "medium", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "kiss:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "medium", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "medium", "dark", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "kiss:", "light", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "kiss:", "medium-dark", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "dark", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "dark", "kiss:", "light", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "dark", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "dark", "kiss:", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "dark", "kiss:", "medium-dark", "tone,", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f48b}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "dark", "kiss:", "tone", "woman,"]),
+ ("\u{1f491}", ["human", "valentines", "pair", "like", "heart", "with", "love", "couple_with_heart", "marriage", "couple", "dating", "affection"]),
+ ("\u{1f491}\u{1f3fb}", ["skin", "light", "with", "couple", "heart:", "tone"]),
+ ("\u{1f491}\u{1f3fc}", ["skin", "medium-light", "with", "couple", "heart:", "tone"]),
+ ("\u{1f491}\u{1f3fd}", ["skin", "medium", "with", "couple", "heart:", "tone"]),
+ ("\u{1f491}\u{1f3fe}", ["skin", "with", "medium-dark", "couple", "heart:", "tone"]),
+ ("\u{1f491}\u{1f3ff}", ["skin", "dark", "with", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "person,", "light", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "person,", "medium", "light", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "person,", "light", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "person,", "dark", "light", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "medium-light", "person,", "with", "light", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "medium-light", "person,", "medium", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "medium-light", "person,", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "medium-light", "person,", "dark", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "person,", "medium", "with", "light", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "person,", "medium", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "person,", "medium", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "person,", "medium", "dark", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "person,", "with", "medium-dark", "light", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "person,", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "person,", "medium", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3ff}", ["skin", "person,", "dark", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fb}", ["skin", "person,", "dark", "with", "light", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fc}", ["skin", "medium-light", "person,", "dark", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fd}", ["skin", "person,", "medium", "dark", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f9d1}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f9d1}\u{1f3fe}", ["skin", "person,", "dark", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f469}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}", ["man", "with", "love", "couple_with_heart_woman_man", "couple", "heart:", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "with", "light", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "with", "light", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "medium-light", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "with", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium-light", "medium", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "medium-light", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "medium-light", "dark", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "medium", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "medium", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "with", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "medium", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "medium", "dark", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "with", "medium-dark", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "with", "medium-dark", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "dark", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "dark", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "dark", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "dark", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "with", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f468}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}", ["man", "human", "man,", "valentines", "pair", "like", "with", "love", "marriage", "couple_with_heart_man_man", "couple", "heart:", "dating", "affection"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "light", "with", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "light", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "light", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "light", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "light", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "medium-light", "man,", "with", "light", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "medium-light", "man,", "with", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "medium-light", "man,", "medium", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "medium-light", "man,", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "medium-light", "man,", "dark", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "medium", "with", "light", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "medium", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "with", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "medium", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "medium", "dark", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "with", "medium-dark", "light", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "with", "medium-dark", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fb}", ["skin", "man,", "dark", "with", "light", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fc}", ["skin", "man,", "medium-light", "dark", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fd}", ["skin", "man,", "medium", "dark", "with", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3fe}", ["skin", "man,", "dark", "with", "medium-dark", "tone,", "couple", "heart:", "tone"]),
+ ("\u{1f468}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f468}\u{1f3ff}", ["skin", "man,", "dark", "with", "couple", "heart:", "tone"]),
+ ("\u{1f469}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}", ["human", "couple_with_heart_woman_woman", "valentines", "pair", "like", "with", "love", "dating", "marriage", "woman", "couple", "heart:", "woman,", "affection"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "light", "with", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "light", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "light", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "light", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fb}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "dark", "light", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "medium-light", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "with", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium-light", "medium", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "medium-light", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fc}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "medium-light", "dark", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "medium", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "medium", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "with", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "medium", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fd}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "medium", "dark", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "with", "medium-dark", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "with", "medium-dark", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3fe}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "dark", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fb}", ["skin", "dark", "with", "light", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fc}", ["skin", "medium-light", "dark", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fd}", ["skin", "medium", "dark", "with", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3fe}", ["skin", "dark", "with", "medium-dark", "tone,", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f469}\u{1f3ff}\u{200d}\u{2764}\u{fe0f}\u{200d}\u{1f469}\u{1f3ff}", ["skin", "dark", "with", "couple", "heart:", "tone", "woman,"]),
+ ("\u{1f46a}", ["human", "parents", "mom", "family", "mother", "dad", "child", "home", "people", "father"]),
+ ("\u{1f468}\u{200d}\u{1f469}\u{200d}\u{1f466}", ["man,", "family_man_woman_boy", "family:", "love", "boy", "woman,"]),
+ ("\u{1f468}\u{200d}\u{1f469}\u{200d}\u{1f467}", ["human", "parents", "man,", "family:", "family_man_woman_girl", "child", "home", "girl", "people", "woman,"]),
+ ("\u{1f468}\u{200d}\u{1f469}\u{200d}\u{1f467}\u{200d}\u{1f466}", ["human", "family_man_woman_girl_boy", "man,", "parents", "children", "family:", "girl,", "home", "people", "boy", "woman,"]),
+ ("\u{1f468}\u{200d}\u{1f469}\u{200d}\u{1f466}\u{200d}\u{1f466}", ["human", "parents", "man,", "children", "family:", "family_man_woman_boy_boy", "boy,", "home", "people", "boy", "woman,"]),
+ ("\u{1f468}\u{200d}\u{1f469}\u{200d}\u{1f467}\u{200d}\u{1f467}", ["human", "parents", "man,", "children", "family:", "girl,", "home", "girl", "people", "family_man_woman_girl_girl", "woman,"]),
+ ("\u{1f468}\u{200d}\u{1f468}\u{200d}\u{1f466}", ["human", "parents", "man,", "children", "family_man_man_boy", "family:", "home", "people", "boy"]),
+ ("\u{1f468}\u{200d}\u{1f468}\u{200d}\u{1f467}", ["human", "parents", "man,", "people", "children", "family:", "home", "girl", "family_man_man_girl"]),
+ ("\u{1f468}\u{200d}\u{1f468}\u{200d}\u{1f467}\u{200d}\u{1f466}", ["human", "parents", "man,", "children", "family:", "family_man_man_girl_boy", "girl,", "home", "people", "boy"]),
+ ("\u{1f468}\u{200d}\u{1f468}\u{200d}\u{1f466}\u{200d}\u{1f466}", ["human", "parents", "man,", "children", "family_man_man_boy_boy", "family:", "boy,", "home", "people", "boy"]),
+ ("\u{1f468}\u{200d}\u{1f468}\u{200d}\u{1f467}\u{200d}\u{1f467}", ["human", "parents", "man,", "children", "family:", "girl,", "family_man_man_girl_girl", "home", "girl", "people"]),
+ ("\u{1f469}\u{200d}\u{1f469}\u{200d}\u{1f466}", ["human", "parents", "children", "family:", "family_woman_woman_boy", "home", "people", "boy", "woman,"]),
+ ("\u{1f469}\u{200d}\u{1f469}\u{200d}\u{1f467}", ["human", "parents", "children", "family:", "home", "girl", "family_woman_woman_girl", "people", "woman,"]),
+ ("\u{1f469}\u{200d}\u{1f469}\u{200d}\u{1f467}\u{200d}\u{1f466}", ["human", "parents", "children", "family:", "girl,", "home", "people", "boy", "woman,", "family_woman_woman_girl_boy"]),
+ ("\u{1f469}\u{200d}\u{1f469}\u{200d}\u{1f466}\u{200d}\u{1f466}", ["human", "family_woman_woman_boy_boy", "parents", "children", "family:", "boy,", "home", "people", "boy", "woman,"]),
+ ("\u{1f469}\u{200d}\u{1f469}\u{200d}\u{1f467}\u{200d}\u{1f467}", ["human", "parents", "children", "family:", "family_woman_woman_girl_girl", "girl,", "home", "girl", "people", "woman,"]),
+ ("\u{1f468}\u{200d}\u{1f466}", ["human", "family_man_boy", "man,", "family:", "child", "home", "people", "boy", "parent"]),
+ ("\u{1f468}\u{200d}\u{1f466}\u{200d}\u{1f466}", ["human", "man,", "children", "family:", "boy,", "home", "people", "boy", "family_man_boy_boy", "parent"]),
+ ("\u{1f468}\u{200d}\u{1f467}", ["human", "man,", "family:", "family_man_girl", "child", "home", "girl", "people", "parent"]),
+ ("\u{1f468}\u{200d}\u{1f467}\u{200d}\u{1f466}", ["human", "man,", "children", "family:", "family_man_girl_boy", "girl,", "home", "people", "boy", "parent"]),
+ ("\u{1f468}\u{200d}\u{1f467}\u{200d}\u{1f467}", ["human", "man,", "family_man_girl_girl", "children", "family:", "girl,", "home", "girl", "people", "parent"]),
+ ("\u{1f469}\u{200d}\u{1f466}", ["human", "family:", "child", "home", "people", "boy", "family_woman_boy", "woman,", "parent"]),
+ ("\u{1f469}\u{200d}\u{1f466}\u{200d}\u{1f466}", ["human", "family_woman_boy_boy", "children", "family:", "boy,", "home", "people", "boy", "woman,", "parent"]),
+ ("\u{1f469}\u{200d}\u{1f467}", ["human", "family:", "child", "home", "girl", "family_woman_girl", "people", "woman,", "parent"]),
+ ("\u{1f469}\u{200d}\u{1f467}\u{200d}\u{1f466}", ["human", "children", "family:", "girl,", "family_woman_girl_boy", "home", "people", "boy", "woman,", "parent"]),
+ ("\u{1f469}\u{200d}\u{1f467}\u{200d}\u{1f467}", ["human", "children", "family:", "girl,", "home", "girl", "people", "family_woman_girl_girl", "woman,", "parent"]),
+ ("\u{1f5e3}", ["speaking", "head"]),
+ ("\u{1f464}", ["bust_in_silhouette", "human", "bust", "silhouette", "in", "person", "user"]),
+ ("\u{1f465}", ["human", "busts_in_silhouette", "group", "silhouette", "in", "person", "busts", "user", "team"]),
+ ("\u{1fac2}", ["hugging", "people"]),
+ ("\u{1f463}", ["beach", "footprints", "walking", "feet", "tracking"]),
+ ("\u{1f3fb}", ["skin", "tone", "light"]),
+ ("\u{1f3fc}", ["skin", "medium-light", "tone"]),
+ ("\u{1f3fd}", ["skin", "tone", "medium"]),
+ ("\u{1f3fe}", ["skin", "tone", "medium-dark"]),
+ ("\u{1f3ff}", ["skin", "tone", "dark"]),
+ ("\u{1f9b0}", ["hair", "red"]),
+ ("\u{1f9b1}", ["hair", "curly"]),
+ ("\u{1f9b3}", ["white", "hair"]),
+ ("\u{1f9b2}", ["bald"]),
+ ("\u{1f435}", ["animal", "nature", "face", "monkey", "monkey_face", "circus"]),
+ ("\u{1f412}", ["banana", "animal", "nature", "monkey", "circus"]),
+ ("\u{1f98d}", ["animal", "gorilla", "circus", "nature"]),
+ ("\u{1f9a7}", ["animal", "orangutan"]),
+ ("\u{1f436}", ["pet", "faithful", "dog_face", "dog", "animal", "friend", "woof", "face", "nature", "puppy"]),
+ ("\u{1f415}", ["pet", "faithful", "dog", "animal", "friend", "doge", "nature"]),
+ ("\u{1f9ae}", ["dog", "animal", "guide", "blind", "guide_dog"]),
+ ("\u{1f415}\u{200d}\u{1f9ba}", ["dog", "animal", "service", "blind", "service_dog"]),
+ ("\u{1f429}", ["pet", "dog", "animal", "nature", "poodle"]),
+ ("\u{1f43a}", ["wild", "animal", "wolf", "nature"]),
+ ("\u{1f98a}", ["animal", "fox", "face", "nature"]),
+ ("\u{1f99d}", ["animal", "nature", "raccoon"]),
+ ("\u{1f431}", ["pet", "meow", "animal", "cat", "cat_face", "face", "nature", "kitten"]),
+ ("\u{1f408}", ["pet", "meow", "animal", "cat", "cats"]),
+ ("\u{1f408}\u{200d}\u{2b1b}", ["black cat", "cat", "superstition", "black", "luck"]),
+ ("\u{1f981}", ["animal", "lion", "nature"]),
+ ("\u{1f42f}", ["tiger_face", "wild", "danger", "animal", "cat", "face", "nature", "tiger", "roar"]),
+ ("\u{1f405}", ["tiger", "animal", "roar", "nature"]),
+ ("\u{1f406}", ["animal", "leopard", "nature"]),
+ ("\u{1f434}", ["animal", "face", "nature", "brown", "horse", "horse_face"]),
+ ("\u{1f40e}", ["gamble", "animal", "horse", "luck"]),
+ ("\u{1f984}", ["animal", "unicorn", "mystical", "nature"]),
+ ("\u{1f993}", ["stripes", "animal", "nature", "safari", "zebra"]),
+ ("\u{1f98c}", ["animal", "nature", "deer", "venison", "horns"]),
+ ("\u{1f9ac}", ["bison"]),
+ ("\u{1f42e}", ["cow_face", "milk", "ox", "animal", "beef", "face", "nature", "cow", "moo"]),
+ ("\u{1f402}", ["ox", "animal", "cow", "beef"]),
+ ("\u{1f403}", ["ox", "animal", "nature", "buffalo", "water_buffalo", "cow", "water"]),
+ ("\u{1f404}", ["milk", "ox", "animal", "nature", "beef", "cow", "moo"]),
+ ("\u{1f437}", ["animal", "face", "oink", "pig_face", "nature", "pig"]),
+ ("\u{1f416}", ["animal", "pig", "nature"]),
+ ("\u{1f417}", ["animal", "boar", "nature"]),
+ ("\u{1f43d}", ["animal", "oink", "pig_nose", "nose", "pig"]),
+ ("\u{1f40f}", ["animal", "sheep", "ram", "nature"]),
+ ("\u{1f411}", ["animal", "shipit", "nature", "ewe", "wool"]),
+ ("\u{1f410}", ["animal", "goat", "nature"]),
+ ("\u{1f42a}", ["animal", "hump", "desert", "camel", "hot"]),
+ ("\u{1f42b}", ["two_hump_camel", "two-hump", "animal", "hump", "nature", "desert", "camel", "hot"]),
+ ("\u{1f999}", ["llama", "animal", "alpaca", "nature"]),
+ ("\u{1f992}", ["spots", "animal", "nature", "safari", "giraffe"]),
+ ("\u{1f418}", ["animal", "nature", "elephant", "th", "nose", "circus"]),
+ ("\u{1f9a3}", ["mammoth"]),
+ ("\u{1f98f}", ["animal", "rhinoceros", "horn", "nature"]),
+ ("\u{1f99b}", ["animal", "hippopotamus", "nature"]),
+ ("\u{1f42d}", ["mouse_face", "animal", "rodent", "nature", "face", "cheese_wedge", "mouse"]),
+ ("\u{1f401}", ["animal", "mouse", "rodent", "nature"]),
+ ("\u{1f400}", ["animal", "mouse", "rodent", "rat"]),
+ ("\u{1f439}", ["animal", "hamster", "nature"]),
+ ("\u{1f430}", ["pet", "rabbit", "animal", "spring", "magic", "nature", "face", "bunny", "rabbit_face"]),
+ ("\u{1f407}", ["pet", "rabbit", "animal", "spring", "magic", "nature"]),
+ ("\u{1f43f}", ["chipmunk"]),
+ ("\u{1f9ab}", ["beaver"]),
+ ("\u{1f994}", ["animal", "hedgehog", "spiny", "nature"]),
+ ("\u{1f987}", ["animal", "bat", "blind", "nature", "vampire"]),
+ ("\u{1f43b}", ["animal", "bear", "wild", "nature"]),
+ ("\u{1f43b}\u{200d}\u{2744}\u{fe0f}", ["polar bear", "animal", "bear", "polar", "arctic"]),
+ ("\u{1f428}", ["animal", "koala", "nature"]),
+ ("\u{1f43c}", ["panda", "animal", "nature"]),
+ ("\u{1f9a5}", ["animal", "sloth"]),
+ ("\u{1f9a6}", ["animal", "otter"]),
+ ("\u{1f9a8}", ["animal", "skunk"]),
+ ("\u{1f998}", ["australia", "marsupial", "animal", "joey", "hop", "nature", "kangaroo"]),
+ ("\u{1f9a1}", ["animal", "honey", "badger", "nature"]),
+ ("\u{1f43e}", ["pet", "prints", "footprints", "dog", "animal", "paw_prints", "cat", "paw", "feet", "tracking"]),
+ ("\u{1f983}", ["animal", "turkey", "bird"]),
+ ("\u{1f414}", ["chicken", "animal", "bird", "nature", "cluck"]),
+ ("\u{1f413}", ["chicken", "animal", "rooster", "nature"]),
+ ("\u{1f423}", ["chicken", "animal", "chick", "hatching_chick", "bird", "baby", "hatching", "egg", "born"]),
+ ("\u{1f424}", ["baby_chick", "chicken", "chick", "animal", "bird", "baby"]),
+ ("\u{1f425}", ["front-facing", "front_facing_baby_chick", "chicken", "chick", "animal", "bird", "baby"]),
+ ("\u{1f426}", ["tweet", "animal", "spring", "bird", "nature", "fly"]),
+ ("\u{1f427}", ["animal", "penguin", "nature"]),
+ ("\u{1f54a}", ["dove"]),
+ ("\u{1f985}", ["animal", "bird", "nature", "eagle"]),
+ ("\u{1f986}", ["mallard", "animal", "bird", "nature", "duck"]),
+ ("\u{1f9a2}", ["swan", "animal", "bird", "nature"]),
+ ("\u{1f989}", ["animal", "bird", "nature", "hoot", "owl"]),
+ ("\u{1f9a4}", ["dodo"]),
+ ("\u{1fab6}", ["feather"]),
+ ("\u{1f9a9}", ["animal", "flamingo"]),
+ ("\u{1f99a}", ["peahen", "peacock", "animal", "bird", "nature"]),
+ ("\u{1f99c}", ["parrot", "animal", "bird", "talk", "nature", "pirate"]),
+ ("\u{1f438}", ["croak", "animal", "nature", "toad", "frog"]),
+ ("\u{1f40a}", ["crocodile", "animal", "alligator", "nature", "reptile", "lizard"]),
+ ("\u{1f422}", ["tortoise", "animal", "slow", "turtle", "nature"]),
+ ("\u{1f98e}", ["animal", "reptile", "nature", "lizard"]),
+ ("\u{1f40d}", ["python", "animal", "nature", "evil", "hiss", "snake"]),
+ ("\u{1f432}", ["chinese", "animal", "face", "nature", "green", "dragon", "myth", "dragon_face"]),
+ ("\u{1f409}", ["chinese", "animal", "nature", "green", "dragon", "myth"]),
+ ("\u{1f995}", ["brontosaurus", "sauropod", "animal", "extinct", "diplodocus", "brachiosaurus", "dinosaur", "nature"]),
+ ("\u{1f996}", ["tyrannosaurus", "animal", "extinct", "dinosaur", "nature", "t_rex", "T-Rex"]),
+ ("\u{1f433}", ["spouting_whale", "sea", "animal", "ocean", "nature", "spouting", "whale"]),
+ ("\u{1f40b}", ["sea", "animal", "ocean", "nature", "whale"]),
+ ("\u{1f42c}", ["fish", "beach", "sea", "animal", "ocean", "fins", "dolphin", "nature", "flipper"]),
+ ("\u{1f9ad}", ["seal"]),
+ ("\u{1f41f}", ["animal", "fish", "food", "nature"]),
+ ("\u{1f420}", ["nemo", "tropical_fish", "swim", "fish", "beach", "animal", "ocean", "tropical"]),
+ ("\u{1f421}", ["food", "blowfish", "sea", "animal", "ocean", "nature"]),
+ ("\u{1f988}", ["fish", "beach", "sea", "animal", "ocean", "fins", "nature", "jaws", "shark"]),
+ ("\u{1f419}", ["beach", "octopus", "sea", "animal", "ocean", "nature", "creature"]),
+ ("\u{1f41a}", ["beach", "sea", "spiral_shell", "shell", "nature", "spiral"]),
+ ("\u{1f40c}", ["slow", "animal", "snail", "shell"]),
+ ("\u{1f98b}", ["animal", "insect", "nature", "caterpillar", "butterfly"]),
+ ("\u{1f41b}", ["animal", "insect", "bug", "nature", "worm"]),
+ ("\u{1f41c}", ["animal", "bug", "insect", "ant", "nature"]),
+ ("\u{1f41d}", ["honey", "animal", "spring", "bug", "nature", "insect", "honeybee"]),
+ ("\u{1fab2}", ["beetle"]),
+ ("\u{1f41e}", ["beetle", "animal", "lady", "insect", "nature", "lady_beetle", "ladybug"]),
+ ("\u{1f997}", ["animal", "cricket", "chirp"]),
+ ("\u{1fab3}", ["cockroach"]),
+ ("\u{1f577}", ["spider"]),
+ ("\u{1f578}", ["web", "spider"]),
+ ("\u{1f982}", ["animal", "scorpion", "arachnid"]),
+ ("\u{1f99f}", ["animal", "malaria", "insect", "nature", "mosquito"]),
+ ("\u{1fab0}", ["fly"]),
+ ("\u{1fab1}", ["worm"]),
+ ("\u{1f9a0}", ["germs", "bacteria", "amoeba", "microbe"]),
+ ("\u{1f490}", ["nature", "spring", "flowers", "bouquet"]),
+ ("\u{1f338}", ["blossom", "cherry", "flower", "spring", "nature", "cherry_blossom", "plant"]),
+ ("\u{1f4ae}", ["japanese", "white_flower", "flower", "spring", "white"]),
+ ("\u{1f3f5}", ["rosette"]),
+ ("\u{1f339}", ["valentines", "spring", "love", "rose", "flowers"]),
+ ("\u{1f940}", ["flower", "wilted_flower", "nature", "wilted", "plant"]),
+ ("\u{1f33a}", ["beach", "vegetable", "flowers", "hibiscus", "plant"]),
+ ("\u{1f33b}", ["sunflower", "plant", "fall", "nature"]),
+ ("\u{1f33c}", ["blossom", "flowers", "yellow", "nature"]),
+ ("\u{1f337}", ["spring", "summer", "nature", "flowers", "tulip", "plant"]),
+ ("\u{1f331}", ["grass", "spring", "nature", "lawn", "seedling", "plant"]),
+ ("\u{1fab4}", ["potted", "plant"]),
+ ("\u{1f332}", ["evergreen", "evergreen_tree", "nature", "tree", "plant"]),
+ ("\u{1f333}", ["nature", "deciduous_tree", "tree", "deciduous", "plant"]),
+ ("\u{1f334}", ["beach", "palm_tree", "summer", "tree", "nature", "palm", "tropical", "vegetable", "plant", "mojito"]),
+ ("\u{1f335}", ["nature", "cactus", "plant", "vegetable"]),
+ ("\u{1f33e}", ["sheaf", "nature", "rice", "sheaf_of_rice", "plant", "of"]),
+ ("\u{1f33f}", ["grass", "medicine", "weed", "herb", "lawn", "vegetable", "plant"]),
+ ("\u{2618}", ["shamrock"]),
+ ("\u{1f340}", ["irish", "lucky", "four", "leaf", "four_leaf_clover", "nature", "clover", "vegetable", "plant"]),
+ ("\u{1f341}", ["ca", "maple", "nature", "leaf", "maple_leaf", "vegetable", "plant", "fall"]),
+ ("\u{1f342}", ["fallen", "nature", "leaf", "leaves", "vegetable", "plant", "fallen_leaf"]),
+ ("\u{1f343}", ["grass", "spring", "in", "leaf", "nature", "leaf_fluttering_in_wind", "fluttering", "tree", "lawn", "wind", "vegetable", "plant"]),
+ ("\u{1f347}", ["wine", "fruit", "food", "grapes"]),
+ ("\u{1f348}", ["melon", "food", "nature", "fruit"]),
+ ("\u{1f349}", ["food", "fruit", "picnic", "watermelon", "summer"]),
+ ("\u{1f34a}", ["tangerine", "orange", "food", "fruit", "nature"]),
+ ("\u{1f34b}", ["lemon", "nature", "fruit"]),
+ ("\u{1f34c}", ["monkey", "fruit", "food", "banana"]),
+ ("\u{1f34d}", ["nature", "food", "pineapple", "fruit"]),
+ ("\u{1f96d}", ["mango", "tropical", "food", "fruit"]),
+ ("\u{1f34e}", ["red_apple", "fruit", "apple", "red", "mac", "school"]),
+ ("\u{1f34f}", ["green_apple", "fruit", "apple", "nature", "green"]),
+ ("\u{1f350}", ["pear", "nature", "food", "fruit"]),
+ ("\u{1f351}", ["nature", "peach", "food", "fruit"]),
+ ("\u{1f352}", ["fruit", "cherries", "food"]),
+ ("\u{1f353}", ["strawberry", "food", "nature", "fruit"]),
+ ("\u{1fad0}", ["blueberries"]),
+ ("\u{1f95d}", ["food", "kiwi", "kiwi_fruit", "fruit"]),
+ ("\u{1f345}", ["food", "fruit", "tomato", "nature", "vegetable"]),
+ ("\u{1fad2}", ["olive"]),
+ ("\u{1f965}", ["food", "fruit", "nature", "palm", "coconut"]),
+ ("\u{1f951}", ["avocado", "food", "fruit"]),
+ ("\u{1f346}", ["food", "nature", "eggplant", "aubergine", "vegetable"]),
+ ("\u{1f954}", ["vegatable", "food", "starch", "tuber", "potato"]),
+ ("\u{1f955}", ["vegetable", "carrot", "orange", "food"]),
+ ("\u{1f33d}", ["corn", "ear", "food", "vegetable", "plant", "ear_of_corn", "of"]),
+ ("\u{1f336}", ["pepper", "hot"]),
+ ("\u{1fad1}", ["pepper", "bell"]),
+ ("\u{1f952}", ["pickle", "food", "cucumber", "fruit"]),
+ ("\u{1f96c}", ["lettuce", "food", "leafy_green", "bok choy", "leafy", "kale", "green", "cabbage", "vegetable", "plant"]),
+ ("\u{1f966}", ["broccoli", "vegetable", "food", "fruit"]),
+ ("\u{1f9c4}", ["garlic", "food", "cook", "spice"]),
+ ("\u{1f9c5}", ["onion", "food", "cook", "spice"]),
+ ("\u{1f344}", ["mushroom", "vegetable", "plant"]),
+ ("\u{1f95c}", ["peanuts", "nut", "food"]),
+ ("\u{1f330}", ["squirrel", "food", "chestnut"]),
+ ("\u{1f35e}", ["bread", "food", "wheat", "toast", "breakfast"]),
+ ("\u{1f950}", ["french", "croissant", "bread", "food"]),
+ ("\u{1f956}", ["bread", "food", "baguette", "french", "baguette_bread"]),
+ ("\u{1fad3}", ["flatbread"]),
+ ("\u{1f968}", ["pretzel", "food", "twisted", "bread"]),
+ ("\u{1f96f}", ["bread", "food", "schmear", "bakery", "bagel"]),
+ ("\u{1f95e}", ["food", "flapjacks", "hotcakes", "breakfast", "pancakes"]),
+ ("\u{1f9c7}", ["breakfast", "waffle", "food"]),
+ ("\u{1f9c0}", ["food", "chadder", "wedge", "cheese_wedge", "cheese"]),
+ ("\u{1f356}", ["bone", "drumstick", "food", "meat_on_bone", "good", "on", "meat"]),
+ ("\u{1f357}", ["drumstick", "food", "chicken", "bird", "leg", "turkey", "poultry", "meat", "poultry_leg"]),
+ ("\u{1f969}", ["food", "cut_of_meat", "porkchop", "cut", "meat", "cow", "chop", "lambchop", "of"]),
+ ("\u{1f953}", ["pork", "food", "breakfast", "bacon", "meat", "pig"]),
+ ("\u{1f354}", ["burger king", "fast food", "hamburger", "mcdonalds", "beef", "cheeseburger", "meat"]),
+ ("\u{1f35f}", ["french_fries", "fries", "fast food", "french", "chips", "snack"]),
+ ("\u{1f355}", ["pizza", "party", "food"]),
+ ("\u{1f32d}", ["food", "dog", "frankfurter", "hot_dog", "hot"]),
+ ("\u{1f96a}", ["sandwich", "bread", "food", "lunch"]),
+ ("\u{1f32e}", ["mexican", "taco", "food"]),
+ ("\u{1f32f}", ["mexican", "burrito", "food"]),
+ ("\u{1fad4}", ["tamale"]),
+ ("\u{1f959}", ["stuffed_flatbread", "food", "gyro", "stuffed", "flatbread"]),
+ ("\u{1f9c6}", ["falafel", "food"]),
+ ("\u{1f95a}", ["egg", "chicken", "breakfast", "food"]),
+ ("\u{1f373}", ["food", "cooking", "breakfast", "egg", "kitchen"]),
+ ("\u{1f958}", ["food", "shallow_pan_of_food", "cooking", "pan", "shallow", "casserole", "paella", "of"]),
+ ("\u{1f372}", ["food", "pot", "pot_of_food", "meat", "soup", "of"]),
+ ("\u{1fad5}", ["fondue"]),
+ ("\u{1f963}", ["bowl", "food", "oatmeal", "with", "spoon", "breakfast", "bowl_with_spoon", "porridge", "cereal"]),
+ ("\u{1f957}", ["lettuce", "food", "green_salad", "green", "salad", "healthy"]),
+ ("\u{1f37f}", ["films", "food", "snack", "popcorn", "movie theater"]),
+ ("\u{1f9c8}", ["butter", "food", "cook"]),
+ ("\u{1f9c2}", ["salt", "condiment", "shaker"]),
+ ("\u{1f96b}", ["canned", "canned_food", "food", "soup"]),
+ ("\u{1f371}", ["japanese", "food", "bento_box", "bento", "box"]),
+ ("\u{1f358}", ["japanese", "cracker", "food", "rice", "rice_cracker"]),
+ ("\u{1f359}", ["japanese", "rice_ball", "food", "ball", "rice"]),
+ ("\u{1f35a}", ["asian", "cooked", "food", "china", "rice", "cooked_rice"]),
+ ("\u{1f35b}", ["food", "curry_rice", "curry", "rice", "indian", "spicy", "hot"]),
+ ("\u{1f35c}", ["bowl", "japanese", "food", "steaming_bowl", "steaming", "chopsticks", "noodle"]),
+ ("\u{1f35d}", ["spaghetti", "noodle", "italian", "food"]),
+ ("\u{1f360}", ["food", "roasted", "sweet", "nature", "potato", "roasted_sweet_potato"]),
+ ("\u{1f362}", ["japanese", "oden", "food"]),
+ ("\u{1f363}", ["japanese", "fish", "sushi", "food", "rice"]),
+ ("\u{1f364}", ["fried_shrimp", "food", "animal", "shrimp", "summer", "fried", "appetizer"]),
+ ("\u{1f365}", ["surimi", "fish", "cake", "kamaboko", "food", "beach", "narutomaki", "sea", "with", "ramen", "fish_cake_with_swirl", "swirl", "pink", "japan"]),
+ ("\u{1f96e}", ["cake", "food", "autumn", "moon_cake", "moon"]),
+ ("\u{1f361}", ["japanese", "dango", "food", "dessert", "sweet", "meat", "barbecue"]),
+ ("\u{1f95f}", ["potsticker", "empanada", "food", "pierogi", "dumpling"]),
+ ("\u{1f960}", ["food", "cookie", "fortune_cookie", "prophecy", "fortune"]),
+ ("\u{1f961}", ["takeout", "food", "leftovers", "takeout_box", "box"]),
+ ("\u{1f980}", ["animal", "crustacean", "crab"]),
+ ("\u{1f99e}", ["seafood", "bisque", "animal", "nature", "claws", "lobster"]),
+ ("\u{1f990}", ["seafood", "animal", "ocean", "shrimp", "nature"]),
+ ("\u{1f991}", ["sea", "animal", "ocean", "nature", "squid"]),
+ ("\u{1f9aa}", ["food", "oyster"]),
+ ("\u{1f366}", ["soft_ice_cream", "food", "hot", "soft", "dessert", "summer", "ice", "cream"]),
+ ("\u{1f367}", ["shaved", "shaved_ice", "dessert", "summer", "ice", "hot"]),
+ ("\u{1f368}", ["food", "dessert", "ice_cream", "cream", "ice", "hot"]),
+ ("\u{1f369}", ["food", "dessert", "sweet", "doughnut", "snack", "donut"]),
+ ("\u{1f36a}", ["oreo", "cookie", "food", "chocolate", "dessert", "sweet", "snack"]),
+ ("\u{1f382}", ["cake", "food", "dessert", "birthday_cake", "birthday"]),
+ ("\u{1f370}", ["dessert", "shortcake", "food"]),
+ ("\u{1f9c1}", ["food", "dessert", "bakery", "sweet", "cupcake"]),
+ ("\u{1f967}", ["pastry", "dessert", "pie", "food"]),
+ ("\u{1f36b}", ["food", "chocolate", "dessert", "sweet", "snack", "chocolate_bar", "bar"]),
+ ("\u{1f36c}", ["dessert", "sweet", "snack", "candy", "lolly"]),
+ ("\u{1f36d}", ["lollipop", "food", "sweet", "snack", "candy"]),
+ ("\u{1f36e}", ["dessert", "custard", "food"]),
+ ("\u{1f36f}", ["honey", "honey_pot", "pot", "sweet", "bees", "kitchen"]),
+ ("\u{1f37c}", ["food", "milk", "container", "baby", "bottle", "baby_bottle"]),
+ ("\u{1f95b}", ["glass", "milk", "drink", "cow", "glass_of_milk", "beverage", "of"]),
+ ("\u{2615}", ["latte", "hot", "espresso", "caffeine", "beverage", "hot_beverage"]),
+ ("\u{1fad6}", ["teapot"]),
+ ("\u{1f375}", ["bowl", "drink", "teacup", "handle", "british", "green", "breakfast", "teacup_without_handle", "without"]),
+ ("\u{1f376}", ["japanese", "drink", "alcohol", "sake", "booze", "wine", "beverage", "drunk"]),
+ ("\u{1f37e}", ["popping", "drink", "with", "cork", "celebration", "bottle_with_popping_cork", "bottle", "wine"]),
+ ("\u{1f377}", ["glass", "drink", "alcohol", "wine_glass", "booze", "wine", "beverage", "drunk"]),
+ ("\u{1f378}", ["cocktail", "cocktail_glass", "glass", "drink", "mojito", "booze", "beverage", "alcohol", "drunk"]),
+ ("\u{1f379}", ["cocktail", "beach", "drink", "alcohol", "summer", "booze", "tropical", "tropical_drink", "mojito", "beverage"]),
+ ("\u{1f37a}", ["drink", "alcohol", "pub", "mug", "party", "summer", "booze", "beer_mug", "beer", "beverage", "relax", "drunk"]),
+ ("\u{1f37b}", ["drink", "alcohol", "pub", "clinking", "party", "clinking_beer_mugs", "summer", "booze", "mugs", "beer", "beverage", "relax", "drunk"]),
+ ("\u{1f942}", ["cheers", "drink", "alcohol", "celebrate", "clinking", "glasses", "toast", "champagne", "wine", "beverage", "party", "clinking_glasses"]),
+ ("\u{1f943}", ["glass", "drink", "alcohol", "liquor", "scotch", "whisky", "booze", "shot", "bourbon", "tumbler_glass", "tumbler", "beverage", "drunk"]),
+ ("\u{1f964}", ["soda", "cup_with_straw", "drink", "straw", "with", "cup"]),
+ ("\u{1f9cb}", ["bubble", "tea"]),
+ ("\u{1f9c3}", ["box", "drink", "beverage", "beverage_box"]),
+ ("\u{1f9c9}", ["mate", "beverage", "tea", "drink"]),
+ ("\u{1f9ca}", ["cold", "ice", "water"]),
+ ("\u{1f962}", ["chopsticks", "food"]),
+ ("\u{1f37d}", ["plate", "knife", "with", "fork", "and"]),
+ ("\u{1f374}", ["cutlery", "knife", "fork_and_knife", "fork", "and", "kitchen"]),
+ ("\u{1f944}", ["spoon", "cutlery", "kitchen", "tableware"]),
+ ("\u{1f52a}", ["kitchen_knife", "kitchen", "cutlery", "knife", "weapon", "blade"]),
+ ("\u{1f3fa}", ["vase", "amphora", "jar"]),
+ ("\u{1f30d}", ["world", "international", "globe", "Europe-Africa", "globe_showing_europe_africa", "showing"]),
+ ("\u{1f30e}", ["world", "globe_showing_americas", "USA", "international", "Americas", "globe", "showing"]),
+ ("\u{1f30f}", ["world", "globe_showing_asia_australia", "east", "international", "globe", "Asia-Australia", "showing"]),
+ ("\u{1f310}", ["world", "globe_with_meridians", "i18n", "with", "international", "internet", "globe", "earth", "interweb", "meridians"]),
+ ("\u{1f5fa}", ["world", "map"]),
+ ("\u{1f5fe}", ["japanese", "asia", "nation", "Japan", "country", "map", "map_of_japan", "of"]),
+ ("\u{1f9ed}", ["compass", "magnetic", "navigation", "orienteering"]),
+ ("\u{1f3d4}", ["mountain", "snow-capped"]),
+ ("\u{26f0}", ["mountain"]),
+ ("\u{1f30b}", ["disaster", "volcano", "photo", "nature"]),
+ ("\u{1f5fb}", ["mountain", "japanese", "fuji", "photo", "mount", "nature", "mount_fuji"]),
+ ("\u{1f3d5}", ["camping"]),
+ ("\u{1f3d6}", ["umbrella", "with", "beach"]),
+ ("\u{1f3dc}", ["desert"]),
+ ("\u{1f3dd}", ["desert", "island"]),
+ ("\u{1f3de}", ["national", "park"]),
+ ("\u{1f3df}", ["stadium"]),
+ ("\u{1f3db}", ["building", "classical"]),
+ ("\u{1f3d7}", ["construction", "building"]),
+ ("\u{1f9f1}", ["bricks", "brick"]),
+ ("\u{1faa8}", ["rock"]),
+ ("\u{1fab5}", ["wood"]),
+ ("\u{1f6d6}", ["hut"]),
+ ("\u{1f3d8}", ["houses"]),
+ ("\u{1f3da}", ["derelict", "house"]),
+ ("\u{1f3e0}", ["home", "building", "house"]),
+ ("\u{1f3e1}", ["plant", "with", "nature", "home", "house_with_garden", "house", "garden"]),
+ ("\u{1f3e2}", ["work", "office_building", "bureau", "office", "building"]),
+ ("\u{1f3e3}", ["communication", "japanese_post_office", "Japanese", "post", "office", "building", "envelope"]),
+ ("\u{1f3e4}", ["building", "post_office", "post", "office", "email"]),
+ ("\u{1f3e5}", ["doctor", "surgery", "hospital", "building", "health"]),
+ ("\u{1f3e6}", ["enterprise", "business", "money", "cash", "bank", "sales", "building"]),
+ ("\u{1f3e8}", ["checkin", "accomodation", "hotel", "building"]),
+ ("\u{1f3e9}", ["like", "love", "hotel", "love_hotel", "dating", "affection"]),
+ ("\u{1f3ea}", ["shopping", "convenience", "convenience_store", "groceries", "store", "building"]),
+ ("\u{1f3eb}", ["teach", "education", "student", "school", "building", "learn"]),
+ ("\u{1f3ec}", ["department_store", "shopping", "mall", "department", "store", "building"]),
+ ("\u{1f3ed}", ["factory", "industry", "pollution", "smoke", "building"]),
+ ("\u{1f3ef}", ["japanese_castle", "photo", "castle", "Japanese", "building"]),
+ ("\u{1f3f0}", ["royalty", "history", "building", "castle"]),
+ ("\u{1f492}", ["like", "groom", "bride", "love", "marriage", "couple", "wedding", "affection"]),
+ ("\u{1f5fc}", ["Tokyo", "japanese", "photo", "tokyo_tower", "tower"]),
+ ("\u{1f5fd}", ["Liberty", "statue_of_liberty", "newyork", "Statue", "american", "of"]),
+ ("\u{26ea}", ["christ", "religion", "church", "building"]),
+ ("\u{1f54c}", ["minaret", "worship", "islam", "mosque"]),
+ ("\u{1f6d5}", ["hindu", "religion", "hindu_temple", "temple"]),
+ ("\u{1f54d}", ["synagogue", "worship", "jewish", "judaism", "temple"]),
+ ("\u{26e9}", ["shrine", "shinto"]),
+ ("\u{1f54b}", ["mecca", "kaaba", "islam", "mosque"]),
+ ("\u{26f2}", ["photo", "summer", "fresh", "fountain", "water"]),
+ ("\u{26fa}", ["outdoors", "photo", "camping", "tent"]),
+ ("\u{1f301}", ["mountain", "foggy", "photo"]),
+ ("\u{1f303}", ["stars", "city", "evening", "with", "downtown", "night_with_stars", "night"]),
+ ("\u{1f3d9}", ["cityscape"]),
+ ("\u{1f304}", ["view", "sunrise", "photo", "sunrise_over_mountains", "vacation", "mountains", "over"]),
+ ("\u{1f305}", ["morning", "view", "sunrise", "photo", "vacation"]),
+ ("\u{1f306}", ["buildings", "dusk", "cityscape", "evening", "sky", "photo", "at", "cityscape_at_dusk"]),
+ ("\u{1f307}", ["good morning", "sunset", "photo", "dawn"]),
+ ("\u{1f309}", ["photo", "at", "bridge", "bridge_at_night", "sanfrancisco", "night"]),
+ ("\u{2668}", ["springs", "hot"]),
+ ("\u{1f3a0}", ["photo", "carnival", "horse", "carousel_horse", "carousel"]),
+ ("\u{1f3a1}", ["ferris_wheel", "photo", "wheel", "carnival", "londoneye", "ferris"]),
+ ("\u{1f3a2}", ["roller", "roller_coaster", "playground", "fun", "photo", "carnival", "coaster"]),
+ ("\u{1f488}", ["barber_pole", "hair", "pole", "salon", "barber", "style"]),
+ ("\u{1f3aa}", ["tent", "festival", "party", "circus_tent", "carnival", "circus"]),
+ ("\u{1f682}", ["train", "vehicle", "locomotive", "transportation"]),
+ ("\u{1f683}", ["car", "transportation", "railway", "railway_car", "vehicle"]),
+ ("\u{1f684}", ["transportation", "high-speed", "train", "vehicle", "high_speed_train"]),
+ ("\u{1f685}", ["bullet_train", "transportation", "train", "public", "travel", "speed", "fast", "vehicle", "bullet"]),
+ ("\u{1f686}", ["train", "vehicle", "transportation"]),
+ ("\u{1f687}", ["transportation", "underground", "blue-square", "metro", "mrt", "tube"]),
+ ("\u{1f688}", ["transportation", "light_rail", "light", "rail", "vehicle"]),
+ ("\u{1f689}", ["transportation", "vehicle", "station", "public"]),
+ ("\u{1f68a}", ["tram", "vehicle", "transportation"]),
+ ("\u{1f69d}", ["monorail", "transportation", "vehicle"]),
+ ("\u{1f69e}", ["mountain", "transportation", "railway", "mountain_railway", "vehicle"]),
+ ("\u{1f68b}", ["car", "carriage", "transportation", "public", "travel", "tram", "tram_car", "vehicle"]),
+ ("\u{1f68c}", ["car", "vehicle", "transportation", "bus"]),
+ ("\u{1f68d}", ["oncoming_bus", "transportation", "bus", "oncoming", "vehicle"]),
+ ("\u{1f68e}", ["trolleybus", "vehicle", "transportation", "bart"]),
+ ("\u{1f690}", ["car", "vehicle", "transportation", "minibus"]),
+ ("\u{1f691}", ["ambulance", "hospital", "health"]),
+ ("\u{1f692}", ["engine", "transportation", "fire_engine", "fire", "cars", "vehicle"]),
+ ("\u{1f693}", ["car", "enforcement", "police_car", "transportation", "law", "police", "cars", "legal", "vehicle"]),
+ ("\u{1f694}", ["car", "enforcement", "law", "police", "oncoming_police_car", "oncoming", "legal", "vehicle"]),
+ ("\u{1f695}", ["transportation", "uber", "cars", "taxi", "vehicle"]),
+ ("\u{1f696}", ["oncoming_taxi", "uber", "cars", "oncoming", "taxi", "vehicle"]),
+ ("\u{1f697}", ["vehicle", "red", "transportation", "automobile"]),
+ ("\u{1f698}", ["car", "transportation", "automobile", "oncoming_automobile", "oncoming", "vehicle"]),
+ ("\u{1f699}", ["transportation", "utility", "sport", "sport_utility_vehicle", "vehicle"]),
+ ("\u{1f6fb}", ["pickup", "truck"]),
+ ("\u{1f69a}", ["transportation", "truck", "cars", "delivery_truck", "delivery"]),
+ ("\u{1f69b}", ["lorry", "transportation", "articulated_lorry", "cars", "express", "vehicle", "articulated"]),
+ ("\u{1f69c}", ["car", "farming", "tractor", "vehicle", "agriculture"]),
+ ("\u{1f3ce}", ["car", "racing"]),
+ ("\u{1f3cd}", ["motorcycle"]),
+ ("\u{1f6f5}", ["vespa", "scooter", "motor_scooter", "sasha", "vehicle", "motor"]),
+ ("\u{1f9bd}", ["manual_wheelchair", "wheelchair", "accessibility", "manual"]),
+ ("\u{1f9bc}", ["motorized", "motorized_wheelchair", "wheelchair", "accessibility"]),
+ ("\u{1f6fa}", ["transportation", "auto_rickshaw", "rickshaw", "move", "auto"]),
+ ("\u{1f6b2}", ["bicycle", "exercise", "hipster", "sports"]),
+ ("\u{1f6f4}", ["scooter", "kick_scooter", "razor", "kick", "vehicle"]),
+ ("\u{1f6f9}", ["skateboard", "board"]),
+ ("\u{1f6fc}", ["roller", "skate"]),
+ ("\u{1f68f}", ["transportation", "bus", "stop", "wait", "bus_stop"]),
+ ("\u{1f6e3}", ["motorway"]),
+ ("\u{1f6e4}", ["track", "railway"]),
+ ("\u{1f6e2}", ["oil", "drum"]),
+ ("\u{26fd}", ["pump", "petroleum", "fuel_pump", "fuel", "gas station"]),
+ ("\u{1f6a8}", ["car", "pinged", "ambulance", "law", "light", "emergency", "error", "police", "alert", "legal", "police_car_light"]),
+ ("\u{1f6a5}", ["transportation", "signal", "light", "traffic", "horizontal_traffic_light", "horizontal"]),
+ ("\u{1f6a6}", ["transportation", "driving", "light", "vertical", "vertical_traffic_light", "traffic"]),
+ ("\u{1f6d1}", ["sign", "stop_sign", "stop"]),
+ ("\u{1f6a7}", ["warning", "wip", "progress", "caution", "construction"]),
+ ("\u{2693}", ["boat", "ferry", "sea", "anchor", "ship"]),
+ ("\u{26f5}", ["transportation", "summer", "sailboat", "ship", "sailing", "water"]),
+ ("\u{1f6f6}", ["boat", "paddle", "ship", "water", "canoe"]),
+ ("\u{1f6a4}", ["transportation", "summer", "speedboat", "vehicle", "ship"]),
+ ("\u{1f6f3}", ["passenger", "ship"]),
+ ("\u{26f4}", ["ferry"]),
+ ("\u{1f6e5}", ["boat", "motor"]),
+ ("\u{1f6a2}", ["deploy", "transportation", "ship", "titanic"]),
+ ("\u{2708}", ["airplane"]),
+ ("\u{1f6e9}", ["small", "airplane"]),
+ ("\u{1f6eb}", ["landing", "airport", "airplane", "airplane_departure", "departure", "flight"]),
+ ("\u{1f6ec}", ["boarding", "airport", "airplane", "arrival", "flight", "airplane_arrival"]),
+ ("\u{1fa82}", ["parachute", "fly", "glide"]),
+ ("\u{1f4ba}", ["sit", "bus", "airplane", "transport", "fly", "seat", "flight"]),
+ ("\u{1f681}", ["helicopter", "vehicle", "transportation", "fly"]),
+ ("\u{1f69f}", ["transportation", "railway", "suspension_railway", "suspension", "vehicle"]),
+ ("\u{1f6a0}", ["mountain", "transportation", "mountain_cableway", "cableway", "vehicle", "ski"]),
+ ("\u{1f6a1}", ["transportation", "aerial_tramway", "tramway", "vehicle", "aerial", "ski"]),
+ ("\u{1f6f0}", ["satellite"]),
+ ("\u{1f680}", ["outer space", "outer_space", "fly", "NASA", "staffmode", "ship", "rocket", "launch"]),
+ ("\u{1f6f8}", ["flying", "transportation", "saucer", "flying_saucer", "ufo", "vehicle"]),
+ ("\u{1f6ce}", ["bellhop", "bell"]),
+ ("\u{1f9f3}", ["luggage", "travel", "packing"]),
+ ("\u{231b}", ["exam", "test", "hourglass_done", "time", "done", "clock", "oldschool", "limit", "quiz", "hourglass"]),
+ ("\u{23f3}", ["not", "time", "done", "hourglass_not_done", "oldschool", "countdown", "hourglass"]),
+ ("\u{231a}", ["watch", "accessories", "time"]),
+ ("\u{23f0}", ["wake", "alarm_clock", "time", "clock", "alarm"]),
+ ("\u{23f1}", ["stopwatch"]),
+ ("\u{23f2}", ["timer", "clock"]),
+ ("\u{1f570}", ["mantelpiece", "clock"]),
+ ("\u{1f55b}", ["early", "noon", "midnight", "schedule", "o’clock", "late", "time", "twelve_o_clock", "twelve", "midday"]),
+ ("\u{1f567}", ["twelve_thirty", "early", "schedule", "late", "twelve-thirty", "time"]),
+ ("\u{1f550}", ["early", "one_o_clock", "one", "schedule", "o’clock", "late", "time"]),
+ ("\u{1f55c}", ["early", "one-thirty", "schedule", "late", "time", "one_thirty"]),
+ ("\u{1f551}", ["early", "schedule", "late", "o’clock", "two", "time", "two_o_clock"]),
+ ("\u{1f55d}", ["early", "two-thirty", "schedule", "late", "time", "two_thirty"]),
+ ("\u{1f552}", ["early", "schedule", "late", "o’clock", "time", "three", "three_o_clock"]),
+ ("\u{1f55e}", ["early", "schedule", "late", "time", "three-thirty", "three_thirty"]),
+ ("\u{1f553}", ["early", "four_o_clock", "schedule", "four", "late", "o’clock", "time"]),
+ ("\u{1f55f}", ["four-thirty", "four_thirty", "early", "schedule", "late", "time"]),
+ ("\u{1f554}", ["five_o_clock", "early", "schedule", "five", "late", "o’clock", "time"]),
+ ("\u{1f560}", ["early", "five_thirty", "schedule", "late", "time", "five-thirty"]),
+ ("\u{1f555}", ["dusk", "early", "schedule", "late", "o’clock", "time", "six", "dawn", "six_o_clock"]),
+ ("\u{1f561}", ["early", "schedule", "late", "time", "six_thirty", "six-thirty"]),
+ ("\u{1f556}", ["early", "seven", "schedule", "seven_o_clock", "o’clock", "late", "time"]),
+ ("\u{1f562}", ["early", "schedule", "late", "time", "seven_thirty", "seven-thirty"]),
+ ("\u{1f557}", ["early", "schedule", "late", "o’clock", "eight_o_clock", "time", "eight"]),
+ ("\u{1f563}", ["eight_thirty", "early", "schedule", "late", "eight-thirty", "time"]),
+ ("\u{1f558}", ["early", "schedule", "nine", "late", "o’clock", "time", "nine_o_clock"]),
+ ("\u{1f564}", ["early", "schedule", "late", "time", "nine-thirty", "nine_thirty"]),
+ ("\u{1f559}", ["early", "ten", "schedule", "o’clock", "late", "time", "ten_o_clock"]),
+ ("\u{1f565}", ["early", "ten-thirty", "ten_thirty", "schedule", "late", "time"]),
+ ("\u{1f55a}", ["early", "schedule", "late", "o’clock", "eleven", "time", "eleven_o_clock"]),
+ ("\u{1f566}", ["eleven-thirty", "early", "eleven_thirty", "schedule", "late", "time"]),
+ ("\u{1f311}", ["space", "twilight", "evening", "nature", "planet", "sleep", "night", "moon", "new", "new_moon"]),
+ ("\u{1f312}", ["crescent", "space", "twilight", "evening", "nature", "planet", "sleep", "waxing_crescent_moon", "waxing", "moon", "night"]),
+ ("\u{1f313}", ["space", "twilight", "first", "evening", "nature", "first_quarter_moon", "planet", "sleep", "moon", "quarter", "night"]),
+ ("\u{1f314}", ["space", "twilight", "gibbous", "sky", "evening", "waxing_gibbous_moon", "nature", "planet", "sleep", "gray", "waxing", "moon", "night"]),
+ ("\u{1f315}", ["space", "twilight", "evening", "nature", "planet", "sleep", "full_moon", "yellow", "moon", "night", "full"]),
+ ("\u{1f316}", ["space", "twilight", "gibbous", "evening", "waxing_gibbous_moon", "nature", "planet", "sleep", "waning", "moon", "waning_gibbous_moon", "night"]),
+ ("\u{1f317}", ["space", "twilight", "last_quarter_moon", "evening", "nature", "planet", "sleep", "last", "moon", "quarter", "night"]),
+ ("\u{1f318}", ["crescent", "space", "twilight", "waning_crescent_moon", "evening", "nature", "planet", "sleep", "waning", "moon", "night"]),
+ ("\u{1f319}", ["crescent", "crescent_moon", "sky", "evening", "magic", "sleep", "moon", "night"]),
+ ("\u{1f31a}", ["space", "twilight", "evening", "nature", "face", "planet", "new_moon_face", "sleep", "moon", "new", "night"]),
+ ("\u{1f31b}", ["space", "twilight", "first", "evening", "face", "nature", "planet", "sleep", "first_quarter_moon_face", "moon", "quarter", "night"]),
+ ("\u{1f31c}", ["last_quarter_moon_face", "space", "twilight", "evening", "face", "nature", "planet", "last", "sleep", "moon", "quarter", "night"]),
+ ("\u{1f321}", ["thermometer"]),
+ ("\u{2600}", ["sun"]),
+ ("\u{1f31d}", ["space", "twilight", "full_moon_face", "evening", "nature", "face", "planet", "sleep", "moon", "night", "full"]),
+ ("\u{1f31e}", ["morning", "sun_with_face", "sky", "with", "sun", "nature", "face"]),
+ ("\u{1fa90}", ["planet", "ringed_planet", "ringed", "outerspace"]),
+ ("\u{2b50}", ["star", "yellow", "night"]),
+ ("\u{1f31f}", ["star", "glowing", "glowing_star", "magic", "good", "awesome", "sparkle", "night"]),
+ ("\u{1f320}", ["star", "photo", "shooting", "shooting_star", "night"]),
+ ("\u{1f30c}", ["milky", "space", "stars", "photo", "way", "milky_way"]),
+ ("\u{2601}", ["cloud"]),
+ ("\u{26c5}", ["cloudy", "fall", "morning", "spring", "cloud", "sun", "nature", "behind", "sun_behind_cloud", "weather"]),
+ ("\u{26c8}", ["rain", "cloud", "with", "lightning", "and"]),
+ ("\u{1f324}", ["cloud", "small", "sun", "behind"]),
+ ("\u{1f325}", ["cloud", "large", "sun", "behind"]),
+ ("\u{1f326}", ["rain", "cloud", "sun", "behind"]),
+ ("\u{1f327}", ["rain", "cloud", "with"]),
+ ("\u{1f328}", ["snow", "cloud", "with"]),
+ ("\u{1f329}", ["cloud", "with", "lightning"]),
+ ("\u{1f32a}", ["tornado"]),
+ ("\u{1f32b}", ["fog"]),
+ ("\u{1f32c}", ["wind", "face"]),
+ ("\u{1f300}", ["vortex", "tornado", "blue", "cyclone", "cloud", "hurricane", "spiral", "swirl", "typhoon", "spin", "whirlpool", "weather"]),
+ ("\u{1f308}", ["unicorn_face", "sky", "happy", "photo", "spring", "nature", "rainbow"]),
+ ("\u{1f302}", ["closed_umbrella", "drizzle", "rain", "umbrella", "closed", "weather"]),
+ ("\u{2602}", ["umbrella"]),
+ ("\u{2614}", ["drops", "rain", "umbrella", "with", "umbrella_with_rain_drops", "spring", "rainy", "weather"]),
+ ("\u{26f1}", ["ground", "umbrella", "on"]),
+ ("\u{26a1}", ["voltage", "lightning bolt", "high_voltage", "fast", "high", "thunder", "weather"]),
+ ("\u{2744}", ["snowflake"]),
+ ("\u{2603}", ["snowman"]),
+ ("\u{26c4}", ["christmas", "without_snow", "season", "snowman_without_snow", "cold", "frozen", "snowman", "snow", "without", "weather", "xmas", "winter"]),
+ ("\u{2604}", ["comet"]),
+ ("\u{1f525}", ["flame", "fire", "cook", "hot"]),
+ ("\u{1f4a7}", ["drip", "spring", "droplet", "faucet", "water"]),
+ ("\u{1f30a}", ["water_wave", "wave", "sea", "tsunami", "nature", "disaster", "water"]),
+ ("\u{1f383}", ["fall", "halloween", "pumpkin", "jack_o_lantern", "light", "creepy", "jack-o-lantern"]),
+ ("\u{1f384}", ["festival", "christmas_tree", "celebration", "tree", "december", "vacation", "xmas", "Christmas"]),
+ ("\u{1f386}", ["fireworks", "festival", "photo", "carnival", "congratulations"]),
+ ("\u{1f387}", ["night", "shine", "sparkler", "stars"]),
+ ("\u{1f9e8}", ["boom", "dynamite", "explode", "explosive", "firecracker", "explosion"]),
+ ("\u{2728}", ["stars", "magic", "good", "shine", "awesome", "sparkles", "cool", "shiny"]),
+ ("\u{1f388}", ["circus", "celebration", "balloon", "birthday", "party"]),
+ ("\u{1f389}", ["party_popper", "magic", "circus", "popper", "celebration", "birthday", "congratulations", "party"]),
+ ("\u{1f38a}", ["festival", "ball", "confetti_ball", "circus", "confetti", "birthday", "party"]),
+ ("\u{1f38b}", ["tanabata", "tanabata_tree", "branch", "summer", "nature", "tree", "plant"]),
+ ("\u{1f38d}", ["pine_decoration", "pine", "decoration", "nature", "panda", "vegetable", "plant"]),
+ ("\u{1f38e}", ["japanese", "japanese_dolls", "toy", "kimono", "dolls", "Japanese"]),
+ ("\u{1f38f}", ["japanese", "fish", "koinobori", "banner", "carp_streamer", "streamer", "carp"]),
+ ("\u{1f390}", ["wind_chime", "spring", "ding", "nature", "bell", "wind", "chime"]),
+ ("\u{1f391}", ["asia", "ceremony", "moon_viewing_ceremony", "photo", "tsukimi", "viewing", "japan", "moon"]),
+ ("\u{1f9e7}", ["gift", "red_envelope", "red", "envelope"]),
+ ("\u{1f380}", ["decoration", "ribbon", "pink", "bowtie", "girl"]),
+ ("\u{1f381}", ["christmas", "gift", "present", "wrapped", "wrapped_gift", "xmas", "birthday"]),
+ ("\u{1f397}", ["ribbon", "reminder"]),
+ ("\u{1f39f}", ["admission", "tickets"]),
+ ("\u{1f3ab}", ["pass", "concert", "event", "ticket"]),
+ ("\u{1f396}", ["medal", "military"]),
+ ("\u{1f3c6}", ["contest", "ceremony", "award", "win", "ftw", "place", "trophy"]),
+ ("\u{1f3c5}", ["award", "sports", "sports_medal", "winning", "medal"]),
+ ("\u{1f947}", ["1st", "award", "first", "winning", "place", "medal"]),
+ ("\u{1f948}", ["award", "place", "second", "medal", "2nd"]),
+ ("\u{1f949}", ["award", "third", "3rd", "place", "medal"]),
+ ("\u{26bd}", ["football", "soccer", "ball", "sports", "soccer_ball"]),
+ ("\u{26be}", ["balls", "baseball", "sports"]),
+ ("\u{1f94e}", ["softball", "balls", "sports"]),
+ ("\u{1f3c0}", ["basketball", "NBA", "balls", "sports"]),
+ ("\u{1f3d0}", ["balls", "volleyball", "sports"]),
+ ("\u{1f3c8}", ["NFL", "football", "american", "sports", "american_football", "balls"]),
+ ("\u{1f3c9}", ["rugby", "rugby_football", "football", "sports", "team"]),
+ ("\u{1f3be}", ["tennis", "green", "balls", "sports"]),
+ ("\u{1f94f}", ["flying", "flying_disc", "ultimate", "sports", "disc", "frisbee"]),
+ ("\u{1f3b3}", ["play", "sports", "fun", "bowling"]),
+ ("\u{1f3cf}", ["game", "cricket", "cricket_game", "sports"]),
+ ("\u{1f3d1}", ["field", "field_hockey", "hockey", "sports"]),
+ ("\u{1f3d2}", ["ice", "sports", "hockey", "ice_hockey"]),
+ ("\u{1f94d}", ["stick", "lacrosse", "ball", "sports"]),
+ ("\u{1f3d3}", ["pong", "pingpong", "sports", "ping", "ping_pong"]),
+ ("\u{1f3f8}", ["badminton", "sports"]),
+ ("\u{1f94a}", ["sports", "boxing_glove", "fighting", "boxing", "glove"]),
+ ("\u{1f94b}", ["judo", "arts", "karate", "martial", "uniform", "martial_arts_uniform", "taekwondo"]),
+ ("\u{1f945}", ["goal", "net", "goal_net", "sports"]),
+ ("\u{26f3}", ["business", "flag_in_hole", "in", "summer", "sports", "flag", "hole"]),
+ ("\u{26f8}", ["ice", "skate"]),
+ ("\u{1f3a3}", ["fishing_pole", "fishing", "food", "hobby", "pole", "summer"]),
+ ("\u{1f93f}", ["ocean", "sport", "diving", "diving_mask", "mask"]),
+ ("\u{1f3bd}", ["pageant", "shirt", "play", "running", "running_shirt"]),
+ ("\u{1f3bf}", ["cold", "sports", "skis", "snow", "winter"]),
+ ("\u{1f6f7}", ["toboggan", "sled", "luge", "sleigh"]),
+ ("\u{1f94c}", ["stone", "curling", "curling_stone", "sports"]),
+ ("\u{1f3af}", ["game", "target", "play", "bullseye", "direct_hit", "bar"]),
+ ("\u{1fa80}", ["yo-yo", "toy", "yo_yo"]),
+ ("\u{1fa81}", ["kite", "wind", "fly"]),
+ ("\u{1f3b1}", ["game", "8", "ball", "hobby", "magic", "pool", "pool_8_ball", "luck"]),
+ ("\u{1f52e}", ["disco", "fortune_teller", "ball", "magic", "crystal", "circus", "crystal_ball", "party"]),
+ ("\u{1fa84}", ["wand", "magic"]),
+ ("\u{1f9ff}", ["nazar_amulet", "charm", "bead", "nazar", "amulet"]),
+ ("\u{1f3ae}", ["game", "controller", "play", "video", "console", "video_game", "PS4"]),
+ ("\u{1f579}", ["joystick"]),
+ ("\u{1f3b0}", ["slot", "machine", "slot_machine", "gamble", "casino", "fruit machine", "bet", "vegas", "luck"]),
+ ("\u{1f3b2}", ["game", "tabletop", "game_die", "die", "play", "dice", "random", "luck"]),
+ ("\u{1f9e9}", ["interlocking", "puzzle", "puzzle_piece", "piece"]),
+ ("\u{1f9f8}", ["teddy", "plush", "bear", "teddy_bear", "stuffed"]),
+ ("\u{1fa85}", ["piñata"]),
+ ("\u{1fa86}", ["dolls", "nesting"]),
+ ("\u{2660}", ["spade", "suit"]),
+ ("\u{2665}", ["heart", "suit"]),
+ ("\u{2666}", ["diamond", "suit"]),
+ ("\u{2663}", ["club", "suit"]),
+ ("\u{265f}", ["chess", "pawn"]),
+ ("\u{1f0cf}", ["game", "joker", "magic", "poker", "play", "cards"]),
+ ("\u{1f004}", ["game", "chinese", "mahjong_red_dragon", "red", "play", "kanji", "mahjong", "dragon"]),
+ ("\u{1f3b4}", ["game", "sunset", "flower_playing_cards", "flower", "red", "playing", "cards"]),
+ ("\u{1f3ad}", ["performing", "arts", "theater", "drama", "performing_arts", "acting"]),
+ ("\u{1f5bc}", ["framed", "picture"]),
+ ("\u{1f3a8}", ["colors", "paint", "palette", "draw", "artist", "artist_palette", "design"]),
+ ("\u{1f9f5}", ["thread", "spool", "string", "needle", "sewing"]),
+ ("\u{1faa1}", ["needle", "sewing"]),
+ ("\u{1f9f6}", ["crochet", "ball", "knit", "yarn"]),
+ ("\u{1faa2}", ["knot"]),
+ ("\u{1f453}", ["accessories", "nerdy", "fashion", "geek", "glasses", "eyesight", "dork"]),
+ ("\u{1f576}", ["sunglasses"]),
+ ("\u{1f97d}", ["protection", "goggles", "safety", "eyes"]),
+ ("\u{1f97c}", ["coat", "chemist", "doctor", "lab_coat", "lab", "experiment", "scientist"]),
+ ("\u{1f9ba}", ["vest", "safety", "safety_vest", "protection"]),
+ ("\u{1f454}", ["necktie", "shirt", "fashion", "suitup", "cloth", "business", "formal"]),
+ ("\u{1f455}", ["tee", "t-shirt", "shirt", "t_shirt", "fashion", "casual", "cloth"]),
+ ("\u{1f456}", ["fashion", "jeans", "shopping"]),
+ ("\u{1f9e3}", ["clothes", "scarf", "winter", "neck"]),
+ ("\u{1f9e4}", ["clothes", "hands", "gloves", "winter"]),
+ ("\u{1f9e5}", ["coat", "jacket"]),
+ ("\u{1f9e6}", ["clothes", "stockings", "socks"]),
+ ("\u{1f457}", ["dress", "shopping", "fashion", "clothes"]),
+ ("\u{1f458}", ["japanese", "dress", "fashion", "kimono", "female", "women"]),
+ ("\u{1f97b}", ["dress", "sari"]),
+ ("\u{1fa71}", ["fashion", "one_piece_swimsuit", "one-piece", "swimsuit"]),
+ ("\u{1fa72}", ["clothing", "briefs"]),
+ ("\u{1fa73}", ["shorts", "clothing"]),
+ ("\u{1f459}", ["swimming", "beach", "fashion", "bikini", "summer", "woman", "female", "girl"]),
+ ("\u{1f45a}", ["clothes", "woman_s_clothes", "shopping_bags", "fashion", "female", "woman’s"]),
+ ("\u{1f45b}", ["accessories", "fashion", "shopping", "money", "purse", "sales"]),
+ ("\u{1f45c}", ["accessories", "fashion", "shopping", "accessory", "handbag"]),
+ ("\u{1f45d}", ["accessories", "bag", "shopping", "clutch", "clutch_bag"]),
+ ("\u{1f6cd}", ["shopping", "bags"]),
+ ("\u{1f392}", ["education", "student", "backpack", "bag"]),
+ ("\u{1fa74}", ["thong", "sandal"]),
+ ("\u{1f45e}", ["male", "fashion", "man’s", "shoe", "man_s_shoe"]),
+ ("\u{1f45f}", ["sneakers", "sports", "shoe", "shoes", "running_shoe", "running"]),
+ ("\u{1f97e}", ["camping", "hiking", "backpacking", "boot", "hiking_boot"]),
+ ("\u{1f97f}", ["flat", "slip-on", "slipper", "shoe", "flat_shoe", "ballet"]),
+ ("\u{1f460}", ["high_heeled_shoe", "high-heeled", "pumps", "fashion", "stiletto", "shoe", "female", "shoes"]),
+ ("\u{1f461}", ["woman_s_sandal", "fashion", "sandal", "woman’s", "shoes", "flip flops"]),
+ ("\u{1fa70}", ["dance", "ballet", "ballet_shoes", "shoes"]),
+ ("\u{1f462}", ["woman_s_boot", "fashion", "shoes", "boot", "woman’s"]),
+ ("\u{1f451}", ["king", "leader", "lord", "crown", "kod", "royalty"]),
+ ("\u{1f452}", ["hat", "accessories", "fashion", "lady", "spring", "woman_s_hat", "female", "woman’s"]),
+ ("\u{1f3a9}", ["hat", "gentleman", "magic", "classy", "top", "top_hat", "circus"]),
+ ("\u{1f393}", ["hat", "university", "learn", "education", "school", "graduation", "college", "legal", "graduation_cap", "cap", "degree"]),
+ ("\u{1f9e2}", ["cap", "billed", "baseball", "billed_cap"]),
+ ("\u{1fa96}", ["helmet", "military"]),
+ ("\u{26d1}", ["helmet", "worker’s", "rescue"]),
+ ("\u{1f4ff}", ["prayer", "prayer_beads", "beads", "religious", "dhikr"]),
+ ("\u{1f484}", ["fashion", "woman", "female", "lipstick", "girl"]),
+ ("\u{1f48d}", ["valentines", "engagement", "ring", "fashion", "marriage", "gem", "propose", "diamond", "wedding", "jewelry"]),
+ ("\u{1f48e}", ["blue", "gem_stone", "gem", "stone", "diamond", "jewelry", "ruby"]),
+ ("\u{1f507}", ["silence", "quiet", "sound", "muted", "speaker", "volume", "muted_speaker"]),
+ ("\u{1f508}", ["silence", "low", "speaker_low_volume", "sound", "speaker", "volume", "broadcast"]),
+ ("\u{1f509}", ["medium", "speaker", "volume", "broadcast", "speaker_medium_volume"]),
+ ("\u{1f50a}", ["noisy", "speaker_high_volume", "speaker", "volume", "broadcast", "high", "noise"]),
+ ("\u{1f4e2}", ["volume", "sound", "loudspeaker"]),
+ ("\u{1f4e3}", ["volume", "sound", "megaphone", "speaker"]),
+ ("\u{1f4ef}", ["postal_horn", "instrument", "horn", "music", "postal"]),
+ ("\u{1f514}", ["notification", "christmas", "chime", "sound", "xmas", "bell"]),
+ ("\u{1f515}", ["silent", "quiet", "sound", "with", "slash", "volume", "mute", "bell_with_slash", "bell"]),
+ ("\u{1f3bc}", ["compose", "musical", "clef", "musical_score", "score", "treble"]),
+ ("\u{1f3b5}", ["sound", "musical", "score", "tone", "note", "musical_note"]),
+ ("\u{1f3b6}", ["notes", "musical_notes", "musical", "score", "music"]),
+ ("\u{1f399}", ["microphone", "studio"]),
+ ("\u{1f39a}", ["level", "slider"]),
+ ("\u{1f39b}", ["knobs", "control"]),
+ ("\u{1f3a4}", ["sing", "sound", "talkshow", "PA", "music", "microphone"]),
+ ("\u{1f3a7}", ["gadgets", "score", "headphone", "music"]),
+ ("\u{1f4fb}", ["communication", "radio", "program", "podcast", "music"]),
+ ("\u{1f3b7}", ["blues", "instrument", "saxophone", "music", "jazz"]),
+ ("\u{1fa97}", ["accordion"]),
+ ("\u{1f3b8}", ["guitar", "music", "instrument"]),
+ ("\u{1f3b9}", ["keyboard", "compose", "musical", "instrument", "musical_keyboard", "piano"]),
+ ("\u{1f3ba}", ["brass", "trumpet", "music"]),
+ ("\u{1f3bb}", ["symphony", "instrument", "violin", "music", "orchestra"]),
+ ("\u{1fa95}", ["instructment", "banjo", "music"]),
+ ("\u{1f941}", ["drum", "instrument", "drumsticks", "snare", "music"]),
+ ("\u{1fa98}", ["long", "drum"]),
+ ("\u{1f4f1}", ["gadgets", "phone", "apple", "mobile_phone", "dial", "technology", "mobile"]),
+ ("\u{1f4f2}", ["incoming", "mobile_phone_with_arrow", "phone", "with", "iphone", "mobile", "arrow"]),
+ ("\u{260e}", ["telephone"]),
+ ("\u{1f4de}", ["telephone_receiver", "communication", "dial", "telephone", "technology", "receiver"]),
+ ("\u{1f4df}", ["oldschool", "bbcall", "pager"]),
+ ("\u{1f4e0}", ["machine", "communication", "fax_machine", "fax", "technology"]),
+ ("\u{1f50b}", ["power", "energy", "sustain", "battery"]),
+ ("\u{1f50c}", ["power", "electric_plug", "electric", "plug", "charger"]),
+ ("\u{1f4bb}", ["display", "screen", "technology", "monitor", "laptop"]),
+ ("\u{1f5a5}", ["computer", "desktop"]),
+ ("\u{1f5a8}", ["printer"]),
+ ("\u{2328}", ["keyboard"]),
+ ("\u{1f5b1}", ["computer", "mouse"]),
+ ("\u{1f5b2}", ["trackball"]),
+ ("\u{1f4bd}", ["data", "computer_disk", "computer", "technology", "record", "disk"]),
+ ("\u{1f4be}", ["floppy", "floppy_disk", "oldschool", "technology", "save", "disk"]),
+ ("\u{1f4bf}", ["dvd", "optical", "technology", "disc", "optical_disk", "disk"]),
+ ("\u{1f4c0}", ["dvd", "disc", "disk", "cd"]),
+ ("\u{1f9ee}", ["calculation", "abacus"]),
+ ("\u{1f3a5}", ["movie", "film", "camera", "record", "movie_camera"]),
+ ("\u{1f39e}", ["film", "frames"]),
+ ("\u{1f4fd}", ["projector", "film"]),
+ ("\u{1f3ac}", ["movie", "clapper", "board", "clapper_board", "film", "record"]),
+ ("\u{1f4fa}", ["television", "program", "oldschool", "technology", "show"]),
+ ("\u{1f4f7}", ["gadgets", "camera", "photography"]),
+ ("\u{1f4f8}", ["gadgets", "with", "camera_with_flash", "camera", "flash", "photography"]),
+ ("\u{1f4f9}", ["video_camera", "film", "camera", "video", "record"]),
+ ("\u{1f4fc}", ["videocassette", "record", "video", "oldschool"]),
+ ("\u{1f50d}", ["left", "glass", "magnifying_glass_tilted_left", "find", "detective", "search", "zoom", "tilted", "magnifying"]),
+ ("\u{1f50e}", ["glass", "find", "detective", "right", "search", "magnifying_glass_tilted_right", "zoom", "tilted", "magnifying"]),
+ ("\u{1f56f}", ["candle"]),
+ ("\u{1f4a1}", ["idea", "electricity", "light", "light_bulb", "bulb"]),
+ ("\u{1f526}", ["camping", "dark", "flashlight", "sight", "night"]),
+ ("\u{1f3ee}", ["paper", "lantern", "halloween", "spooky", "light", "red", "red_paper_lantern"]),
+ ("\u{1fa94}", ["lighting", "diya", "lamp", "diya_lamp"]),
+ ("\u{1f4d4}", ["paper", "notes", "study", "notebook", "with", "cover", "notebook_with_decorative_cover", "classroom", "decorative", "record"]),
+ ("\u{1f4d5}", ["closed_book", "textbook", "library", "book", "closed", "knowledge", "read", "learn"]),
+ ("\u{1f4d6}", ["open_book", "study", "library", "book", "literature", "open", "knowledge", "read", "learn"]),
+ ("\u{1f4d7}", ["study", "library", "book", "green", "green_book", "knowledge", "read"]),
+ ("\u{1f4d8}", ["study", "blue", "library", "book", "blue_book", "knowledge", "read", "learn"]),
+ ("\u{1f4d9}", ["orange", "study", "textbook", "library", "book", "orange_book", "knowledge", "read"]),
+ ("\u{1f4da}", ["literature", "study", "library", "books"]),
+ ("\u{1f4d3}", ["paper", "notes", "study", "notebook", "stationery", "record"]),
+ ("\u{1f4d2}", ["paper", "notes", "ledger"]),
+ ("\u{1f4c3}", ["page", "paper", "curl", "with", "documents", "office", "page_with_curl"]),
+ ("\u{1f4dc}", ["ancient", "paper", "history", "documents", "scroll"]),
+ ("\u{1f4c4}", ["page", "paper", "information", "office", "up", "documents", "facing", "page_facing_up"]),
+ ("\u{1f4f0}", ["press", "headline", "newspaper"]),
+ ("\u{1f5de}", ["rolled-up", "newspaper"]),
+ ("\u{1f4d1}", ["favorite", "tidy", "bookmark_tabs", "order", "save", "bookmark", "tabs"]),
+ ("\u{1f516}", ["favorite", "save", "bookmark", "label"]),
+ ("\u{1f3f7}", ["label"]),
+ ("\u{1f4b0}", ["dollar", "sale", "bag", "payment", "money", "coins", "money_bag"]),
+ ("\u{1fa99}", ["coin"]),
+ ("\u{1f4b4}", ["japanese", "dollar", "banknote", "currency", "money", "yen_banknote", "yen", "sales"]),
+ ("\u{1f4b5}", ["bill", "dollar", "banknote", "currency", "money", "dollar_banknote", "sales"]),
+ ("\u{1f4b6}", ["dollar", "banknote", "euro_banknote", "currency", "money", "euro", "sales"]),
+ ("\u{1f4b7}", ["bills", "banknote", "british", "england", "money", "currency", "uk", "sales", "pound_banknote", "pound", "sterling"]),
+ ("\u{1f4b8}", ["bills", "dollar", "sale", "with", "payment", "money_with_wings", "money", "wings"]),
+ ("\u{1f4b3}", ["bill", "dollar", "shopping", "payment", "money", "credit", "sales", "credit_card", "card"]),
+ ("\u{1f9fe}", ["receipt", "expenses", "accounting"]),
+ ("\u{1f4b9}", ["graph", "chart_increasing_with_yen", "with", "stats", "increasing", "presentation", "yen", "chart", "green-square"]),
+ ("\u{2709}", ["envelope"]),
+ ("\u{1f4e7}", ["inbox", "communication", "e-mail", "e_mail"]),
+ ("\u{1f4e8}", ["incoming", "inbox", "incoming_envelope", "email", "envelope"]),
+ ("\u{1f4e9}", ["envelope", "communication", "with", "envelope_with_arrow", "email", "arrow"]),
+ ("\u{1f4e4}", ["inbox", "outbox", "outbox_tray", "tray", "email"]),
+ ("\u{1f4e5}", ["inbox", "inbox_tray", "tray", "documents", "email"]),
+ ("\u{1f4e6}", ["mail", "package", "cardboard", "gift", "moving", "box"]),
+ ("\u{1f4eb}", ["mailbox", "inbox", "communication", "with", "flag", "closed", "closed_mailbox_with_raised_flag", "raised", "email"]),
+ ("\u{1f4ea}", ["mailbox", "inbox", "communication", "with", "email", "closed", "closed_mailbox_with_lowered_flag", "flag", "lowered"]),
+ ("\u{1f4ec}", ["mailbox", "inbox", "communication", "with", "flag", "open_mailbox_with_raised_flag", "open", "raised", "email"]),
+ ("\u{1f4ed}", ["mailbox", "inbox", "with", "email", "open", "flag", "open_mailbox_with_lowered_flag", "lowered"]),
+ ("\u{1f4ee}", ["postbox", "letter", "email", "envelope"]),
+ ("\u{1f5f3}", ["box", "ballot", "with"]),
+ ("\u{270f}", ["pencil"]),
+ ("\u{2712}", ["black", "nib"]),
+ ("\u{1f58b}", ["pen", "fountain"]),
+ ("\u{1f58a}", ["pen"]),
+ ("\u{1f58c}", ["paintbrush"]),
+ ("\u{1f58d}", ["crayon"]),
+ ("\u{1f4dd}", ["paper", "study", "exam", "memo", "test", "stationery", "compose", "pencil", "write", "legal", "documents", "writing", "quiz"]),
+ ("\u{1f4bc}", ["work", "law", "job", "legal", "briefcase", "documents", "career", "business"]),
+ ("\u{1f4c1}", ["folder", "file_folder", "file", "documents", "office", "business"]),
+ ("\u{1f4c2}", ["folder", "load", "open_file_folder", "file", "open", "documents"]),
+ ("\u{1f5c2}", ["index", "card", "dividers"]),
+ ("\u{1f4c5}", ["calendar", "schedule"]),
+ ("\u{1f4c6}", ["planning", "schedule", "date", "tear-off", "calendar", "tear_off_calendar"]),
+ ("\u{1f5d2}", ["spiral", "notepad"]),
+ ("\u{1f5d3}", ["spiral", "calendar"]),
+ ("\u{1f4c7}", ["card_index", "index", "stationery", "card", "business"]),
+ ("\u{1f4c8}", ["graph", "economics", "success", "money", "good", "stats", "recovery", "increasing", "presentation", "chart", "sales", "chart_increasing", "business"]),
+ ("\u{1f4c9}", ["graph", "economics", "decreasing", "bad", "failure", "money", "recession", "stats", "presentation", "chart_decreasing", "chart", "sales", "business"]),
+ ("\u{1f4ca}", ["graph", "bar_chart", "stats", "presentation", "bar", "chart"]),
+ ("\u{1f4cb}", ["stationery", "clipboard", "documents"]),
+ ("\u{1f4cc}", ["pushpin", "stationery", "mark", "here"]),
+ ("\u{1f4cd}", ["pushpin", "location", "stationery", "round_pushpin", "round", "map", "here"]),
+ ("\u{1f4ce}", ["stationery", "paperclip", "documents"]),
+ ("\u{1f587}", ["paperclips", "linked"]),
+ ("\u{1f4cf}", ["calculate", "sketch", "ruler", "stationery", "straight", "straight_ruler", "drawing", "school", "architect", "length", "math"]),
+ ("\u{1f4d0}", ["triangular_ruler", "sketch", "ruler", "stationery", "architect", "math", "triangular"]),
+ ("\u{2702}", ["scissors"]),
+ ("\u{1f5c3}", ["file", "box", "card"]),
+ ("\u{1f5c4}", ["file", "cabinet"]),
+ ("\u{1f5d1}", ["wastebasket"]),
+ ("\u{1f512}", ["password", "locked", "padlock", "security"]),
+ ("\u{1f513}", ["unlocked", "security", "privacy"]),
+ ("\u{1f50f}", ["security", "locked_with_pen", "pen", "with", "locked", "secret"]),
+ ("\u{1f510}", ["security", "key", "with", "locked_with_key", "privacy", "locked"]),
+ ("\u{1f511}", ["door", "lock", "key", "password"]),
+ ("\u{1f5dd}", ["old", "key"]),
+ ("\u{1f528}", ["tools", "build", "create", "hammer"]),
+ ("\u{1fa93}", ["tool", "cut", "axe", "chop"]),
+ ("\u{26cf}", ["pick"]),
+ ("\u{2692}", ["and", "hammer", "pick"]),
+ ("\u{1f6e0}", ["and", "wrench", "hammer"]),
+ ("\u{1f5e1}", ["dagger"]),
+ ("\u{2694}", ["crossed", "swords"]),
+ ("\u{1f52b}", ["revolver", "water", "weapon", "violence", "pistol"]),
+ ("\u{1fa83}", ["boomerang"]),
+ ("\u{1f3f9}", ["bow", "bow_and_arrow", "sports", "and", "arrow"]),
+ ("\u{1f6e1}", ["shield"]),
+ ("\u{1fa9a}", ["carpentry", "saw"]),
+ ("\u{1f527}", ["tools", "fix", "maintainer", "ikea", "diy", "wrench"]),
+ ("\u{1fa9b}", ["screwdriver"]),
+ ("\u{1f529}", ["tools", "fix", "bolt", "nut", "nut_and_bolt", "and", "handy"]),
+ ("\u{2699}", ["gear"]),
+ ("\u{1f5dc}", ["clamp"]),
+ ("\u{2696}", ["scale", "balance"]),
+ ("\u{1f9af}", ["white", "cane", "probing_cane", "accessibility"]),
+ ("\u{1f517}", ["rings", "url", "link"]),
+ ("\u{26d3}", ["chains"]),
+ ("\u{1fa9d}", ["hook"]),
+ ("\u{1f9f0}", ["tools", "fix", "maintainer", "toolbox", "diy", "mechanic"]),
+ ("\u{1f9f2}", ["magnetic", "magnet", "attraction"]),
+ ("\u{1fa9c}", ["ladder"]),
+ ("\u{2697}", ["alembic"]),
+ ("\u{1f9ea}", ["science", "test", "lab", "chemistry", "test_tube", "experiment", "tube"]),
+ ("\u{1f9eb}", ["lab", "petri", "bacteria", "dish", "culture", "biology", "petri_dish"]),
+ ("\u{1f9ec}", ["dna", "genetics", "life", "biologist"]),
+ ("\u{1f52c}", ["science", "study", "microscope", "zoomin", "laboratory", "experiment"]),
+ ("\u{1f52d}", ["telescope", "space", "science", "astronomy", "stars", "zoom"]),
+ ("\u{1f4e1}", ["antenna", "space", "satellite", "future", "communication", "radio", "satellite_antenna"]),
+ ("\u{1f489}", ["medicine", "doctor", "blood", "syringe", "hospital", "drugs", "nurse", "needle", "health"]),
+ ("\u{1fa78}", ["drop", "harm", "period", "hurt", "blood", "drop_of_blood", "wound", "of"]),
+ ("\u{1f48a}", ["medicine", "pill", "doctor", "drug", "pharmacy", "health"]),
+ ("\u{1fa79}", ["adhesive", "bandage", "heal", "adhesive_bandage"]),
+ ("\u{1fa7a}", ["stethoscope", "health"]),
+ ("\u{1f6aa}", ["door", "entry", "exit", "house"]),
+ ("\u{1f6d7}", ["elevator"]),
+ ("\u{1fa9e}", ["mirror"]),
+ ("\u{1fa9f}", ["window"]),
+ ("\u{1f6cf}", ["bed"]),
+ ("\u{1f6cb}", ["and", "lamp", "couch"]),
+ ("\u{1fa91}", ["furniture", "sit", "chair"]),
+ ("\u{1f6bd}", ["restroom", "toilet", "wc", "potty", "bathroom", "washroom"]),
+ ("\u{1faa0}", ["plunger"]),
+ ("\u{1f6bf}", ["bathroom", "shower", "clean", "water"]),
+ ("\u{1f6c1}", ["bathroom", "shower", "clean", "bathtub"]),
+ ("\u{1faa4}", ["mouse", "trap"]),
+ ("\u{1fa92}", ["razor", "cut"]),
+ ("\u{1f9f4}", ["lotion", "lotion_bottle", "moisturizer", "bottle", "sunscreen"]),
+ ("\u{1f9f7}", ["pin", "diaper", "safety", "safety_pin"]),
+ ("\u{1f9f9}", ["cleaning", "broom", "sweeping", "witch"]),
+ ("\u{1f9fa}", ["laundry", "basket"]),
+ ("\u{1f9fb}", ["paper", "roll", "of", "roll_of_paper"]),
+ ("\u{1faa3}", ["bucket"]),
+ ("\u{1f9fc}", ["cleaning", "lather", "soap", "bathing", "bar"]),
+ ("\u{1faa5}", ["toothbrush"]),
+ ("\u{1f9fd}", ["cleaning", "absorbing", "porous", "sponge"]),
+ ("\u{1f9ef}", ["extinguisher", "fire", "quench", "fire_extinguisher"]),
+ ("\u{1f6d2}", ["shopping", "cart", "shopping_cart", "trolley"]),
+ ("\u{1f6ac}", ["cigarette", "tobacco", "joint", "smoke", "kills"]),
+ ("\u{26b0}", ["coffin"]),
+ ("\u{1faa6}", ["headstone"]),
+ ("\u{26b1}", ["funeral", "urn"]),
+ ("\u{1f5ff}", ["easter island", "moai", "rock"]),
+ ("\u{1faa7}", ["placard"]),
+ ("\u{1f3e7}", ["ATM", "atm_sign", "payment", "money", "sign", "cash", "blue-square", "bank", "sales"]),
+ ("\u{1f6ae}", ["human", "litter", "in", "sign", "blue-square", "info", "bin", "litter_in_bin_sign"]),
+ ("\u{1f6b0}", ["cleaning", "potable", "restroom", "potable_water", "liquid", "blue-square", "faucet", "water"]),
+ ("\u{267f}", ["wheelchair", "wheelchair_symbol", "symbol", "blue-square", "disabled", "accessibility"]),
+ ("\u{1f6b9}", ["male", "restroom", "men’s", "room", "gender", "toilet", "wc", "blue-square", "men_s_room"]),
+ ("\u{1f6ba}", ["purple-square", "loo", "restroom", "gender", "room", "women_s_room", "toilet", "woman", "female", "women’s"]),
+ ("\u{1f6bb}", ["restroom", "gender", "toilet", "wc", "blue-square", "refresh"]),
+ ("\u{1f6bc}", ["symbol", "baby", "child", "orange-square", "baby_symbol"]),
+ ("\u{1f6be}", ["restroom", "water_closet", "toilet", "closet", "blue-square", "water"]),
+ ("\u{1f6c2}", ["control", "blue-square", "passport_control", "passport", "custom"]),
+ ("\u{1f6c3}", ["customs", "blue-square", "passport", "border"]),
+ ("\u{1f6c4}", ["baggage_claim", "airport", "blue-square", "transport", "claim", "baggage"]),
+ ("\u{1f6c5}", ["left", "travel", "blue-square", "left_luggage", "luggage"]),
+ ("\u{26a0}", ["warning"]),
+ ("\u{1f6b8}", ["warning", "children_crossing", "children", "danger", "driving", "sign", "school", "crossing", "yellow-diamond"]),
+ ("\u{26d4}", ["security", "stop", "bad", "entry", "privacy", "circle", "no", "no_entry", "limit", "denied"]),
+ ("\u{1f6ab}", ["prohibited", "forbid", "stop", "circle", "limit", "disallow", "denied"]),
+ ("\u{1f6b3}", ["prohibited", "circle", "bicycles", "no", "cyclist", "no_bicycles"]),
+ ("\u{1f6ad}", ["cigarette", "smoking", "no_smoking", "no", "blue-square", "smell", "smoke"]),
+ ("\u{1f6af}", ["garbage", "no_littering", "circle", "no", "littering", "bin", "trash"]),
+ ("\u{1f6b1}", ["non-potable", "non_potable_water", "drink", "circle", "faucet", "tap", "water"]),
+ ("\u{1f6b7}", ["pedestrians", "rules", "walking", "circle", "no", "crossing", "no_pedestrians"]),
+ ("\u{1f4f5}", ["circle", "phones", "no", "mute", "iphone", "no_mobile_phones", "mobile"]),
+ ("\u{1f51e}", ["drink", "no_one_under_eighteen", "one", "pub", "eighteen", "circle", "minor", "no", "night", "under"]),
+ ("\u{2622}", ["radioactive"]),
+ ("\u{2623}", ["biohazard"]),
+ ("\u{2b06}", ["up", "arrow"]),
+ ("\u{2197}", ["up-right", "arrow"]),
+ ("\u{27a1}", ["right", "arrow"]),
+ ("\u{2198}", ["down-right", "arrow"]),
+ ("\u{2b07}", ["down", "arrow"]),
+ ("\u{2199}", ["down-left", "arrow"]),
+ ("\u{2b05}", ["left", "arrow"]),
+ ("\u{2196}", ["up-left", "arrow"]),
+ ("\u{2195}", ["up-down", "arrow"]),
+ ("\u{2194}", ["left-right", "arrow"]),
+ ("\u{21a9}", ["left", "curving", "right", "arrow"]),
+ ("\u{21aa}", ["left", "curving", "right", "arrow"]),
+ ("\u{2934}", ["up", "curving", "right", "arrow"]),
+ ("\u{2935}", ["curving", "right", "down", "arrow"]),
+ ("\u{1f503}", ["repeat", "arrows", "clockwise", "vertical", "clockwise_vertical_arrows", "sync", "round", "cycle"]),
+ ("\u{1f504}", ["arrows", "button", "blue-square", "counterclockwise_arrows_button", "sync", "counterclockwise", "cycle"]),
+ ("\u{1f519}", ["return", "words", "back_arrow", "BACK", "arrow"]),
+ ("\u{1f51a}", ["end_arrow", "arrow", "words", "END"]),
+ ("\u{1f51b}", ["words", "on_arrow", "ON!", "arrow"]),
+ ("\u{1f51c}", ["soon_arrow", "arrow", "words", "SOON"]),
+ ("\u{1f51d}", ["top_arrow", "words", "blue-square", "TOP", "arrow"]),
+ ("\u{1f6d0}", ["prayer", "religion", "temple", "place_of_worship", "worship", "place", "church", "of"]),
+ ("\u{269b}", ["symbol", "atom"]),
+ ("\u{1f549}", ["om"]),
+ ("\u{2721}", ["star", "David", "of"]),
+ ("\u{2638}", ["of", "dharma", "wheel"]),
+ ("\u{262f}", ["yin", "yang"]),
+ ("\u{271d}", ["cross", "latin"]),
+ ("\u{2626}", ["cross", "orthodox"]),
+ ("\u{262a}", ["crescent", "star", "and"]),
+ ("\u{262e}", ["peace", "symbol"]),
+ ("\u{1f54e}", ["jewish", "candles", "menorah", "hanukkah"]),
+ ("\u{1f52f}", ["purple-square", "star", "religion", "dotted_six_pointed_star", "hexagram", "six-pointed", "dotted", "jewish"]),
+ ("\u{2648}", ["purple-square", "zodiac", "astrology", "sign", "Aries", "aries"]),
+ ("\u{2649}", ["purple-square", "zodiac", "astrology", "taurus", "sign", "Taurus"]),
+ ("\u{264a}", ["purple-square", "zodiac", "astrology", "sign", "Gemini", "gemini"]),
+ ("\u{264b}", ["purple-square", "zodiac", "Cancer", "astrology", "cancer", "sign"]),
+ ("\u{264c}", ["purple-square", "zodiac", "astrology", "Leo", "sign", "leo"]),
+ ("\u{264d}", ["purple-square", "zodiac", "astrology", "virgo", "sign", "Virgo"]),
+ ("\u{264e}", ["purple-square", "zodiac", "astrology", "sign", "Libra", "libra"]),
+ ("\u{264f}", ["purple-square", "zodiac", "astrology", "Scorpio", "sign", "scorpio"]),
+ ("\u{2650}", ["purple-square", "zodiac", "sagittarius", "astrology", "Sagittarius", "sign"]),
+ ("\u{2651}", ["purple-square", "zodiac", "astrology", "sign", "Capricorn", "capricorn"]),
+ ("\u{2652}", ["purple-square", "aquarius", "zodiac", "astrology", "sign", "Aquarius"]),
+ ("\u{2653}", ["purple-square", "zodiac", "pisces", "astrology", "sign", "Pisces"]),
+ ("\u{26ce}", ["purple-square", "ophiuchus", "constellation", "astrology", "sign", "Ophiuchus"]),
+ ("\u{1f500}", ["shuffle", "button", "shuffle_tracks_button", "blue-square", "tracks", "music", "random"]),
+ ("\u{1f501}", ["repeat", "loop", "button", "record", "repeat_button"]),
+ ("\u{1f502}", ["repeat", "loop", "button", "repeat_single_button", "blue-square", "single"]),
+ ("\u{25b6}", ["play", "button"]),
+ ("\u{23e9}", ["fast-forward", "button", "play", "blue-square", "continue", "speed", "fast_forward_button"]),
+ ("\u{23ed}", ["button", "track", "next"]),
+ ("\u{23ef}", ["play", "button", "or", "pause"]),
+ ("\u{25c0}", ["reverse", "button"]),
+ ("\u{23ea}", ["reverse", "button", "play", "blue-square", "fast_reverse_button", "fast"]),
+ ("\u{23ee}", ["track", "last", "button"]),
+ ("\u{1f53c}", ["forward", "top", "upwards_button", "upwards", "button", "blue-square", "point", "triangle", "direction"]),
+ ("\u{23eb}", ["button", "up", "blue-square", "fast", "top", "fast_up_button", "direction"]),
+ ("\u{1f53d}", ["button", "bottom", "blue-square", "downwards", "downwards_button", "direction"]),
+ ("\u{23ec}", ["down", "button", "bottom", "blue-square", "fast_down_button", "fast", "direction"]),
+ ("\u{23f8}", ["pause", "button"]),
+ ("\u{23f9}", ["button", "stop"]),
+ ("\u{23fa}", ["record", "button"]),
+ ("\u{23cf}", ["eject", "button"]),
+ ("\u{1f3a6}", ["curtain", "stage", "movie", "cinema", "theater", "blue-square", "film", "record"]),
+ ("\u{1f505}", ["warm", "afternoon", "dim", "sun", "summer", "button", "dim_button"]),
+ ("\u{1f506}", ["bright_button", "light", "sun", "button", "bright"]),
+ ("\u{1f4f6}", ["antenna_bars", "phone", "wifi", "internet", "bars", "blue-square", "reception", "connection", "bluetooth", "antenna"]),
+ ("\u{1f4f3}", ["phone", "vibration_mode", "vibration", "mode", "orange-square"]),
+ ("\u{1f4f4}", ["silence", "off", "phone", "quiet", "mute", "mobile_phone_off", "orange-square", "mobile"]),
+ ("\u{2640}", ["sign", "female"]),
+ ("\u{2642}", ["male", "sign"]),
+ ("\u{26a7}", ["symbol", "transgender"]),
+ ("\u{2716}", ["multiply"]),
+ ("\u{2795}", ["calculation", "more", "addition", "increase", "math", "plus", "plus_sign"]),
+ ("\u{2796}", ["calculation", "minus", "minus_sign", "math", "subtract", "less"]),
+ ("\u{2797}", ["calculation", "math", "divide", "division_sign"]),
+ ("\u{267e}", ["infinity"]),
+ ("\u{203c}", ["double", "mark", "exclamation"]),
+ ("\u{2049}", ["exclamation", "mark", "question"]),
+ ("\u{2753}", ["question", "mark", "red", "doubt", "confused", "question_mark"]),
+ ("\u{2754}", ["huh", "white_question_mark", "question", "mark", "white", "doubts", "confused", "gray"]),
+ ("\u{2755}", ["warning", "white_exclamation_mark", "wow", "exclamation", "punctuation", "mark", "surprise", "white", "gray"]),
+ ("\u{2757}", ["exclamation_mark", "warning", "danger", "wow", "exclamation", "punctuation", "mark", "red", "surprise", "heavy_exclamation_mark"]),
+ ("\u{3030}", ["wavy", "dash"]),
+ ("\u{1f4b1}", ["currency_exchange", "dollar", "currency", "exchange", "money", "travel", "sales"]),
+ ("\u{1f4b2}", ["buck", "heavy_dollar_sign", "dollar", "currency", "payment", "money", "sign", "heavy", "sales"]),
+ ("\u{2695}", ["symbol", "medical"]),
+ ("\u{267b}", ["recycling", "symbol"]),
+ ("\u{269c}", ["fleur-de-lis"]),
+ ("\u{1f531}", ["spear", "trident_emblem", "trident", "weapon", "emblem"]),
+ ("\u{1f4db}", ["name_badge", "forbid", "badge", "fire", "name"]),
+ ("\u{1f530}", ["japanese_symbol_for_beginner", "badge", "for", "shield", "beginner", "symbol", "Japanese"]),
+ ("\u{2b55}", ["hollow", "hollow_red_circle", "circle", "red", "round"]),
+ ("\u{2705}", ["check_mark_button", "vote", "tick", "ok", "mark", "agree", "button", "check", "election", "answer", "green-square"]),
+ ("\u{2611}", ["box", "with", "check"]),
+ ("\u{2714}", ["mark", "check"]),
+ ("\u{274c}", ["cross", "cancel", "mark", "delete", "red", "no", "remove", "cross_mark"]),
+ ("\u{274e}", ["cross", "deny", "cross_mark_button", "mark", "button", "no", "x", "green-square"]),
+ ("\u{27b0}", ["squiggle", "loop", "curly", "draw", "curly_loop", "scribble", "shape"]),
+ ("\u{27bf}", ["double", "tape", "double_curly_loop", "loop", "curly", "cassette"]),
+ ("\u{303d}", ["alternation", "mark", "part"]),
+ ("\u{2733}", ["asterisk", "eight-spoked"]),
+ ("\u{2734}", ["eight-pointed", "star"]),
+ ("\u{2747}", ["sparkle"]),
+ ("\u{00a9}", ["copyright"]),
+ ("\u{00ae}", ["registered"]),
+ ("\u{2122}", ["mark", "trade"]),
+ ("\u{0023}\u{fe0f}\u{20e3}", ["blue-square", "twitter", "symbol", "keycap_"]),
+ ("\u{002a}\u{fe0f}\u{20e3}", ["star", "keycap:", "*", "keycap_", "keycap"]),
+ ("\u{0030}\u{fe0f}\u{20e3}", ["keycap_0", "keycap:", "0", "numbers", "blue-square", "null"]),
+ ("\u{0031}\u{fe0f}\u{20e3}", ["keycap:", "numbers", "blue-square", "keycap_1", "1"]),
+ ("\u{0032}\u{fe0f}\u{20e3}", ["keycap:", "numbers", "prime", "blue-square", "keycap_2", "2"]),
+ ("\u{0033}\u{fe0f}\u{20e3}", ["3", "keycap:", "numbers", "prime", "blue-square", "keycap_3"]),
+ ("\u{0034}\u{fe0f}\u{20e3}", ["4", "keycap:", "numbers", "keycap_4", "blue-square"]),
+ ("\u{0035}\u{fe0f}\u{20e3}", ["5", "keycap:", "numbers", "prime", "blue-square", "keycap_5"]),
+ ("\u{0036}\u{fe0f}\u{20e3}", ["6", "keycap:", "numbers", "blue-square", "keycap_6"]),
+ ("\u{0037}\u{fe0f}\u{20e3}", ["7", "keycap:", "keycap_7", "numbers", "prime", "blue-square"]),
+ ("\u{0038}\u{fe0f}\u{20e3}", ["keycap:", "8", "numbers", "keycap_8", "blue-square"]),
+ ("\u{0039}\u{fe0f}\u{20e3}", ["keycap:", "numbers", "blue-square", "9", "keycap_9"]),
+ ("\u{1f51f}", ["keycap:", "10", "keycap_10", "numbers", "blue-square"]),
+ ("\u{1f520}", ["alphabet", "input", "uppercase", "latin", "words", "blue-square", "input_latin_uppercase"]),
+ ("\u{1f521}", ["alphabet", "input", "latin", "lowercase", "input_latin_lowercase", "blue-square"]),
+ ("\u{1f522}", ["numbers", "input_numbers", "blue-square", "input"]),
+ ("\u{1f523}", ["input", "glyphs", "input_symbols", "symbols", "percent", "blue-square", "music", "ampersand", "note", "characters"]),
+ ("\u{1f524}", ["alphabet", "input", "latin", "blue-square", "letters", "input_latin_letters"]),
+ ("\u{1f170}", ["button", "(blood", "type)", "A"]),
+ ("\u{1f18e}", ["alphabet", "ab_button", "type)", "button", "AB", "(blood", "red-square"]),
+ ("\u{1f171}", ["B", "(blood", "type)", "button"]),
+ ("\u{1f191}", ["cl_button", "alphabet", "words", "CL", "button", "red-square"]),
+ ("\u{1f192}", ["cool_button", "words", "button", "COOL", "blue-square"]),
+ ("\u{1f193}", ["words", "button", "blue-square", "FREE", "free_button"]),
+ ("\u{2139}", ["information"]),
+ ("\u{1f194}", ["purple-square", "ID", "words", "button", "id_button"]),
+ ("\u{24c2}", ["circled", "M"]),
+ ("\u{1f195}", ["new_button", "NEW", "words", "button", "blue-square", "start"]),
+ ("\u{1f196}", ["ng_button", "NG", "icon", "words", "button", "blue-square", "shape"]),
+ ("\u{1f17e}", ["(blood", "O", "type)", "button"]),
+ ("\u{1f197}", ["ok_button", "agree", "yes", "good", "button", "blue-square", "OK"]),
+ ("\u{1f17f}", ["button", "P"]),
+ ("\u{1f198}", ["help", "emergency", "words", "button", "sos_button", "red-square", "SOS"]),
+ ("\u{1f199}", ["above", "up_button", "button", "UP!", "blue-square", "high"]),
+ ("\u{1f19a}", ["vs_button", "words", "button", "VS", "orange-square"]),
+ ("\u{1f201}", ["japanese", "katakana", "button", "blue-square", "Japanese", "japanese_here_button", "“here”", "destination", "here"]),
+ ("\u{1f202}", ["Japanese", "charge”", "“service", "button"]),
+ ("\u{1f237}", ["“monthly", "Japanese", "amount”", "button"]),
+ ("\u{1f236}", ["free", "chinese", "have", "japanese_not_free_of_charge_button", "button", "Japanese", "kanji", "“not", "orange-square", "charge”", "of"]),
+ ("\u{1f22f}", ["chinese", "japanese_reserved_button", "button", "“reserved”", "Japanese", "kanji", "point", "green-square"]),
+ ("\u{1f250}", ["chinese", "obtain", "get", "circle", "button", "Japanese", "kanji", "japanese_bargain_button", "“bargain”"]),
+ ("\u{1f239}", ["chinese", "pink-square", "cut", "button", "Japanese", "kanji", "japanese_discount_button", "“discount”", "divide"]),
+ ("\u{1f21a}", ["nothing", "japanese", "chinese", "japanese_free_of_charge_button", "button", "Japanese", "kanji", "“free", "orange-square", "charge”", "of"]),
+ ("\u{1f232}", ["japanese", "chinese", "restricted", "button", "forbidden", "kanji", "Japanese", "limit", "japanese_prohibited_button", "red-square", "“prohibited”"]),
+ ("\u{1f251}", ["chinese", "“acceptable”", "japanese_acceptable_button", "orange-circle", "ok", "agree", "yes", "button", "good", "Japanese", "kanji"]),
+ ("\u{1f238}", ["japanese", "chinese", "japanese_application_button", "button", "“application”", "Japanese", "kanji", "orange-square"]),
+ ("\u{1f234}", ["japanese", "chinese", "japanese_passing_grade_button", "“passing", "join", "button", "Japanese", "kanji", "red-square", "grade”"]),
+ ("\u{1f233}", ["japanese", "chinese", "empty", "sky", "button", "blue-square", "kanji", "Japanese", "“vacancy”", "japanese_vacancy_button"]),
+ ("\u{3297}", ["“congratulations”", "Japanese", "button"]),
+ ("\u{3299}", ["button", "Japanese", "“secret”"]),
+ ("\u{1f23a}", ["business”", "japanese", "for", "japanese_open_for_business_button", "button", "“open", "Japanese", "opening hours", "orange-square"]),
+ ("\u{1f235}", ["japanese", "chinese", "button", "Japanese", "“no", "kanji", "vacancy”", "red-square", "japanese_no_vacancy_button", "full"]),
+ ("\u{1f534}", ["danger", "circle", "red", "error", "red_circle", "shape"]),
+ ("\u{1f7e0}", ["circle", "orange", "orange_circle", "round"]),
+ ("\u{1f7e1}", ["round", "circle", "yellow", "yellow_circle"]),
+ ("\u{1f7e2}", ["green", "circle", "green_circle", "round"]),
+ ("\u{1f535}", ["blue", "circle", "icon", "button", "shape", "blue_circle"]),
+ ("\u{1f7e3}", ["purple_circle", "circle", "purple", "round"]),
+ ("\u{1f7e4}", ["brown", "circle", "brown_circle", "round"]),
+ ("\u{26ab}", ["circle", "black_circle", "button", "shape", "round", "black"]),
+ ("\u{26aa}", ["circle", "shape", "round", "white_circle", "white"]),
+ ("\u{1f7e5}", ["red_square", "square", "red"]),
+ ("\u{1f7e7}", ["square", "orange", "orange_square"]),
+ ("\u{1f7e8}", ["square", "yellow_square", "yellow"]),
+ ("\u{1f7e9}", ["green_square", "green", "square"]),
+ ("\u{1f7e6}", ["blue", "blue_square", "square"]),
+ ("\u{1f7ea}", ["purple_square", "square", "purple"]),
+ ("\u{1f7eb}", ["brown", "square", "brown_square"]),
+ ("\u{2b1b}", ["square", "icon", "button", "shape", "large", "black", "black_large_square"]),
+ ("\u{2b1c}", ["square", "icon", "button", "stone", "shape", "white_large_square", "large", "white"]),
+ ("\u{25fc}", ["black", "square", "medium"]),
+ ("\u{25fb}", ["white", "square", "medium"]),
+ ("\u{25fe}", ["square", "medium-small", "icon", "black_medium_small_square", "button", "shape", "black"]),
+ ("\u{25fd}", ["square", "medium-small", "white_medium_small_square", "icon", "button", "stone", "shape", "white"]),
+ ("\u{25aa}", ["black", "square", "small"]),
+ ("\u{25ab}", ["white", "square", "small"]),
+ ("\u{1f536}", ["orange", "large_orange_diamond", "jewel", "gem", "shape", "large", "diamond"]),
+ ("\u{1f537}", ["large_blue_diamond", "blue", "jewel", "gem", "shape", "large", "diamond"]),
+ ("\u{1f538}", ["orange", "jewel", "gem", "small", "shape", "diamond", "small_orange_diamond"]),
+ ("\u{1f539}", ["blue", "jewel", "gem", "small", "small_blue_diamond", "shape", "diamond"]),
+ ("\u{1f53a}", ["pointed", "top", "red", "up", "shape", "red_triangle_pointed_up", "triangle", "direction"]),
+ ("\u{1f53b}", ["pointed", "down", "red_triangle_pointed_down", "red", "bottom", "shape", "triangle", "direction"]),
+ ("\u{1f4a0}", ["dot", "diamond_with_a_dot", "blue", "with", "a", "jewel", "gem", "crystal", "fancy", "diamond"]),
+ ("\u{1f518}", ["old", "input", "radio_button", "circle", "button", "radio", "music"]),
+ ("\u{1f533}", ["square", "input", "white_square_button", "button", "shape", "white"]),
+ ("\u{1f532}", ["square", "frame", "input", "black_square_button", "button", "shape", "black"]),
+ ("\u{1f3c1}", ["contest", "finishline", "chequered", "chequered_flag", "race", "flag", "gokart"]),
+ ("\u{1f6a9}", ["triangular_flag", "mark", "flag", "milestone", "place", "triangular"]),
+ ("\u{1f38c}", ["japanese", "flags", "crossed_flags", "nation", "border", "country", "crossed"]),
+ ("\u{1f3f4}", ["black", "pirate", "flag", "black_flag"]),
+ ("\u{1f3f3}", ["white", "flag"]),
+ ("\u{1f3f3}\u{fe0f}\u{200d}\u{1f308}", ["gay", "rainbow", "queer", "glbt", "rainbow_flag", "lgbt", "homosexual", "pride", "bisexual", "flag", "transgender", "lesbian"]),
+ ("\u{1f3f3}\u{fe0f}\u{200d}\u{26a7}\u{fe0f}", ["transgender flag", "lgbtq", "flag", "transgender"]),
+ ("\u{1f3f4}\u{200d}\u{2620}\u{fe0f}", ["pirate_flag", "banner", "skull", "crossbones", "pirate", "flag"]),
+ ("\u{1f1e6}\u{1f1e8}", ["flag:", "flag_ascension_island", "Island", "Ascension"]),
+ ("\u{1f1e6}\u{1f1e9}", ["nation", "flag:", "flag_andorra", "banner", "ad", "Andorra", "country", "flag"]),
+ ("\u{1f1e6}\u{1f1ea}", ["nation", "flag:", "Arab", "united", "United", "flag_united_arab_emirates", "emirates", "arab", "banner", "country", "Emirates", "flag"]),
+ ("\u{1f1e6}\u{1f1eb}", ["af", "nation", "flag:", "banner", "Afghanistan", "country", "flag", "flag_afghanistan"]),
+ ("\u{1f1e6}\u{1f1ec}", ["antigua", "nation", "flag:", "banner", "flag_antigua_barbuda", "Barbuda", "barbuda", "country", "Antigua", "&", "flag"]),
+ ("\u{1f1e6}\u{1f1ee}", ["nation", "flag:", "banner", "flag", "Anguilla", "country", "ai", "flag_anguilla"]),
+ ("\u{1f1e6}\u{1f1f1}", ["Albania", "nation", "flag:", "banner", "flag", "country", "flag_albania", "al"]),
+ ("\u{1f1e6}\u{1f1f2}", ["flag_armenia", "nation", "flag:", "banner", "country", "Armenia", "flag", "am"]),
+ ("\u{1f1e6}\u{1f1f4}", ["nation", "flag:", "banner", "Angola", "country", "ao", "flag", "flag_angola"]),
+ ("\u{1f1e6}\u{1f1f6}", ["flag_antarctica", "nation", "flag:", "banner", "Antarctica", "country", "aq", "flag"]),
+ ("\u{1f1e6}\u{1f1f7}", ["Argentina", "nation", "flag:", "ar", "banner", "flag_argentina", "country", "flag"]),
+ ("\u{1f1e6}\u{1f1f8}", ["flag_american_samoa", "Samoa", "nation", "flag:", "ws", "banner", "american", "country", "flag", "American"]),
+ ("\u{1f1e6}\u{1f1f9}", ["Austria", "flag_austria", "nation", "flag:", "banner", "at", "country", "flag"]),
+ ("\u{1f1e6}\u{1f1fa}", ["nation", "au", "flag:", "flag_australia", "banner", "Australia", "country", "flag"]),
+ ("\u{1f1e6}\u{1f1fc}", ["Aruba", "nation", "aw", "flag:", "banner", "flag_aruba", "country", "flag"]),
+ ("\u{1f1e6}\u{1f1fd}", ["nation", "flag:", "Åland", "banner", "Islands", "country", "flag_aland_islands", "flag", "islands"]),
+ ("\u{1f1e6}\u{1f1ff}", ["nation", "flag:", "banner", "Azerbaijan", "flag_azerbaijan", "country", "az", "flag"]),
+ ("\u{1f1e7}\u{1f1e6}", ["nation", "flag:", "Herzegovina", "banner", "Bosnia", "country", "flag_bosnia_herzegovina", "&", "herzegovina", "bosnia", "flag"]),
+ ("\u{1f1e7}\u{1f1e7}", ["nation", "flag:", "banner", "country", "bb", "Barbados", "flag_barbados", "flag"]),
+ ("\u{1f1e7}\u{1f1e9}", ["nation", "Bangladesh", "flag:", "banner", "country", "bd", "flag_bangladesh", "flag"]),
+ ("\u{1f1e7}\u{1f1ea}", ["nation", "Belgium", "flag:", "banner", "flag_belgium", "country", "be", "flag"]),
+ ("\u{1f1e7}\u{1f1eb}", ["nation", "flag:", "banner", "Burkina", "faso", "country", "burkina", "flag", "flag_burkina_faso", "Faso"]),
+ ("\u{1f1e7}\u{1f1ec}", ["flag_bulgaria", "nation", "flag:", "banner", "country", "bg", "Bulgaria", "flag"]),
+ ("\u{1f1e7}\u{1f1ed}", ["nation", "flag:", "banner", "flag_bahrain", "country", "Bahrain", "bh", "flag"]),
+ ("\u{1f1e7}\u{1f1ee}", ["nation", "flag:", "Burundi", "banner", "bi", "flag", "country", "flag_burundi"]),
+ ("\u{1f1e7}\u{1f1ef}", ["bj", "nation", "Benin", "flag:", "banner", "country", "flag_benin", "flag"]),
+ ("\u{1f1e7}\u{1f1f1}", ["saint", "nation", "flag:", "barthélemy", "banner", "flag", "country", "Barthélemy", "St.", "flag_st_barthelemy"]),
+ ("\u{1f1e7}\u{1f1f2}", ["nation", "flag:", "banner", "country", "Bermuda", "bm", "flag", "flag_bermuda"]),
+ ("\u{1f1e7}\u{1f1f3}", ["bn", "nation", "flag:", "banner", "darussalam", "Brunei", "country", "flag_brunei", "flag"]),
+ ("\u{1f1e7}\u{1f1f4}", ["flag_bolivia", "nation", "flag:", "banner", "bo", "country", "Bolivia", "flag"]),
+ ("\u{1f1e7}\u{1f1f6}", ["flag_caribbean_netherlands", "nation", "flag:", "banner", "Caribbean", "country", "bonaire", "Netherlands", "flag"]),
+ ("\u{1f1e7}\u{1f1f7}", ["br", "nation", "flag:", "banner", "Brazil", "flag", "country", "flag_brazil"]),
+ ("\u{1f1e7}\u{1f1f8}", ["Bahamas", "flag_bahamas", "nation", "flag:", "banner", "country", "bs", "flag"]),
+ ("\u{1f1e7}\u{1f1f9}", ["flag_bhutan", "nation", "flag:", "banner", "Bhutan", "country", "bt", "flag"]),
+ ("\u{1f1e7}\u{1f1fb}", ["Bouvet", "Island", "flag_bouvet_island", "flag:", "norway"]),
+ ("\u{1f1e7}\u{1f1fc}", ["nation", "bw", "flag:", "banner", "Botswana", "flag_botswana", "country", "flag"]),
+ ("\u{1f1e7}\u{1f1fe}", ["nation", "flag:", "flag_belarus", "by", "banner", "Belarus", "country", "flag"]),
+ ("\u{1f1e7}\u{1f1ff}", ["bz", "nation", "Belize", "flag:", "banner", "country", "flag", "flag_belize"]),
+ ("\u{1f1e8}\u{1f1e6}", ["nation", "flag:", "ca", "banner", "country", "Canada", "flag", "flag_canada"]),
+ ("\u{1f1e8}\u{1f1e8}", ["Cocos", "nation", "flag:", "banner", "flag_cocos_islands", "flag", "islands", "Islands", "cocos", "country", "(Keeling)", "keeling"]),
+ ("\u{1f1e8}\u{1f1e9}", ["flag_congo_kinshasa", "nation", "flag:", "democratic", "banner", "flag", "republic", "congo", "country", "-", "Kinshasa", "Congo"]),
+ ("\u{1f1e8}\u{1f1eb}", ["central", "flag_central_african_republic", "nation", "Central", "flag:", "banner", "African", "republic", "flag", "country", "african", "Republic"]),
+ ("\u{1f1e8}\u{1f1ec}", ["flag_congo_brazzaville", "nation", "flag:", "banner", "congo", "country", "-", "Brazzaville", "flag", "Congo"]),
+ ("\u{1f1e8}\u{1f1ed}", ["ch", "nation", "Switzerland", "flag:", "flag_switzerland", "banner", "country", "flag"]),
+ ("\u{1f1e8}\u{1f1ee}", ["nation", "flag:", "Côte", "banner", "ivory", "coast", "country", "flag_cote_d_ivoire", "flag", "d’Ivoire"]),
+ ("\u{1f1e8}\u{1f1f0}", ["nation", "cook", "flag:", "banner", "Cook", "flag_cook_islands", "Islands", "country", "flag", "islands"]),
+ ("\u{1f1e8}\u{1f1f1}", ["flag_chile", "nation", "Chile", "flag:", "banner", "country", "flag"]),
+ ("\u{1f1e8}\u{1f1f2}", ["nation", "flag_cameroon", "flag:", "banner", "country", "cm", "Cameroon", "flag"]),
+ ("\u{1f1e8}\u{1f1f3}", ["chinese", "nation", "prc", "flag:", "china", "flag_china", "banner", "China", "country", "flag"]),
+ ("\u{1f1e8}\u{1f1f4}", ["nation", "flag:", "Colombia", "banner", "co", "country", "flag", "flag_colombia"]),
+ ("\u{1f1e8}\u{1f1f5}", ["flag:", "flag_clipperton_island", "Island", "Clipperton"]),
+ ("\u{1f1e8}\u{1f1f7}", ["costa", "Rica", "nation", "flag:", "banner", "flag", "country", "rica", "Costa", "flag_costa_rica"]),
+ ("\u{1f1e8}\u{1f1fa}", ["nation", "flag:", "banner", "Cuba", "country", "flag_cuba", "flag", "cu"]),
+ ("\u{1f1e8}\u{1f1fb}", ["verde", "nation", "flag:", "Cape", "cabo", "banner", "Verde", "country", "flag_cape_verde", "flag"]),
+ ("\u{1f1e8}\u{1f1fc}", ["flag_curacao", "nation", "curaçao", "flag:", "banner", "country", "Curaçao", "flag"]),
+ ("\u{1f1e8}\u{1f1fd}", ["christmas", "Island", "nation", "flag:", "banner", "country", "island", "flag_christmas_island", "flag", "Christmas"]),
+ ("\u{1f1e8}\u{1f1fe}", ["nation", "flag:", "flag_cyprus", "banner", "country", "Cyprus", "cy", "flag"]),
+ ("\u{1f1e8}\u{1f1ff}", ["nation", "flag:", "cz", "Czechia", "banner", "flag_czechia", "country", "flag"]),
+ ("\u{1f1e9}\u{1f1ea}", ["nation", "flag:", "Germany", "banner", "flag", "country", "flag_germany", "german"]),
+ ("\u{1f1e9}\u{1f1ec}", ["flag:", "Diego", "Garcia", "flag_diego_garcia"]),
+ ("\u{1f1e9}\u{1f1ef}", ["flag_djibouti", "nation", "flag:", "banner", "dj", "country", "Djibouti", "flag"]),
+ ("\u{1f1e9}\u{1f1f0}", ["Denmark", "nation", "flag:", "banner", "country", "dk", "flag", "flag_denmark"]),
+ ("\u{1f1e9}\u{1f1f2}", ["flag_dominica", "nation", "flag:", "banner", "dm", "country", "Dominica", "flag"]),
+ ("\u{1f1e9}\u{1f1f4}", ["dominican", "nation", "flag:", "banner", "Dominican", "flag_dominican_republic", "republic", "flag", "country", "Republic"]),
+ ("\u{1f1e9}\u{1f1ff}", ["nation", "flag:", "dz", "banner", "flag_algeria", "country", "flag", "Algeria"]),
+ ("\u{1f1ea}\u{1f1e6}", ["flag:", "Melilla", "flag_ceuta_melilla", "&", "Ceuta"]),
+ ("\u{1f1ea}\u{1f1e8}", ["nation", "flag:", "banner", "ec", "flag_ecuador", "Ecuador", "country", "flag"]),
+ ("\u{1f1ea}\u{1f1ea}", ["flag_estonia", "nation", "flag:", "banner", "ee", "country", "Estonia", "flag"]),
+ ("\u{1f1ea}\u{1f1ec}", ["Egypt", "nation", "flag:", "flag_egypt", "banner", "eg", "country", "flag"]),
+ ("\u{1f1ea}\u{1f1ed}", ["Western", "nation", "flag:", "Sahara", "banner", "sahara", "flag", "country", "flag_western_sahara", "western"]),
+ ("\u{1f1ea}\u{1f1f7}", ["nation", "er", "flag:", "banner", "country", "flag", "flag_eritrea", "Eritrea"]),
+ ("\u{1f1ea}\u{1f1f8}", ["spain", "nation", "flag:", "flag_spain", "banner", "country", "Spain", "flag"]),
+ ("\u{1f1ea}\u{1f1f9}", ["nation", "flag:", "banner", "Ethiopia", "et", "flag_ethiopia", "country", "flag"]),
+ ("\u{1f1ea}\u{1f1fa}", ["european", "flag:", "banner", "union", "flag", "European", "flag_european_union", "Union"]),
+ ("\u{1f1eb}\u{1f1ee}", ["flag_finland", "Finland", "nation", "flag:", "banner", "country", "fi", "flag"]),
+ ("\u{1f1eb}\u{1f1ef}", ["nation", "flag:", "banner", "country", "flag_fiji", "fj", "flag", "Fiji"]),
+ ("\u{1f1eb}\u{1f1f0}", ["falkland", "malvinas", "nation", "flag:", "Falkland", "banner", "islands", "Islands", "country", "flag", "flag_falkland_islands"]),
+ ("\u{1f1eb}\u{1f1f2}", ["micronesia", "nation", "flag:", "flag_micronesia", "banner", "Micronesia", "federated", "states", "country", "flag"]),
+ ("\u{1f1eb}\u{1f1f4}", ["flag_faroe_islands", "nation", "flag:", "banner", "Islands", "Faroe", "faroe", "country", "flag", "islands"]),
+ ("\u{1f1eb}\u{1f1f7}", ["nation", "flag:", "flag_france", "banner", "france", "french", "country", "France", "flag"]),
+ ("\u{1f1ec}\u{1f1e6}", ["Gabon", "nation", "flag:", "banner", "country", "flag_gabon", "ga", "flag"]),
+ ("\u{1f1ec}\u{1f1e7}", ["nation", "country", "great", "english", "northern", "british", "ireland", "banner", "united", "United", "UK", "union jack", "Kingdom", "kingdom", "england", "flag_united_kingdom", "flag:", "britain", "flag"]),
+ ("\u{1f1ec}\u{1f1e9}", ["flag_grenada", "nation", "flag:", "banner", "country", "gd", "Grenada", "flag"]),
+ ("\u{1f1ec}\u{1f1ea}", ["nation", "flag:", "banner", "flag_georgia", "country", "Georgia", "flag", "ge"]),
+ ("\u{1f1ec}\u{1f1eb}", ["Guiana", "nation", "flag:", "banner", "guiana", "French", "french", "country", "flag", "flag_french_guiana"]),
+ ("\u{1f1ec}\u{1f1ec}", ["nation", "flag:", "banner", "flag_guernsey", "country", "Guernsey", "flag", "gg"]),
+ ("\u{1f1ec}\u{1f1ed}", ["Ghana", "nation", "flag:", "banner", "gh", "country", "flag_ghana", "flag"]),
+ ("\u{1f1ec}\u{1f1ee}", ["nation", "flag:", "banner", "flag_gibraltar", "country", "Gibraltar", "gi", "flag"]),
+ ("\u{1f1ec}\u{1f1f1}", ["Greenland", "flag_greenland", "gl", "flag:", "nation", "banner", "country", "flag"]),
+ ("\u{1f1ec}\u{1f1f2}", ["nation", "flag:", "gm", "banner", "Gambia", "flag_gambia", "country", "flag"]),
+ ("\u{1f1ec}\u{1f1f3}", ["nation", "flag:", "banner", "flag_guinea", "country", "Guinea", "flag", "gn"]),
+ ("\u{1f1ec}\u{1f1f5}", ["nation", "flag:", "banner", "Guadeloupe", "country", "flag_guadeloupe", "gp", "flag"]),
+ ("\u{1f1ec}\u{1f1f6}", ["Equatorial", "nation", "gn", "flag:", "banner", "country", "flag_equatorial_guinea", "Guinea", "flag", "equatorial"]),
+ ("\u{1f1ec}\u{1f1f7}", ["nation", "gr", "flag:", "banner", "flag_greece", "country", "Greece", "flag"]),
+ ("\u{1f1ec}\u{1f1f8}", ["georgia", "nation", "flag:", "banner", "Sandwich", "south", "Islands", "country", "South", "&", "sandwich", "Georgia", "flag", "islands", "flag_south_georgia_south_sandwich_islands"]),
+ ("\u{1f1ec}\u{1f1f9}", ["nation", "flag:", "banner", "flag_guatemala", "country", "gt", "Guatemala", "flag"]),
+ ("\u{1f1ec}\u{1f1fa}", ["nation", "flag:", "banner", "Guam", "country", "flag_guam", "flag", "gu"]),
+ ("\u{1f1ec}\u{1f1fc}", ["bissau", "nation", "flag_guinea_bissau", "flag:", "banner", "gw", "Guinea-Bissau", "country", "flag"]),
+ ("\u{1f1ec}\u{1f1fe}", ["nation", "flag_guyana", "flag:", "banner", "Guyana", "gy", "country", "flag"]),
+ ("\u{1f1ed}\u{1f1f0}", ["Hong", "kong", "nation", "flag:", "banner", "hong", "Kong", "China", "country", "SAR", "flag", "flag_hong_kong_sar_china"]),
+ ("\u{1f1ed}\u{1f1f2}", ["McDonald", "Heard", "flag:", "flag_heard_mcdonald_islands", "Islands", "&"]),
+ ("\u{1f1ed}\u{1f1f3}", ["nation", "flag:", "banner", "flag", "flag_honduras", "country", "Honduras", "hn"]),
+ ("\u{1f1ed}\u{1f1f7}", ["nation", "flag:", "banner", "Croatia", "hr", "country", "flag_croatia", "flag"]),
+ ("\u{1f1ed}\u{1f1f9}", ["ht", "nation", "flag:", "banner", "Haiti", "flag_haiti", "country", "flag"]),
+ ("\u{1f1ed}\u{1f1fa}", ["nation", "hu", "flag:", "Hungary", "banner", "country", "flag_hungary", "flag"]),
+ ("\u{1f1ee}\u{1f1e8}", ["flag_canary_islands", "nation", "flag:", "banner", "flag", "Islands", "country", "Canary", "canary", "islands"]),
+ ("\u{1f1ee}\u{1f1e9}", ["flag_indonesia", "nation", "flag:", "banner", "Indonesia", "country", "flag"]),
+ ("\u{1f1ee}\u{1f1ea}", ["Ireland", "ie", "nation", "flag:", "banner", "flag_ireland", "country", "flag"]),
+ ("\u{1f1ee}\u{1f1f1}", ["nation", "Israel", "flag:", "flag_israel", "banner", "country", "il", "flag"]),
+ ("\u{1f1ee}\u{1f1f2}", ["Isle", "man", "isle", "nation", "flag:", "banner", "flag_isle_of_man", "country", "Man", "flag", "of"]),
+ ("\u{1f1ee}\u{1f1f3}", ["nation", "flag:", "banner", "in", "country", "flag_india", "flag", "India"]),
+ ("\u{1f1ee}\u{1f1f4}", ["Ocean", "Territory", "territory", "nation", "flag:", "ocean", "banner", "Indian", "british", "flag", "country", "indian", "flag_british_indian_ocean_territory", "British"]),
+ ("\u{1f1ee}\u{1f1f6}", ["iq", "flag_iraq", "nation", "flag:", "banner", "country", "Iraq", "flag"]),
+ ("\u{1f1ee}\u{1f1f7}", ["flag_iran", "nation", "flag:", "banner", "republic", "country", "islamic", "Iran", "iran", "flag"]),
+ ("\u{1f1ee}\u{1f1f8}", ["Iceland", "flag_iceland", "is", "nation", "flag:", "banner", "country", "flag"]),
+ ("\u{1f1ee}\u{1f1f9}", ["nation", "flag:", "banner", "flag_italy", "Italy", "country", "italy", "flag"]),
+ ("\u{1f1ef}\u{1f1ea}", ["nation", "flag:", "banner", "country", "je", "flag_jersey", "flag", "Jersey"]),
+ ("\u{1f1ef}\u{1f1f2}", ["nation", "flag:", "banner", "jm", "flag", "country", "Jamaica", "flag_jamaica"]),
+ ("\u{1f1ef}\u{1f1f4}", ["nation", "flag_jordan", "flag:", "banner", "country", "jo", "flag", "Jordan"]),
+ ("\u{1f1ef}\u{1f1f5}", ["japanese", "Japan", "nation", "flag:", "banner", "country", "flag_japan", "flag"]),
+ ("\u{1f1f0}\u{1f1ea}", ["Kenya", "nation", "flag:", "banner", "ke", "flag_kenya", "country", "flag"]),
+ ("\u{1f1f0}\u{1f1ec}", ["Kyrgyzstan", "flag_kyrgyzstan", "nation", "flag:", "banner", "country", "kg", "flag"]),
+ ("\u{1f1f0}\u{1f1ed}", ["kh", "Cambodia", "nation", "flag:", "banner", "flag_cambodia", "country", "flag"]),
+ ("\u{1f1f0}\u{1f1ee}", ["Kiribati", "nation", "flag:", "banner", "country", "flag_kiribati", "ki", "flag"]),
+ ("\u{1f1f0}\u{1f1f2}", ["nation", "Comoros", "flag:", "banner", "country", "flag_comoros", "km", "flag"]),
+ ("\u{1f1f0}\u{1f1f3}", ["saint", "flag_st_kitts_nevis", "Kitts", "nation", "flag:", "Nevis", "banner", "kitts", "nevis", "country", "&", "St.", "flag"]),
+ ("\u{1f1f0}\u{1f1f5}", ["nation", "flag:", "banner", "Korea", "north", "North", "country", "flag_north_korea", "korea", "flag"]),
+ ("\u{1f1f0}\u{1f1f7}", ["nation", "flag:", "banner", "Korea", "south", "country", "South", "flag_south_korea", "korea", "flag"]),
+ ("\u{1f1f0}\u{1f1fc}", ["nation", "Kuwait", "flag:", "banner", "flag_kuwait", "country", "kw", "flag"]),
+ ("\u{1f1f0}\u{1f1fe}", ["flag_cayman_islands", "nation", "flag:", "banner", "Islands", "country", "Cayman", "cayman", "flag", "islands"]),
+ ("\u{1f1f0}\u{1f1ff}", ["Kazakhstan", "nation", "flag:", "banner", "country", "flag_kazakhstan", "kz", "flag"]),
+ ("\u{1f1f1}\u{1f1e6}", ["flag_laos", "nation", "flag:", "democratic", "banner", "republic", "Laos", "country", "lao", "flag"]),
+ ("\u{1f1f1}\u{1f1e7}", ["flag_lebanon", "nation", "flag:", "banner", "lb", "country", "Lebanon", "flag"]),
+ ("\u{1f1f1}\u{1f1e8}", ["saint", "nation", "Lucia", "flag:", "banner", "country", "lucia", "St.", "flag_st_lucia", "flag"]),
+ ("\u{1f1f1}\u{1f1ee}", ["nation", "flag:", "banner", "Liechtenstein", "flag_liechtenstein", "country", "li", "flag"]),
+ ("\u{1f1f1}\u{1f1f0}", ["Sri", "nation", "flag:", "banner", "sri", "Lanka", "country", "flag_sri_lanka", "lanka", "flag"]),
+ ("\u{1f1f1}\u{1f1f7}", ["nation", "flag:", "banner", "flag_liberia", "flag", "country", "lr", "Liberia"]),
+ ("\u{1f1f1}\u{1f1f8}", ["nation", "flag:", "flag_lesotho", "banner", "ls", "country", "flag", "Lesotho"]),
+ ("\u{1f1f1}\u{1f1f9}", ["nation", "flag_lithuania", "flag:", "banner", "lt", "country", "Lithuania", "flag"]),
+ ("\u{1f1f1}\u{1f1fa}", ["nation", "flag:", "Luxembourg", "lu", "banner", "flag_luxembourg", "country", "flag"]),
+ ("\u{1f1f1}\u{1f1fb}", ["nation", "flag:", "banner", "Latvia", "country", "lv", "flag", "flag_latvia"]),
+ ("\u{1f1f1}\u{1f1fe}", ["nation", "flag:", "banner", "Libya", "flag_libya", "ly", "country", "flag"]),
+ ("\u{1f1f2}\u{1f1e6}", ["nation", "flag:", "banner", "flag_morocco", "ma", "country", "Morocco", "flag"]),
+ ("\u{1f1f2}\u{1f1e8}", ["mc", "nation", "flag:", "banner", "country", "flag_monaco", "Monaco", "flag"]),
+ ("\u{1f1f2}\u{1f1e9}", ["Moldova", "nation", "flag:", "banner", "moldova", "flag_moldova", "republic", "country", "flag"]),
+ ("\u{1f1f2}\u{1f1ea}", ["nation", "flag:", "banner", "country", "flag_montenegro", "me", "Montenegro", "flag"]),
+ ("\u{1f1f2}\u{1f1eb}", ["flag:", "flag_st_martin", "St.", "Martin"]),
+ ("\u{1f1f2}\u{1f1ec}", ["nation", "flag:", "banner", "flag_madagascar", "Madagascar", "country", "flag", "mg"]),
+ ("\u{1f1f2}\u{1f1ed}", ["nation", "flag:", "banner", "flag_marshall_islands", "Islands", "marshall", "country", "Marshall", "flag", "islands"]),
+ ("\u{1f1f2}\u{1f1f0}", ["flag_north_macedonia", "nation", "Macedonia", "flag:", "banner", "North", "country", "macedonia", "flag"]),
+ ("\u{1f1f2}\u{1f1f1}", ["nation", "flag:", "banner", "ml", "flag_mali", "country", "Mali", "flag"]),
+ ("\u{1f1f2}\u{1f1f2}", ["mm", "nation", "flag:", "Myanmar", "(Burma)", "banner", "country", "flag_myanmar", "flag"]),
+ ("\u{1f1f2}\u{1f1f3}", ["nation", "flag:", "banner", "mn", "country", "Mongolia", "flag", "flag_mongolia"]),
+ ("\u{1f1f2}\u{1f1f4}", ["macao", "nation", "flag:", "banner", "flag_macao_sar_china", "flag", "China", "country", "SAR", "Macao"]),
+ ("\u{1f1f2}\u{1f1f5}", ["nation", "flag:", "northern", "Northern", "banner", "mariana", "Islands", "country", "flag_northern_mariana_islands", "flag", "islands", "Mariana"]),
+ ("\u{1f1f2}\u{1f1f6}", ["nation", "flag:", "banner", "flag_martinique", "country", "mq", "flag", "Martinique"]),
+ ("\u{1f1f2}\u{1f1f7}", ["nation", "flag:", "mr", "banner", "flag_mauritania", "country", "Mauritania", "flag"]),
+ ("\u{1f1f2}\u{1f1f8}", ["nation", "flag:", "Montserrat", "banner", "ms", "country", "flag_montserrat", "flag"]),
+ ("\u{1f1f2}\u{1f1f9}", ["Malta", "nation", "flag:", "banner", "flag_malta", "country", "mt", "flag"]),
+ ("\u{1f1f2}\u{1f1fa}", ["Mauritius", "mu", "nation", "flag:", "banner", "flag_mauritius", "country", "flag"]),
+ ("\u{1f1f2}\u{1f1fb}", ["Maldives", "mv", "nation", "flag:", "banner", "country", "flag", "flag_maldives"]),
+ ("\u{1f1f2}\u{1f1fc}", ["nation", "flag:", "banner", "Malawi", "mw", "country", "flag_malawi", "flag"]),
+ ("\u{1f1f2}\u{1f1fd}", ["nation", "flag:", "flag_mexico", "banner", "Mexico", "mx", "country", "flag"]),
+ ("\u{1f1f2}\u{1f1fe}", ["nation", "flag:", "flag_malaysia", "banner", "country", "my", "flag", "Malaysia"]),
+ ("\u{1f1f2}\u{1f1ff}", ["Mozambique", "nation", "flag:", "banner", "country", "flag_mozambique", "mz", "flag"]),
+ ("\u{1f1f3}\u{1f1e6}", ["nation", "flag:", "banner", "Namibia", "flag_namibia", "country", "na", "flag"]),
+ ("\u{1f1f3}\u{1f1e8}", ["nation", "flag:", "banner", "Caledonia", "flag", "flag_new_caledonia", "country", "caledonia", "New", "new"]),
+ ("\u{1f1f3}\u{1f1ea}", ["ne", "nation", "flag:", "banner", "flag_niger", "Niger", "country", "flag"]),
+ ("\u{1f1f3}\u{1f1eb}", ["norfolk", "Island", "nation", "flag:", "banner", "Norfolk", "country", "flag_norfolk_island", "island", "flag"]),
+ ("\u{1f1f3}\u{1f1ec}", ["flag_nigeria", "nation", "flag:", "banner", "Nigeria", "country", "flag"]),
+ ("\u{1f1f3}\u{1f1ee}", ["Nicaragua", "nation", "flag:", "banner", "country", "flag_nicaragua", "flag", "ni"]),
+ ("\u{1f1f3}\u{1f1f1}", ["nl", "nation", "flag:", "banner", "country", "Netherlands", "flag", "flag_netherlands"]),
+ ("\u{1f1f3}\u{1f1f4}", ["Norway", "nation", "flag:", "banner", "no", "country", "flag_norway", "flag"]),
+ ("\u{1f1f3}\u{1f1f5}", ["Nepal", "nation", "flag:", "banner", "flag_nepal", "country", "np", "flag"]),
+ ("\u{1f1f3}\u{1f1f7}", ["Nauru", "nation", "flag:", "banner", "country", "flag_nauru", "nr", "flag"]),
+ ("\u{1f1f3}\u{1f1fa}", ["nation", "flag:", "banner", "nu", "country", "Niue", "flag_niue", "flag"]),
+ ("\u{1f1f3}\u{1f1ff}", ["Zealand", "new", "nation", "flag:", "banner", "flag_new_zealand", "flag", "country", "zealand", "New"]),
+ ("\u{1f1f4}\u{1f1f2}", ["om_symbol", "nation", "flag:", "banner", "Oman", "flag_oman", "country", "flag"]),
+ ("\u{1f1f5}\u{1f1e6}", ["nation", "flag:", "banner", "Panama", "country", "pa", "flag_panama", "flag"]),
+ ("\u{1f1f5}\u{1f1ea}", ["nation", "flag:", "banner", "flag_peru", "country", "Peru", "pe", "flag"]),
+ ("\u{1f1f5}\u{1f1eb}", ["polynesia", "Polynesia", "nation", "flag:", "flag_french_polynesia", "banner", "French", "french", "country", "flag"]),
+ ("\u{1f1f5}\u{1f1ec}", ["new", "flag_papua_new_guinea", "nation", "flag:", "banner", "flag", "guinea", "country", "papua", "Papua", "Guinea", "New"]),
+ ("\u{1f1f5}\u{1f1ed}", ["Philippines", "nation", "flag_philippines", "flag:", "banner", "country", "ph", "flag"]),
+ ("\u{1f1f5}\u{1f1f0}", ["Pakistan", "flag_pakistan", "nation", "flag:", "banner", "country", "pk", "flag"]),
+ ("\u{1f1f5}\u{1f1f1}", ["pl", "nation", "Poland", "flag:", "flag_poland", "banner", "country", "flag"]),
+ ("\u{1f1f5}\u{1f1f2}", ["saint", "nation", "flag:", "Miquelon", "banner", "flag_st_pierre_miquelon", "pierre", "flag", "country", "&", "St.", "miquelon", "Pierre"]),
+ ("\u{1f1f5}\u{1f1f3}", ["nation", "flag:", "banner", "pitcairn", "Islands", "flag_pitcairn_islands", "country", "flag", "Pitcairn"]),
+ ("\u{1f1f5}\u{1f1f7}", ["nation", "Rico", "flag:", "banner", "country", "flag_puerto_rico", "rico", "Puerto", "flag", "puerto"]),
+ ("\u{1f1f5}\u{1f1f8}", ["palestine", "Territories", "nation", "flag_palestinian_territories", "flag:", "banner", "territories", "country", "palestinian", "flag", "Palestinian"]),
+ ("\u{1f1f5}\u{1f1f9}", ["Portugal", "nation", "flag:", "banner", "pt", "flag_portugal", "country", "flag"]),
+ ("\u{1f1f5}\u{1f1fc}", ["flag_palau", "nation", "flag:", "banner", "Palau", "country", "flag", "pw"]),
+ ("\u{1f1f5}\u{1f1fe}", ["nation", "flag:", "banner", "Paraguay", "country", "flag_paraguay", "flag", "py"]),
+ ("\u{1f1f6}\u{1f1e6}", ["qa", "nation", "flag:", "flag_qatar", "banner", "Qatar", "country", "flag"]),
+ ("\u{1f1f7}\u{1f1ea}", ["réunion", "nation", "flag:", "flag_reunion", "banner", "country", "Réunion", "flag"]),
+ ("\u{1f1f7}\u{1f1f4}", ["nation", "flag:", "ro", "banner", "country", "flag", "Romania", "flag_romania"]),
+ ("\u{1f1f7}\u{1f1f8}", ["nation", "flag:", "banner", "Serbia", "flag_serbia", "flag", "country", "rs"]),
+ ("\u{1f1f7}\u{1f1fa}", ["flag_russia", "nation", "flag:", "banner", "russian", "federation", "Russia", "country", "flag"]),
+ ("\u{1f1f7}\u{1f1fc}", ["nation", "flag:", "banner", "rw", "flag_rwanda", "Rwanda", "country", "flag"]),
+ ("\u{1f1f8}\u{1f1e6}", ["Arabia", "nation", "flag:", "banner", "flag_saudi_arabia", "country", "flag", "Saudi"]),
+ ("\u{1f1f8}\u{1f1e7}", ["nation", "flag:", "solomon", "banner", "Solomon", "Islands", "country", "flag_solomon_islands", "flag", "islands"]),
+ ("\u{1f1f8}\u{1f1e8}", ["Seychelles", "nation", "flag:", "banner", "country", "sc", "flag_seychelles", "flag"]),
+ ("\u{1f1f8}\u{1f1e9}", ["flag_sudan", "sd", "nation", "Sudan", "flag:", "banner", "country", "flag"]),
+ ("\u{1f1f8}\u{1f1ea}", ["Sweden", "nation", "flag:", "banner", "country", "flag_sweden", "se", "flag"]),
+ ("\u{1f1f8}\u{1f1ec}", ["nation", "Singapore", "flag:", "banner", "country", "sg", "flag", "flag_singapore"]),
+ ("\u{1f1f8}\u{1f1ed}", ["saint", "flag_st_helena", "nation", "flag:", "ascension", "tristan", "banner", "Helena", "country", "helena", "St.", "flag", "cunha"]),
+ ("\u{1f1f8}\u{1f1ee}", ["nation", "flag:", "banner", "flag", "si", "country", "flag_slovenia", "Slovenia"]),
+ ("\u{1f1f8}\u{1f1ef}", ["Jan", "flag:", "flag_svalbard_jan_mayen", "Mayen", "Svalbard", "&"]),
+ ("\u{1f1f8}\u{1f1f0}", ["flag_slovakia", "sk", "nation", "flag:", "banner", "country", "Slovakia", "flag"]),
+ ("\u{1f1f8}\u{1f1f1}", ["sierra", "nation", "flag_sierra_leone", "flag:", "banner", "flag", "Leone", "country", "Sierra", "leone"]),
+ ("\u{1f1f8}\u{1f1f2}", ["flag_san_marino", "marino", "nation", "San", "san", "flag:", "Marino", "banner", "country", "flag"]),
+ ("\u{1f1f8}\u{1f1f3}", ["nation", "Senegal", "flag:", "banner", "flag", "country", "flag_senegal", "sn"]),
+ ("\u{1f1f8}\u{1f1f4}", ["nation", "flag:", "banner", "Somalia", "so", "country", "flag_somalia", "flag"]),
+ ("\u{1f1f8}\u{1f1f7}", ["Suriname", "nation", "flag:", "sr", "banner", "flag_suriname", "country", "flag"]),
+ ("\u{1f1f8}\u{1f1f8}", ["sd", "nation", "Sudan", "flag:", "banner", "flag_south_sudan", "south", "country", "South", "flag"]),
+ ("\u{1f1f8}\u{1f1f9}", ["principe", "Príncipe", "nation", "flag:", "banner", "sao", "São", "Tomé", "flag_sao_tome_principe", "country", "&", "tome", "flag"]),
+ ("\u{1f1f8}\u{1f1fb}", ["el", "nation", "El", "flag:", "Salvador", "salvador", "banner", "flag_el_salvador", "country", "flag"]),
+ ("\u{1f1f8}\u{1f1fd}", ["Maarten", "nation", "flag:", "banner", "Sint", "flag_sint_maarten", "country", "sint", "maarten", "flag", "dutch"]),
+ ("\u{1f1f8}\u{1f1fe}", ["nation", "flag:", "banner", "arab", "republic", "country", "Syria", "flag_syria", "syrian", "flag"]),
+ ("\u{1f1f8}\u{1f1ff}", ["nation", "flag:", "banner", "Eswatini", "country", "flag_eswatini", "sz", "flag"]),
+ ("\u{1f1f9}\u{1f1e6}", ["da", "flag:", "Tristan", "flag_tristan_da_cunha", "Cunha"]),
+ ("\u{1f1f9}\u{1f1e8}", ["caicos", "Turks", "nation", "turks", "flag:", "Caicos", "banner", "flag_turks_caicos_islands", "Islands", "country", "&", "flag", "islands"]),
+ ("\u{1f1f9}\u{1f1e9}", ["nation", "flag:", "banner", "flag_chad", "country", "td", "Chad", "flag"]),
+ ("\u{1f1f9}\u{1f1eb}", ["Territories", "southern", "nation", "flag_french_southern_territories", "flag:", "banner", "French", "Southern", "territories", "french", "country", "flag"]),
+ ("\u{1f1f9}\u{1f1ec}", ["nation", "flag:", "banner", "Togo", "flag_togo", "country", "flag", "tg"]),
+ ("\u{1f1f9}\u{1f1ed}", ["flag_thailand", "nation", "flag:", "banner", "country", "th", "flag", "Thailand"]),
+ ("\u{1f1f9}\u{1f1ef}", ["nation", "flag:", "banner", "flag", "Tajikistan", "country", "flag_tajikistan", "tj"]),
+ ("\u{1f1f9}\u{1f1f0}", ["flag_tokelau", "nation", "flag:", "banner", "country", "Tokelau", "flag", "tk"]),
+ ("\u{1f1f9}\u{1f1f1}", ["nation", "flag:", "banner", "Timor-Leste", "flag", "country", "leste", "timor", "flag_timor_leste"]),
+ ("\u{1f1f9}\u{1f1f2}", ["nation", "flag:", "banner", "country", "Turkmenistan", "flag_turkmenistan", "flag"]),
+ ("\u{1f1f9}\u{1f1f3}", ["nation", "flag:", "banner", "Tunisia", "country", "tn", "flag", "flag_tunisia"]),
+ ("\u{1f1f9}\u{1f1f4}", ["nation", "flag:", "banner", "Tonga", "country", "flag", "flag_tonga", "to"]),
+ ("\u{1f1f9}\u{1f1f7}", ["nation", "flag:", "banner", "flag_turkey", "turkey", "country", "Turkey", "flag"]),
+ ("\u{1f1f9}\u{1f1f9}", ["Tobago", "nation", "flag_trinidad_tobago", "flag:", "banner", "tobago", "country", "&", "trinidad", "flag", "Trinidad"]),
+ ("\u{1f1f9}\u{1f1fb}", ["nation", "Tuvalu", "flag:", "banner", "country", "flag_tuvalu", "flag"]),
+ ("\u{1f1f9}\u{1f1fc}", ["flag_taiwan", "Taiwan", "nation", "flag:", "banner", "country", "tw", "flag"]),
+ ("\u{1f1f9}\u{1f1ff}", ["nation", "flag:", "banner", "united", "flag_tanzania", "flag", "republic", "tanzania", "country", "Tanzania"]),
+ ("\u{1f1fa}\u{1f1e6}", ["Ukraine", "nation", "flag:", "banner", "country", "ua", "flag_ukraine", "flag"]),
+ ("\u{1f1fa}\u{1f1ec}", ["ug", "nation", "flag:", "banner", "flag", "country", "Uganda", "flag_uganda"]),
+ ("\u{1f1fa}\u{1f1f2}", ["Outlying", "flag:", "flag_u_s_outlying_islands", "Islands", "U.S."]),
+ ("\u{1f1fa}\u{1f1f3}", ["flag:", "Nations", "banner", "United", "flag_united_nations", "un", "flag"]),
+ ("\u{1f1fa}\u{1f1f8}", ["nation", "flag:", "States", "united", "United", "america", "banner", "country", "states", "flag_united_states", "flag"]),
+ ("\u{1f1fa}\u{1f1fe}", ["uy", "nation", "flag:", "banner", "flag_uruguay", "country", "Uruguay", "flag"]),
+ ("\u{1f1fa}\u{1f1ff}", ["Uzbekistan", "nation", "uz", "flag:", "banner", "country", "flag_uzbekistan", "flag"]),
+ ("\u{1f1fb}\u{1f1e6}", ["nation", "flag:", "city", "banner", "flag", "City", "country", "vatican", "flag_vatican_city", "Vatican"]),
+ ("\u{1f1fb}\u{1f1e8}", ["saint", "flag_st_vincent_grenadines", "nation", "flag:", "banner", "vincent", "Grenadines", "St.", "country", "&", "Vincent", "flag", "grenadines"]),
+ ("\u{1f1fb}\u{1f1ea}", ["nation", "flag:", "banner", "flag_venezuela", "ve", "bolivarian", "republic", "country", "Venezuela", "flag"]),
+ ("\u{1f1fb}\u{1f1ec}", ["Virgin", "nation", "flag:", "banner", "bvi", "british", "Islands", "country", "flag_british_virgin_islands", "virgin", "flag", "islands", "British"]),
+ ("\u{1f1fb}\u{1f1ee}", ["Virgin", "nation", "us", "flag:", "banner", "islands", "Islands", "U.S.", "country", "flag_u_s_virgin_islands", "flag", "virgin"]),
+ ("\u{1f1fb}\u{1f1f3}", ["Vietnam", "nation", "flag:", "banner", "nam", "viet", "country", "flag", "flag_vietnam"]),
+ ("\u{1f1fb}\u{1f1fa}", ["vu", "nation", "flag:", "flag_vanuatu", "banner", "country", "Vanuatu", "flag"]),
+ ("\u{1f1fc}\u{1f1eb}", ["Futuna", "nation", "flag:", "banner", "flag_wallis_futuna", "Wallis", "wallis", "country", "&", "flag", "futuna"]),
+ ("\u{1f1fc}\u{1f1f8}", ["Samoa", "nation", "flag:", "ws", "banner", "country", "flag_samoa", "flag"]),
+ ("\u{1f1fd}\u{1f1f0}", ["nation", "xk", "flag:", "banner", "flag_kosovo", "country", "Kosovo", "flag"]),
+ ("\u{1f1fe}\u{1f1ea}", ["Yemen", "ye", "nation", "flag:", "banner", "flag_yemen", "country", "flag"]),
+ ("\u{1f1fe}\u{1f1f9}", ["nation", "flag:", "banner", "Mayotte", "country", "flag_mayotte", "flag", "yt"]),
+ ("\u{1f1ff}\u{1f1e6}", ["Africa", "nation", "flag:", "banner", "south", "country", "South", "flag_south_africa", "africa", "flag"]),
+ ("\u{1f1ff}\u{1f1f2}", ["zm", "flag_zambia", "nation", "flag:", "banner", "country", "Zambia", "flag"]),
+ ("\u{1f1ff}\u{1f1fc}", ["nation", "flag:", "banner", "flag_zimbabwe", "country", "zw", "Zimbabwe", "flag"]),
+ ("\u{1f3f4}\u{e0067}\u{e0062}\u{e0065}\u{e006e}\u{e0067}\u{e007f}", ["flag:", "England"]),
+ ("\u{1f3f4}\u{e0067}\u{e0062}\u{e0073}\u{e0063}\u{e0074}\u{e007f}", ["flag:", "Scotland"]),
+ ("\u{1f3f4}\u{e0067}\u{e0062}\u{e0077}\u{e006c}\u{e0073}\u{e007f}", ["flag:", "Wales"])]
