@@ -16,6 +16,7 @@ normalize s =
             in
             if Char.isAlpha c then
                 String.cons cc (normalize sss)
+
             else
                 normalize sss
 

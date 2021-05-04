@@ -132,10 +132,12 @@ addIntoTrieAux id s trie =
 fetchFromIndex : String -> Index data -> List data
 fetchFromIndex s index =
     let
-        normalizedS = (normalize s |> String.toLower)
+        normalizedS =
+            normalize s |> String.toLower
     in
     if String.length normalizedS == 0 then
         []
+
     else
         fetchFromTrie (normalize s |> String.toLower) index.trie
             |> Set.foldl
