@@ -1,4 +1,4 @@
-module Trie exposing (DataTags, Index, buildIndex, fetchFromIndex)
+module Trie exposing (DataTags, Index, buildIndex, emptyIndex, fetchFromIndex)
 
 import Array exposing (Array)
 import DiacriticsNormalize exposing (normalize)
@@ -42,6 +42,11 @@ emptyArray =
 indexOfChar : Char -> Int
 indexOfChar c =
     Char.toCode c - Char.toCode 'a'
+
+
+emptyIndex : Index data
+emptyIndex =
+    Index Empty Dict.empty
 
 
 buildIndex : DataTags data -> Index data
