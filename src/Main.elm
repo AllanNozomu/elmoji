@@ -17,17 +17,24 @@ port copy : String -> Cmd msg
 ---- MODEL ----
 
 
+type Status
+    = Failure
+    | Loading
+    | Success
+
+
 type alias Model =
     { input : String
     , emojis : List Emoji
     , allEmojis : List Emoji
     , emojisIndex : Index Emoji
+    , status : Status
     }
 
 
 init : ( Model, Cmd Msg )
 init =
-    ( Model "" [] [] emptyIndex, getData )
+    ( Model "" [] [] emptyIndex Loading, getData )
 
 
 dataDecoder : Decoder (List EmojiData)
@@ -62,23 +69,15 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         ChangeText s ->
-            case String.length s of
-                0 ->
-                    ( { model | input = s, emojis = model.allEmojis }, Cmd.none )
+            if String.length s >= 1 then
+                ( { model | input = s, emojis = model.allEmojis }, Cmd.none )
 
-                1 ->
-                    ( model, Cmd.none )
-
-                _ ->
-                    let
-                        emojisList =
-                            if String.length s >= 2 then
-                                fetchFromIndex s model.emojisIndex
-
-                            else
-                                model.allEmojis
-                    in
-                    ( { model | input = s, emojis = emojisList }, Cmd.none )
+            else
+                let
+                    emojisList =
+                        fetchFromIndex s model.emojisIndex
+                in
+                ( { model | input = s, emojis = emojisList }, Cmd.none )
 
         Copy emojiId ->
             ( model, copy emojiId )
@@ -96,10 +95,10 @@ update msg model =
                         emojisIndex =
                             buildIndex emojisKeywords
                     in
-                    ( { model | emojis = emojis, emojisIndex = emojisIndex, allEmojis = emojis }, Cmd.none )
+                    ( { model | status = Success, emojis = emojis, emojisIndex = emojisIndex, allEmojis = emojis }, Cmd.none )
 
                 Err _ ->
-                    ( model, Cmd.none )
+                    ( { model | status = Failure }, Cmd.none )
 
 
 
@@ -108,12 +107,23 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    div []
-        [ h1 [] [ text "Elmoji" ]
-        , input [ onInput ChangeText, placeholder "Search for Emojis" ] []
-        , h2 [] [ text (String.fromInt (List.length model.emojis) ++ " emojis found") ]
-        , div [ id "container" ] (List.indexedMap (\index emoji -> div [ class "hover", onClick <| Copy emoji.code ] [ text emoji.code ]) model.emojis)
-        ]
+    if model.status == Loading then
+        div []
+            [ h1 [] [ text "Carregando" ]
+            , div [ class "loader-inner ball-pulse" ]
+                [ div [] []
+                , div [] []
+                , div [] []
+                ]
+            ]
+
+    else
+        div []
+            [ h1 [] [ text "Elmoji" ]
+            , input [ onInput ChangeText, placeholder "Search for Emojis" ] []
+            , h2 [] [ text (String.fromInt (List.length model.emojis) ++ " emojis found") ]
+            , div [ id "container" ] (List.indexedMap (\index emoji -> div [ class "hover", onClick <| Copy emoji.code ] [ text emoji.code ]) model.emojis)
+            ]
 
 
 
