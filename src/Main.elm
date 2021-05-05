@@ -3,8 +3,8 @@ port module Main exposing (..)
 import Browser
 import Emojis exposing (Emoji, EmojiData, SkinTone(..), emojiDataToEmoji)
 import Html exposing (Html, div, h1, h2, input, text)
-import Html.Attributes exposing (class, id, placeholder)
-import Html.Events exposing (onClick, onInput)
+import Html.Attributes exposing (checked, class, id, placeholder, type_)
+import Html.Events exposing (onCheck, onClick, onInput)
 import Http
 import Json.Decode exposing (Decoder)
 import Trie exposing (Index, buildIndex, emptyIndex, fetchFromIndex)
@@ -29,12 +29,15 @@ type alias Model =
     , allEmojis : List Emoji
     , emojisIndex : Index Emoji
     , status : Status
+    , include12_1 : Bool
+    , include13_0 : Bool
+    , include13_1 : Bool
     }
 
 
 init : ( Model, Cmd Msg )
 init =
-    ( Model "" [] [] emptyIndex Loading, getData )
+    ( Model "" [] [] emptyIndex Loading True True True, getData )
 
 
 dataDecoder : Decoder (List EmojiData)
@@ -63,21 +66,54 @@ type Msg
     = ChangeText String
     | Copy String
     | GotData (Result Http.Error (List EmojiData))
+    | ChangeVersion Int Bool
+
+
+filterVersions : Model -> List Emoji -> List Emoji
+filterVersions model emojis =
+    List.filter
+        (\emoji ->
+            if model.include12_1 then
+                True
+
+            else
+                not model.include12_1 && emoji.version /= "12.1"
+        )
+        emojis
+        |> List.filter
+            (\emoji ->
+                if model.include13_0 then
+                    True
+
+                else
+                    not model.include13_0 && emoji.version /= "13.0"
+            )
+        |> List.filter
+            (\emoji ->
+                if model.include13_1 then
+                    True
+
+                else
+                    not model.include13_1 && emoji.version /= "13.1"
+            )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         ChangeText s ->
-            if String.length s == 0 then
-                ( { model | input = s, emojis = model.allEmojis }, Cmd.none )
+            let
+                emojisList =
+                    if String.length s == 0 then
+                        model.allEmojis
 
-            else
-                let
-                    emojisList =
+                    else
                         fetchFromIndex s model.emojisIndex
-                in
-                ( { model | input = s, emojis = emojisList }, Cmd.none )
+
+                filteredEmojis =
+                    filterVersions model emojisList
+            in
+            ( { model | input = s, emojis = filteredEmojis }, Cmd.none )
 
         Copy emojiId ->
             ( model, copy emojiId )
@@ -99,6 +135,24 @@ update msg model =
 
                 Err _ ->
                     ( { model | status = Failure }, Cmd.none )
+
+        ChangeVersion version toggle ->
+            let
+                newModel =
+                    case version of
+                        121 ->
+                            { model | include12_1 = toggle }
+
+                        130 ->
+                            { model | include13_0 = toggle }
+
+                        131 ->
+                            { model | include13_1 = toggle }
+
+                        _ ->
+                            model
+            in
+            update (ChangeText model.input) newModel
 
 
 
@@ -122,6 +176,15 @@ view model =
         div []
             [ h1 [] [ text "Elmoji" ]
             , input [ onInput ChangeText, placeholder "Search for Emojis" ] []
+            , div []
+                [ text "Include versions:"
+                , input [ type_ "checkbox", checked model.include12_1, onCheck <| ChangeVersion 121 ] []
+                , text "12.1"
+                , input [ type_ "checkbox", checked model.include13_0, onCheck <| ChangeVersion 130 ] []
+                , text "13.0"
+                , input [ type_ "checkbox", checked model.include13_1, onCheck <| ChangeVersion 131 ] []
+                , text "13.1"
+                ]
             , h2 [] [ text (String.fromInt (List.length model.emojis) ++ " emojis found") ]
             , div [ id "container" ] (List.indexedMap (\index emoji -> div [ class "hover", onClick <| Copy emoji.code ] [ text emoji.code ]) model.emojis)
             ]
