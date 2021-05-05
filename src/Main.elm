@@ -1,7 +1,7 @@
 port module Main exposing (..)
 
 import Browser
-import Emojis exposing (Emoji, EmojiData, SkinTone(..), emojiDataToEmoji)
+import Emojis exposing (Emoji, EmojiData, emojiDataToEmoji)
 import Html exposing (Html, div, h1, h2, input, text)
 import Html.Attributes exposing (checked, class, id, placeholder, type_)
 import Html.Events exposing (onCheck, onClick, onInput)
@@ -32,12 +32,13 @@ type alias Model =
     , include12_1 : Bool
     , include13_0 : Bool
     , include13_1 : Bool
+    , skinFilters : List Int
     }
 
 
 init : ( Model, Cmd Msg )
 init =
-    ( Model "" [] [] emptyIndex Loading True True True, getData )
+    ( Model "" [] [] emptyIndex Loading True True True [ 1, 2, 3, 4, 5 ], getData )
 
 
 dataDecoder : Decoder (List EmojiData)
@@ -47,7 +48,7 @@ dataDecoder =
             (Json.Decode.at [ "code" ] Json.Decode.string)
             (Json.Decode.at [ "keywords" ] (Json.Decode.list Json.Decode.string))
             (Json.Decode.at [ "version" ] Json.Decode.string)
-            (Json.Decode.at [ "skinTone" ] Json.Decode.string)
+            (Json.Decode.at [ "skinTone" ] (Json.Decode.list Json.Decode.int))
 
 
 getData : Cmd Msg
@@ -66,7 +67,8 @@ type Msg
     = ChangeText String
     | Copy String
     | GotData (Result Http.Error (List EmojiData))
-    | ChangeVersion Int Bool
+    | ToggleVersion Int Bool
+    | ToggleSkin Int Bool
 
 
 filterVersions : Model -> List Emoji -> List Emoji
@@ -98,6 +100,20 @@ filterVersions model emojis =
             )
 
 
+filterSkins : Model -> List Emoji -> List Emoji
+filterSkins model emojis =
+    List.filter
+        (\emoji ->
+            List.foldl
+                (\curr acc ->
+                    acc && List.member curr model.skinFilters
+                )
+                True
+                emoji.skinTone
+        )
+        emojis
+
+
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
@@ -111,7 +127,7 @@ update msg model =
                         fetchFromIndex s model.emojisIndex
 
                 filteredEmojis =
-                    filterVersions model emojisList
+                    filterVersions model emojisList |> filterSkins model
             in
             ( { model | input = s, emojis = filteredEmojis }, Cmd.none )
 
@@ -136,7 +152,7 @@ update msg model =
                 Err _ ->
                     ( { model | status = Failure }, Cmd.none )
 
-        ChangeVersion version toggle ->
+        ToggleVersion version toggle ->
             let
                 newModel =
                     case version of
@@ -153,6 +169,17 @@ update msg model =
                             model
             in
             update (ChangeText model.input) newModel
+
+        ToggleSkin skin toggle ->
+            let
+                newSkins =
+                    if toggle then
+                        skin :: model.skinFilters
+
+                    else
+                        List.filter (\s -> s /= skin) model.skinFilters
+            in
+            update (ChangeText model.input) { model | skinFilters = newSkins }
 
 
 
@@ -178,12 +205,25 @@ view model =
             , input [ onInput ChangeText, placeholder "Search for Emojis" ] []
             , div []
                 [ text "Include versions:"
-                , input [ type_ "checkbox", checked model.include12_1, onCheck <| ChangeVersion 121 ] []
+                , input [ type_ "checkbox", checked model.include12_1, onCheck <| ToggleVersion 121 ] []
                 , text "12.1"
-                , input [ type_ "checkbox", checked model.include13_0, onCheck <| ChangeVersion 130 ] []
+                , input [ type_ "checkbox", checked model.include13_0, onCheck <| ToggleVersion 130 ] []
                 , text "13.0"
-                , input [ type_ "checkbox", checked model.include13_1, onCheck <| ChangeVersion 131 ] []
+                , input [ type_ "checkbox", checked model.include13_1, onCheck <| ToggleVersion 131 ] []
                 , text "13.1"
+                ]
+            , div []
+                [ text "Skins:"
+                , input [ type_ "checkbox", checked <| List.member 1 model.skinFilters, onCheck <| ToggleSkin 1 ] []
+                , text "🖐🏻"
+                , input [ type_ "checkbox", checked <| List.member 2 model.skinFilters, onCheck <| ToggleSkin 2 ] []
+                , text "🖐🏼"
+                , input [ type_ "checkbox", checked <| List.member 3 model.skinFilters, onCheck <| ToggleSkin 3 ] []
+                , text "🖐🏽"
+                , input [ type_ "checkbox", checked <| List.member 4 model.skinFilters, onCheck <| ToggleSkin 4 ] []
+                , text "🖐🏾"
+                , input [ type_ "checkbox", checked <| List.member 5 model.skinFilters, onCheck <| ToggleSkin 5 ] []
+                , text "🖐🏿"
                 ]
             , h2 [] [ text (String.fromInt (List.length model.emojis) ++ " emojis found") ]
             , div [ id "container" ] (List.indexedMap (\index emoji -> div [ class "hover", onClick <| Copy emoji.code ] [ text emoji.code ]) model.emojis)

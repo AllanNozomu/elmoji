@@ -1,14 +1,10 @@
-module Emojis exposing (Emoji, EmojiData, SkinTone(..), emojiDataToEmoji)
-
-
-type SkinTone
-    = Default
+module Emojis exposing (Emoji, EmojiData, emojiDataToEmoji)
 
 
 type alias Emoji =
     { code : String
     , version : String
-    , skinTone : String
+    , skinTone : List Int
     }
 
 
@@ -16,7 +12,7 @@ type alias EmojiData =
     { code : String
     , keywords : List String
     , version : String
-    , skinTone : String
+    , skinTone : List Int
     }
 
 
