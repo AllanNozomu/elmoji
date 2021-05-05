@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/elmoji/precache-manifest.7dab5c1deab6c4cf26c4f6f758be2479.js"
+  "/elmoji/precache-manifest.2e5577c4197a72d145d450479e31379e.js"
 );
 
 workbox.core.skipWaiting();

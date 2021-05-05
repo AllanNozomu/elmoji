@@ -1,10 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "revision": "91cbf4dd22de02867902d30dd8841bf5",
+    "url": "/elmoji/emojis.json"
+  },
+  {
     "revision": "fcf4f16848a2afec0e654a438b5aa22f",
     "url": "/elmoji/favicon.ico"
   },
   {
-    "revision": "f19b0955955c9e444080bbada82eb636",
+    "revision": "5e3b1b49fcc19472f682b14e1b44c52d",
     "url": "/elmoji/index.html"
   },
   {
@@ -16,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/elmoji/manifest.json"
   },
   {
-    "revision": "efbb7c412d4c165ce973",
-    "url": "/elmoji/static/css/main.68119f16.chunk.css"
+    "revision": "176b70644b2f5934648e",
+    "url": "/elmoji/static/css/main.cf0f4683.chunk.css"
   },
   {
-    "revision": "efbb7c412d4c165ce973",
-    "url": "/elmoji/static/js/main.efbb7c41.chunk.js"
+    "revision": "176b70644b2f5934648e",
+    "url": "/elmoji/static/js/main.176b7064.chunk.js"
   },
   {
     "revision": "1a87473cca6cb67ff568",
